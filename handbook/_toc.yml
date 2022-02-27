@@ -1,0 +1,20 @@
+# Table of contents
+
+format: jb-book
+root: intro 
+parts:
+  - caption: Data
+    chapters:
+    - file: data 
+  - caption: Analysis
+    chapters:
+    - file: analysis 
+    - url: https://swcarpentry.github.io/git-novice/
+      title: Git tutorial
+  - caption: Software
+    chapters:
+    - file: software
+  - caption: References
+    chapters:
+    - file: references
+
