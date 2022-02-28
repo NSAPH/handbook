@@ -109,6 +109,11 @@ const thebe_selector_output = ".output, .cell_output"
    NSAPH Data
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://swcarpentry.github.io/git-novice/">
+   NSAPH IRB Data quiz
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -136,6 +141,35 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="software.html">
    NSAPH Software
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contributing.html">
+   Contributing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Infrastructure
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="fasse.html">
+   FASSE
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  The team
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="team.html">
+   The team
   </a>
  </li>
 </ul>
@@ -298,7 +332,16 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="git-repository">
 <h1>Git repository<a class="headerlink" href="#git-repository" title="Permalink to this headline">¶</a></h1>
-<p>If you are starting a new analysis project, create a repository under <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> organization on GitHub. Keeping all NSAPH analysis projects at <a class="reference external" href="https://github.com/NSAPH-Projects">one location</a> is preferable for internal review, collaboration and reuse, but also for future data and code curation, and cross-referencing internal material and documentation.</p>
+<p><a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> GitHub organization is a shared account where all NSAPH members can collaborate across many projects at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are not a member of <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a>, ask Amit or one of the admins to add you to the organization.</p>
+</div>
+<p>The goal is to keep all NSAPH analysis projects at <a class="reference external" href="https://github.com/NSAPH-Projects">one location</a> to encourage internal review, collaboration and reuse. It would also facilitate future data and code curations, migrations, and cross-referencing material and documentation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are starting a new analysis project, create a repository under <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> organization on GitHub. You can make contributions directly, or create a fork under own account.</p>
+</div>
 <p>If you already have a working git repository under own username, transfer its ownership to <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a>. You can do that by clicking the following buttons at your repository page: “Settings” -&gt; “Danger Zone” -&gt; “Transfer ownership”. Have a look at the <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository">official GitHub guidelines</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -344,6 +387,11 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 <p>Alternatively, you can ignore all files of a certain format like CSV, NC or RST. Do that by adding <code class="docutils literal notranslate"><span class="pre">*.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">*.nc</span></code> or <code class="docutils literal notranslate"><span class="pre">*.rst</span></code> as new lines in <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*.</span><span class="n">csv</span> 
+<span class="o">*.</span><span class="n">nc</span>
+<span class="o">*.</span><span class="n">rst</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
