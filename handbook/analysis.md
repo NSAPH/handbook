@@ -1,6 +1,16 @@
 # Git repository
 
-If you are starting a new analysis project, create a repository under [NSAPH Projects](https://github.com/NSAPH-Projects) organization on GitHub. Keeping all NSAPH analysis projects at [one location](https://github.com/NSAPH-Projects) is preferable for internal review, collaboration and reuse, but also for future data and code curation, and cross-referencing internal material and documentation.
+[NSAPH Projects](https://github.com/NSAPH-Projects) GitHub organization is a shared account where all NSAPH members can collaborate across many projects at once. 
+
+```{note}
+If you are not a member of [NSAPH Projects](https://github.com/NSAPH-Projects), ask Amit or one of the admins to add you to the organization.
+```
+
+The goal is to keep all NSAPH analysis projects at [one location](https://github.com/NSAPH-Projects) to encourage internal review, collaboration and reuse. It would also facilitate future data and code curations, migrations, and cross-referencing material and documentation.
+
+```{note}
+If you are starting a new analysis project, create a repository under [NSAPH Projects](https://github.com/NSAPH-Projects) organization on GitHub. You can make contributions directly, or create a fork under own account. 
+```
 
 If you already have a working git repository under own username, transfer its ownership to [NSAPH Projects](https://github.com/NSAPH-Projects). You can do that by clicking the following buttons at your repository page: "Settings" -> "Danger Zone" -> "Transfer ownership". Have a look at the [official GitHub guidelines](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository).
 
@@ -56,5 +66,10 @@ data/
 ```
 
 Alternatively, you can ignore all files of a certain format like CSV, NC or RST. Do that by adding `*.csv`, `*.nc` or `*.rst` as new lines in `.gitignore`.
+```
+*.csv 
+*.nc
+*.rst
+```
 ````
 

@@ -6,6 +6,8 @@ parts:
   - caption: Data
     chapters:
     - file: data 
+    - url: https://swcarpentry.github.io/git-novice/
+      title: NSAPH IRB Data quiz 
   - caption: Analysis
     chapters:
     - file: analysis 
@@ -14,6 +16,13 @@ parts:
   - caption: Software
     chapters:
     - file: software
+    - file: contributing
+  - caption: Infrastructure 
+    chapters:
+    - file: fasse 
+  - caption: The team 
+    chapters:
+    - file: team 
   - caption: References
     chapters:
     - file: references
