@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contributing &#8212; NSAPH Handbook</title>
+    <title>Contributing on Git &#8212; NSAPH Handbook</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -131,6 +131,11 @@ const thebe_selector_output = ".output, .cell_output"
    Git tutorial
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="publishing.html">
+   Publishing
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -145,7 +150,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Contributing
+   Contributing on Git
   </a>
  </li>
 </ul>
@@ -241,11 +246,11 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/NSAPH/handbook"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontributing.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fcontributing.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -272,9 +277,36 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fork-pr-workflow">
-   Fork-PR workflow
+  <a class="reference internal nav-link" href="#fork-pull-request-workflow">
+   Fork &amp; Pull Request workflow
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-fork">
+     Create a Fork
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-your-contribution">
+     Add your contribution
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keep-your-fork-up-to-date">
+     Keep your fork up to date
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#submit-a-pull-request">
+     Submit a Pull Request
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#delete-the-development-branch">
+     Delete the development branch
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -286,7 +318,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Contributing</h1>
+                <h1>Contributing on Git</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -297,9 +329,36 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fork-pr-workflow">
-   Fork-PR workflow
+  <a class="reference internal nav-link" href="#fork-pull-request-workflow">
+   Fork &amp; Pull Request workflow
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-fork">
+     Create a Fork
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-your-contribution">
+     Add your contribution
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keep-your-fork-up-to-date">
+     Keep your fork up to date
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#submit-a-pull-request">
+     Submit a Pull Request
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#delete-the-development-branch">
+     Delete the development branch
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -310,10 +369,89 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="contributing">
-<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="fork-pr-workflow">
-<h2>Fork-PR workflow<a class="headerlink" href="#fork-pr-workflow" title="Permalink to this headline">¶</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="contributing-on-git">
+<h1>Contributing on Git<a class="headerlink" href="#contributing-on-git" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fork-pull-request-workflow">
+<h2>Fork &amp; Pull Request workflow<a class="headerlink" href="#fork-pull-request-workflow" title="Permalink to this headline">¶</a></h2>
+<p>Fork &amp; Pull Request workflow is essential when contributing to NSAPH and other open-source projects. Unfortuatelly, it is easy to make mistakes when you are learning the process. Here are the instructions for a standard procedure for creating a fork, making your contribution, issuing a pull request and merging it to the original project.</p>
+<div class="section" id="create-a-fork">
+<h3>Create a Fork<a class="headerlink" href="#create-a-fork" title="Permalink to this headline">¶</a></h3>
+<p>On the GitHub page, click the “Fork” button to create a fork under your account.</p>
+<p><img alt="" src="_images/fork_pr_fork.png" /></p>
+<p>Clone the fork to your local machine as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">USERNAME</span><span class="o">/</span><span class="n">FORKED</span><span class="o">-</span><span class="n">PROJECT</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you contribute to the official NSAPH software, check its contribution gudelines.</p>
+<p>You may need to build on the <code class="docutils literal notranslate"><span class="pre">develop</span></code> branch instead of the <code class="docutils literal notranslate"><span class="pre">master/main</span></code> branch. To fetch the develop branch, type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">--</span><span class="n">track</span> <span class="n">origin</span><span class="o">/</span><span class="n">develop</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="add-your-contribution">
+<h3>Add your contribution<a class="headerlink" href="#add-your-contribution" title="Permalink to this headline">¶</a></h3>
+<p>It is important that you create a new branch for your contribution. It is a proper git workflow and it keeps your changes organized and separated from the master/develop branch, so you can easily switch between them.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout the develop branch - you want your new branch to come from develop</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">develop</span>
+
+<span class="c1"># Create a new branch </span>
+<span class="n">git</span> <span class="n">branch</span> <span class="n">newfeature</span>
+
+<span class="c1"># Switch to your new branch</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">newfeature</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="keep-your-fork-up-to-date">
+<h3>Keep your fork up to date<a class="headerlink" href="#keep-your-fork-up-to-date" title="Permalink to this headline">¶</a></h3>
+<p>If multiple people are actively contributing to this project, or you plan to work on it for a longer period (ie, your contribution is not just “a quick fix”), you should track the original “upstream” repo that you forked. To do that, you need to add a remote:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add &#39;upstream&#39; repo to list of remotes</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">UPSTREAM</span><span class="o">-</span><span class="n">USER</span><span class="o">/</span><span class="n">ORIGINAL</span><span class="o">-</span><span class="n">PROJECT</span><span class="o">.</span><span class="n">git</span>
+
+<span class="c1"># Verify the new remote named &#39;upstream&#39;</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+<p>Now you can update your fork with the lastest  upstream changes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch from upstream remote</span>
+<span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
+
+<span class="c1"># View all branches, including those from upstream</span>
+<span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">va</span>
+
+<span class="c1"># Checkout your develop branch and merge upstream</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">develop</span>
+<span class="n">git</span> <span class="n">merge</span> <span class="n">upstream</span><span class="o">/</span><span class="n">develop</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="submit-a-pull-request">
+<h3>Submit a Pull Request<a class="headerlink" href="#submit-a-pull-request" title="Permalink to this headline">¶</a></h3>
+<p>If there are new commits to the upstream <code class="docutils literal notranslate"><span class="pre">develop</span></code> branch, you should rebase your development branch so that merging is straight-forward and conflict-free. You can do that like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch upstream master and merge with your repo&#39;s master branch</span>
+<span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+<span class="n">git</span> <span class="n">merge</span> <span class="n">upstream</span><span class="o">/</span><span class="n">master</span>
+
+<span class="c1"># If there were any new commits, rebase your development branch</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">newfeature</span>
+<span class="n">git</span> <span class="n">rebase</span> <span class="n">master</span>
+</pre></div>
+</div>
+<p>Then push your contributions to your GitHub fork, and make a pull request on the GitHub web page directly. Make sure to document your contribution with an informative title and description.</p>
+<p><img alt="" src="_images/fork_pr_docs.png" /></p>
+<p>You can assign reviewers for your pull request. Follow up with the reviewers and incorporate their suggestions in a new commit to your fork. The new commit will be automatically visible in the pull request.</p>
+</div>
+<div class="section" id="delete-the-development-branch">
+<h3>Delete the development branch<a class="headerlink" href="#delete-the-development-branch" title="Permalink to this headline">¶</a></h3>
+<p>Once you are done with the development branch, you can delete it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">d</span> <span class="n">newfeature</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
