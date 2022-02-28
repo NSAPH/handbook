@@ -13,6 +13,7 @@ parts:
     - file: analysis 
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial
+    - file: publishing 
   - caption: Software
     chapters:
     - file: software
