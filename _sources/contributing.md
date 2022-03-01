@@ -8,7 +8,13 @@ Fork & Pull Request workflow is essential when contributing to NSAPH and other o
 
 On the GitHub page, click the "Fork" button to create a fork under your account.
 
-![](imgs/fork_pr_fork.png)
+```{figure} imgs/fork_pr_fork.png
+---
+scale: 90%
+align: center 
+---
+The fork button.
+```
 
 Clone the fork to your local machine as follows:
 
@@ -82,7 +88,13 @@ git rebase master
 
 Then push your contributions to your GitHub fork, and make a pull request on the GitHub web page directly. Make sure to document your contribution with an informative title and description.
 
-![](imgs/fork_pr_docs.png)
+```{figure} imgs/fork_pr_docs.png
+---
+scale: 80%
+align: center 
+---
+Describe your contribution.
+```
 
 You can assign reviewers for your pull request. Follow up with the reviewers and incorporate their suggestions in a new commit to your fork. The new commit will be automatically visible in the pull request.
 
