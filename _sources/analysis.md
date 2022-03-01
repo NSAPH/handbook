@@ -55,6 +55,10 @@ Consider organizing your repository as follows:
 ```
 Have a look at the [NSAPH Project Template](https://github.com/NSAPH/project_template).
 
+```{tip}
+If you are using R software in your analysis, have a look at best practices and recommendations [here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) and [here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
+```
+
 ## Special files
 
 A `README.md` file is a standard documentation file where you should put information about the content of your repository.
