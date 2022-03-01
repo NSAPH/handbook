@@ -61,7 +61,7 @@ If you are using R software in your analysis, have a look at best practices and 
 
 ## Special files
 
-A `README.md` file is a standard documentation file where you should put information about the content of your repository.
+A `README.md` file is a standard documentation file where you should put information about the content of your repository. See more here: {ref}`readme-md`.
 
 A `.gitignore` file tells Git which files to ignore when committing your project to the GitHub repository. It should be located in the root directory of your repo. Large data file and sensitive data should be ignored by Git.
 
