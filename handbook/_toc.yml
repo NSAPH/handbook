@@ -21,6 +21,7 @@ parts:
   - caption: Infrastructure 
     chapters:
     - file: fasse 
+    - file: dataverse
   - caption: The team 
     chapters:
     - file: team 
