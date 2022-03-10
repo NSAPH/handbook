@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git repository &#8212; NSAPH Handbook</title>
+    <title>Dataverse &#8212; NSAPH Handbook</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Publishing" href="publishing.html" />
-    <link rel="prev" title="NSAPH Data" href="data.html" />
+    <link rel="next" title="The team" href="team.html" />
+    <link rel="prev" title="FASSE" href="fasse.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -120,9 +120,9 @@ const thebe_selector_output = ".output, .cell_output"
   Analysis
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="analysis.html">
    Git repository
   </a>
  </li>
@@ -159,14 +159,14 @@ const thebe_selector_output = ".output, .cell_output"
   Infrastructure
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fasse.html">
    FASSE
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dataverse.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Dataverse
   </a>
  </li>
@@ -235,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/analysis.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/dataverse.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -255,7 +255,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fanalysis.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fdataverse.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -276,29 +276,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naming">
-   Naming
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#repository-structure">
-   Repository structure
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#special-files">
-   Special files
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -306,111 +283,26 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Git repository</h1>
+                <h1>Dataverse</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naming">
-   Naming
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#repository-structure">
-   Repository structure
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#special-files">
-   Special files
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="git-repository">
-<h1>Git repository<a class="headerlink" href="#git-repository" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> GitHub organization is a shared account where all NSAPH members can collaborate across many projects at once.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you are not already a member of <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a>, ask Amit or one of the admins to add you to the organization.</p>
-</div>
-<p>The goal is to keep all NSAPH analysis projects at <a class="reference external" href="https://github.com/NSAPH-Projects">one location</a> to encourage internal review, collaboration and reuse. It would also facilitate future data and code curations, migrations, and cross-referencing material and documentation.</p>
-<div class="note admonition">
-<p class="admonition-title">New project </p>
-<p>If you are starting a new analysis project, create a repository under <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> organization on GitHub. You can make contributions to the repository directly, or create a fork under own account.</p>
-</div>
-<div class="note admonition">
-<p class="admonition-title">Existing project </p>
-<p>If you already have a working git repository under own username, transfer its ownership to <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a>. You can do that by clicking the following buttons at your repository page: “Settings” -&gt; “Danger Zone” -&gt; “Transfer ownership”. Have a look at the <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository">official GitHub guidelines</a>.</p>
-</div>
-<div class="note admonition">
-<p class="admonition-title">Published project </p>
-<p>If you have a git repository of a completed project under own username that you reference in a publication, do not just transfer ownership to <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a>. In this case, you should:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="dataverse">
+<h1>Dataverse<a class="headerlink" href="#dataverse" title="Permalink to this headline">¶</a></h1>
+<p>NSAPH Dataverse:</p>
 <ul class="simple">
-<li><p>Transfer ownership and create a <strong>fork</strong> of the repository under own username; or</p></li>
-<li><p>Ask a <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> admin to fork your repository. Both repositories should be up-to-date.</p></li>
+<li><p>Main: <a class="reference external" href="https://dataverse.harvard.edu/dataverse/biostats">https://dataverse.harvard.edu/dataverse/biostats</a></p></li>
+<li><p>Open data collection: <a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaphopendata">https://dataverse.harvard.edu/dataverse/nsaphopendata</a></p></li>
+<li><p>Analysis data collection: <a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaphanalysis">https://dataverse.harvard.edu/dataverse/nsaphanalysis</a></p></li>
 </ul>
-<p>This is important so that shared repository URLs are not broken. In this case, do not modify the repository name.</p>
-</div>
-<div class="section" id="naming">
-<h2>Naming<a class="headerlink" href="#naming" title="Permalink to this headline">¶</a></h2>
-<p>Your repository name should have the following format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposure</span><span class="o">-</span><span class="n">outcome</span><span class="o">-</span><span class="n">method</span>
-</pre></div>
-</div>
-<p>For example: <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-reinforcement_learning</span></code> or shorter <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-rl</span></code>.</p>
-<p>A repository name can have up to 100 characters.</p>
-</div>
-<div class="section" id="repository-structure">
-<h2>Repository structure<a class="headerlink" href="#repository-structure" title="Permalink to this headline">¶</a></h2>
-<p>Consider organizing your repository as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|--</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
-<span class="o">|--</span> <span class="n">data</span><span class="o">/</span>
-<span class="o">|--</span> <span class="n">code</span><span class="o">/</span>
-<span class="o">|--</span> <span class="n">figures</span><span class="o">/</span>
-<span class="o">|--</span> <span class="n">reports</span><span class="o">/</span>
-<span class="o">|--</span> <span class="n">results</span><span class="o">/</span>
-<span class="o">|--</span> <span class="o">.</span><span class="n">gitignore</span>
-</pre></div>
-</div>
-<p>Have a look at the <a class="reference external" href="https://github.com/NSAPH/project_template">NSAPH Project Template</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you are using R software in your analysis, have a look at best practices and recommendations <a class="reference external" href="https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/">here</a> and <a class="reference external" href="https://www.nature.com/articles/s41597-022-01143-6#Sec18">here</a>.</p>
-</div>
-</div>
-<div class="section" id="special-files">
-<h2>Special files<a class="headerlink" href="#special-files" title="Permalink to this headline">¶</a></h2>
-<p>A <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file is a standard documentation file where you should put information about the content of your repository. See more here: <a class="reference internal" href="publishing.html#readme-md"><span class="std std-ref">A README.md file</span></a>.</p>
-<p>A <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file tells Git which files to ignore when committing your project to the GitHub repository. It should be located in the root directory of your repo. Large data file and sensitive data should be ignored by Git.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Be careful not to push sensitive data on GitHub. Don’t forget that Medicare/Medicaid data should not leave Harvard, but your analysis code should be versioned with Git. A <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file helps with that.</p>
-</div>
-<p>Add path and/or file names of your data in the <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file. For example, if your datasets sit in a <code class="docutils literal notranslate"><span class="pre">data</span></code> folder, add the following line:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">/</span>
-</pre></div>
-</div>
-<p>Alternatively, you can ignore all files of a certain format like <code class="docutils literal notranslate"><span class="pre">.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">.nc</span></code> or <code class="docutils literal notranslate"><span class="pre">.rst</span></code>. Do that by adding <code class="docutils literal notranslate"><span class="pre">*.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">*.nc</span></code> or <code class="docutils literal notranslate"><span class="pre">*.rst</span></code> as new lines in <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>. For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*.</span><span class="n">csv</span> 
-<span class="o">*.</span><span class="n">nc</span>
-<span class="o">*.</span><span class="n">rst</span>
-</pre></div>
-</div>
-</div>
+<p>Or see at: <a class="reference external" href="http://biostatsdata.org">http://biostatsdata.org</a></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -438,17 +330,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="data.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="fasse.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">NSAPH Data</p>
+            <p class="prev-next-title">FASSE</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="publishing.html" title="next page">
+    <a class='right-next' id="next-link" href="team.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Publishing</p>
+        <p class="prev-next-title">The team</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
