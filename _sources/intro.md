@@ -2,6 +2,10 @@
 
 The handbook offers information on data, software and analysis.
 
+## Web page
+
+Find the National Studies on Air Pollution and Health (NSAPH) group official web page [here.](https://www.hsph.harvard.edu/nsaph/)
+
 ## GitHub presence
 
 A GitHub organization is a shared account where all organization members can collaborate across many projects at once. NSAPH has five organizations on GitHub meant to help you find and use group resources:
