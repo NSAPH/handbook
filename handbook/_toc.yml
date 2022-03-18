@@ -6,13 +6,15 @@ parts:
   - caption: Data
     chapters:
     - file: data 
-    - url: https://swcarpentry.github.io/git-novice/
-      title: NSAPH IRB Data quiz 
+    - url: https://docs.google.com/forms/d/e/1FAIpQLScV_txoDRI5b6bpsnVO6QaAPZJ4xRo2z4VgyXibSxZ55o_AJg/viewform 
+      title: Training on Data Security 
   - caption: Analysis
     chapters:
     - file: analysis 
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial
+    - url: https://swcarpentry.github.io/shell-novice/ 
+      title: Unix Shell tutorial
     - file: publishing 
   - caption: Software
     chapters:
@@ -22,7 +24,7 @@ parts:
     chapters:
     - file: fasse 
     - file: dataverse
-  - caption: The team 
+  - caption: The Team 
     chapters:
     - file: team 
   - caption: References
