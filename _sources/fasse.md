@@ -20,10 +20,9 @@ ls -l my_link.txt
 
 # symlink to a directory
 ln -s ../analytic/medpar /data/medpar
-
 ```
 
-```{info}
+```{note}
 Even if multiple people read the same analytic files in order to analyze it at the same time, that will not cause problems on FASSE.
 ```
 

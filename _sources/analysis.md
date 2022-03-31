@@ -49,7 +49,7 @@ A repository name can have up to 100 characters.
 In pratice you may have multiple exposures and outcomes. In that case, use your best jugement to name your repository based on the guidelines. Avoid information such as usernames and current date or year.
 ```
 
-```{info}
+```{note}
 To learn more about file naming conventions and why they are important, have a look at [the Harvard's research data management page](https://datamanagement.hms.harvard.edu/collect/file-naming-conventions).
 ```
 
