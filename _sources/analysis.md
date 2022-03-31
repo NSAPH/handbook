@@ -28,17 +28,31 @@ If you have a git repository of a completed project under own username that you 
 This is important so that shared repository URLs are not broken. In this case, do not modify the repository name.
 :::
 
-## Naming
+## Repository naming convention
 
-Your repository name should have the following format:
+Your repository name should be informative for the group members and outsiders. Consider the following format:
 
 ```
-exposure-outcome-method
+<EXPOSURE>-<OUTCOME>-<SUBPOPULATION>-<METHOD>
 ```
+
+- Exposure examples: `pm-components`, `pm-no2`, `pm-no2-o3`, `heat-alert`
+- Outcome examples: `cardiovascular`, `respiratory`, `adrd`
+- Subpopulation examples: `medicare`, `race`, `ethnicity`
+- Method: `reinforcement-learning`, `causalgps` 
 
 For example: `heat_alert-mortality-reinforcement_learning` or shorter `heat_alert-mortality-rl`.
 
 A repository name can have up to 100 characters.
+
+```{tip}
+In pratice you may have multiple exposures and outcomes. In that case, use your best jugement to name your repository based on the guidelines. Avoid information such as usernames and current date or year.
+```
+
+```{info}
+To learn more about file naming conventions and why they are important, have a look at [the Harvard's research data management page](https://datamanagement.hms.harvard.edu/collect/file-naming-conventions).
+```
+
 
 ## Repository structure
 

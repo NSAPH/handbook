@@ -287,8 +287,8 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naming">
-   Naming
+  <a class="reference internal nav-link" href="#repository-naming-convention">
+   Repository naming convention
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -322,8 +322,8 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#naming">
-   Naming
+  <a class="reference internal nav-link" href="#repository-naming-convention">
+   Repository naming convention
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -370,14 +370,24 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p>This is important so that shared repository URLs are not broken. In this case, do not modify the repository name.</p>
 </div>
-<div class="section" id="naming">
-<h2>Naming<a class="headerlink" href="#naming" title="Permalink to this headline">¶</a></h2>
-<p>Your repository name should have the following format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposure</span><span class="o">-</span><span class="n">outcome</span><span class="o">-</span><span class="n">method</span>
+<div class="section" id="repository-naming-convention">
+<h2>Repository naming convention<a class="headerlink" href="#repository-naming-convention" title="Permalink to this headline">¶</a></h2>
+<p>Your repository name should be informative for the group members and outsiders. Consider the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">EXPOSURE</span><span class="o">&gt;-&lt;</span><span class="n">OUTCOME</span><span class="o">&gt;-&lt;</span><span class="n">SUBPOPULATION</span><span class="o">&gt;-&lt;</span><span class="n">METHOD</span><span class="o">&gt;</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Exposure examples: <code class="docutils literal notranslate"><span class="pre">pm-components</span></code>, <code class="docutils literal notranslate"><span class="pre">pm-no2</span></code>, <code class="docutils literal notranslate"><span class="pre">pm-no2-o3</span></code>, <code class="docutils literal notranslate"><span class="pre">heat-alert</span></code></p></li>
+<li><p>Outcome examples: <code class="docutils literal notranslate"><span class="pre">cardiovascular</span></code>, <code class="docutils literal notranslate"><span class="pre">respiratory</span></code>, <code class="docutils literal notranslate"><span class="pre">adrd</span></code></p></li>
+<li><p>Subpopulation examples: <code class="docutils literal notranslate"><span class="pre">medicare</span></code>, <code class="docutils literal notranslate"><span class="pre">race</span></code>, <code class="docutils literal notranslate"><span class="pre">ethnicity</span></code></p></li>
+<li><p>Method: <code class="docutils literal notranslate"><span class="pre">reinforcement-learning</span></code>, <code class="docutils literal notranslate"><span class="pre">causalgps</span></code></p></li>
+</ul>
 <p>For example: <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-reinforcement_learning</span></code> or shorter <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-rl</span></code>.</p>
 <p>A repository name can have up to 100 characters.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In pratice you may have multiple exposures and outcomes. In that case, use your best jugement to name your repository based on the guidelines. Avoid information such as usernames and current date or year.</p>
+</div>
 </div>
 <div class="section" id="repository-structure">
 <h2>Repository structure<a class="headerlink" href="#repository-structure" title="Permalink to this headline">¶</a></h2>
