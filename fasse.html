@@ -370,6 +370,17 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Analytic Data Reuse<a class="headerlink" href="#analytic-data-reuse" title="Permalink to this headline">¶</a></h3>
 <p>If you are using any of the pre-processed analytic datasets, create a symbolic link (symlink) of that dataset instead of creating a new copy. A symbolic link is essentially a reference to another file or directory that the operating system interprets as a path to that file or directory (a shortcut).</p>
 <p>This is how you create a symlink:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># ln -s source_file symbolic_link</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">../</span><span class="n">analytic</span><span class="o">/</span><span class="n">my_file</span><span class="o">.</span><span class="n">txt</span> <span class="n">my_link</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="c1"># to verify if the symlink was successfully created, run:</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="n">my_link</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="c1"># symlink to a directory</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">../</span><span class="n">analytic</span><span class="o">/</span><span class="n">medpar</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">medpar</span>
+
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="rce-conda">

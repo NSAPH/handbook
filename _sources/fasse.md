@@ -11,7 +11,7 @@ If you are using any of the pre-processed analytic datasets, create a symbolic l
 
 This is how you create a symlink:
 
-```{shell}
+```
 # ln -s source_file symbolic_link
 ln -s ../analytic/my_file.txt my_link.txt
 
