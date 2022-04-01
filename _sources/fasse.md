@@ -7,12 +7,12 @@
 ### Prerequisites 
 
 1. Get a FASSE account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
-2. Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to FASRC VPN. 
-3. Install 2FA, i.e., Google Authenticator. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
+2. Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to the FASRC VPN. 
+3. Install 2FA, i.e., Google Authenticator for FASRC. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
 
 ### VPN login
 
-1. Type `vpn.rc.fas.harvard.edu` in the Cisco AnyConnect text box.
+1. Type `vpn.rc.fas.harvard.edu` in the Cisco AnyConnect text box (see figures).
 2. Type your username in the format `username@fasse`, password and verification code (same as for FASRC).
 
 ```{figure} imgs/fasse_vpn.png
