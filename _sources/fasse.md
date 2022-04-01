@@ -1,7 +1,51 @@
 # FASSE
 
 
-## Account
+## Login 
+
+
+### Prerequisites 
+
+1. Get a FASSE account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
+2. Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to FASRC VPN. 
+3. Install 2FA, i.e., Google Authenticator. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
+
+### VPN login
+
+1. Type `vpn.rc.fas.harvard.edu` in the Cisco AnyConnect text box.
+2. Type your username in the format `username@fasse`, password and verification code (same as for FASRC).
+
+```{figure} imgs/fasse_vpn.png
+---
+scale: 70%
+align: center 
+---
+```
+
+```{figure} imgs/fasse_form.png
+---
+scale: 70%
+align: center 
+---
+```
+
+### Access FASSE
+
+1. Open Terminal
+2. Type `ssh username@fasselogin.rc.fas.harvard.edu`
+3. Type your password and verification code (same as for FASRC, i.e., same as in the previous step)
+
+```{figure} imgs/fasse_ssh.png
+---
+scale: 70%
+align: center 
+---
+```
+
+To access NSAPH projects folder, type 
+```
+cd /n/dominici_nsaph_l3/projects
+``` 
 
 ## Analysis project folder 
 
