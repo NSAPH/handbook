@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FASSE &#8212; NSAPH Handbook</title>
+    <title>FASSE Setup &#8212; NSAPH Handbook</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -167,7 +167,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   FASSE
+   FASSE Setup
   </a>
  </li>
  <li class="toctree-l1">
@@ -287,38 +287,34 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#login">
-   Login
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#prerequisites">
-     Prerequisites
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#vpn-login">
-     VPN login
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#access-fasse">
-     Access FASSE
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vpn-login">
+   VPN login
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-fasse">
+   Access FASSE
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#analysis-project-folder">
    Analysis project folder
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analytic-data-reuse">
-     Analytic Data Reuse
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analytic-data-reuse">
+   Analytic Data Reuse
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terminal-settings-optional">
+   Terminal settings (optional)
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#rce-conda">
@@ -335,7 +331,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>FASSE</h1>
+                <h1>FASSE Setup</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -346,38 +342,34 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#login">
-   Login
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#prerequisites">
-     Prerequisites
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#vpn-login">
-     VPN login
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#access-fasse">
-     Access FASSE
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vpn-login">
+   VPN login
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-fasse">
+   Access FASSE
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#analysis-project-folder">
    Analysis project folder
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analytic-data-reuse">
-     Analytic Data Reuse
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analytic-data-reuse">
+   Analytic Data Reuse
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terminal-settings-optional">
+   Terminal settings (optional)
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#rce-conda">
@@ -393,12 +385,11 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="fasse">
-<h1>FASSE<a class="headerlink" href="#fasse" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="login">
-<h2>Login<a class="headerlink" href="#login" title="Permalink to this headline">¶</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="fasse-setup">
+<h1>FASSE Setup<a class="headerlink" href="#fasse-setup" title="Permalink to this headline">¶</a></h1>
+<p>The following are instruction for logging in to FASSE and setting up own workspace.</p>
 <div class="section" id="prerequisites">
-<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Get a FASSE account by requesting it <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/">here</a>.</p></li>
 <li><p>Install <a class="reference external" href="https://vpn.rc.fas.harvard.edu/">Cisco AnyConnect client</a> to connect to the FASRC VPN.</p></li>
@@ -406,7 +397,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ol>
 </div>
 <div class="section" id="vpn-login">
-<h3>VPN login<a class="headerlink" href="#vpn-login" title="Permalink to this headline">¶</a></h3>
+<h2>VPN login<a class="headerlink" href="#vpn-login" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Type <code class="docutils literal notranslate"><span class="pre">vpn.rc.fas.harvard.edu</span></code> in the Cisco AnyConnect text box (see figures).</p></li>
 <li><p>Type your username in the format <code class="docutils literal notranslate"><span class="pre">username&#64;fasse</span></code>, password and verification code (same as for FASRC).</p></li>
@@ -419,7 +410,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="section" id="access-fasse">
-<h3>Access FASSE<a class="headerlink" href="#access-fasse" title="Permalink to this headline">¶</a></h3>
+<h2>Access FASSE<a class="headerlink" href="#access-fasse" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Open Terminal</p></li>
 <li><p>Type <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">username&#64;fasselogin.rc.fas.harvard.edu</span></code></p></li>
@@ -428,16 +419,26 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/fasse_ssh.png"><img alt="_images/fasse_ssh.png" src="_images/fasse_ssh.png" style="width: 719.5999999999999px; height: 209.29999999999998px;" /></a>
 </div>
-<p>To access NSAPH projects folder, type</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">dominici_nsaph_l3</span><span class="o">/</span><span class="n">projects</span>
-</pre></div>
-</div>
-</div>
 </div>
 <div class="section" id="analysis-project-folder">
 <h2>Analysis project folder<a class="headerlink" href="#analysis-project-folder" title="Permalink to this headline">¶</a></h2>
+<p>We strongly encourage users to keep their analysis data and code in the NSAPH shared project space here:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">dominici_nsaph_l3</span><span class="o">/</span><span class="n">projects</span>
+</pre></div>
+</div>
+<p>Create a subfolder and GitHub repository for your analysis by following the convention <a class="reference internal" href="analysis.html#naming-convention"><span class="std std-ref">here</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To clone an existing GitHub repository or push to GitHub, you may need to create a GitHub token. See instructions for that <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">here</a>.</p>
+</div>
+<p>Link your GitHub account to the FASSE workspace by setting your git username and email. By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Mona Lisa&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;email@example.com&quot;</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="analytic-data-reuse">
-<h3>Analytic Data Reuse<a class="headerlink" href="#analytic-data-reuse" title="Permalink to this headline">¶</a></h3>
+<h2>Analytic Data Reuse<a class="headerlink" href="#analytic-data-reuse" title="Permalink to this headline">¶</a></h2>
 <p>If you are using any of the pre-processed analytic datasets, create a symbolic link (symlink) of that dataset instead of creating a new copy. A symbolic link is essentially a reference to another file or directory that the operating system interprets as a path to that file or directory (a shortcut).</p>
 <p>This is how you create a symlink:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># ln -s source_file symbolic_link</span>
@@ -452,8 +453,50 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Even if multiple people read the same analytic files in order to analyze it at the same time, that will not cause problems on FASSE.</p>
+<p>Even if multiple people read the same analytic files at the same time, that will not cause problems on FASSE.</p>
 </div>
+</div>
+<div class="section" id="terminal-settings-optional">
+<h2>Terminal settings (optional)<a class="headerlink" href="#terminal-settings-optional" title="Permalink to this headline">¶</a></h2>
+<p>Consider adding the following lines in your <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> file to set shortcuts (aliases) and have more colorful working environment.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># function to see active git branch</span>
+parse_git_branch<span class="o">()</span> <span class="o">{</span>
+     git branch <span class="m">2</span>&gt; /dev/null <span class="p">|</span> sed -e <span class="s1">&#39;/^[^*]/d&#39;</span> -e <span class="s1">&#39;s/* \(.*\)/ (\1)/&#39;</span>
+<span class="o">}</span>
+
+<span class="c1"># Aliases </span>
+<span class="nb">alias</span> <span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/projects&#39;</span> 
+
+<span class="c1"># Prompt colors</span>
+<span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;\[\033[01;32m\]\u@\h\[\033[0;00m\]:\[\033[01;36m\]\w\[\033[35m\]\$(parse_git_branch)\[\033[00m\] </span>$<span class="s2"> &quot;</span>
+</pre></div>
+</div>
+<p>The prompt colors are encoded in <code class="docutils literal notranslate"><span class="pre">\[\033[COLORm\]</span></code>. You can modify the number to change the prompt color. Here are the values for different text colors:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Black: 30</p></th>
+<th class="head"><p>Blue: 34</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cyan: 36</p></td>
+<td><p>Green: 32</p></td>
+</tr>
+<tr class="row-odd"><td><p>Purple: 35</p></td>
+<td><p>Red: 31</p></td>
+</tr>
+<tr class="row-even"><td><p>White: 37</p></td>
+<td><p>Yellow: 33</p></td>
+</tr>
+</tbody>
+</table>
+<p>Source your <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> file to see the changes:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>. ~/.bash_profile
+</pre></div>
+</div>
+<p>The new prompt look:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/fasse_cmd.png"><img alt="_images/fasse_cmd.png" src="_images/fasse_cmd.png" style="width: 893.6px; height: 148.8px;" /></a>
 </div>
 </div>
 <div class="section" id="rce-conda">

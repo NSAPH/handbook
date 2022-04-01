@@ -28,6 +28,7 @@ If you have a git repository of a completed project under own username that you 
 This is important so that shared repository URLs are not broken. In this case, do not modify the repository name.
 :::
 
+(naming-convention)=
 ## Repository naming convention
 
 Your repository name should be informative for the group members and outsiders. Consider the following format:
