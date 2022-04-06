@@ -2,6 +2,11 @@
 
 # Data sources
 
+| Medical | Description |
+| ------- | ----------- |
+| MedPar data | Includes hospitalizations for FFS individuals (1999-2017) | 
+| MBSF | The enrollment file and also has mortality for everyone (1999-2017) | 
+| MCBS | Survey for sample of all Medicare or just FFS (1999-2004, 2007-2013, 2015-2017) |
 
 ## MedPAR
 
