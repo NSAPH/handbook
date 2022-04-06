@@ -16,7 +16,7 @@ parts:
     - url: https://swcarpentry.github.io/shell-novice/ 
       title: Unix Shell tutorial
     - file: publishing 
-    -file: datarequestprocedure
+    - file: datarequestprocedure
   - caption: Software
     chapters:
     - file: software
