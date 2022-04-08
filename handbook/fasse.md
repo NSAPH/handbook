@@ -82,6 +82,12 @@ ln -s ../analytic/medpar /data/medpar
 Even if multiple people read the same analytic files at the same time, that will not cause problems on FASSE.
 ```
 
+## Setting up R and RStudio on FASSE
+
+To load R and install packages, follow [these directions](https://docs.rc.fas.harvard.edu/kb/r-packages/). If you're using RStudio, you'll need your R_LIBS_USER path to set up the interactive session.
+
+In RStudio, if you want to see files outside of your home directory, you can click the three dots on the upper right-hand side of the Files window in RStudio (under the refresh arrow) and type in the directory path you want. If you want to save files outside your home directory, you can change your working directory using the command "setwd([directory path])" in the Console.
+
 ## Terminal settings (optional)
 
 Consider adding the following lines in your `~/.bash_profile` file to set shortcuts (aliases) and have more colorful working environment.
