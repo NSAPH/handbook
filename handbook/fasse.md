@@ -57,8 +57,8 @@ To clone an existing GitHub repository or push to GitHub, you may need to create
 Link your GitHub account to the FASSE workspace by setting your git username and email. By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
 
 ```
-git config user.name "Mona Lisa"
-git config user.email "email@example.com"
+git config --global user.name "Mona Lisa"
+git config --global user.email "email@example.com"
 ```
 
 ## Analytic Data Reuse
