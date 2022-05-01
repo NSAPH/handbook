@@ -27,7 +27,7 @@ align: center
 ---
 ```
 
-## Access FASSE
+## Access FASSE via command line
 
 1. Open Terminal
 2. Type `ssh username@fasselogin.rc.fas.harvard.edu`
@@ -40,6 +40,12 @@ align: center
 ---
 ```
 
+## Access FASSE via VDI/OoD (in browser)
+
+Acess FASSE via the web browser here: https://fasseood.rc.fas.harvard.edu/ 
+
+See the official documentation here: https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/
+
 ## Analysis project folder 
 
 We strongly encourage users to keep their analysis data and code in the NSAPH shared project space here:
@@ -49,6 +55,10 @@ cd /n/dominici_nsaph_l3/projects
 ``` 
 
 Create a subfolder and GitHub repository for your analysis by following the convention [here](naming-convention).
+
+## Link your FASSE account to GitHub
+
+Create a GitHub repository for your analysis.
 
 ```{note}
 To clone an existing GitHub repository or push to GitHub, you may need to create a GitHub token. See instructions for that [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
