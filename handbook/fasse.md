@@ -35,6 +35,10 @@ align: center
 ---
 ```
 
+```{warning}
+CMS prohibits accessing data while outside of the US, this includes not only opening data files but also submitting code/jobs to run on the data. This also means no jobs will be allowed to be run on RCE/FASSE outside the U.S. While Harvard does not restrict cluster access, we are not allowed to access it per the DUA with CMS. For people not using CMS data, we encourage you to work on FASRC.
+```
+
 ## Access FASSE via command line
 
 1. Open Terminal
