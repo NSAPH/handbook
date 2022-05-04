@@ -19,6 +19,8 @@ parts:
   #  - file: datarequestprocedure
   - caption: Software
     chapters:
+    - url: https://nsaph-software.github.io/intro.html
+      title: NSAPH Software Website
     - file: software
     - file: contributing
   - caption: Infrastructure 
