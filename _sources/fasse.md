@@ -4,12 +4,13 @@ The following are instruction for logging in to FASSE and setting up your own wo
 
 ## Prerequisites 
 
-1. Get a FASSE account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
-2. Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to the FASRC VPN. 
-3. Install 2FA, i.e., Google Authenticator for FASRC. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
+1. Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
+2. Join our FASSE project group (please see steps below)
+3. Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to the FASRC VPN. 
+4. Install 2FA, i.e., Google Authenticator for FASRC. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
 
 ## Join our FASSE project group
-To join our FASSE project group, follow the steps below:
+After creating your FASRC account, follow the steps below to join our FASSE project group:
 1. Navigate to the [Add Grants page](https://portal.rc.fas.harvard.edu/request/grants/add) in portal, you will need to login with your FASRC account
 2. Expand the plus sign next to “Other”
 3. Find the project group you want to be added to: dominici_nsaph
