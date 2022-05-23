@@ -5,7 +5,7 @@ The following are instruction for logging in to FASSE and setting up your own wo
 ## Prerequisites 
 
 1. Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
-2. Join our FASSE project group (please see steps below).
+2. Join our FASSE project group (please [see steps below](#join-our-fasse-project-group)).
 3. Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to the FASRC VPN. 
 4. Install 2FA, i.e., Google Authenticator for FASRC. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
 
