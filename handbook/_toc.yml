@@ -25,7 +25,8 @@ parts:
     - file: contributing
   - caption: Infrastructure 
     chapters:
-    - file: fasse 
+    - file: fasse
+    - file: rce
     - file: dataverse
   - caption: The Team 
     chapters:
