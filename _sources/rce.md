@@ -1,11 +1,11 @@
-# Work on Research Computing Environment (RCE)
+# Work on RCE
 
-To work on RCE, you also need to connect to the Harvard's VPN (https://vpn.harvard.edu/) through the Cisco AnyConnect.
+Unless you are at Harvard and connected to the Harvard network, you will first need to connect to the Harvard's VPN (https://vpn.harvard.edu/) through the Cisco AnyConnect application in order to work on the Research Computing Environment (RCE).
 
-See the official documentation here: https://rce-docs.hmdc.harvard.edu 
+See the official RCE documentation here: https://rce-docs.hmdc.harvard.edu 
 
 ```{warning}
-RCE is no longer maintained and the users should plan for their transition to FASSE.
+The RCE is no longer maintained and the users should plan for their transition to FASSE.
 ```
 
 ## Access RCE
@@ -14,20 +14,20 @@ You can access the RCE in the three following ways:
 
 1. In the command line with: `ssh username@rce.hmdc.harvard.edu`
 2. In the web browser at: https://rce.hmdc.harvard.edu/nxwebplayer
-3. In the [NoMachine](https://rce-docs.hmdc.harvard.edu/nx4_installation) software.
+3. In [the NoMachine software](https://rce-docs.hmdc.harvard.edu/nx4_installation).
 
 ## Running RStudio on RCE
 
-Inside the browser or NoMachine interface run the following application: `Menu` -> `Applications` -> `Anaconda Shell` (see figure below).
+Inside the browser or NoMachine interface run the following application: `Menu` -> `Applications` -> `RCE Powered Applications` -> `Anaconda Shell` (see figure below).
 
 ```{figure} imgs/img.png
 ---
-scale: 70%
+scale: 90%
 align: center 
 ---
 ```
 
-When the shell is open, run the following commands to load the R NSAPH environment and RStudio.
+When the shell is open, run the following commands to load the NSAPH's R environment and the RStudio.
 
 ```bash
 export CONDA_ENVS_PATH=/nfs/projects/n/nsaph_common/conda/envs/

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Work on Research Computing Environment (RCE) &#8212; NSAPH Handbook</title>
+    <title>Work on RCE &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -192,7 +192,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Work on Research Computing Environment (RCE)
+   Work on RCE
   </a>
  </li>
  <li class="toctree-l1">
@@ -425,7 +425,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Work on Research Computing Environment (RCE)</h1>
+                <h1>Work on RCE</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -460,13 +460,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="work-on-research-computing-environment-rce">
-<h1>Work on Research Computing Environment (RCE)<a class="headerlink" href="#work-on-research-computing-environment-rce" title="Permalink to this headline">#</a></h1>
-<p>To work on RCE, you also need to connect to the Harvard’s VPN (<a class="reference external" href="https://vpn.harvard.edu/">https://vpn.harvard.edu/</a>) through the Cisco AnyConnect.</p>
-<p>See the official documentation here: <a class="reference external" href="https://rce-docs.hmdc.harvard.edu">https://rce-docs.hmdc.harvard.edu</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="work-on-rce">
+<h1>Work on RCE<a class="headerlink" href="#work-on-rce" title="Permalink to this headline">#</a></h1>
+<p>Unless you are at Harvard and connected to the Harvard network, you will first need to connect to the Harvard’s VPN (<a class="reference external" href="https://vpn.harvard.edu/">https://vpn.harvard.edu/</a>) through the Cisco AnyConnect application in order to work on the Research Computing Environment (RCE).</p>
+<p>See the official RCE documentation here: <a class="reference external" href="https://rce-docs.hmdc.harvard.edu">https://rce-docs.hmdc.harvard.edu</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>RCE is no longer maintained and the users should plan for their transition to FASSE.</p>
+<p>The RCE is no longer maintained and the users should plan for their transition to FASSE.</p>
 </div>
 <section id="access-rce">
 <h2>Access RCE<a class="headerlink" href="#access-rce" title="Permalink to this headline">#</a></h2>
@@ -474,16 +474,16 @@ title="Print to PDF"
 <ol class="simple">
 <li><p>In the command line with: <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">username&#64;rce.hmdc.harvard.edu</span></code></p></li>
 <li><p>In the web browser at: <a class="reference external" href="https://rce.hmdc.harvard.edu/nxwebplayer">https://rce.hmdc.harvard.edu/nxwebplayer</a></p></li>
-<li><p>In the <a class="reference external" href="https://rce-docs.hmdc.harvard.edu/nx4_installation">NoMachine</a> software.</p></li>
+<li><p>In <a class="reference external" href="https://rce-docs.hmdc.harvard.edu/nx4_installation">the NoMachine software</a>.</p></li>
 </ol>
 </section>
 <section id="running-rstudio-on-rce">
 <h2>Running RStudio on RCE<a class="headerlink" href="#running-rstudio-on-rce" title="Permalink to this headline">#</a></h2>
-<p>Inside the browser or NoMachine interface run the following application: <code class="docutils literal notranslate"><span class="pre">Menu</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Applications</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Shell</span></code> (see figure below).</p>
+<p>Inside the browser or NoMachine interface run the following application: <code class="docutils literal notranslate"><span class="pre">Menu</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Applications</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">RCE</span> <span class="pre">Powered</span> <span class="pre">Applications</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Shell</span></code> (see figure below).</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="_images/img.png"><img alt="_images/img.png" src="_images/img.png" style="width: 429.09999999999997px; height: 333.9px;" /></a>
+<a class="reference internal image-reference" href="_images/img.png"><img alt="_images/img.png" src="_images/img.png" style="width: 551.7px; height: 429.3px;" /></a>
 </figure>
-<p>When the shell is open, run the following commands to load the R NSAPH environment and RStudio.</p>
+<p>When the shell is open, run the following commands to load the NSAPH’s R environment and the RStudio.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">CONDA_ENVS_PATH</span><span class="o">=</span>/nfs/projects/n/nsaph_common/conda/envs/
 <span class="nb">export</span> <span class="nv">CONDA_PKGS_PATH</span><span class="o">=</span>/nfs/projects/n/nsaph_common/conda/pkgs/
 <span class="nb">source</span> activate nsaph
