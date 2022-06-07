@@ -136,7 +136,7 @@ align: center
 Describe your contribution.
 ```
 
-You can assign reviewers for your pull request. Follow up with the reviewers and incorporate their suggestions in a new commit to your fork. The new commit will be automatically visible in the pull request.
+You can assign reviewers for your pull request after creating one. Follow up with the reviewers and incorporate their suggestions in a new commit to your fork. The new commit will be automatically visible in the pull request.
 
 ### Delete the development branch
 
