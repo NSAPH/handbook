@@ -149,7 +149,3 @@ scale: 80%
 align: center 
 ---
 ```
-
-## RCE Conda
-
-[Steps for setting up a Conda environment](https://github.com/NSAPH/CausalGPS-test/blob/main/Analyses/scaling_synthetic_rce_1/scaling_synthetic_rce.md#steps-for-setting-up-environment)
