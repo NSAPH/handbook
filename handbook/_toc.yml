@@ -6,6 +6,8 @@ parts:
   - caption: Data
     chapters:
     - file: data 
+    - file: mcbs
+    - file: data_docs
     - url: https://docs.google.com/forms/d/e/1FAIpQLScV_txoDRI5b6bpsnVO6QaAPZJ4xRo2z4VgyXibSxZ55o_AJg/viewform 
       title: Training on Data Security 
   - caption: Analysis
