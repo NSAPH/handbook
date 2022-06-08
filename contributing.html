@@ -422,9 +422,26 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#submit-a-pull-request">
-     Submit a Pull Request
+    <a class="reference internal nav-link" href="#submit-a-pull-request-from-your-fork">
+     Submit a Pull Request from your fork
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sync-the-fork">
+       Sync the fork
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#push-your-contributions-to-your-github-fork">
+       Push your contributions to your GitHub fork
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#make-a-pull-request-on-the-github-web-page-directly">
+       Make a pull request on the GitHub web page directly
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#delete-the-development-branch">
@@ -473,9 +490,26 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#submit-a-pull-request">
-     Submit a Pull Request
+    <a class="reference internal nav-link" href="#submit-a-pull-request-from-your-fork">
+     Submit a Pull Request from your fork
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sync-the-fork">
+       Sync the fork
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#push-your-contributions-to-your-github-fork">
+       Push your contributions to your GitHub fork
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#make-a-pull-request-on-the-github-web-page-directly">
+       Make a pull request on the GitHub web page directly
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#delete-the-development-branch">
@@ -499,6 +533,14 @@ title="Print to PDF"
 <section id="fork-pull-request-workflow">
 <h2>Fork &amp; Pull Request workflow<a class="headerlink" href="#fork-pull-request-workflow" title="Permalink to this headline">#</a></h2>
 <p>Fork &amp; Pull Request workflow is essential when contributing to NSAPH and other open-source projects. Unfortuatelly, it is easy to make mistakes when you are learning the process. Here are the instructions for a standard procedure for creating a fork, making your contribution, issuing a pull request and merging it to the original project.</p>
+<p><em>Overview</em>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="#create-a-fork">Create a Fork</a></p></li>
+<li><p><a class="reference external" href="#add-your-contribution">Add your contribution</a></p></li>
+<li><p><a class="reference external" href="#keep-your-fork-up-to-date">Keep your fork up to date</a></p></li>
+<li><p><a class="reference external" href="#submit-a-pull-request-from-your-fork">Submit a Pull Request from your fork</a></p></li>
+<li><p><a class="reference external" href="#delete-the-development-branch">Delete the development branch</a></p></li>
+</ul>
 <section id="create-a-fork">
 <h3>Create a Fork<a class="headerlink" href="#create-a-fork" title="Permalink to this headline">#</a></h3>
 <p>On the GitHub page, click the “Fork” button to create a fork under your account.</p>
@@ -523,7 +565,7 @@ title="Print to PDF"
 </section>
 <section id="add-your-contribution">
 <h3>Add your contribution<a class="headerlink" href="#add-your-contribution" title="Permalink to this headline">#</a></h3>
-<p>It is important that you create a new branch for your contribution. It is a proper git workflow and it keeps your changes organized and separated from the master/develop branch, so you can easily switch between them.</p>
+<p>It is important that you create a new branch for your contribution. It is a proper git workflow, and it keeps your changes organized and separated from the master/develop branch, so you can easily switch between them.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout the develop branch - you want your new branch to come from develop</span>
 <span class="n">git</span> <span class="n">checkout</span> <span class="n">develop</span>
 
@@ -545,7 +587,7 @@ title="Print to PDF"
 <span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
 </pre></div>
 </div>
-<p>Now you can update your fork with the lastest  upstream changes.</p>
+<p>Now you can update your fork with the latest upstream changes.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch from upstream remote</span>
 <span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
 
@@ -558,27 +600,61 @@ title="Print to PDF"
 </pre></div>
 </div>
 </section>
-<section id="submit-a-pull-request">
-<h3>Submit a Pull Request<a class="headerlink" href="#submit-a-pull-request" title="Permalink to this headline">#</a></h3>
-<p>If there are new commits to the upstream <code class="docutils literal notranslate"><span class="pre">develop</span></code> branch, you should rebase your development branch so that merging is straight-forward and conflict-free. You can do that like this:</p>
+<section id="submit-a-pull-request-from-your-fork">
+<h3>Submit a Pull Request from your fork<a class="headerlink" href="#submit-a-pull-request-from-your-fork" title="Permalink to this headline">#</a></h3>
+<p><em>Overview:</em> There are three steps in creating a PR from your fork.</p>
+<ol class="simple">
+<li><p>Sync the fork, rebase if necessary.</p></li>
+<li><p>Push your changes to your fork.</p></li>
+<li><p>Make pull requests from your fork.</p></li>
+</ol>
+<section id="sync-the-fork">
+<h4>Sync the fork<a class="headerlink" href="#sync-the-fork" title="Permalink to this headline">#</a></h4>
+<p><strong>Commandline</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch upstream master and merge with your repo&#39;s master branch</span>
 <span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
 <span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
 <span class="n">git</span> <span class="n">merge</span> <span class="n">upstream</span><span class="o">/</span><span class="n">master</span>
-
-<span class="c1"># If there were any new commits, rebase your development branch</span>
+</pre></div>
+</div>
+<p>If there are new commits to the upstream <code class="docutils literal notranslate"><span class="pre">develop</span></code> branch, you should rebase your development branch so that merging is straight-forward and conflict-free. You can do that like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># If there were any new commits, rebase your development branch</span>
 <span class="n">git</span> <span class="n">checkout</span> <span class="n">newfeature</span>
 <span class="n">git</span> <span class="n">rebase</span> <span class="n">master</span>
 </pre></div>
 </div>
-<p>Then push your contributions to your GitHub fork, and make a pull request on the GitHub web page directly. Make sure to document your contribution with an informative title and description.</p>
+<p><strong>GitHub web</strong>:</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/fork_pr_docs.png"><img alt="_images/fork_pr_docs.png" src="_images/fork_pr_docs.png" style="width: 600.0px; height: 208.0px;" /></a>
+<a class="reference internal image-reference" href="_images/fetch-upstream-drop-down.png"><img alt="_images/fetch-upstream-drop-down.png" src="_images/fetch-upstream-drop-down.png" style="width: 703.1999999999999px; height: 158.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Describe your contribution.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Dropdown options to fetch</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>You can assign reviewers for your pull request. Follow up with the reviewers and incorporate their suggestions in a new commit to your fork. The new commit will be automatically visible in the pull request.</p>
+<p>If the upstream commits look good, click “Fetch and merge”</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/fetch-and-merge-button.png"><img alt="_images/fetch-and-merge-button.png" src="_images/fetch-and-merge-button.png" style="width: 621.6px; height: 294.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Fetch and merge button</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Read more about syncing the fork using GitHub UI <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork">here</a>.</p>
+</section>
+<section id="push-your-contributions-to-your-github-fork">
+<h4>Push your contributions to your GitHub fork<a class="headerlink" href="#push-your-contributions-to-your-github-fork" title="Permalink to this headline">#</a></h4>
+<p><a class="reference external" href="https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository">Command line</a></p>
+<p><a class="reference external" href="https://www.jetbrains.com/help/pycharm/commit-and-push-changes.html">PyCharm</a></p>
+</section>
+<section id="make-a-pull-request-on-the-github-web-page-directly">
+<h4>Make a pull request on the GitHub web page directly<a class="headerlink" href="#make-a-pull-request-on-the-github-web-page-directly" title="Permalink to this headline">#</a></h4>
+<p>Follow the steps <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork">here</a> to make a pull request from your fork. Make sure to document your contribution with an informative title and description.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/fork_pr_docs.png"><img alt="_images/fork_pr_docs.png" src="_images/fork_pr_docs.png" style="width: 600.0px; height: 208.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Describe your contribution.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>You can assign reviewers for your pull request after creating one. Follow up with the reviewers and incorporate their suggestions in a new commit to your fork. The new commit will be automatically visible in the pull request.</p>
+</section>
 </section>
 <section id="delete-the-development-branch">
 <h3>Delete the development branch<a class="headerlink" href="#delete-the-development-branch" title="Permalink to this headline">#</a></h3>
