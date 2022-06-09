@@ -4,21 +4,7 @@
 ├── admissions_by_year
 │   ├── admissions_1999.fst
 │   ├── admissions_2000.fst
-│   ├── admissions_2001.fst
-│   ├── admissions_2002.fst
-│   ├── admissions_2003.fst
-│   ├── admissions_2004.fst
-│   ├── admissions_2005.fst
-│   ├── admissions_2006.fst
-│   ├── admissions_2007.fst
-│   ├── admissions_2008.fst
-│   ├── admissions_2009.fst
-│   ├── admissions_2010.fst
-│   ├── admissions_2011.fst
-│   ├── admissions_2012.fst
-│   ├── admissions_2013.fst
-│   ├── admissions_2014.fst
-│   ├── admissions_2015.fst
+│   ├── ...
 │   ├── admissions_2016.fst
 │   └── README.md
 ├── denom
@@ -70,14 +56,29 @@
     └── readme.txt
 ```
 
+## Data questions
+
+```{note}
+Have a look at the already avaialble analytic data on FASSE. Is the data you want to transfer already there?
+```
+
+1. What data sources (MedPar, MBSF, other) were used to create this data file? How many different data sources went into it? 
+2. What, if any, processing was done to the data sources? Were there any selections (cuts) done, data quality checks and aggregations? 
+3. Was this data used in any publication (add a link)? 
+4. Is there any git repository (or subfolder) related to it? (add git location)? 
+5. What is the RCE source location? 
+6. When was the data created and by who?
+7. What is the spatial, temporal resolution? 
+
+
 ## NSAPH Projects on FASSE
 
-| /n/dominici_nsaph_l3/projects      | GitHub Projects | 
-| ---------------------------------- | --------------- |
-| air_pollution-distributed_lag_adrd | |
-| analytic | |
-| floods-hospitalizations-glm | |
-| heat-alerts_mortality_RL | |
-| pm25-hosp-medicaid-children-causalgps-distancematching | |
-| pm25-mortality-medicare-causalgps-pool | |
-| pm_no2_o3-adrd_hosp-medicare-causalgps | |
+| `/n/dominici_nsaph_l3/projects/`      |      GitHub Projects Link      | 
+| ------------------------------------- | ------------------------------ |
+| `air_pollution-distributed_lag_adrd`  | [AirPollution_DistributedLag_ADRD](https://github.com/NSAPH-Projects/AirPollution_DistributedLag_ADRD) |
+| `floods-hospitalizations-glm`         | [floods-hospitalizations-glm](https://github.com/NSAPH-Projects/floods-hospitalizations-glm) |
+| `heat-alerts_mortality_RL`            | [heat-alerts_mortality_RL](https://github.com/NSAPH-Projects/heat-alerts_mortality_RL) |
+| `pm25-hosp-medicaid-children-causalgps-distancematching` | []() |
+| `pm25-mortality-medicare-causalgps-pool` | [pm25-mortality-medicare-causalgps-pool](https://github.com/NSAPH-Projects/pm25-mortality-medicare-causalgps-pool) |
+| `pm_no2_o3-adrd_hosp-medicare-causalgps` | []() |
+
