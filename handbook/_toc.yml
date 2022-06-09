@@ -12,7 +12,8 @@ parts:
       title: Training on Data Security 
   - caption: Analysis
     chapters:
-    - file: analysis 
+    - file: analysis
+    - file: analytic
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial
     - url: https://swcarpentry.github.io/shell-novice/ 
