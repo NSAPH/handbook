@@ -86,7 +86,7 @@ Read more about syncing the fork using GitHub UI
 ```
 
 (open-pr)=
-## Open pull request
+## Create a pull request
 
 Finally, you can push your branch to a remote repository:
 
@@ -94,7 +94,7 @@ Finally, you can push your branch to a remote repository:
 git push origin newfeature
 ```
 
-In the GitHub UI, you will see a button giving you the option to open a pull request.
+In the GitHub UI, you will see a button giving you the option to create a pull request.
 
 Make sure to document your contribution with an informative title and description.
 
