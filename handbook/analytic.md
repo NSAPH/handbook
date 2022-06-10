@@ -1,19 +1,31 @@
 # Analytic data
 
-```{dropdown} admissions_by_year
-````
-data_source: MedPar
-rce_location: `~/shared_space/ci3_health_data/medicare/gen_admission/1999_2016/targeted_conditions/cache_data/admissions_by_year/`
-date_created: Feb 20 2020
-size: 22 GB
-files: 
+The following data is available at: **`/n/dominici_nsaph_l3/projects/analytic/`**
+
+`````{dropdown} admissions_by_year
+
+```{list-table}
+:header-rows: 0
+
+* - data_source
+  - MedPar
+* - rce_location
+  - `~/shared_space/ci3_health_data/medicare/gen_admission/ 1999_2016/targeted_conditions/cache_data/admissions_by_year/`
+* - date_created
+  - Feb 20 2020
+* - size
+  - 22 GB
+* - files
+  - 
+```
+```
    ├── admissions_1999.fst
    ├── admissions_2000.fst
    ├── ...
    └── admissions_2016.fst
-````
-````{dropdown} header:
-`````
+```
+````{dropdown} header
+```
 QID                      : chr  
 AGE                      : int  
 SEX                      : int  
@@ -99,26 +111,32 @@ Race_gp                  : chr
 Sex_gp                   : chr  
 age_gp                   : chr  
 Dual                     : int  
-`````
-````
 ```
-
-```{dropdown} denom
 ````
-data_source: MBSF
-rce_location: ``
-date_created: 
-size: 7.4 GB
-files:
+`````
+
+`````{dropdown} denom
+
+```{list-table}
+:header-rows: 0
+
+* - data_source
+  - MBSF
+* - size
+  - 7.4 GB
+* - files
+  - 
+```
+```
    ├── qid_data_2009.fst
    ├── qid_data_2010.fst
    ├── ...
    ├── qid_data_2016.fst
    ├── qid_entry_exit.fst
    └── year_zip_confounders.fst
-````
-````{dropdown} header (qid_data):
-`````
+```
+````{dropdown} header (qid_data_yyyy)
+```
 qid   : chr  
 year  : int  
 zip   : int  
@@ -130,10 +148,10 @@ hmo_mo: chr
 fips  : int  
 race  : chr  
 sexM  : num  
-`````
+```
 ````
-````{dropdown} header (year_zip_confounders):
-`````
+````{dropdown} header (year_zip_confounders)
+```
 zip               : num  
 year              : int  
 mean_bmi          : num  
@@ -157,23 +175,102 @@ longitude         : num
 
 min_year: 2000
 max_year: 2016
-`````
+```
 ````
+`````
+
+
+`````{dropdown} qid_yr_exposures
+
+```{list-table}
+:header-rows: 0
+
+* - author
+  - Daniel Mork
+* - rce_location
+  - `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
+* - date_created
+  - April 2022
+* - size
+  - 139 GB
+* - description
+  - Annual exposure measurements (columns, 2000-2016) for each Medicare benficiary (rows) tied to their zip code of residence in a given year. Exposures (xxx in file name) include: no2, ozone, pm2.5, pm2.5components, pr (precipitation), rmax (max humidity), tmmx (max temperature), zip (zip code of residence).
+* - files
+  - 
 ```
 
-```{dropdown} denom_by_year
+```
+    ├── qid_yr_no2.fst
+    ├── qid_yr_ozone.fst
+    ├── qid_yr_pm25comp_br.fst
+    ├── qid_yr_pm25comp_ca.fst
+    ├── qid_yr_pm25comp_cu.fst
+    ├── qid_yr_pm25comp_ec.fst
+    ├── qid_yr_pm25comp_fe.fst
+    ├── qid_yr_pm25comp_k.fst
+    ├── qid_yr_pm25comp_nh4.fst
+    ├── qid_yr_pm25comp_ni.fst
+    ├── qid_yr_pm25comp_no3.fst
+    ├── qid_yr_pm25comp_oc.fst
+    ├── qid_yr_pm25comp_pb.fst
+    ├── qid_yr_pm25comp_si.fst
+    ├── qid_yr_pm25comp_so4.fst
+    ├── qid_yr_pm25comp_v.fst
+    ├── qid_yr_pm25comp_z.fst
+    ├── qid_yr_pm25.fst
+    ├── qid_yr_pr.fst
+    ├── qid_yr_rmax.fst
+    ├── qid_yr_tmmx.fst
+    └── qid_yr_zip.fst
+```
+
+````{dropdown} header (qid_yr_xxx.fst):
+```
+qid : chr  
+2000: num  
+2001: num  
+2002: num  
+2003: num  
+2004: num  
+2005: num  
+2006: num  
+2007: num  
+2008: num  
+2009: num  
+2010: num  
+2011: num  
+2012: num  
+2013: num  
+2014: num  
+2015: num  
+2016: num
+```
 ````
-data_source: 
-rce_location: `~/shared_space/ci3_health_data/medicare/mortality/1999_2016/wu/cache_data/merged_by_year_v2`
-date_created: Apr  6  2021
-size: 7.4 GB
-files:
+`````
+
+
+`````{dropdown} denom_by_year
+
+```{list-table}
+:header-rows: 0
+
+* - rce_location
+  - `~/shared_space/ci3_health_data/medicare/mortality/ 1999_2016/wu/cache_data/merged_by_year_v2`
+* - date_created
+  - Apr 2021
+* - size
+  - 7.4 GB
+* - files
+  - 
+```
+
+```
    ├── confounder_exposure_merged_nodups_health_1999.fst
    ├── ...
    └── confounder_exposure_merged_nodups_health_2016.fst
-````
-````{dropdown} header:
-`````
+```
+````{dropdown} header
+```
 zip                         : int  
 year                        : int  
 qid                         : chr  
@@ -238,86 +335,41 @@ summer_tmmx                 : num
 summer_rmax                 : num  
 winter_tmmx                 : num  
 winter_rmax                 : num  
-`````
-````
 ```
-
-
-```{dropdown} hospitalization
 ````
-data_source: MedPar derived
-size: 1.2 GB
-files:
+`````
+
+
+`````{dropdown} hospitalization
+
+```{list-table}
+:header-rows: 0
+
+* - data_source
+  - MedPar derived
+* - rce_location
+  - `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
+* - size
+  - 1.2 GB
+* - files
+  - 
+```
+```
    ├── First_hosp_AD_any.fst
    ├── First_hosp_AD_primary.fst
    ├── First_hosp_ADRD_any.fst
    ├── First_hosp_ADRD_primary.fst
    ├── First_hosp_ADRD_secondary.fst
    └── First_hosp_AD_secondary.fst
-````
-````{dropdown} header:
-`````
+```
+````{dropdown} header
+```
 QID  : Factor 
 ADATE: Date
 year : num  
-`````
-````
 ```
-
-```{dropdown} qid_yr_exposures
 ````
-author: Daniel Mork
-date_created: April 2022
-size: 139 GB
-rce_location: `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
-description: Annual exposure measurements (columns, 2000-2016) for each Medicare benficiary (rows) tied to their zip code of residence in a given year. Exposures (xxx in file name) include: no2, ozone, pm2.5, pm2.5components, pr (precipitation), rmax (max humidity), tmmx (max temperature), zip (zip code of residence).
-files:
-    ├── qid_yr_no2.fst
-    ├── qid_yr_ozone.fst
-    ├── qid_yr_pm25comp_br.fst
-    ├── qid_yr_pm25comp_ca.fst
-    ├── qid_yr_pm25comp_cu.fst
-    ├── qid_yr_pm25comp_ec.fst
-    ├── qid_yr_pm25comp_fe.fst
-    ├── qid_yr_pm25comp_k.fst
-    ├── qid_yr_pm25comp_nh4.fst
-    ├── qid_yr_pm25comp_ni.fst
-    ├── qid_yr_pm25comp_no3.fst
-    ├── qid_yr_pm25comp_oc.fst
-    ├── qid_yr_pm25comp_pb.fst
-    ├── qid_yr_pm25comp_si.fst
-    ├── qid_yr_pm25comp_so4.fst
-    ├── qid_yr_pm25comp_v.fst
-    ├── qid_yr_pm25comp_z.fst
-    ├── qid_yr_pm25.fst
-    ├── qid_yr_pr.fst
-    ├── qid_yr_rmax.fst
-    ├── qid_yr_tmmx.fst
-    └── qid_yr_zip.fst
-````
-````{dropdown} header (qid_yr_xxx.fst):
 `````
-qid : chr  
-2000: num  
-2001: num  
-2002: num  
-2003: num  
-2004: num  
-2005: num  
-2006: num  
-2007: num  
-2008: num  
-2009: num  
-2010: num  
-2011: num  
-2012: num  
-2013: num  
-2014: num  
-2015: num  
-2016: num 
-`````
-````
-```
 
 ## Data questions
 
