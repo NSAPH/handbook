@@ -8,16 +8,14 @@ parts:
     - file: data 
     - file: mcbs
     - file: data_docs
+    - file: analytic
     - url: https://docs.google.com/forms/d/e/1FAIpQLScV_txoDRI5b6bpsnVO6QaAPZJ4xRo2z4VgyXibSxZ55o_AJg/viewform 
       title: Training on Data Security 
   - caption: Analysis
     chapters:
     - file: analysis
-    - file: analytic
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial
-    - url: https://swcarpentry.github.io/shell-novice/ 
-      title: Unix Shell tutorial
     - file: publishing 
   #  - file: datarequestprocedure
   - caption: Software

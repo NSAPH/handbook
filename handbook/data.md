@@ -1,5 +1,3 @@
-# NSAPH Data
-
 # Data sources
 
 | Medical | Description |
