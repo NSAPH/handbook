@@ -1,4 +1,4 @@
-# Documenting data workflow
+# Documenting data
 
 ## Data dictionary
 

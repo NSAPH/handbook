@@ -385,15 +385,3 @@ Have a look at the already avaialble analytic data on FASSE. Is the data you wan
 6. When was the data created and by who?
 7. What is the spatial, temporal resolution? 
 
-
-## NSAPH Projects on FASSE
-
-| `/n/dominici_nsaph_l3/projects/`      |      GitHub Projects Link      | 
-| ------------------------------------- | ------------------------------ |
-| `air_pollution-distributed_lag_adrd`  | [AirPollution_DistributedLag_ADRD](https://github.com/NSAPH-Projects/AirPollution_DistributedLag_ADRD) |
-| `floods-hospitalizations-glm`         | [floods-hospitalizations-glm](https://github.com/NSAPH-Projects/floods-hospitalizations-glm) |
-| `heat-alerts_mortality_RL`            | [heat-alerts_mortality_RL](https://github.com/NSAPH-Projects/heat-alerts_mortality_RL) |
-| `pm25-hosp-medicaid-children-causalgps-distancematching` | []() |
-| `pm25-mortality-medicare-causalgps-pool` | [pm25-mortality-medicare-causalgps-pool](https://github.com/NSAPH-Projects/pm25-mortality-medicare-causalgps-pool) |
-| `pm_no2_o3-adrd_hosp-medicare-causalgps` | []() |
-

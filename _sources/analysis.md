@@ -1,10 +1,23 @@
-# Git repository
+# NSAPH Projects
 
-[NSAPH Projects](https://github.com/NSAPH-Projects) GitHub organization is a shared account where all NSAPH members can collaborate across many projects at once. 
+[NSAPH Projects GitHub organization](https://github.com/NSAPH-Projects) is a shared account where all NSAPH members can collaborate across many projects at once.
+
+The list of current projects and their location on FASSE and GitHub:
+
+| `/n/dominici_nsaph_l3/projects/`      |      GitHub Projects Link      | 
+| ------------------------------------- | ------------------------------ |
+| `air_pollution-distributed_lag_adrd`  | [AirPollution_DistributedLag_ADRD](https://github.com/NSAPH-Projects/AirPollution_DistributedLag_ADRD) |
+| `floods-hospitalizations-glm`         | [floods-hospitalizations-glm](https://github.com/NSAPH-Projects/floods-hospitalizations-glm) |
+| `heat-alerts_mortality_RL`            | [heat-alerts_mortality_RL](https://github.com/NSAPH-Projects/heat-alerts_mortality_RL) |
+| `pm25-hosp-medicaid-children-causalgps-distancematching` | []() |
+| `pm25-mortality-medicare-causalgps-pool` | [pm25-mortality-medicare-causalgps-pool](https://github.com/NSAPH-Projects/pm25-mortality-medicare-causalgps-pool) |
+| `pm_no2_o3-adrd_hosp-medicare-causalgps` | []() |
 
 ```{tip}
-If you are not already a member of [NSAPH Projects](https://github.com/NSAPH-Projects), ask Amit or one of the admins to add you to the organization.
+If you are not already a member of [NSAPH Projects](https://github.com/NSAPH-Projects), ask one of the admins to add you to the organization.
 ```
+
+## Using GitHub
 
 The goal is to keep all NSAPH analysis projects at [one location](https://github.com/NSAPH-Projects) to encourage internal review, collaboration and reuse. It would also facilitate future data and code curations, migrations, and cross-referencing material and documentation.
 

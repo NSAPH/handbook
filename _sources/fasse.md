@@ -113,6 +113,10 @@ In RStudio, if you want to see files outside of your home directory, you can cli
 
 ## Terminal settings (optional)
 
+```{note}
+To learn more about working in the command line, check out this [Unix Shell tutorial](https://swcarpentry.github.io/shell-novice/).
+```
+
 Consider adding the following lines in your `~/.bash_profile` file to set shortcuts (aliases) and have more colorful working environment.
 
 ```sh
