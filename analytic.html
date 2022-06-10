@@ -394,41 +394,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-questions">
-   Data questions
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#nsaph-projects-on-fasse">
-   NSAPH Projects on FASSE
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -440,24 +411,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-questions">
-   Data questions
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#nsaph-projects-on-fasse">
-   NSAPH Projects on FASSE
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -467,36 +420,282 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="analytic-data">
 <h1>Analytic data<a class="headerlink" href="#analytic-data" title="Permalink to this headline">#</a></h1>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── admissions_by_year
-│   ├── admissions_1999.fst
-│   ├── admissions_2000.fst
-│   ├── ...
-│   ├── admissions_2016.fst
-│   └── README.md
-├── denom
-│   ├── qid_data_2009.fst
-│   ├── qid_data_2010.fst
-│   ├── qid_data_2011.fst
-│   ├── qid_data_2012.fst
-│   ├── qid_data_2013.fst
-│   ├── qid_data_2014.fst
-│   ├── qid_data_2015.fst
-│   ├── qid_data_2016.fst
-│   ├── qid_entry_exit.fst
-│   └── year_zip_confounders.fst
-├── denom_by_year
-│   ├── confounder_exposure_merged_nodups_health_1999.fst
-│   ├── ...
-│   ├── confounder_exposure_merged_nodups_health_2016.fst
-│   └── readme
-├── hospitalization
-│   ├── First_hosp_AD_any.fst
-│   ├── First_hosp_AD_primary.fst
-│   ├── First_hosp_ADRD_any.fst
-│   ├── First_hosp_ADRD_primary.fst
-│   ├── First_hosp_ADRD_secondary.fst
-│   └── First_hosp_AD_secondary.fst
-└── qid_yr_exposures
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+admissions_by_year<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><p>data_source: MedPar
+rce_location: <code class="docutils literal notranslate"><span class="pre">~/shared_space/ci3_health_data/medicare/gen_admission/1999_2016/targeted_conditions/cache_data/admissions_by_year/</span></code>
+date_created: Feb 20 2020
+size: 22 GB
+files:
+   ├── admissions_1999.fst
+   ├── admissions_2000.fst
+   ├── …
+   └── admissions_2016.fst</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{dropdown} header:
+</pre></div>
+</div>
+<p>QID                      : chr<br />
+AGE                      : int<br />
+SEX                      : int<br />
+RACE                     : int<br />
+SSA_STATE_CD             : int<br />
+SSA_CNTY_CD              : int<br />
+PROV_NUM                 : int<br />
+ADM_SOURCE               : chr<br />
+ADM_TYPE                 : int<br />
+ADATE                    : chr<br />
+DDATE                    : chr<br />
+BENE_DOD                 : chr<br />
+DODFLAG                  : chr<br />
+ICU_DAY                  : int<br />
+CCI_DAY                  : int<br />
+ICU                      : int<br />
+CCI                      : int<br />
+DIAG1                    : chr<br />
+DIAG2                    : chr<br />
+DIAG3                    : chr<br />
+DIAG4                    : chr<br />
+DIAG5                    : chr<br />
+DIAG6                    : chr<br />
+DIAG7                    : chr<br />
+DIAG8                    : chr<br />
+DIAG9                    : chr<br />
+DIAG10                   : logi
+diag11                   : logi
+diag12                   : logi
+diag13                   : logi
+diag14                   : logi
+diag15                   : logi
+diag16                   : logi
+diag17                   : logi
+diag18                   : logi
+diag19                   : logi
+diag20                   : logi
+diag21                   : logi
+diag22                   : logi
+diag23                   : logi
+diag24                   : logi
+diag25                   : logi
+YEAR                     : int<br />
+LOS                      : int<br />
+Parkinson_pdx            : int<br />
+Parkinson_pdx2dx_10      : int<br />
+Parkinson_pdx2dx_25      : int<br />
+Alzheimer_pdx            : int<br />
+Alzheimer_pdx2dx_10      : int<br />
+Alzheimer_pdx2dx_25      : int<br />
+Dementia_pdx             : int<br />
+Dementia_pdx2dx_10       : int<br />
+Dementia_pdx2dx_25       : int<br />
+CHF_pdx                  : int<br />
+CHF_pdx2dx_10            : int<br />
+CHF_pdx2dx_25            : int<br />
+AMI_pdx                  : int<br />
+AMI_pdx2dx_10            : int<br />
+AMI_pdx2dx_25            : int<br />
+COPD_pdx                 : int<br />
+COPD_pdx2dx_10           : int<br />
+COPD_pdx2dx_25           : int<br />
+DM_pdx                   : int<br />
+DM_pdx2dx_10             : int<br />
+DM_pdx2dx_25             : int<br />
+Stroke_pdx               : int<br />
+Stroke_pdx2dx_10         : int<br />
+Stroke_pdx2dx_25         : int<br />
+CVD_pdx                  : int<br />
+CVD_pdx2dx_10            : int<br />
+CVD_pdx2dx_25            : int<br />
+CSD_pdx                  : int<br />
+CSD_pdx2dx_10            : int<br />
+CSD_pdx2dx_25            : int<br />
+Ischemic_stroke_pdx      : int<br />
+Ischemic_stroke_pdx2dx_10: int<br />
+Ischemic_stroke_pdx2dx_25: int<br />
+Hemo_Stroke_pdx          : int<br />
+Hemo_Stroke_pdx2dx_10    : int<br />
+Hemo_Stroke_pdx2dx_25    : int<br />
+zipcode_R                : int<br />
+Race_gp                  : chr<br />
+Sex_gp                   : chr<br />
+age_gp                   : chr<br />
+Dual                     : int</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````
+```
+
+```{dropdown} denom
+````
+data_source: MBSF
+rce_location: ``
+date_created: 
+size: 7.4 GB
+files:
+   ├── qid_data_2009.fst
+   ├── qid_data_2010.fst
+   ├── ...
+   ├── qid_data_2016.fst
+   ├── qid_entry_exit.fst
+   └── year_zip_confounders.fst
+````
+````{dropdown} header (qid_data):
+</pre></div>
+</div>
+<p>qid   : chr<br />
+year  : int<br />
+zip   : int<br />
+sex   : int<br />
+age   : int<br />
+dual  : chr<br />
+dead  : logi
+hmo_mo: chr<br />
+fips  : int<br />
+race  : chr<br />
+sexM  : num</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````
+````{dropdown} header (year_zip_confounders):
+</pre></div>
+</div>
+<p>zip               : num<br />
+year              : int<br />
+mean_bmi          : num<br />
+smoke_rate        : num<br />
+hispanic          : num<br />
+pct_blk           : num<br />
+medhouseholdincome: num<br />
+medianhousevalue  : num<br />
+poverty           : num<br />
+education         : num<br />
+popdensity        : num<br />
+pct_owner_occ     : num<br />
+summer_tmmx       : num<br />
+winter_tmmx       : num<br />
+summer_rmax       : num<br />
+winter_rmax       : num<br />
+city              : chr<br />
+statecode         : chr<br />
+latitude          : num<br />
+longitude         : num</p>
+<p>min_year: 2000
+max_year: 2016</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````
+```
+
+```{dropdown} denom_by_year
+````
+data_source: 
+rce_location: `~/shared_space/ci3_health_data/medicare/mortality/1999_2016/wu/cache_data/merged_by_year_v2`
+date_created: Apr  6  2021
+size: 7.4 GB
+files:
+   ├── confounder_exposure_merged_nodups_health_1999.fst
+   ├── ...
+   └── confounder_exposure_merged_nodups_health_2016.fst
+````
+````{dropdown} header:
+</pre></div>
+</div>
+<p>zip                         : int<br />
+year                        : int<br />
+qid                         : chr<br />
+dodflag                     : chr<br />
+bene_dod                    : chr<br />
+sex                         : int<br />
+race                        : int<br />
+age                         : int<br />
+hmo_mo                      : chr<br />
+hmoind                      : chr<br />
+statecode                   : chr<br />
+latitude                    : num<br />
+longitude                   : num<br />
+dual                        : chr<br />
+death                       : int<br />
+dead                        : logi
+entry_age                   : int<br />
+entry_year                  : int<br />
+entry_age_break             : int<br />
+followup_year               : num<br />
+followup_year_plus_one      : num<br />
+pm25_ensemble               : num<br />
+pm25_no_interp              : num<br />
+pm25_nn                     : num<br />
+ozone                       : num<br />
+ozone_no_interp             : num<br />
+zcta                        : int<br />
+poverty                     : num<br />
+popdensity                  : num<br />
+medianhousevalue            : num<br />
+pct_blk                     : num<br />
+medhouseholdincome          : num<br />
+pct_owner_occ               : num<br />
+hispanic                    : num<br />
+education                   : num<br />
+population                  : num<br />
+zcta_no_interp              : int<br />
+poverty_no_interp           : num<br />
+popdensity_no_interp        : num<br />
+medianhousevalue_no_interp  : num<br />
+pct_blk_no_interp           : num<br />
+medhouseholdincome_no_interp: num<br />
+pct_owner_occ_no_interp     : num<br />
+hispanic_no_interp          : num<br />
+education_no_interp         : num<br />
+population_no_interp        : int<br />
+smoke_rate                  : num<br />
+mean_bmi                    : num<br />
+smoke_rate_no_interp        : num<br />
+mean_bmi_no_interp          : num<br />
+amb_visit_pct               : num<br />
+a1c_exm_pct                 : num<br />
+amb_visit_pct_no_interp     : num<br />
+a1c_exm_pct_no_interp       : num<br />
+tmmx                        : num<br />
+rmax                        : num<br />
+pr                          : num<br />
+cluster_cat                 : chr<br />
+fips_no_interp              : int<br />
+fips                        : int<br />
+summer_tmmx                 : num<br />
+summer_rmax                 : num<br />
+winter_tmmx                 : num<br />
+winter_rmax                 : num</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````
+```
+
+
+```{dropdown} hospitalization
+````
+data_source: MedPar derived
+size: 1.2 GB
+files:
+   ├── First_hosp_AD_any.fst
+   ├── First_hosp_AD_primary.fst
+   ├── First_hosp_ADRD_any.fst
+   ├── First_hosp_ADRD_primary.fst
+   ├── First_hosp_ADRD_secondary.fst
+   └── First_hosp_AD_secondary.fst
+````
+````{dropdown} header:
+</pre></div>
+</div>
+<p>QID  : Factor
+ADATE: Date
+year : num</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````
+```
+
+```{dropdown} qid_yr_exposures
+````
+author: Daniel Mork
+date_created: April 2022
+size: 139 GB
+rce_location: `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
+description: Annual exposure measurements (columns, 2000-2016) for each Medicare benficiary (rows) tied to their zip code of residence in a given year. Exposures (xxx in file name) include: no2, ozone, pm2.5, pm2.5components, pr (precipitation), rmax (max humidity), tmmx (max temperature), zip (zip code of residence).
+files:
     ├── qid_yr_no2.fst
     ├── qid_yr_ozone.fst
     ├── qid_yr_pm25comp_br.fst
@@ -518,56 +717,60 @@ title="Print to PDF"
     ├── qid_yr_pr.fst
     ├── qid_yr_rmax.fst
     ├── qid_yr_tmmx.fst
-    ├── qid_yr_zip.fst
-    └── readme.txt
+    └── qid_yr_zip.fst
+````
+````{dropdown} header (qid_yr_xxx.fst):
 </pre></div>
 </div>
-<section id="data-questions">
-<h2>Data questions<a class="headerlink" href="#data-questions" title="Permalink to this headline">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Have a look at the already avaialble analytic data on FASSE. Is the data you want to transfer already there?</p>
+<p>qid : chr<br />
+2000: num<br />
+2001: num<br />
+2002: num<br />
+2003: num<br />
+2004: num<br />
+2005: num<br />
+2006: num<br />
+2007: num<br />
+2008: num<br />
+2009: num<br />
+2010: num<br />
+2011: num<br />
+2012: num<br />
+2013: num<br />
+2014: num<br />
+2015: num<br />
+2016: num</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````
+```
+
+## Data questions
+
+```{note}
+Have a look at the already avaialble analytic data on FASSE. Is the data you want to transfer already there?
+```
+
+1. What data sources (MedPar, MBSF, other) were used to create this data file? How many different data sources went into it? 
+2. What, if any, processing was done to the data sources? Were there any selections (cuts) done, data quality checks and aggregations? 
+3. Was this data used in any publication (add a link)? 
+4. Is there any git repository (or subfolder) related to it? (add git location)? 
+5. What is the RCE source location? 
+6. When was the data created and by who?
+7. What is the spatial, temporal resolution? 
+
+
+## NSAPH Projects on FASSE
+
+| `/n/dominici_nsaph_l3/projects/`      |      GitHub Projects Link      | 
+| ------------------------------------- | ------------------------------ |
+| `air_pollution-distributed_lag_adrd`  | [AirPollution_DistributedLag_ADRD](https://github.com/NSAPH-Projects/AirPollution_DistributedLag_ADRD) |
+| `floods-hospitalizations-glm`         | [floods-hospitalizations-glm](https://github.com/NSAPH-Projects/floods-hospitalizations-glm) |
+| `heat-alerts_mortality_RL`            | [heat-alerts_mortality_RL](https://github.com/NSAPH-Projects/heat-alerts_mortality_RL) |
+| `pm25-hosp-medicaid-children-causalgps-distancematching` | []() |
+| `pm25-mortality-medicare-causalgps-pool` | [pm25-mortality-medicare-causalgps-pool](https://github.com/NSAPH-Projects/pm25-mortality-medicare-causalgps-pool) |
+| `pm_no2_o3-adrd_hosp-medicare-causalgps` | []() |
+
+</pre></div>
 </div>
-<ol class="simple">
-<li><p>What data sources (MedPar, MBSF, other) were used to create this data file? How many different data sources went into it?</p></li>
-<li><p>What, if any, processing was done to the data sources? Were there any selections (cuts) done, data quality checks and aggregations?</p></li>
-<li><p>Was this data used in any publication (add a link)?</p></li>
-<li><p>Is there any git repository (or subfolder) related to it? (add git location)?</p></li>
-<li><p>What is the RCE source location?</p></li>
-<li><p>When was the data created and by who?</p></li>
-<li><p>What is the spatial, temporal resolution?</p></li>
-</ol>
-</section>
-<section id="nsaph-projects-on-fasse">
-<h2>NSAPH Projects on FASSE<a class="headerlink" href="#nsaph-projects-on-fasse" title="Permalink to this headline">#</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/projects/</span></code></p></th>
-<th class="head"><p>GitHub Projects Link</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">air_pollution-distributed_lag_adrd</span></code></p></td>
-<td><p><a class="reference external" href="https://github.com/NSAPH-Projects/AirPollution_DistributedLag_ADRD">AirPollution_DistributedLag_ADRD</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">floods-hospitalizations-glm</span></code></p></td>
-<td><p><a class="reference external" href="https://github.com/NSAPH-Projects/floods-hospitalizations-glm">floods-hospitalizations-glm</a></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">heat-alerts_mortality_RL</span></code></p></td>
-<td><p><a class="reference external" href="https://github.com/NSAPH-Projects/heat-alerts_mortality_RL">heat-alerts_mortality_RL</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pm25-hosp-medicaid-children-causalgps-distancematching</span></code></p></td>
-<td><p><span class="xref myst"></span></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pm25-mortality-medicare-causalgps-pool</span></code></p></td>
-<td><p><a class="reference external" href="https://github.com/NSAPH-Projects/pm25-mortality-medicare-causalgps-pool">pm25-mortality-medicare-causalgps-pool</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pm_no2_o3-adrd_hosp-medicare-causalgps</span></code></p></td>
-<td><p><span class="xref myst"></span></p></td>
-</tr>
-</tbody>
-</table>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
