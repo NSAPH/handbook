@@ -84,6 +84,10 @@ Consider organizing your repository as follows:
 Have a look at the [NSAPH Project Template](https://github.com/NSAPH/project_template).
 
 ```{tip}
+A template example for new research projects: https://github.com/djnavarro/newproject/
+```
+
+```{tip}
 If you are using R software in your analysis, have a look at best practices and recommendations [here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) and [here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
 ```
 
