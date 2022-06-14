@@ -27,6 +27,17 @@ align: center
 ---
 ```
 
+Set the number of CPUs and the memory size for your job. Make sure that the allocated memory exceeds 
+the size of the data you want to process. For instance, if your dataset is 20 GB in size, allocate 
+40 GB or 60 GB of memory.
+
+```{figure} imgs/job_size.png
+---
+scale: 30%
+align: center 
+---
+```
+
 When the shell is open, run the following commands to load the NSAPH's R environment and the RStudio.
 
 ```bash
