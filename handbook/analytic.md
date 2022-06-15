@@ -2,13 +2,15 @@
 
 The following data is available at: **`/n/dominici_nsaph_l3/projects/analytic/`**
 
-`````{dropdown} admissions_by_year
+`````{dropdown} 1. admissions_by_year
 
 ```{list-table}
 :header-rows: 0
 
 * - data_source
   - MedPar
+* - fasse_location
+  - `/n/dominici_nsaph_l3/projects/analytic/admissions_by_year`
 * - rce_location
   - `~/shared_space/ci3_health_data/medicare/gen_admission/ 1999_2016/targeted_conditions/cache_data/admissions_by_year/`
 * - date_created
@@ -115,13 +117,15 @@ Dual                     : int
 ````
 `````
 
-`````{dropdown} denom
+`````{dropdown} 2. denom
 
 ```{list-table}
 :header-rows: 0
 
 * - data_source
   - MBSF
+* - fasse_location
+  - `/n/dominici_nsaph_l3/projects/analytic/denom`
 * - size
   - 7.4 GB
 * - files
@@ -180,7 +184,7 @@ max_year: 2016
 `````
 
 
-`````{dropdown} qid_yr_exposures
+`````{dropdown} 3. qid_yr_exposures
 
 ```{list-table}
 :header-rows: 0
@@ -189,6 +193,8 @@ max_year: 2016
   - Daniel Mork
 * - rce_location
   - `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
+* - fasse_location
+  - `/n/dominici_nsaph_l3/projects/analytic/qid_yr_exposures`
 * - date_created
   - April 2022
 * - size
@@ -249,13 +255,15 @@ qid : chr
 `````
 
 
-`````{dropdown} denom_by_year
+`````{dropdown} 4. denom_by_year
 
 ```{list-table}
 :header-rows: 0
 
 * - rce_location
   - `~/shared_space/ci3_health_data/medicare/mortality/ 1999_2016/wu/cache_data/merged_by_year_v2`
+* - fasse_location
+  - `/n/dominici_nsaph_l3/projects/analytic/denom_by_year`
 * - date_created
   - Apr 2021
 * - size
@@ -340,7 +348,7 @@ winter_rmax                 : num
 `````
 
 
-`````{dropdown} hospitalization
+`````{dropdown} 5. hospitalization
 
 ```{list-table}
 :header-rows: 0
@@ -349,6 +357,8 @@ winter_rmax                 : num
   - MedPar derived
 * - rce_location
   - `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
+* - fasse_location
+  - `/n/dominici_nsaph_l3/projects/analytic/hospitalization`
 * - size
   - 1.2 GB
 * - files
