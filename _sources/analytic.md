@@ -411,6 +411,18 @@ year : num
 ```
 `````
 
+````{warning}
+The space of FASSE is limited, so do not copy analytic data to your own folder! Create symlinks to the data in your `data` folder.
+Symbolic links (or symlinks) are special files that point to files or directories in other locations on your system.
+You will be able to use data with symlinks as normal.
+
+Create the symlink in your `data` folder in the following way:
+```
+cd data
+ln -s /n/dominici_nsaph_l3/projects/analytic/admissions_by_year .
+```
+````
+
 ## Data questions
 
 ```{note}
