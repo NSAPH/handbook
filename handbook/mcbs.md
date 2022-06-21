@@ -33,4 +33,9 @@ Below shows an image that explains the timeline for a typical year compared to t
 
 In 2015, Hispanic beneficiaries living outside of Puerto Rico were intentionally oversampled. Additionally, beneficiaries under age 45 with disabilities and beneficiaries over age 85 were intentionally oversampled in order to better understand their medical needs.
 
-The survey files contain information regarding various aspects of the beneficiaries' lives, including topics such as their housing, demographic information, income, and health status. Prior to 2015, these files were labeled "RIC-X" for the various topics, but now they are labeled with titles that reflect their contents, e.g. "Health Status and Functioning (HFQ)". The questions about nicotine and alcohol are included within the Health Status and Functioning file for this year, and after 2015 are in their own Nicotine and Alcohol file.
+The survey files contain information regarding various aspects of the beneficiaries' lives, including topics such as their housing, demographic information, income, and health status. Prior to 2015, these files were labeled "RIC-X" for the various topics, but now they are labeled with titles that reflect their contents, e.g. "Health Status and Functioning (HFQ)". The questions about nicotine and alcohol are included within the nicoalco.csv file under the Survey folder (/n/dominici_nsaph_l3/data/mcbs/mcbs/2015/Survey File 2015/Data/CSV Files/nicoalco.csv/ within FASSE). In order to match these patients with their demographic information, use the demo.csv file with variable BASEID.
+
+In order to learn what each variable represents in these files, please reference the Codebooks folder. For example, to access the code book for the nicotine and alcohol survey, you can navigate to /n/dominici_nsaph_l3/data/mcbs/mcbs/2015/Survey File 2015/Codebooks/nicoalco_2015.txt/ in FASSE to get the codebook. Some variables include the number of drinks per day, if the beneficiary currently smokes, if they ever smoked, etc. The demographic file codebook contains information such as DOB, sex, race, income, state, county, and zipcode. 
+
+# MCBS 2016
+
