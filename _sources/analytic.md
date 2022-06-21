@@ -381,6 +381,36 @@ year : num
 ````
 `````
 
+
+`````{dropdown} 6. medicare_entry_age
+
+```{list-table}
+:header-rows: 0
+
+* - data_source
+  - MBSF derived
+* - rce_location
+  - `/nfs/nsaph_ci3/scratch/jan2021_whanhee_cache/entry_age/`
+* - fasse_location
+  - `/n/dominici_nsaph_l3/projects/analytic/medicare_entry_age/`
+* - size
+  - 2.3 GB
+* - date_created
+  - Jan 26, 2021
+* - dataset_author
+  - Ben Sabath
+* - spatial_resolution
+  - zipcode
+* - git_repository
+  - https://github.com/NSAPH/data_requests/blob/master/request_projects/jan2021_whanhee_fisrt_hosps/code/1_create_indivdual_vars.R
+* - files
+  -
+```
+```
+   └── medicare_entry_age.csv
+```
+`````
+
 ## Data questions
 
 ```{note}
