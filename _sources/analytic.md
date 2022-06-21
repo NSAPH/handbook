@@ -402,7 +402,7 @@ year : num
 * - spatial_resolution
   - zipcode
 * - git_repository
-  - https://github.com/NSAPH/data_requests/blob/master/request_projects/jan2021_whanhee_fisrt_hosps/code/1_create_indivdual_vars.R
+  - [NSAPH/data_requests](https://github.com/NSAPH/data_requests/blob/master/request_projects/jan2021_whanhee_fisrt_hosps/code/1_create_indivdual_vars.R)
 * - files
   -
 ```
