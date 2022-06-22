@@ -2,7 +2,7 @@
 
 The following data is available at: **`/n/dominici_nsaph_l3/projects/analytic/`**
 
-`````{dropdown} 1. admissions_by_year
+`````{dropdown} 1. MedPar (Admissions)
 
 ```{list-table}
 :header-rows: 0
@@ -117,7 +117,7 @@ Dual                     : int
 ````
 `````
 
-`````{dropdown} 2. denom
+`````{dropdown} 2. MBSF (Denominator) 
 
 ```{list-table}
 :header-rows: 0
@@ -184,7 +184,7 @@ max_year: 2016
 `````
 
 
-`````{dropdown} 3. qid_yr_exposures
+`````{dropdown} 3. Annual Exposure per Medicare Beneficiary
 
 ```{list-table}
 :header-rows: 0
@@ -255,7 +255,7 @@ qid : chr
 `````
 
 
-`````{dropdown} 4. denom_by_year
+`````{dropdown} 4. MBSF (Enrollment file, denominator) 
 
 ```{list-table}
 :header-rows: 0
@@ -348,7 +348,7 @@ winter_rmax                 : num
 `````
 
 
-`````{dropdown} 5. hospitalization
+`````{dropdown} 5. AD/ADRD Hospitalization
 
 ```{list-table}
 :header-rows: 0
@@ -382,7 +382,7 @@ year : num
 `````
 
 
-`````{dropdown} 6. medicare_entry_age
+`````{dropdown} 6. Medicare Entry Age
 
 ```{list-table}
 :header-rows: 0
@@ -463,16 +463,15 @@ year : num
 * - temporal resolution
   - annually
 * - description
-   - This dataset contains information on temperature, relative humidity, and total precipitation data. The data is available as raster files on Google earth engine. The temporal and spatial resolutions varied by data source, but all were available at a daily resolution or more frequently. Where the time resolution of the rasters is more than daily, daily averages for each raster were calculated. Next, using Google earth engine's spatial averaging algorithms and a set of polygons representing the areas of interest, the daily value for each polygon was calculated. The polygons used were the ones described in the preceding section. The results of this calculation were then downloaded as a csv file to the RCE. At this point, there is one file for each year. Following this, annual averages are calculated for each location, and these are combined in to a single file. The daily values are also combined in to a single file. For the `combined_zips` files (which combine the zip code polygon based measures with the the point based estimates to address zip codes without area) there is an additional step. Values for zip codes not in the polygon based measure are taken from the point based measures to address the ~7000 zip codes without area that are missing from the polygon shape file.
+  - This dataset contains information on temperature, relative humidity, and total precipitation data. The data is available as raster files on Google earth engine. The temporal and spatial resolutions varied by data source, but all were available at a daily resolution or more frequently. Where the time resolution of the rasters is more than daily, daily averages for each raster were calculated. Next, using Google earth engine's spatial averaging algorithms and a set of polygons representing the areas of interest, the daily value for each polygon was calculated. The polygons used were the ones described in the preceding section. The results of this calculation were then downloaded as a csv file to the RCE. At this point, there is one file for each year. Following this, annual averages are calculated for each location, and these are combined in to a single file. The daily values are also combined in to a single file. For the `combined_zips` files (which combine the zip code polygon based measures with the the point based estimates to address zip codes without area) there is an additional step. Values for zip codes not in the polygon based measure are taken from the point based measures to address the ~7000 zip codes without area that are missing from the polygon shape file.
 * - rce_location
-  - `/nfs/nsaph_ci3/ci3_confounders/data_for_analysis/earth_engine/temperature/temperature_seasonal_zipcode_combined.csv`
+  - `/nfs/nsaph_ci3/ci3_confounders/data_for_analysis/earth_engine/ temperature/temperature_seasonal_zipcode_combined.csv`
 * - fasse_location
   - `/n/dominici_nsaph_l3/projects/analytic/temperature_seasonal_zipcode`
 * - GitHub 
-   - [NSAPH/data_documentation](https://github.com/NSAPH/data_documentation/blob/master/earth_engine_docs/earth_engine_data.Rmd)
+  - [NSAPH/data_documentation](https://github.com/NSAPH/data_documentation/blob/master/earth_engine_docs/earth_engine_data.Rmd)
 * - meterological
-  - Temperature (K) - variable name: tmmx (Source: GRIDMET)
-  - Relative Humidity - variable name: rmax (Source: GRIDMET)
+  - Temperature (K) - variable name: tmmx (Source: GRIDMET); Relative Humidity - variable name: rmax (Source: GRIDMET)
 * - size
   - 65 MB
 * - header 
@@ -488,7 +487,6 @@ year : num
 `````{dropdown} 9.  Pollution-Census-Temperature covariates
 ```{list-table}
 :header-rows: 0
-
 * - dataset_author
   - Xiao Wi, Ben Sabath
 * - date_created
@@ -504,18 +502,17 @@ year : num
 * - temporal resolution
   - annually
 * - rce_location
-  - /nfs/nsaph_ci3/ci3_health_data/medicare/mortality/1999_2016/wu/output_data/merged_covariates.csv
+  - `/nfs/nsaph_ci3/ci3_health_data/medicare/ mortality/1999_2016/wu/output_data /merged_covariates.csv`
 * - fasse_location
   - `/n/dominici_nsaph_l3/projects/analytic/merged_covariates_pm_census_temp`
 * - publication 
   - https://www.science.org/doi/10.1126/sciadv.aba5692
 * - GitHub 
-   - [nejm_confounder_summary/nejm_confounder](https://github.com/NSAPH/data_documentation/blob/master/nejm_confounder_summary/nejm_confounders.csv)
-   - [rce_data_list/confounder_data](https://github.com/NSAPH/data_documentation/blob/master/rce_data_list/confounder_data.csv)
+  - [nejm_confounder_summary/nejm_confounder](https://github.com/NSAPH/data_documentation/blob/master/nejm_confounder_summary/nejm_confounders.csv) and [rce_data_list/confounder_data](https://github.com/NSAPH/data_documentation/blob/master/rce_data_list/confounder_data.csv)
 * - size
   - 296 MB
 * - header 
-  - `zip,year,pm25_ensemble,pm25_no_interp,pm25_nn,ozone,ozone_no_interp,zcta,poverty,popdensity,medianhousevalue,pct_blk,medhouseholdincome,pct_owner_occ,hispanic,education,population,zcta_no_interp,poverty_no_interp,popdensity_no_interp,medianhousevalue_no_interp,pct_blk_no_interp,medhouseholdincome_no_interp,pct_owner_occ_no_interp,hispanic_no_interp,education_no_interp,population_no_interp,smoke_rate,mean_bmi,smoke_rate_no_interp,mean_bmi_no_interp,amb_visit_pct,a1c_exm_pct,amb_visit_pct_no_interp,a1c_exm_pct_no_interp,tmmx,rmax,pr,cluster_cat,fips,fips_no_interp`
+  - `zip, year, pm25_ensemble, pm25_no_interp, pm25_nn, ozone, ozone_no_interp, zcta, poverty, popdensity, medianhousevalue, pct_blk, medhouseholdincome, pct_owner_occ, hispanic, education, population, zcta_no_interp, poverty_no_interp, popdensity_no_interp, medianhousevalue_no_interp, pct_blk_no_interp, medhouseholdincome_no_interp, pct_owner_occ_no_interp, hispanic_no_interp, education_no_interp, population_no_interp, smoke_rate, mean_bmi, smoke_rate_no_interp, mean_bmi_no_interp, amb_visit_pct, a1c_exm_pct, amb_visit_pct_no_interp, a1c_exm_pct_no_interp, tmmx, rmax, pr, cluster_cat, fips, fips_no_interp`
 * - files
   - 
 ```
@@ -544,7 +541,7 @@ year : num
 * - processing_description
   - The data prepared for this project consists of the Medicaid Fee For Service population, with unrestricted Medicaid benefits, under the age of 20 from 1999-2012. This data also includes all hospitalizations for that population, with indicators included regarding whether or not they were associated with a set of respiratory hospitalizations. See the schema for the hospitalization data below for details on specific indicators.
 * - rce_location
-  - `/nfs/nsaph_ci3/ci3_health_data/medicaid/respiratory/1999_2012/youth_resp_hosps_jlee/data`
+  - `/nfs/nsaph_ci3/ci3_health_data/medicaid/respiratory /1999_2012/youth_resp_hosps_jlee/data`
 * - fasse_location
   - `/n/dominici_nsaph_l3/projects/analytic/medicaid_children_99-12`
 * - GitHub 
