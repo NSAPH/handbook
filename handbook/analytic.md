@@ -398,7 +398,7 @@ year : num
 * - date_created
   - Jan 26, 2021
 * - dataset_author
-  - Ben Sabath
+  - Ben Sabath, Whenhee Lee
 * - spatial_resolution
   - zipcode
 * - git_repository
@@ -430,7 +430,7 @@ year : num
 * - temporal_coverage
   - 1999-2016
 * - dataset_author
-  - Ben Sabath
+  - Ben Sabath, Whanhee Lee
 * - spatial_resolution
   - zipcode
 * - git_repository
@@ -562,6 +562,43 @@ year : num
     ├── under_20_admissions_1999.fst
     ├── ...
     └── under_20_admissions_2012.fst
+```
+`````
+
+`````{dropdown} 11.  Exposure-census-BRFFS confounders
+```{list-table}
+:header-rows: 0
+* - data_source
+  - US Census, BRFSS
+* - rce_location
+  - `/nfs/nsaph_ci3/scratch/jan2021_whanhee_cache/cache_dir/ merged_exposure_confounders/`
+* - fasse_location
+  - `confounders`
+* - dataset_author
+  - Ben Sabath, Whanhee Lee
+* - date_created
+  - Apr 23, 2021
+* - spatial_coverage
+  - contiguous US
+* - spatial_resolution
+  - zipcode, zcta
+* - temporal_coverage
+  - 2000-2016
+* - temporal resolution
+  - annually
+* - GitHub
+  - [data_requests](https://github.com/NSAPH/data_requests/blob/master/request_projects/jan2021_whanhee_fisrt_hosps/code/6_join_exposure_to_confounders.R)
+* - size
+  - 247 MB
+* - header 
+  - `"ZIP","year","zcta","poverty","popdensity","medianhousevalue","pct_blk","medhouseholdincome","pct_owner_occ","hispanic","education","population","pct_asian","pct_native","pct_white","smoke_rate","mean_bmi","pm25.current_year","ozone.current_year","no2.current_year","ozone_summer.current_year","pm25.one_year_lag","ozone.one_year_lag","no2.one_year_lag","ozone_summer.one_year_lag"`
+* - files
+  - 
+```
+```
+   ├── merged_confounders_2000.csv
+   ├── ...
+   └── merged_confounders_2016.csv
 ```
 `````
 
