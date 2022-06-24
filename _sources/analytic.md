@@ -10,7 +10,7 @@ The following data is available at: **`/n/dominici_nsaph_l3/projects/analytic/`*
 * - data_source
   - MedPar
 * - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/admissions_by_year`
+  - `admissions_by_year`
 * - rce_location
   - `~/shared_space/ci3_health_data/medicare/gen_admission/ 1999_2016/targeted_conditions/cache_data/admissions_by_year/`
 * - date_created
@@ -125,7 +125,7 @@ Dual                     : int
 * - data_source
   - MBSF
 * - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/denom`
+  - `denom`
 * - size
   - 7.4 GB
 * - files
@@ -189,12 +189,12 @@ max_year: 2016
 ```{list-table}
 :header-rows: 0
 
-* - author
-  - Daniel Mork
 * - rce_location
   - `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
 * - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/qid_yr_exposures`
+  - `qid_yr_exposures`
+* - dataset_author
+  - Daniel Mork
 * - date_created
   - April 2022
 * - size
@@ -263,7 +263,7 @@ qid : chr
 * - rce_location
   - `~/shared_space/ci3_health_data/medicare/mortality/ 1999_2016/wu/cache_data/merged_by_year_v2`
 * - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/denom_by_year`
+  - `denom_by_year`
 * - date_created
   - Apr 2021
 * - size
@@ -358,7 +358,7 @@ winter_rmax                 : num
 * - rce_location
   - `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
 * - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/hospitalization`
+  - `hospitalization`
 * - size
   - 1.2 GB
 * - files
@@ -392,13 +392,13 @@ year : num
 * - rce_location
   - `/nfs/nsaph_ci3/scratch/jan2021_whanhee_cache/entry_age/`
 * - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/medicare_entry_age/`
+  - `medicare_entry_age`
 * - size
   - 2.3 GB
 * - date_created
   - Jan 26, 2021
 * - dataset_author
-  - Ben Sabath
+  - Ben Sabath, Whenhee Lee
 * - spatial_resolution
   - zipcode
 * - git_repository
@@ -417,12 +417,12 @@ year : num
 
 * - data_source
   - MBSF derived
-* - description
-  - Number of years a beneficiary has been in Medicare (or in other words, the number of years since one has entered Medicare). Allows for grouping on how long beneficiaries have been in Medicare.
 * - rce_location
   - `/nfs/nsaph_ci3/scratch/jan2021_whanhee_cache/follow_up/`
 * - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/years_in_medicare`
+  - `years_in_medicare`
+* - description
+  - Number of years a beneficiary has been in Medicare (or in other words, the number of years since one has entered Medicare). Allows for grouping on how long beneficiaries have been in Medicare.
 * - size
   - 8.8 GB
 * - date_created
@@ -430,7 +430,7 @@ year : num
 * - temporal_coverage
   - 1999-2016
 * - dataset_author
-  - Ben Sabath
+  - Ben Sabath, Whanhee Lee
 * - spatial_resolution
   - zipcode
 * - git_repository
@@ -448,6 +448,10 @@ year : num
 `````{dropdown} 8. Temperature Humidity Precipitation 
 ```{list-table}
 :header-rows: 0
+* - rce_location
+  - `/nfs/nsaph_ci3/ci3_confounders/data_for_analysis/earth_engine/ temperature/temperature_seasonal_zipcode_combined.csv`
+* - fasse_location
+  - `temperature_seasonal_zipcode`
 * - dataset_author
   - Xiao Wi, Ben Sabath
 * - date_created
@@ -464,10 +468,6 @@ year : num
   - annually
 * - description
   - This dataset contains information on temperature, relative humidity, and total precipitation data. The data is available as raster files on Google earth engine. The temporal and spatial resolutions varied by data source, but all were available at a daily resolution or more frequently. Where the time resolution of the rasters is more than daily, daily averages for each raster were calculated. Next, using Google earth engine's spatial averaging algorithms and a set of polygons representing the areas of interest, the daily value for each polygon was calculated. The polygons used were the ones described in the preceding section. The results of this calculation were then downloaded as a csv file to the RCE. At this point, there is one file for each year. Following this, annual averages are calculated for each location, and these are combined in to a single file. The daily values are also combined in to a single file. For the `combined_zips` files (which combine the zip code polygon based measures with the the point based estimates to address zip codes without area) there is an additional step. Values for zip codes not in the polygon based measure are taken from the point based measures to address the ~7000 zip codes without area that are missing from the polygon shape file.
-* - rce_location
-  - `/nfs/nsaph_ci3/ci3_confounders/data_for_analysis/earth_engine/ temperature/temperature_seasonal_zipcode_combined.csv`
-* - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/temperature_seasonal_zipcode`
 * - GitHub 
   - [NSAPH/data_documentation](https://github.com/NSAPH/data_documentation/blob/master/earth_engine_docs/earth_engine_data.Rmd)
 * - meterological
@@ -487,12 +487,16 @@ year : num
 `````{dropdown} 9.  Pollution-Census-Temperature covariates
 ```{list-table}
 :header-rows: 0
+* - data_source
+  - US Census/ACS, Business Analyst Data Set, BRFSS
+* - rce_location
+  - `/nfs/nsaph_ci3/ci3_health_data/medicare/ mortality/1999_2016/wu/output_data /merged_covariates.csv`
+* - fasse_location
+  - `merged_covariates_pm_census_temp`
 * - dataset_author
   - Xiao Wi, Ben Sabath
 * - date_created
   - May 29, 2019
-* - data_source
-  - US Census/ACS, Business Analyst Data Set, BRFSS
 * - spatial_coverage
   - contiguous US
 * - spatial_resolution
@@ -501,10 +505,6 @@ year : num
   - 2000-2016
 * - temporal resolution
   - annually
-* - rce_location
-  - `/nfs/nsaph_ci3/ci3_health_data/medicare/ mortality/1999_2016/wu/output_data /merged_covariates.csv`
-* - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/merged_covariates_pm_census_temp`
 * - publication 
   - https://www.science.org/doi/10.1126/sciadv.aba5692
 * - GitHub 
@@ -524,12 +524,16 @@ year : num
 `````{dropdown} 10.  Medicaid - Children
 ```{list-table}
 :header-rows: 0
+* - data_source
+  - Medicaid
+* - rce_location
+  - `/nfs/nsaph_ci3/ci3_health_data/medicaid/respiratory /1999_2012/youth_resp_hosps_jlee/data`
+* - fasse_location
+  - `medicaid_children_99-12`
 * - dataset_author
   - Jenny Lee
 * - date_created
   - 2021
-* - data_source
-  - Medicaid
 * - spatial_coverage
   - contiguous US
 * - spatial_resolution
@@ -540,10 +544,6 @@ year : num
   - annually
 * - processing_description
   - The data prepared for this project consists of the Medicaid Fee For Service population, with unrestricted Medicaid benefits, under the age of 20 from 1999-2012. This data also includes all hospitalizations for that population, with indicators included regarding whether or not they were associated with a set of respiratory hospitalizations. See the schema for the hospitalization data below for details on specific indicators.
-* - rce_location
-  - `/nfs/nsaph_ci3/ci3_health_data/medicaid/respiratory /1999_2012/youth_resp_hosps_jlee/data`
-* - fasse_location
-  - `/n/dominici_nsaph_l3/projects/analytic/medicaid_children_99-12`
 * - GitHub 
   - [NSAPH/data_requests](https://github.com/NSAPH/data_requests/tree/master/request_projects/feb2021_jenny_medicaid_resp)
 * - exposures
@@ -565,6 +565,43 @@ year : num
 ```
 `````
 
+`````{dropdown} 11.  Exposure-census-BRFFS confounders
+```{list-table}
+:header-rows: 0
+* - data_source
+  - US Census, BRFSS
+* - rce_location
+  - `/nfs/nsaph_ci3/scratch/jan2021_whanhee_cache/cache_dir/ merged_exposure_confounders/`
+* - fasse_location
+  - `confounders`
+* - dataset_author
+  - Ben Sabath, Whanhee Lee
+* - date_created
+  - Apr 23, 2021
+* - spatial_coverage
+  - contiguous US
+* - spatial_resolution
+  - zipcode, zcta
+* - temporal_coverage
+  - 2000-2016
+* - temporal resolution
+  - annually
+* - GitHub
+  - [data_requests](https://github.com/NSAPH/data_requests/blob/master/request_projects/jan2021_whanhee_fisrt_hosps/code/6_join_exposure_to_confounders.R)
+* - size
+  - 247 MB
+* - header 
+  - `"ZIP","year","zcta","poverty","popdensity","medianhousevalue","pct_blk","medhouseholdincome","pct_owner_occ","hispanic","education","population","pct_asian","pct_native","pct_white","smoke_rate","mean_bmi","pm25.current_year","ozone.current_year","no2.current_year","ozone_summer.current_year","pm25.one_year_lag","ozone.one_year_lag","no2.one_year_lag","ozone_summer.one_year_lag"`
+* - files
+  - 
+```
+```
+   ├── merged_confounders_2000.csv
+   ├── ...
+   └── merged_confounders_2016.csv
+```
+`````
+
 ````{warning}
 The space of FASSE is limited, so do not copy analytic data to your own folder! Create symlinks to the data in your `data` folder.
 Symbolic links (or symlinks) are special files that point to files or directories in other locations on your system.
@@ -573,15 +610,16 @@ You will be able to use data with symlinks as normal.
 Create the symlink in your `data` folder in the following way:
 ```
 cd data
-ln -s /n/dominici_nsaph_l3/projects/analytic/admissions_by_year .
+ln -s /n/dominici_nsaph_l3/projects/analytic/fasse_location .
 ```
 ````
 
-## Data questions
-
 ```{note}
-Have a look at the already avaialble analytic data on FASSE. Is the data you want to transfer already there?
+You need data that is not here, but exists on RCE? 
+If so, fill in the form [here](https://gist.github.com/atrisovic/93d379dd84e31f0d63b965de8d529777) to get it transfered to FASSE.
 ```
+
+## Data questions
 
 1. What data sources (MedPar, MBSF, other) were used to create this data file? How many different data sources went into it? 
 2. What, if any, processing was done to the data sources? Were there any selections (cuts) done, data quality checks and aggregations? 
