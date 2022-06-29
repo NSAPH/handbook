@@ -1,4 +1,4 @@
-# Work on RCE
+# Working on RCE
 
 Unless you are at Harvard and connected to the Harvard network, you will first need to connect to the Harvard's VPN (https://vpn.harvard.edu/) through the Cisco AnyConnect application in order to work on the Research Computing Environment (RCE).
 

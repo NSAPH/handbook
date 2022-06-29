@@ -1,8 +1,8 @@
 # Getting started on FASSE
 
-The following are instruction for logging in to FASSE and setting up your own workspace.
+The following are instructions for logging in to FASSE and setting up your own workspace.
 
-## Prerequisites. Join our FASSE project group
+## Prerequisites. Join our project group
 
 1. Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
 2. Join our FASSE project group (please [see steps below](#join-our-fasse-project-group)).
