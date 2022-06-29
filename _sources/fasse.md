@@ -69,13 +69,12 @@ Think of a **project name** in the following format:
 
 - Exposure examples: `pm-components`, `pm-no2`, `pm-no2-o3`, `heat-alert`
 - Outcome examples: `cardiovascular`, `respiratory`, `adrd`
-- Subpopulation examples: `medicare`, `race`, `ethnicity`
 - Method: `reinforcement-learning`, `causalgps` 
 
 For example: `heat_alert-mortality-reinforcement_learning` or shorter `heat_alert-mortality-rl`.
 
 In practice, you may have multiple exposures and outcomes. 
-In that case, use your best judgement to name your **project name** based on the guidelines. 
+In that case, use your best judgement for your **project name** based on the guidelines. 
 Avoid adding information such as usernames and current date or year.
 
 Create a folder with your **project name** (ie, `heat_alert-mortality-rl`) in the NSAPH workspace here:
@@ -99,7 +98,8 @@ Crete a new git repository under [NSAPH Projects](https://github.com/NSAPH-Proje
 your **project name**.
 
 Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
-If you are not familiar with using `git`, check out this [git tutorial](https://swcarpentry.github.io/git-novice/).
+If you are not familiar with using `git`, check out this [git tutorial](https://swcarpentry.github.io/git-novice/). 
+Also, check out [our guidelines](https://nsaph.info/contributing.html) for collaborative work on GitHub.
 
 ````{note}
 You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE's command line. 
