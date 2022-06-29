@@ -591,7 +591,7 @@ year : num
 * - size
   - 247 MB
 * - header 
-  - `"ZIP","year","zcta","poverty","popdensity","medianhousevalue","pct_blk","medhouseholdincome","pct_owner_occ","hispanic","education","population","pct_asian","pct_native","pct_white","smoke_rate","mean_bmi","pm25.current_year","ozone.current_year","no2.current_year","ozone_summer.current_year","pm25.one_year_lag","ozone.one_year_lag","no2.one_year_lag","ozone_summer.one_year_lag"`
+  - ZIP, year, zcta, poverty, popdensity, medianhousevalue, pct_blk, medhouseholdincome, pct_owner_occ, hispanic, education, population, pct_asian, pct_native, pct_white, smoke_rate, mean_bmi, pm25.current_year, ozone.current_year, no2.current_year, ozone_summer.current_year, pm25.one_year_lag, ozone.one_year_lag, no2.one_year_lag, ozone_summer.one_year_lag`
 * - files
   - 
 ```
