@@ -1,4 +1,4 @@
-# FASSE Setup
+# Getting started on FASSE
 
 The following are instruction for logging in to FASSE and setting up your own workspace.
 
@@ -17,139 +17,168 @@ After creating your FASRC account, follow the steps below to join our FASSE proj
 4. Select the checkbox for the project group you want to be added to
 You PI will have to approve the addition.  Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.
 
-## VPN login
+## Step 1. Connect to Harvard's VPN 
 
 1. Type `vpn.rc.fas.harvard.edu` in the Cisco AnyConnect text box (see figures).
 2. Type your username in the format `username@fasse`, password and verification code (same as for FASRC).
 
 ```{figure} imgs/fasse_vpn.png
 ---
-scale: 70%
+scale: 60%
 align: center 
 ---
 ```
 
 ```{figure} imgs/fasse_form.png
 ---
-scale: 70%
+scale: 60%
 align: center 
 ---
 ```
 
 ```{warning}
-CMS prohibits accessing data while outside of the US, this includes not only opening data files but also submitting code/jobs to run on the data. This also means no jobs will be allowed to be run on RCE/FASSE outside the U.S. While Harvard does not restrict cluster access, we are not allowed to access it per the DUA with CMS. For people not using CMS data, we encourage you to work on FASRC.
+CMS prohibits accessing data while outside of the U.S., this includes not only opening data files but also 
+submitting code/jobs to run on the data. 
 ```
 
-## Access FASSE via command line
+## Step 2. Access FASSE 
 
-1. Open Terminal
-2. Type `ssh username@fasselogin.rc.fas.harvard.edu`
-3. Type your password and verification code (same as for FASRC, i.e., same as in the previous step)
+There are a few ways to access FASSE. You can access it via VDI/OoD (in the web browser) by clicking the link here:
+https://fasseood.rc.fas.harvard.edu/ 
 
-```{figure} imgs/fasse_ssh.png
----
-scale: 70%
-align: center 
----
-```
-
-## Access FASSE via VDI/OoD (in browser)
-
-Acess FASSE via the web browser here: https://fasseood.rc.fas.harvard.edu/ 
-
-See the official documentation here: https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/
-
-## Analysis project folder 
-
-We strongly encourage users to keep their analysis data and code in the NSAPH shared project space here:
-
-```
-cd /n/dominici_nsaph_l3/projects
-``` 
-
-Create a subfolder and GitHub repository for your analysis by following the convention [here](naming-convention).
-
-## Link your FASSE account to GitHub
-
-Create a GitHub repository for your analysis.
+You can also access it via command line (Terminal) by typing: `ssh username@fasselogin.rc.fas.harvard.edu`. 
+To learn more about working in the command line, check out this [Unix Shell tutorial](https://swcarpentry.github.io/shell-novice/).
 
 ```{note}
-To clone an existing GitHub repository or push to GitHub, you may need to create a GitHub token. See instructions for that [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+The username, password and verification code are the same as in the previous step 
+(and the same as for FASRC).
 ```
 
-Link your GitHub account to the FASSE workspace by setting your git username and email. By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
+```{tip}
+For more information, see the [official documentation](https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/).
+```
+
+## Step 3. Project workspace
+
+Your **project name** should be informative for the group members and outsiders. 
+Think of a **project name** in the following format:
+
+```
+<exposure>-<outcome>-<method>
+```
+
+- Exposure examples: `pm-components`, `pm-no2`, `pm-no2-o3`, `heat-alert`
+- Outcome examples: `cardiovascular`, `respiratory`, `adrd`
+- Subpopulation examples: `medicare`, `race`, `ethnicity`
+- Method: `reinforcement-learning`, `causalgps` 
+
+For example: `heat_alert-mortality-reinforcement_learning` or shorter `heat_alert-mortality-rl`.
+
+In practice, you may have multiple exposures and outcomes. 
+In that case, use your best judgement to name your **project name** based on the guidelines. 
+Avoid adding information such as usernames and current date or year.
+
+Create a folder with your **project name** (ie, `heat_alert-mortality-rl`) in the NSAPH workspace here:
+
+```
+/n/dominici_nsaph_l3/projects
+``` 
+
+```{note}
+Make sure to keep your analysis data and code within your folder at `/n/dominici_nsaph_l3/projects`.
+```
+
+## Step 4. Create a git repository on GitHub
+
+Navigate to [NSAPH Projects GitHub organization](https://github.com/NSAPH-Projects) in your web browser.
+[NSAPH Projects GitHub organization](https://github.com/NSAPH-Projects) is a shared account where all NSAPH members 
+can collaborate across many projects at once. If you are not already a member of 
+[NSAPH Projects](https://github.com/NSAPH-Projects), ask one of the admins to add you to the organization.
+
+Crete a new git repository under [NSAPH Projects](https://github.com/NSAPH-Projects) and name it with 
+your **project name**.
+
+Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
+If you are not familiar with using `git`, check out this [git tutorial](https://swcarpentry.github.io/git-novice/).
+
+````{note}
+You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE's command line. 
+By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
 
 ```
 git config --global user.name "Mona Lisa"
 git config --global user.email "email@example.com"
 ```
+````
 
-## Analytic Data Reuse
+## Step 5. Analytic Data
 
-If you are using any of the pre-processed analytic datasets, create a symbolic link (symlink) of that dataset instead of creating a new copy. A symbolic link is essentially a reference to another file or directory that the operating system interprets as a path to that file or directory (a shortcut).
+Much of the NSAPH data is already available on FASSE. 
+Check out the data catalogue [here](https://nsaph.info/analytic.html).
 
-This is how you create a symlink:
+If you'd like to use any of the analytic datasets, create a symbolic link (symlink) of that dataset instead 
+of creating a new copy. A symbolic link is a reference to another file or directory that the 
+operating system interprets as a path to that file or directory (a shortcut).
+
+This is how you create a symlink from your `data` folder (in the command line):
 
 ```
-# ln -s source_file symbolic_link
-ln -s ../analytic/my_file.txt my_link.txt
-
-# to verify if the symlink was successfully created, run:
-ls -l my_link.txt
-
-# symlink to a directory
-ln -s ../analytic/medpar /data/medpar
+cd data
+ln -s ../analytic/DATA_FOLDER .
 ```
 
-```{note}
-Even if multiple people read the same analytic files at the same time, that will not cause problems on FASSE.
+## Step 6. Setting up R and RStudio
+
+To load R and install packages, follow [these directions](https://docs.rc.fas.harvard.edu/kb/r-packages/). 
+If you're using RStudio, you'll need your `R_LIBS_USER` path to set up the interactive session.
+
+In RStudio, if you want to see files outside of your home directory, you can click the three dots 
+on the upper right-hand side of the Files window in RStudio (under the refresh arrow) and type 
+in the directory path you want. If you want to save files outside your home directory, you can change 
+your working directory using the command `setwd([directory path])` in the Console.
+
+```{tip}
+If you are using R software in your analysis, have a look at best practices and recommendations 
+[here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) and 
+[here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
 ```
 
-## Setting up R and RStudio on FASSE
+## Step 7. Organize your folder
 
-To load R and install packages, follow [these directions](https://docs.rc.fas.harvard.edu/kb/r-packages/). If you're using RStudio, you'll need your R_LIBS_USER path to set up the interactive session.
+Consider organizing your project folder (and repository) as follows:
 
-In RStudio, if you want to see files outside of your home directory, you can click the three dots on the upper right-hand side of the Files window in RStudio (under the refresh arrow) and type in the directory path you want. If you want to save files outside your home directory, you can change your working directory using the command "setwd([directory path])" in the Console.
-
-## Terminal settings (optional)
-
-```{note}
-To learn more about working in the command line, check out this [Unix Shell tutorial](https://swcarpentry.github.io/shell-novice/).
+```
+project-name
+├── README.md
+├── data/
+├── code/
+├── figures/
+├── reports/
+├── results/
+└── .gitignore
 ```
 
-Consider adding the following lines in your `~/.bash_profile` file to set shortcuts (aliases) and have more colorful working environment.
-
-```sh
-# function to see active git branch
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-# Aliases 
-alias projects='cd /n/dominici_nsaph_l3/projects' 
-
-# Prompt colors
-PS1="\[\033[01;32m\]\u@\h\[\033[0;00m\]:\[\033[01;36m\]\w\[\033[35m\]\$(parse_git_branch)\[\033[00m\] $ "
+```{tip}
+Have a look at the [NSAPH Project Template](https://github.com/NSAPH/project_template). 
+Also, here is another template example for new research projects: https://github.com/djnavarro/newproject/
 ```
 
-The prompt colors are encoded in `\[\033[COLORm\]`. You can modify the number to change the prompt color. Here are the values for different text colors:
+Make sure to use the `README.md` and `.gitignore` special files. A `README.md` file is a standard documentation file where you should put information about the content of your 
+repository. A `.gitignore` file tells Git which files to ignore when committing your project to the GitHub 
+repository. It should be located in the root directory of your repo. Large data file and sensitive data should be 
+ignored by Git.
 
-| Black: 30 | Blue: 34 |
-| --------- | -------- |
-| Cyan: 36 | Green: 32 |
-| Purple: 35 | Red: 31 |
-| White: 37 | Yellow: 33 |
-
-Source your `.bash_profile` file to see the changes:
-
-```sh
-. ~/.bash_profile
+```{warning}
+Be careful not to push sensitive data on GitHub. Don't forget that Medicare/Medicaid data should not leave Harvard, 
+but your analysis code should be versioned with Git. A `.gitignore` file helps with that.
 ```
-The new prompt look:
 
-```{figure} imgs/fasse_cmd.png
----
-scale: 80%
-align: center 
----
+Add path and/or file names of your data in the `.gitignore` file. You can ignore the `data` sub-folder and/or 
+all files of a certain format like `.csv`, `.nc` or `.rst`. Add these as new lines in `.gitignore`. For example:
+
+```
+data/
+*.csv 
+*.nc
+*.rst
 ```
