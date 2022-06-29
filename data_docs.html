@@ -467,6 +467,56 @@ title="Print to PDF"
 </section>
 <section id="data-diagram">
 <h2>Data diagram<a class="headerlink" href="#data-diagram" title="Permalink to this headline">#</a></h2>
+<p>Data diagram tools are useful to document data processing flows and some can be embedded into Markdown files. For example, <a class="reference external" href="https://github.com/mermaid-js/mermaid#readme">Mermaid</a> and <a class="reference external" href="https://plantuml.com">PlantUML</a>.</p>
+<p>By using diagram tools:</p>
+<ul class="simple">
+<li><p>modifications to flowcharts do not have to be re-uploaded with new images every time.</p></li>
+<li><p>Markdown syntax is intuitive therefore documentation process is more efficient.</p></li>
+</ul>
+<p>Examples of Data Filtering and Data Integration diagrams created by <code class="docutils literal notranslate"><span class="pre">mermaid</span></code>:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/process_flow.png"><img alt="_images/process_flow.png" src="_images/process_flow.png" style="width: 468.8px; height: 505.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Example data process flow diagram</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Source code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">flowchart</span> <span class="n">TB</span>
+    <span class="n">subgraph</span> <span class="n">ID100</span><span class="p">[</span> <span class="p">]</span>
+        <span class="n">ID1</span><span class="p">[</span><span class="n">BRFSS</span> <span class="mi">2014</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">464</span><span class="p">,</span><span class="mi">664</span><span class="p">]</span><span class="o">==&gt;</span><span class="n">ID2</span><span class="p">[</span><span class="n">Veteran</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">61</span><span class="p">,</span><span class="mi">120</span><span class="p">]</span>
+        <span class="n">ID2</span><span class="o">==&gt;</span><span class="n">ID3</span><span class="p">[</span><span class="n">Known</span> <span class="n">diabetes</span> <span class="n">status</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">62</span><span class="p">,</span><span class="mi">104</span><span class="p">]</span>
+        <span class="n">ID3</span><span class="o">==&gt;</span><span class="n">ID4</span><span class="p">[</span><span class="n">Known</span> <span class="n">asthma</span> <span class="n">status</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">61</span><span class="p">,</span><span class="mi">833</span><span class="p">]</span>
+        <span class="n">ID4</span><span class="o">==&gt;</span><span class="n">ID5</span><span class="p">[</span><span class="n">Known</span> <span class="n">average</span> <span class="n">sleep</span> <span class="n">per</span> <span class="n">night</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">61</span><span class="p">,</span><span class="mi">08</span><span class="p">]</span>
+    <span class="n">end</span>
+<span class="n">ID1</span><span class="o">--&gt;</span><span class="n">ID10</span><span class="p">[</span><span class="n">Not</span> <span class="n">a</span> <span class="n">Veteran</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">402</span><span class="p">,</span><span class="mi">544</span><span class="p">]</span>
+<span class="n">ID2</span><span class="o">--&gt;</span><span class="n">ID11</span><span class="p">[</span><span class="n">No</span> <span class="n">information</span> \<span class="n">n</span> <span class="n">on</span> <span class="n">diabetes</span> <span class="n">status</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">106</span><span class="p">]</span>
+<span class="n">ID3</span><span class="o">--&gt;</span><span class="n">ID12</span><span class="p">[</span><span class="n">No</span> <span class="n">asthma</span> \<span class="n">nstatus</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">181</span><span class="p">]</span>
+<span class="n">ID4</span><span class="o">--&gt;</span><span class="n">ID13</span><span class="p">[</span><span class="n">No</span> <span class="n">information</span> \<span class="n">n</span> <span class="n">average</span> <span class="n">sleep</span> \<span class="n">n</span> <span class="n">per</span> <span class="n">night</span> \<span class="n">n</span> <span class="n">n</span><span class="o">=</span><span class="mi">752</span><span class="p">]</span>
+</pre></div>
+</div>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/data_integration.png"><img alt="_images/data_integration.png" src="_images/data_integration.png" style="width: 468.8px; height: 496.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Example data integration diagram</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Source code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">flowchart</span> <span class="n">LR</span>
+    <span class="o">%%</span> <span class="n">creating</span> <span class="n">nodes</span>
+    <span class="n">id1</span><span class="p">([</span><span class="n">Data</span> \<span class="n">n</span> <span class="n">Integration</span><span class="p">])</span>
+    
+    <span class="o">%%</span> <span class="n">linking</span> <span class="n">nodes</span>
+    <span class="n">id2</span><span class="p">((</span><span class="n">External</span> \<span class="n">n</span> <span class="n">Applications</span><span class="p">))</span><span class="o">--&gt;</span><span class="n">id1</span>
+    <span class="n">id3</span><span class="p">[(</span>\<span class="n">nData</span> <span class="n">Services</span><span class="p">)]</span><span class="o">--&gt;</span><span class="n">id1</span>
+    <span class="n">id4</span><span class="p">((</span><span class="n">Enterprise</span> \<span class="n">n</span> <span class="n">Applications</span><span class="p">))</span><span class="o">--&gt;</span><span class="n">id1</span>
+    <span class="n">id5</span><span class="p">(</span><span class="n">Unstructured</span> <span class="n">Files</span><span class="p">)</span><span class="o">--&gt;</span><span class="n">id1</span>
+    <span class="n">id6</span><span class="p">[[</span><span class="n">Cloud</span> <span class="n">Applications</span> \<span class="n">n</span> <span class="ow">and</span> <span class="n">Databases</span><span class="p">]]</span><span class="o">--&gt;</span><span class="n">id1</span>
+    
+    <span class="o">%%</span> <span class="n">integration</span> <span class="n">to</span> <span class="n">warehouse</span>
+    <span class="n">id1</span><span class="o">--&gt;</span><span class="n">id7</span><span class="p">[(</span>\<span class="n">n</span>\<span class="n">n</span> <span class="n">Enterprise</span> <span class="n">Data</span> \<span class="n">n</span> <span class="n">Warehouse</span> \<span class="n">n</span>\<span class="n">n</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p>See <a class="reference external" href="https://github.com/NSAPH-Data-Processing/sql-utils/tree/develop/docs">more examples</a> on Github.</p>
 </section>
 </section>
 
