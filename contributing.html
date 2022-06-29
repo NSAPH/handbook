@@ -412,23 +412,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-own-fork">
-   Create own fork
+  <a class="reference internal nav-link" href="#create-a-new-branch">
+   Create a new branch
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#clone-the-repository">
-   Clone the repository
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-own-branch">
-   Create own branch
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sync-and-rebase-your-fork">
-   Sync and rebase your fork
+  <a class="reference internal nav-link" href="#commit-and-push-your-contribution">
+   Commit and push your contribution
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -456,23 +446,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-own-fork">
-   Create own fork
+  <a class="reference internal nav-link" href="#create-a-new-branch">
+   Create a new branch
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#clone-the-repository">
-   Clone the repository
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-own-branch">
-   Create own branch
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sync-and-rebase-your-fork">
-   Sync and rebase your fork
+  <a class="reference internal nav-link" href="#commit-and-push-your-contribution">
+   Commit and push your contribution
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -492,93 +472,45 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="collaborative-work-on-github">
 <h1>Collaborative work on GitHub<a class="headerlink" href="#collaborative-work-on-github" title="Permalink to this headline">#</a></h1>
-<p>Opening a “Pull Request” is essential when contributing to NSAPH and other open-source projects.
-It is easy to make mistakes when you are learning the process.
-Here are the instructions for a standard procedure for creating a fork, a branch,
-making your contribution, issuing a pull request, asking for review and merging it to the original project.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Do you have write access to the GitHub repository (are you a “collaborator”)? If yes, start <a class="reference internal" href="#clone"><span class="std std-ref">here</span></a>,
-otherwise start <a class="reference internal" href="#fork"><span class="std std-ref">here</span></a>.</p>
-</div>
+<p>If you’d like to invite your collaborators to review your code, open a “pull request” in your
+<a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects GitHub repository</a>. Follow the steps below:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you contribute to the official NSAPH software, check its contribution gudelines.</p>
+<p>If you contribute to the official <a class="reference external" href="https://nsaph-software.github.io/intro.html">NSAPH Software</a>,
+check out its contribution gudelines.</p>
 </div>
-<section id="create-own-fork">
-<span id="fork"></span><h2>Create own fork<a class="headerlink" href="#create-own-fork" title="Permalink to this headline">#</a></h2>
-<p>On the GitHub page, click the “Fork” button to create a fork under your account.</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/fork_pr_fork.png"><img alt="_images/fork_pr_fork.png" src="_images/fork_pr_fork.png" style="width: 457.2px; height: 47.7px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The fork button.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Clone <strong>your fork</strong> locally.</p>
-<p>If multiple people are actively contributing to this project, you
-should track the original “upstream” repo that you forked. To do that, you need to
-add a remote:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add &#39;upstream&#39; repo to list of remotes</span>
-<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">UPSTREAM</span><span class="o">-</span><span class="n">USER</span><span class="o">/</span><span class="n">ORIGINAL</span><span class="o">-</span><span class="n">PROJECT</span><span class="o">.</span><span class="n">git</span>
-<span class="c1"># Verify the new remote named &#39;upstream&#39;</span>
-<span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
-</pre></div>
-</div>
-<p>Next, you should create a new working branch as described <a class="reference internal" href="#branch"><span class="std std-ref">here</span></a>.</p>
-</section>
-<section id="clone-the-repository">
-<span id="clone"></span><h2>Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">#</a></h2>
-<p>Clone the repository to your local machine as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">NSAPH</span><span class="o">-</span><span class="n">Projects</span><span class="o">/</span><span class="n">PROJECT</span><span class="o">.</span><span class="n">git</span>
-</pre></div>
-</div>
-</section>
-<section id="create-own-branch">
-<span id="branch"></span><h2>Create own branch<a class="headerlink" href="#create-own-branch" title="Permalink to this headline">#</a></h2>
+<section id="create-a-new-branch">
+<h2>Create a new branch<a class="headerlink" href="#create-a-new-branch" title="Permalink to this headline">#</a></h2>
 <p>It is important that you create a <strong>new branch</strong> for your contribution. It is a proper git workflow,
-and it keeps your changes organized and separated from the master/main branch, so you can easily switch between them.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout the main branch - you want your new branch to come from main</span>
+and it keeps your changes organized and separated from the <code class="docutils literal notranslate"><span class="pre">master</span></code>/<code class="docutils literal notranslate"><span class="pre">main</span></code> branch,
+so you can easily switch between them.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout the main (master) branch - you want your new branch to come from main (master)</span>
 <span class="n">git</span> <span class="n">checkout</span> <span class="n">main</span>
 <span class="c1"># Create a new branch and switch to it</span>
 <span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">newfeature</span>
 </pre></div>
 </div>
 </section>
-<section id="sync-and-rebase-your-fork">
-<span id="sync-fork"></span><h2>Sync and rebase your fork<a class="headerlink" href="#sync-and-rebase-your-fork" title="Permalink to this headline">#</a></h2>
-<p>If you have write access to the GitHub repository and you didn’t need to create own fork,
-proceed to <a class="reference internal" href="#open-pr"><span class="std std-ref">here</span></a>.</p>
-<p>Otherwise, if there are new commits to the upstream <code class="docutils literal notranslate"><span class="pre">main</span></code> branch, you should rebase your
-working branch so that merging is straight-forward and conflict-free.
-You can do that like this:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetch from upstream remote</span>
-git fetch upstream
-git checkout newfeature
-git rebase upstream/main
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Read more about syncing the fork using GitHub UI
-<a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork">here</a>.</p>
-</div>
-</section>
-<section id="create-a-pull-request">
-<span id="open-pr"></span><h2>Create a pull request<a class="headerlink" href="#create-a-pull-request" title="Permalink to this headline">#</a></h2>
-<p>Finally, you can push your branch to a remote repository:</p>
+<section id="commit-and-push-your-contribution">
+<h2>Commit and push your contribution<a class="headerlink" href="#commit-and-push-your-contribution" title="Permalink to this headline">#</a></h2>
+<p>You can push your branch to a remote repository:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push origin newfeature
 </pre></div>
 </div>
+</section>
+<section id="create-a-pull-request">
+<h2>Create a pull request<a class="headerlink" href="#create-a-pull-request" title="Permalink to this headline">#</a></h2>
 <p>In the GitHub UI, you will see a button giving you the option to create a pull request.</p>
 <p>Make sure to document your contribution with an informative title and description.</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="_images/fork_pr_docs.png"><img alt="_images/fork_pr_docs.png" src="_images/fork_pr_docs.png" style="width: 600.0px; height: 208.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Describe your contribution.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Describe your contribution.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>You can assign reviewers for your pull request after creating one. Follow up with the reviewers and incorporate
-their suggestions in a new commit to your fork. The new commit will be automatically visible in the pull request after you push them.</p>
+their suggestions in a new commit to your branch. The new commit will be automatically visible in the
+pull request after you push them.</p>
 <p>Once you are done with the temporary (<code class="docutils literal notranslate"><span class="pre">newfeature</span></code>) branch, you can delete it:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">d</span> <span class="n">newfeature</span>
 </pre></div>
