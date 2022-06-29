@@ -46,15 +46,8 @@ submitting code/jobs to run on the data.
 There are a few ways to access FASSE. You can access it via VDI/OoD (in the web browser) by clicking the link here:
 https://fasseood.rc.fas.harvard.edu/ 
 
-You can also access it via command line (Terminal) by typing: `ssh username@fasselogin.rc.fas.harvard.edu` (see figure). 
+You can also access it via command line (Terminal) by typing: `ssh username@fasselogin.rc.fas.harvard.edu`. 
 To learn more about working in the command line, check out this [Unix Shell tutorial](https://swcarpentry.github.io/shell-novice/).
-
-```{figure} imgs/fasse_ssh.png
----
-scale: 70%
-align: center 
----
-```
 
 ```{note}
 The username, password and verification code are the same as in the previous step 
@@ -71,7 +64,7 @@ Your **project name** should be informative for the group members and outsiders.
 Think of a **project name** in the following format:
 
 ```
-<EXPOSURE>-<OUTCOME>-<SUBPOPULATION>-<METHOD>
+<exposure>-<outcome>-<method>
 ```
 
 - Exposure examples: `pm-components`, `pm-no2`, `pm-no2-o3`, `heat-alert`
@@ -88,11 +81,11 @@ Avoid adding information such as usernames and current date or year.
 Create a folder with your **project name** (ie, `heat_alert-mortality-rl`) in the NSAPH workspace here:
 
 ```
-cd /n/dominici_nsaph_l3/projects
+/n/dominici_nsaph_l3/projects
 ``` 
 
 ```{note}
-Make sure to keep your analysis data and code within your folder.
+Make sure to keep your analysis data and code within your folder at `/n/dominici_nsaph_l3/projects`.
 ```
 
 ## Step 4. Create a git repository on GitHub
@@ -124,13 +117,12 @@ Much of the NSAPH data is already available on FASSE.
 Check out the data catalogue [here](https://nsaph.info/analytic.html).
 
 If you'd like to use any of the analytic datasets, create a symbolic link (symlink) of that dataset instead 
-of creating a new copy. A symbolic link is essentially a reference to another file or directory that the 
+of creating a new copy. A symbolic link is a reference to another file or directory that the 
 operating system interprets as a path to that file or directory (a shortcut).
 
-This is how you create a symlink inside your data folder (from command line):
+This is how you create a symlink from your `data` folder (in the command line):
 
 ```
-# ln -s source_file symbolic_link
 cd data
 ln -s ../analytic/DATA_FOLDER .
 ```
@@ -144,3 +136,49 @@ In RStudio, if you want to see files outside of your home directory, you can cli
 on the upper right-hand side of the Files window in RStudio (under the refresh arrow) and type 
 in the directory path you want. If you want to save files outside your home directory, you can change 
 your working directory using the command `setwd([directory path])` in the Console.
+
+```{tip}
+If you are using R software in your analysis, have a look at best practices and recommendations 
+[here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) and 
+[here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
+```
+
+## Step 7. Organize your folder
+
+Consider organizing your project folder (and repository) as follows:
+
+```
+project-name
+├── README.md
+├── data/
+├── code/
+├── figures/
+├── reports/
+├── results/
+└── .gitignore
+```
+
+```{tip}
+Have a look at the [NSAPH Project Template](https://github.com/NSAPH/project_template). 
+Also, here is another template example for new research projects: https://github.com/djnavarro/newproject/
+```
+
+Make sure to use the `README.md` and `.gitignore` special files. A `README.md` file is a standard documentation file where you should put information about the content of your 
+repository. A `.gitignore` file tells Git which files to ignore when committing your project to the GitHub 
+repository. It should be located in the root directory of your repo. Large data file and sensitive data should be 
+ignored by Git.
+
+```{warning}
+Be careful not to push sensitive data on GitHub. Don't forget that Medicare/Medicaid data should not leave Harvard, 
+but your analysis code should be versioned with Git. A `.gitignore` file helps with that.
+```
+
+Add path and/or file names of your data in the `.gitignore` file. You can ignore the `data` sub-folder and/or 
+all files of a certain format like `.csv`, `.nc` or `.rst`. Add these as new lines in `.gitignore`. For example:
+
+```
+data/
+*.csv 
+*.nc
+*.rst
+```
