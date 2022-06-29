@@ -422,43 +422,33 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#vpn-login">
-   VPN login
+  <a class="reference internal nav-link" href="#step-1-connect-to-harvard-s-vpn">
+   Step 1. Connect to Harvard’s VPN
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#access-fasse-via-command-line">
-   Access FASSE via command line
+  <a class="reference internal nav-link" href="#step-2-access-fasse">
+   Step 2. Access FASSE
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#access-fasse-via-vdi-ood-in-browser">
-   Access FASSE via VDI/OoD (in browser)
+  <a class="reference internal nav-link" href="#step-3-project-workspace">
+   Step 3. Project workspace
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analysis-project-folder">
-   Analysis project folder
+  <a class="reference internal nav-link" href="#step-4-create-a-git-repository-on-github">
+   Step 4. Create a git repository on GitHub
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#link-your-fasse-account-to-github">
-   Link your FASSE account to GitHub
+  <a class="reference internal nav-link" href="#step-5-analytic-data">
+   Step 5. Analytic Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analytic-data-reuse">
-   Analytic Data Reuse
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#setting-up-r-and-rstudio-on-fasse">
-   Setting up R and RStudio on FASSE
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terminal-settings-optional">
-   Terminal settings (optional)
+  <a class="reference internal nav-link" href="#step-6-setting-up-r-and-rstudio">
+   Step 6. Setting up R and RStudio
   </a>
  </li>
 </ul>
@@ -491,43 +481,33 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#vpn-login">
-   VPN login
+  <a class="reference internal nav-link" href="#step-1-connect-to-harvard-s-vpn">
+   Step 1. Connect to Harvard’s VPN
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#access-fasse-via-command-line">
-   Access FASSE via command line
+  <a class="reference internal nav-link" href="#step-2-access-fasse">
+   Step 2. Access FASSE
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#access-fasse-via-vdi-ood-in-browser">
-   Access FASSE via VDI/OoD (in browser)
+  <a class="reference internal nav-link" href="#step-3-project-workspace">
+   Step 3. Project workspace
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analysis-project-folder">
-   Analysis project folder
+  <a class="reference internal nav-link" href="#step-4-create-a-git-repository-on-github">
+   Step 4. Create a git repository on GitHub
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#link-your-fasse-account-to-github">
-   Link your FASSE account to GitHub
+  <a class="reference internal nav-link" href="#step-5-analytic-data">
+   Step 5. Analytic Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analytic-data-reuse">
-   Analytic Data Reuse
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#setting-up-r-and-rstudio-on-fasse">
-   Setting up R and RStudio on FASSE
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terminal-settings-optional">
-   Terminal settings (optional)
+  <a class="reference internal nav-link" href="#step-6-setting-up-r-and-rstudio">
+   Step 6. Setting up R and RStudio
   </a>
  </li>
 </ul>
@@ -563,8 +543,8 @@ title="Print to PDF"
 You PI will have to approve the addition.  Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.</p></li>
 </ol>
 </section>
-<section id="vpn-login">
-<h2>VPN login<a class="headerlink" href="#vpn-login" title="Permalink to this headline">#</a></h2>
+<section id="step-1-connect-to-harvard-s-vpn">
+<h2>Step 1. Connect to Harvard’s VPN<a class="headerlink" href="#step-1-connect-to-harvard-s-vpn" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p>Type <code class="docutils literal notranslate"><span class="pre">vpn.rc.fas.harvard.edu</span></code> in the Cisco AnyConnect text box (see figures).</p></li>
 <li><p>Type your username in the format <code class="docutils literal notranslate"><span class="pre">username&#64;fasse</span></code>, password and verification code (same as for FASRC).</p></li>
@@ -580,113 +560,89 @@ You PI will have to approve the addition.  Once you’re notified of the approva
 <p>CMS prohibits accessing data while outside of the US, this includes not only opening data files but also submitting code/jobs to run on the data. This also means no jobs will be allowed to be run on RCE/FASSE outside the U.S. While Harvard does not restrict cluster access, we are not allowed to access it per the DUA with CMS. For people not using CMS data, we encourage you to work on FASRC.</p>
 </div>
 </section>
-<section id="access-fasse-via-command-line">
-<h2>Access FASSE via command line<a class="headerlink" href="#access-fasse-via-command-line" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
-<li><p>Open Terminal</p></li>
-<li><p>Type <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">username&#64;fasselogin.rc.fas.harvard.edu</span></code></p></li>
-<li><p>Type your password and verification code (same as for FASRC, i.e., same as in the previous step)</p></li>
-</ol>
+<section id="step-2-access-fasse">
+<h2>Step 2. Access FASSE<a class="headerlink" href="#step-2-access-fasse" title="Permalink to this headline">#</a></h2>
+<p>There are a few ways to access FASSE. You can access it via VDI/OoD (in the web browser) by clicking the link here:
+<a class="reference external" href="https://fasseood.rc.fas.harvard.edu/">https://fasseood.rc.fas.harvard.edu/</a></p>
+<p>You can also access it via command line (Terminal) by typing: <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">username&#64;fasselogin.rc.fas.harvard.edu</span></code> (see figure).
+To learn more about working in the command line, check out this <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">Unix Shell tutorial</a>.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="_images/fasse_ssh.png"><img alt="_images/fasse_ssh.png" src="_images/fasse_ssh.png" style="width: 719.5999999999999px; height: 209.29999999999998px;" /></a>
 </figure>
+<div class="highlight-note notranslate"><div class="highlight"><pre><span></span>The username, password and verification code are the same as in the previous step 
+(and the same as for FASRC).
+</pre></div>
+</div>
+<div class="highlight-tip notranslate"><div class="highlight"><pre><span></span>For more information, see the [official documentation](https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/).
+</pre></div>
+</div>
 </section>
-<section id="access-fasse-via-vdi-ood-in-browser">
-<h2>Access FASSE via VDI/OoD (in browser)<a class="headerlink" href="#access-fasse-via-vdi-ood-in-browser" title="Permalink to this headline">#</a></h2>
-<p>Acess FASSE via the web browser here: <a class="reference external" href="https://fasseood.rc.fas.harvard.edu/">https://fasseood.rc.fas.harvard.edu/</a></p>
-<p>See the official documentation here: <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/">https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/</a></p>
-</section>
-<section id="analysis-project-folder">
-<h2>Analysis project folder<a class="headerlink" href="#analysis-project-folder" title="Permalink to this headline">#</a></h2>
-<p>We strongly encourage users to keep their analysis data and code in the NSAPH shared project space here:</p>
+<section id="step-3-project-workspace">
+<h2>Step 3. Project workspace<a class="headerlink" href="#step-3-project-workspace" title="Permalink to this headline">#</a></h2>
+<p>Your project name should be informative for the group members and outsiders.
+Think of a <strong>project name</strong> in the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">EXPOSURE</span><span class="o">&gt;-&lt;</span><span class="n">OUTCOME</span><span class="o">&gt;-&lt;</span><span class="n">SUBPOPULATION</span><span class="o">&gt;-&lt;</span><span class="n">METHOD</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Exposure examples: <code class="docutils literal notranslate"><span class="pre">pm-components</span></code>, <code class="docutils literal notranslate"><span class="pre">pm-no2</span></code>, <code class="docutils literal notranslate"><span class="pre">pm-no2-o3</span></code>, <code class="docutils literal notranslate"><span class="pre">heat-alert</span></code></p></li>
+<li><p>Outcome examples: <code class="docutils literal notranslate"><span class="pre">cardiovascular</span></code>, <code class="docutils literal notranslate"><span class="pre">respiratory</span></code>, <code class="docutils literal notranslate"><span class="pre">adrd</span></code></p></li>
+<li><p>Subpopulation examples: <code class="docutils literal notranslate"><span class="pre">medicare</span></code>, <code class="docutils literal notranslate"><span class="pre">race</span></code>, <code class="docutils literal notranslate"><span class="pre">ethnicity</span></code></p></li>
+<li><p>Method: <code class="docutils literal notranslate"><span class="pre">reinforcement-learning</span></code>, <code class="docutils literal notranslate"><span class="pre">causalgps</span></code></p></li>
+</ul>
+<p>For example: <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-reinforcement_learning</span></code> or shorter <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-rl</span></code>.</p>
+<p>In practice, you may have multiple exposures and outcomes.
+In that case, use your best judgement to name your <strong>project name</strong> based on the guidelines.
+Avoid adding information such as usernames and current date or year.</p>
+<p>Create a folder with your <strong>project name</strong> (ie, <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-rl</span></code>) in the NSAPH workspace here:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">dominici_nsaph_l3</span><span class="o">/</span><span class="n">projects</span>
 </pre></div>
 </div>
-<p>Create a subfolder and GitHub repository for your analysis by following the convention <a class="reference internal" href="analysis.html#naming-convention"><span class="std std-ref">here</span></a>.</p>
-</section>
-<section id="link-your-fasse-account-to-github">
-<h2>Link your FASSE account to GitHub<a class="headerlink" href="#link-your-fasse-account-to-github" title="Permalink to this headline">#</a></h2>
-<p>Create a GitHub repository for your analysis.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To clone an existing GitHub repository or push to GitHub, you may need to create a GitHub token. See instructions for that <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">here</a>.</p>
-</div>
-<p>Link your GitHub account to the FASSE workspace by setting your git username and email. By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Mona Lisa&quot;</span>
-<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;email@example.com&quot;</span>
+<div class="highlight-note notranslate"><div class="highlight"><pre><span></span>Make sure to keep your analysis data and code within your folder.
 </pre></div>
 </div>
 </section>
-<section id="analytic-data-reuse">
-<h2>Analytic Data Reuse<a class="headerlink" href="#analytic-data-reuse" title="Permalink to this headline">#</a></h2>
-<p>If you are using any of the pre-processed analytic datasets, create a symbolic link (symlink) of that dataset instead of creating a new copy. A symbolic link is essentially a reference to another file or directory that the operating system interprets as a path to that file or directory (a shortcut).</p>
-<p>This is how you create a symlink:</p>
+<section id="step-4-create-a-git-repository-on-github">
+<h2>Step 4. Create a git repository on GitHub<a class="headerlink" href="#step-4-create-a-git-repository-on-github" title="Permalink to this headline">#</a></h2>
+<p>Navigate to <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects GitHub organization</a> in your web browser.
+<a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects GitHub organization</a> is a shared account where all NSAPH members
+can collaborate across many projects at once.</p>
+<p>Crete a new git repository under <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> and name it with
+your <strong>project name</strong>.</p>
+<p>Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
+If you are not familiar with using <code class="docutils literal notranslate"><span class="pre">git</span></code>, check out this <a class="reference external" href="https://swcarpentry.github.io/git-novice/">git tutorial</a>.</p>
+<div class="highlight-note notranslate"><div class="highlight"><pre><span></span>You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE&#39;s command line. 
+By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
+
+```
+git config --global user.name &quot;Mona Lisa&quot;
+git config --global user.email &quot;email@example.com&quot;
+```
+</pre></div>
+</div>
+</section>
+<section id="step-5-analytic-data">
+<h2>Step 5. Analytic Data<a class="headerlink" href="#step-5-analytic-data" title="Permalink to this headline">#</a></h2>
+<p>Much of the NSAPH data is already available on FASSE.
+Check out the data catalogue <a class="reference external" href="https://nsaph.info/analytic.html">here</a>.</p>
+<p>If you’d like to use any of the analytic datasets, create a symbolic link (symlink) of that dataset instead
+of creating a new copy. A symbolic link is essentially a reference to another file or directory that the
+operating system interprets as a path to that file or directory (a shortcut).</p>
+<p>This is how you create a symlink inside your data folder (from command line):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># ln -s source_file symbolic_link</span>
-<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">../</span><span class="n">analytic</span><span class="o">/</span><span class="n">my_file</span><span class="o">.</span><span class="n">txt</span> <span class="n">my_link</span><span class="o">.</span><span class="n">txt</span>
-
-<span class="c1"># to verify if the symlink was successfully created, run:</span>
-<span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="n">my_link</span><span class="o">.</span><span class="n">txt</span>
-
-<span class="c1"># symlink to a directory</span>
-<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">../</span><span class="n">analytic</span><span class="o">/</span><span class="n">medpar</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">medpar</span>
+<span class="n">cd</span> <span class="n">data</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">../</span><span class="n">analytic</span><span class="o">/</span><span class="n">DATA_FOLDER</span> <span class="o">.</span>
 </pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Even if multiple people read the same analytic files at the same time, that will not cause problems on FASSE.</p>
 </div>
 </section>
-<section id="setting-up-r-and-rstudio-on-fasse">
-<h2>Setting up R and RStudio on FASSE<a class="headerlink" href="#setting-up-r-and-rstudio-on-fasse" title="Permalink to this headline">#</a></h2>
-<p>To load R and install packages, follow <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">these directions</a>. If you’re using RStudio, you’ll need your R_LIBS_USER path to set up the interactive session.</p>
-<p>In RStudio, if you want to see files outside of your home directory, you can click the three dots on the upper right-hand side of the Files window in RStudio (under the refresh arrow) and type in the directory path you want. If you want to save files outside your home directory, you can change your working directory using the command “setwd([directory path])” in the Console.</p>
-</section>
-<section id="terminal-settings-optional">
-<h2>Terminal settings (optional)<a class="headerlink" href="#terminal-settings-optional" title="Permalink to this headline">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To learn more about working in the command line, check out this <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">Unix Shell tutorial</a>.</p>
-</div>
-<p>Consider adding the following lines in your <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> file to set shortcuts (aliases) and have more colorful working environment.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># function to see active git branch</span>
-parse_git_branch<span class="o">()</span> <span class="o">{</span>
-     git branch <span class="m">2</span>&gt; /dev/null <span class="p">|</span> sed -e <span class="s1">&#39;/^[^*]/d&#39;</span> -e <span class="s1">&#39;s/* \(.*\)/ (\1)/&#39;</span>
-<span class="o">}</span>
-
-<span class="c1"># Aliases </span>
-<span class="nb">alias</span> <span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/projects&#39;</span> 
-
-<span class="c1"># Prompt colors</span>
-<span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;\[\033[01;32m\]\u@\h\[\033[0;00m\]:\[\033[01;36m\]\w\[\033[35m\]\$(parse_git_branch)\[\033[00m\] </span>$<span class="s2"> &quot;</span>
-</pre></div>
-</div>
-<p>The prompt colors are encoded in <code class="docutils literal notranslate"><span class="pre">\[\033[COLORm\]</span></code>. You can modify the number to change the prompt color. Here are the values for different text colors:</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Black: 30</p></th>
-<th class="head"><p>Blue: 34</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Cyan: 36</p></td>
-<td><p>Green: 32</p></td>
-</tr>
-<tr class="row-odd"><td><p>Purple: 35</p></td>
-<td><p>Red: 31</p></td>
-</tr>
-<tr class="row-even"><td><p>White: 37</p></td>
-<td><p>Yellow: 33</p></td>
-</tr>
-</tbody>
-</table>
-<p>Source your <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> file to see the changes:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>. ~/.bash_profile
-</pre></div>
-</div>
-<p>The new prompt look:</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="_images/fasse_cmd.png"><img alt="_images/fasse_cmd.png" src="_images/fasse_cmd.png" style="width: 893.6px; height: 148.8px;" /></a>
-</figure>
+<section id="step-6-setting-up-r-and-rstudio">
+<h2>Step 6. Setting up R and RStudio<a class="headerlink" href="#step-6-setting-up-r-and-rstudio" title="Permalink to this headline">#</a></h2>
+<p>To load R and install packages, follow <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">these directions</a>.
+If you’re using RStudio, you’ll need your <code class="docutils literal notranslate"><span class="pre">R_LIBS_USER</span></code> path to set up the interactive session.</p>
+<p>In RStudio, if you want to see files outside of your home directory, you can click the three dots
+on the upper right-hand side of the Files window in RStudio (under the refresh arrow) and type
+in the directory path you want. If you want to save files outside your home directory, you can change
+your working directory using the command <code class="docutils literal notranslate"><span class="pre">setwd([directory</span> <span class="pre">path])</span></code> in the Console.</p>
 </section>
 </section>
 
