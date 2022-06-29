@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>FASSE Setup &#8212; NSAPH Handbook</title>
+    <title>Getting started on FASSE &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -197,7 +197,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   FASSE Setup
+   Getting started on FASSE
   </a>
  </li>
  <li class="toctree-l1">
@@ -460,7 +460,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>FASSE Setup</h1>
+                <h1>Getting started on FASSE</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -520,8 +520,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="fasse-setup">
-<h1>FASSE Setup<a class="headerlink" href="#fasse-setup" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-started-on-fasse">
+<h1>Getting started on FASSE<a class="headerlink" href="#getting-started-on-fasse" title="Permalink to this headline">#</a></h1>
 <p>The following are instruction for logging in to FASSE and setting up your own workspace.</p>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
@@ -550,14 +550,15 @@ You PI will have to approve the addition.  Once you’re notified of the approva
 <li><p>Type your username in the format <code class="docutils literal notranslate"><span class="pre">username&#64;fasse</span></code>, password and verification code (same as for FASRC).</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="_images/fasse_vpn.png"><img alt="_images/fasse_vpn.png" src="_images/fasse_vpn.png" style="width: 421.4px; height: 208.6px;" /></a>
+<a class="reference internal image-reference" href="_images/fasse_vpn.png"><img alt="_images/fasse_vpn.png" src="_images/fasse_vpn.png" style="width: 361.2px; height: 178.79999999999998px;" /></a>
 </figure>
 <figure class="align-center">
-<a class="reference internal image-reference" href="_images/fasse_form.png"><img alt="_images/fasse_form.png" src="_images/fasse_form.png" style="width: 542.5px; height: 357.7px;" /></a>
+<a class="reference internal image-reference" href="_images/fasse_form.png"><img alt="_images/fasse_form.png" src="_images/fasse_form.png" style="width: 465.0px; height: 306.59999999999997px;" /></a>
 </figure>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>CMS prohibits accessing data while outside of the US, this includes not only opening data files but also submitting code/jobs to run on the data. This also means no jobs will be allowed to be run on RCE/FASSE outside the U.S. While Harvard does not restrict cluster access, we are not allowed to access it per the DUA with CMS. For people not using CMS data, we encourage you to work on FASRC.</p>
+<p>CMS prohibits accessing data while outside of the U.S., this includes not only opening data files but also
+submitting code/jobs to run on the data.</p>
 </div>
 </section>
 <section id="step-2-access-fasse">
@@ -569,17 +570,19 @@ To learn more about working in the command line, check out this <a class="refere
 <figure class="align-center">
 <a class="reference internal image-reference" href="_images/fasse_ssh.png"><img alt="_images/fasse_ssh.png" src="_images/fasse_ssh.png" style="width: 719.5999999999999px; height: 209.29999999999998px;" /></a>
 </figure>
-<div class="highlight-note notranslate"><div class="highlight"><pre><span></span>The username, password and verification code are the same as in the previous step 
-(and the same as for FASRC).
-</pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The username, password and verification code are the same as in the previous step
+(and the same as for FASRC).</p>
 </div>
-<div class="highlight-tip notranslate"><div class="highlight"><pre><span></span>For more information, see the [official documentation](https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/).
-</pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For more information, see the <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/">official documentation</a>.</p>
 </div>
 </section>
 <section id="step-3-project-workspace">
 <h2>Step 3. Project workspace<a class="headerlink" href="#step-3-project-workspace" title="Permalink to this headline">#</a></h2>
-<p>Your project name should be informative for the group members and outsiders.
+<p>Your <strong>project name</strong> should be informative for the group members and outsiders.
 Think of a <strong>project name</strong> in the following format:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">EXPOSURE</span><span class="o">&gt;-&lt;</span><span class="n">OUTCOME</span><span class="o">&gt;-&lt;</span><span class="n">SUBPOPULATION</span><span class="o">&gt;-&lt;</span><span class="n">METHOD</span><span class="o">&gt;</span>
 </pre></div>
@@ -598,27 +601,29 @@ Avoid adding information such as usernames and current date or year.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">dominici_nsaph_l3</span><span class="o">/</span><span class="n">projects</span>
 </pre></div>
 </div>
-<div class="highlight-note notranslate"><div class="highlight"><pre><span></span>Make sure to keep your analysis data and code within your folder.
-</pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure to keep your analysis data and code within your folder.</p>
 </div>
 </section>
 <section id="step-4-create-a-git-repository-on-github">
 <h2>Step 4. Create a git repository on GitHub<a class="headerlink" href="#step-4-create-a-git-repository-on-github" title="Permalink to this headline">#</a></h2>
 <p>Navigate to <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects GitHub organization</a> in your web browser.
 <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects GitHub organization</a> is a shared account where all NSAPH members
-can collaborate across many projects at once.</p>
+can collaborate across many projects at once. If you are not already a member of
+<a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a>, ask one of the admins to add you to the organization.</p>
 <p>Crete a new git repository under <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> and name it with
 your <strong>project name</strong>.</p>
 <p>Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
 If you are not familiar with using <code class="docutils literal notranslate"><span class="pre">git</span></code>, check out this <a class="reference external" href="https://swcarpentry.github.io/git-novice/">git tutorial</a>.</p>
-<div class="highlight-note notranslate"><div class="highlight"><pre><span></span>You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE&#39;s command line. 
-By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
-
-```
-git config --global user.name &quot;Mona Lisa&quot;
-git config --global user.email &quot;email@example.com&quot;
-```
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE’s command line.
+By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Mona Lisa&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;email@example.com&quot;</span>
 </pre></div>
+</div>
 </div>
 </section>
 <section id="step-5-analytic-data">

@@ -1,4 +1,4 @@
-# FASSE Setup
+# Getting started on FASSE
 
 The following are instruction for logging in to FASSE and setting up your own workspace.
 
@@ -24,20 +24,21 @@ You PI will have to approve the addition.  Once you’re notified of the approva
 
 ```{figure} imgs/fasse_vpn.png
 ---
-scale: 70%
+scale: 60%
 align: center 
 ---
 ```
 
 ```{figure} imgs/fasse_form.png
 ---
-scale: 70%
+scale: 60%
 align: center 
 ---
 ```
 
 ```{warning}
-CMS prohibits accessing data while outside of the US, this includes not only opening data files but also submitting code/jobs to run on the data. This also means no jobs will be allowed to be run on RCE/FASSE outside the U.S. While Harvard does not restrict cluster access, we are not allowed to access it per the DUA with CMS. For people not using CMS data, we encourage you to work on FASRC.
+CMS prohibits accessing data while outside of the U.S., this includes not only opening data files but also 
+submitting code/jobs to run on the data. 
 ```
 
 ## Step 2. Access FASSE 
@@ -55,18 +56,18 @@ align: center
 ---
 ```
 
-```note
+```{note}
 The username, password and verification code are the same as in the previous step 
 (and the same as for FASRC).
 ```
 
-```tip
+```{tip}
 For more information, see the [official documentation](https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/).
 ```
 
 ## Step 3. Project workspace
 
-Your project name should be informative for the group members and outsiders. 
+Your **project name** should be informative for the group members and outsiders. 
 Think of a **project name** in the following format:
 
 ```
@@ -90,7 +91,7 @@ Create a folder with your **project name** (ie, `heat_alert-mortality-rl`) in th
 cd /n/dominici_nsaph_l3/projects
 ``` 
 
-```note
+```{note}
 Make sure to keep your analysis data and code within your folder.
 ```
 
@@ -98,7 +99,8 @@ Make sure to keep your analysis data and code within your folder.
 
 Navigate to [NSAPH Projects GitHub organization](https://github.com/NSAPH-Projects) in your web browser.
 [NSAPH Projects GitHub organization](https://github.com/NSAPH-Projects) is a shared account where all NSAPH members 
-can collaborate across many projects at once.
+can collaborate across many projects at once. If you are not already a member of 
+[NSAPH Projects](https://github.com/NSAPH-Projects), ask one of the admins to add you to the organization.
 
 Crete a new git repository under [NSAPH Projects](https://github.com/NSAPH-Projects) and name it with 
 your **project name**.
@@ -106,7 +108,7 @@ your **project name**.
 Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
 If you are not familiar with using `git`, check out this [git tutorial](https://swcarpentry.github.io/git-novice/).
 
-````note
+````{note}
 You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE's command line. 
 By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
 
