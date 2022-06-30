@@ -5,19 +5,17 @@ The following are instructions for logging in to FASSE and setting up your own w
 ## Prerequisites. Join our project group
 
 1. Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
-2. Join our FASSE project group (please [see steps below](#join-our-fasse-project-group)).
-3. Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to the FASRC VPN. 
-4. Install 2FA, i.e., Google Authenticator for FASRC. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
+2. Navigate to the [Add Grants page](https://portal.rc.fas.harvard.edu/request/grants/add) in portal, you will need to login with your FASRC account
+3. Expand the plus sign next to “Other”
+4. Find the project group you want to be added to: `dominici_nsaph`
+5. Select the checkbox for the project group you want to be added to 
 
-After creating your FASRC account, follow the steps below to join our FASSE project group:
-
-1. Navigate to the [Add Grants page](https://portal.rc.fas.harvard.edu/request/grants/add) in portal, you will need to login with your FASRC account
-2. Expand the plus sign next to “Other”
-3. Find the project group you want to be added to: dominici_nsaph
-4. Select the checkbox for the project group you want to be added to
-You PI will have to approve the addition.  Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.
+Your PI will have to approve the addition.  Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.
 
 ## Step 1. Connect to Harvard's VPN 
+
+Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to the FASRC VPN. 
+Install 2FA, i.e., Google Authenticator for FASRC. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
 
 1. Type `vpn.rc.fas.harvard.edu` in the Cisco AnyConnect text box (see figures).
 2. Type your username in the format `username@fasse`, password and verification code (same as for FASRC).
