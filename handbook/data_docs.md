@@ -59,4 +59,4 @@ flowchart LR
     id1-->id7[(\n\n Analytic Data \n\n)]
 ```
 
-See [more examples](https://github.com/NSAPH-Data-Processing/sql-utils/tree/develop/docs) on Github.
+See [more examples](https://github.com/NSAPH-Data-Processing/sql-utils/tree/main/docs) on Github.
