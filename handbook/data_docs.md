@@ -1,13 +1,18 @@
 # Documenting data
 
-## Data dictionary
+## Data diagrams
 
-## Data diagram
-Data diagram tools are useful to document data processing flows and some can be embedded into Markdown files. For example, [Mermaid](https://github.com/mermaid-js/mermaid#readme) and [PlantUML](https://plantuml.com).
+Data diagram tools like  [Mermaid](https://github.com/mermaid-js/mermaid#readme) and [PlantUML](https://plantuml.com) 
+are useful to document data processing flows and some can be embedded into Markdown files such as a `README.md` file.
 
 By using diagram tools:
 * modifications to flowcharts do not have to be re-uploaded with new images every time.
 * Markdown syntax is intuitive therefore documentation process is more efficient. 
+
+```{tip}
+You may reuse the following source code examples to document your GitHub project repository.
+Add the source code in your `README.md` file and make changes to it to document your data flow.
+```
 
 Examples of Data Filtering and Data Integration diagrams created by `mermaid`:
 
@@ -20,6 +25,7 @@ Example data process flow diagram
 ```
 
 Source code:
+````
 ```
 flowchart TB
     subgraph ID100[ ]
@@ -33,6 +39,7 @@ ID2-->ID11[No information \n on diabetes status \n n=106]
 ID3-->ID12[No asthma \nstatus \n n=181]
 ID4-->ID13[No information \n average sleep \n per night \n n=752]
 ``` 
+````
 
 ```{figure} imgs/data_integration.png
 ---
@@ -43,6 +50,7 @@ Example data integration diagram
 ```
 
 Source code:
+````
 ```
 flowchart LR
     %% creating nodes
@@ -58,5 +66,9 @@ flowchart LR
     %% integration to warehouse
     id1-->id7[(\n\n Analytic Data \n\n)]
 ```
+````
 
 See [more examples](https://github.com/NSAPH-Data-Processing/sql-utils/tree/main/docs) on Github.
+
+## Data dictionary
+
