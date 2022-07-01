@@ -478,7 +478,7 @@ Add the source code in your <code class="docutils literal notranslate"><span cla
 </div>
 <p>Examples of Data Filtering and Data Integration diagrams created by <code class="docutils literal notranslate"><span class="pre">mermaid</span></code>:</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/process_flow.png"><img alt="_images/process_flow.png" src="_images/process_flow.png" style="width: 468.8px; height: 505.6px;" /></a>
+<a class="reference internal image-reference" href="_images/process_flow.png"><img alt="_images/process_flow.png" src="_images/process_flow.png" style="width: 482.40000000000003px; height: 498.40000000000003px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 1 </span><span class="caption-text">Example data process flow diagram</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -500,7 +500,7 @@ ID4--&gt;ID13[No information \n average sleep \n per night \n n=752]
 </pre></div>
 </div>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/data_integration.png"><img alt="_images/data_integration.png" src="_images/data_integration.png" style="width: 468.8px; height: 496.0px;" /></a>
+<a class="reference internal image-reference" href="_images/data_integration.png"><img alt="_images/data_integration.png" src="_images/data_integration.png" style="width: 434.40000000000003px; height: 456.8px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 2 </span><span class="caption-text">Example data integration diagram</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -509,21 +509,21 @@ ID4--&gt;ID13[No information \n average sleep \n per night \n n=752]
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
 flowchart LR
     %% creating nodes
-    id1([Data \n Integration])
+    id1([Data\n Integration])
     
     %% linking nodes
-    id2((External \n Applications))--&gt;id1
-    id3[(\nData Services)]--&gt;id1
-    id4((Enterprise \n Applications))--&gt;id1
-    id5(Unstructured Files)--&gt;id1
-    id6[[Cloud Applications \n and Databases]]--&gt;id1
+    id2(MBSF -\n enrollment)--&gt;id1
+    id3(MedPar -\n hospitalization)--&gt;id1
+    id4((Air Pollution))--&gt;id1
+    id5[(Census \n&amp; BRFSS)]--&gt;id1
+    id6[[GridMET -\n meteorological]]--&gt;id1
     
     %% integration to warehouse
-    id1--&gt;id7[(\n\n Enterprise Data \n Warehouse \n\n)]
+    id1--&gt;id7[(\n\n Analytic Data \n\n)]
 ```
 </pre></div>
 </div>
-<p>See <a class="reference external" href="https://github.com/NSAPH-Data-Processing/sql-utils/tree/develop/docs">more examples</a> on Github.</p>
+<p>See <a class="reference external" href="https://github.com/NSAPH-Data-Processing/sql-utils/tree/main/docs">more examples</a> on Github.</p>
 </section>
 <section id="data-dictionary">
 <h2>Data dictionary<a class="headerlink" href="#data-dictionary" title="Permalink to this headline">#</a></h2>
