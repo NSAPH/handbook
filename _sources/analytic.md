@@ -260,10 +260,22 @@ qid : chr
 ```{list-table}
 :header-rows: 0
 
+* - data_source
+  - MBSF, census (interpolated), BRFSS (interpolated), PM2.5 exposure, seasonal temperature
 * - rce_location
   - `~/shared_space/ci3_health_data/medicare/mortality/ 1999_2016/wu/cache_data/merged_by_year_v2`
 * - fasse_location
   - `denom_by_year`
+* - GitHub 
+  - [github.com/NSAPH/National-Causal-Analysis](https://github.com/NSAPH/National-Causal-Analysis/tree/master/MergedData)
+* - dataset_author
+  - Ben Sabath, Xiao Wu
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 1999-2016
+* - processing_description
+  - Recommended for use. Available in both `.fst` and `.csv` formats on FASSE.
 * - date_created
   - Apr 2021
 * - size
