@@ -1,4 +1,4 @@
-# Superset
+# Exploring Data Platform
 
 ## What is Superset
 Superset is a way to query, visualize, and explore the data. Currently, the data hosted on Superset uses Postgres as the meta database engine.
@@ -25,6 +25,10 @@ scale: 30%
 align: center 
 ---
 Accessing SQL Lab.
+```
+
+```{warning}
+`download data` button retrieves the data locally. Do NOT click it if querying medical data.
 ```
 
 ## Access Superset with Jupyter Lab
@@ -77,7 +81,7 @@ Step 8: query the database. A sample query can be found [here](https://github.co
 The query will be converted to a .csv file and is saved under the working directory. You can then use Jupyter Lab to explore the data.
 
 (customize)=
-## Customize your own conda enviornment
+## Customize your own conda environment
 
 Instructions coming soon...
 
