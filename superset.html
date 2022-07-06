@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>References &#8212; NSAPH Handbook</title>
+    <title>Exploring Data Platform &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="The team" href="team.html" />
+    <link rel="next" title="The team" href="team.html" />
+    <link rel="prev" title="Dataverse" href="dataverse.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -193,7 +194,7 @@ const thebe_selector_output = ".output, .cell_output"
   Infrastructure
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fasse.html">
    Getting started on FASSE
@@ -209,8 +210,8 @@ const thebe_selector_output = ".output, .cell_output"
    Dataverse
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="superset.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Exploring Data Platform
   </a>
  </li>
@@ -232,9 +233,9 @@ const thebe_selector_output = ".output, .cell_output"
   References
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="references.html">
    References
   </a>
  </li>
@@ -328,7 +329,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Freferences.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fsuperset.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -356,7 +357,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/references.md"
+        <a href="_sources/superset.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -393,23 +394,90 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-superset">
+   What is Superset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accessing-superset-in-web-browser">
+   Accessing Superset in Web Browser
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-superset-with-jupyter-lab">
+   Access Superset with Jupyter Lab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#customize-your-own-conda-environment">
+   Customize your own conda environment
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>References</h1>
+                <h1>Exploring Data Platform</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-superset">
+   What is Superset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accessing-superset-in-web-browser">
+   Accessing Superset in Web Browser
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-superset-with-jupyter-lab">
+   Access Superset with Jupyter Lab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#customize-your-own-conda-environment">
+   Customize your own conda environment
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -417,8 +485,85 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="references">
-<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="exploring-data-platform">
+<h1>Exploring Data Platform<a class="headerlink" href="#exploring-data-platform" title="Permalink to this headline">#</a></h1>
+<section id="what-is-superset">
+<h2>What is Superset<a class="headerlink" href="#what-is-superset" title="Permalink to this headline">#</a></h2>
+<p>Superset is a way to query, visualize, and explore the data. Currently, the data hosted on Superset uses Postgres as the meta database engine.</p>
+</section>
+<section id="accessing-superset-in-web-browser">
+<h2>Accessing Superset in Web Browser<a class="headerlink" href="#accessing-superset-in-web-browser" title="Permalink to this headline">#</a></h2>
+<p>In order to access Superset, you would first need access to FASSE and the NSAPH host (instructions <a class="reference internal" href="fasse.html"><span class="doc std std-doc">here</span></a>)</p>
+<p>Open Terminal, and enter the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">L8088</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8088</span> <span class="n">username</span><span class="nd">@nsaph</span><span class="o">.</span><span class="n">rc</span><span class="o">.</span><span class="n">fas</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span>
+</pre></div>
+</div>
+<p>After logging in through this specific port, you can access the Superset interface locally. In your browser, enter the following url: <code class="docutils literal notranslate"><span class="pre">http://localhost:8088/login/</span></code></p>
+<p>Enter your Superset credentials.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you don’t know your Superset credentials, stop immediately and contact us.</p>
+</div>
+<p>Once the Superset authentication is completed, you can now explore the datasets you are granted access to. Start by going to SQL Editor under SQL Lab.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/superset_welcome.png"><img alt="_images/superset_welcome.png" src="_images/superset_welcome.png" style="width: 693.0px; height: 52.199999999999996px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Accessing SQL Lab.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code class="docutils literal notranslate"><span class="pre">download</span> <span class="pre">data</span></code> button retrieves the data locally. Do NOT click it if querying medical data.</p>
+</div>
+</section>
+<section id="access-superset-with-jupyter-lab">
+<h2>Access Superset with Jupyter Lab<a class="headerlink" href="#access-superset-with-jupyter-lab" title="Permalink to this headline">#</a></h2>
+<p>Accessing Superset via Jupyter Lab will allow you to query the databases and create data query pipelines with Python. The environment is already configured to be accessible to all NSAPH users.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you would like to customize your own environment, follow this <a class="reference internal" href="#customize"><span class="std std-ref">section</span></a>. Not sure if you need to? Do NOT customize it.</p>
+</div>
+<p>Step 1: Login to the NSAPH host</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">L8088</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8088</span> <span class="n">username</span><span class="nd">@nsaph</span><span class="o">.</span><span class="n">rc</span><span class="o">.</span><span class="n">fas</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span>
+</pre></div>
+</div>
+<p>Step 2: Initialize the Anaconda environment</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">condabin</span><span class="o">/</span><span class="n">conda</span> <span class="n">init</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may be prompted to restart the host. If that is the case, exit the NSAPH host and login again. You will only need to do step 2 once. All subsequent logins to NSAPH host will activate the Anaconda automatically.</p>
+</div>
+<p>Step 3: Check the available environments</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="nb">list</span>
+</pre></div>
+</div>
+<p>You should find an environment called <code class="docutils literal notranslate"><span class="pre">superset_final</span></code>. Activate that environment.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">activate</span> <span class="n">superset_final</span>
+</pre></div>
+</div>
+<p>Step 4: Ensure package <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> and <code class="docutils literal notranslate"><span class="pre">nsaph-utils</span></code> are installed</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">nsaph</span>
+</pre></div>
+</div>
+<p>Step 5: Go to your dedicated Jupyter Lab directory in NSAPH</p>
+<p>Step 6: Access Jupyter Lab via OOD here: <a class="reference external" href="https://fasseood.rc.fas.harvard.edu/">https://fasseood.rc.fas.harvard.edu/</a></p>
+<p>Step 7: Create a <code class="docutils literal notranslate"><span class="pre">database.ini</span></code> file. The content should look something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">nsaph2</span><span class="p">]</span>
+<span class="n">host</span><span class="o">=</span><span class="n">localhost</span>
+<span class="n">database</span><span class="o">=</span><span class="n">nsaph2</span>
+<span class="n">user</span><span class="o">=</span><span class="n">username</span>
+<span class="n">password</span><span class="o">=*****</span>
+</pre></div>
+</div>
+<p>Step 8: query the database. A sample query can be found <a class="reference external" href="https://github.com/NSAPH-Data-Processing/sql-utils/blob/main/src/query.py">here</a></p>
+<p>The query will be converted to a .csv file and is saved under the working directory. You can then use Jupyter Lab to explore the data.</p>
+</section>
+<section id="customize-your-own-conda-environment">
+<span id="customize"></span><h2>Customize your own conda environment<a class="headerlink" href="#customize-your-own-conda-environment" title="Permalink to this headline">#</a></h2>
+<p>Instructions coming soon…</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -448,12 +593,19 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="team.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="dataverse.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">The team</p>
+            <p class="prev-next-title">Dataverse</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="team.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The team</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
