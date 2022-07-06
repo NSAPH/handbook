@@ -24,11 +24,12 @@ parts:
       title: NSAPH Software Website
     - file: software
     - file: contributing
-  - caption: Infrastructure 
+  - caption: Infrastructure
     chapters:
     - file: fasse
     - file: rce
     - file: dataverse
+    - file: superset
   - caption: The Team 
     chapters:
     - file: team 
