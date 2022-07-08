@@ -614,6 +614,30 @@ year : num
 ```
 `````
 
+`````{dropdown} 12.  ZIP to ZCTA crosswalk (2015)
+```{list-table}
+:header-rows: 0
+* - rce_location
+  - `~/shared_space/ci3_exposure/locations/zcta/crosswalk/`
+* - fasse_location
+  - `zip_to_zcta`
+* - date_created
+  - Nov 2, 2015
+* - spatial_coverage
+  - contiguous US
+* - size
+  - 1.8 MB
+* - header 
+  - `ZIP,PO_NAME,STATE,ZIP_TYPE,ZCTA`
+* - files
+  - 
+```
+```
+   └── Zip_to_ZCTA_crosswalk_2015_JSI.csv
+```
+`````
+
+
 ````{warning}
 The space of FASSE is limited, so do not copy analytic data to your own folder! Create symlinks to the data in your `data` folder.
 Symbolic links (or symlinks) are special files that point to files or directories in other locations on your system.
