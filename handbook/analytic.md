@@ -371,6 +371,10 @@ winter_rmax                 : num
   - `~/shared_space/ci3_analysis/dmork/Data/DLM_ADRD`
 * - fasse_location
   - `hospitalization`
+* - dataset_author
+  - Daniel Mork
+* - description
+  - The first recorded hospitalization for each individual broken down by primary/secondary/any billing code (ICD).
 * - size
   - 1.2 GB
 * - files
@@ -554,7 +558,7 @@ year : num
   - 1999-2012
 * - temporal resolution
   - annually
-* - processing_description
+* - description
   - The data prepared for this project consists of the Medicaid Fee For Service population, with unrestricted Medicaid benefits, under the age of 20 from 1999-2012. This data also includes all hospitalizations for that population, with indicators included regarding whether or not they were associated with a set of respiratory hospitalizations. See the schema for the hospitalization data below for details on specific indicators.
 * - GitHub 
   - [NSAPH/data_requests](https://github.com/NSAPH/data_requests/tree/master/request_projects/feb2021_jenny_medicaid_resp)

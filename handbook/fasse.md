@@ -80,16 +80,16 @@ You can do that by opening "File System" in FAS-RC Remote Desktop and navigating
 
 ```{figure} imgs/img_1.png
 ---
-scale: 60%
+scale: 80%
 align: center 
 ---
 ```
 
-Create there a new folder with your **project name** (ie, `heat_alert-mortality-rl`). 
-Use the new folder as a workspace for your analysis.
+Create there a new folder with your **project name** (ie, `heat_alert-mortality-rl`).
 
 ```{note}
-Make sure to keep your analysis data and code within your folder at `/n/dominici_nsaph_l3/projects`.
+Use your **project name** folder in `/n/dominici_nsaph_l3/projects` as a workspace 
+for your analysis data and code. 
 ```
 
 ## Step 4. Create a git repository on GitHub
