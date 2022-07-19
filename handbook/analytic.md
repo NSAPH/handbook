@@ -641,6 +641,79 @@ year : num
 ```
 `````
 
+`````{dropdown} 13. ADRD Hospitalization Records
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Shuxin Dong
+* - date_created
+  - Jan 27, 2022
+* - data_source
+  - MedPar (admissions)
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode (unaggregated)
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - daily (with admission date)
+* - description
+  - extract the ADRD hospitalizations based on the Chronic Condition Warehouse
+* - rce_location
+  - `~/shared_space/ci3_analysis/ data_ADRDhospitalization/ ADRDhospitalization_CCWlist/`
+* - fasse_location
+  - `adrd_hospitalization`
+* - size
+  - 1.9 GB
+* - GitHub
+  - https://github.com/ShuxinD/ADRDdata
+* - other
+  - The Chronic Condition Warehouse list for ADRD: https://www2.ccwdata.org/web/guest/condition-categories
+* - files
+  -
+```
+```
+   ├── ADRD_2000.fst
+   ├── ...
+   └── ADRD_2016.fst
+```
+````{dropdown} header
+```
+QID           : chr 
+ADATE         : Date
+DDATE         : Date
+zipcode_R     : int 
+DIAG1         : chr 
+DIAG2         : chr 
+DIAG3         : chr 
+DIAG4         : chr 
+DIAG5         : chr 
+DIAG6         : chr 
+DIAG7         : chr 
+DIAG8         : chr 
+DIAG9         : chr 
+DIAG10        : chr 
+AGE           : int 
+Sex_gp        : chr 
+Race_gp       : chr 
+SSA_STATE_CD  : int 
+SSA_CNTY_CD   : int 
+PROV_NUM      : int 
+ADM_SOURCE    : chr 
+ADM_TYPE      : int 
+Dual          : int 
+year          : num 
+AD_primary    : logi
+AD_any        : logi
+AD_secondary  : logi
+ADRD_primary  : logi
+ADRD_any      : logi
+ADRD_secondary: logi
+```
+````
+`````
+
 
 ````{warning}
 The space of FASSE is limited, so do not copy analytic data to your own folder! Create symlinks to the data in your `data` folder.
