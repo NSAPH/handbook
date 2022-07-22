@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Data Request Procedure &#8212; NSAPH Handbook</title>
+    <title>Documentation &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="NSAPH Software" href="software.html" />
+    <link rel="prev" title="Working on RCE" href="rce.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -128,13 +130,18 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="data_docs.html">
-   Documenting data
+  <a class="reference internal" href="analytic.html">
+   Analytic data
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="analytic.html">
-   Analytic data
+  <a class="reference internal" href="superset.html">
+   PostgreSQL Data Platform
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dataverse.html">
+   Dataverse
   </a>
  </li>
  <li class="toctree-l1">
@@ -145,23 +152,38 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Analysis
+  Infrastructure and Tools
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="fasse.html">
+   Getting started on FASSE
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="analysis.html">
    NSAPH Projects
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://swcarpentry.github.io/git-novice/">
-   Git tutorial
+  <a class="reference internal" href="collaborative.html">
+   Collaborative work on GitHub
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="publishing.html">
-   Publishing
+  <a class="reference internal" href="rce.html">
+   Working on RCE
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://swcarpentry.github.io/git-novice/">
+   Git tutorial
   </a>
  </li>
 </ul>
@@ -179,38 +201,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="software.html">
    NSAPH Software
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="contributing.html">
-   Collaborative work on GitHub
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Infrastructure
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="fasse.html">
-   Getting started on FASSE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rce.html">
-   Working on RCE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dataverse.html">
-   Dataverse
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="superset.html">
-   Exploring Data Platform
   </a>
  </li>
 </ul>
@@ -327,7 +317,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fdatarequestprocedure.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fdocs.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -355,7 +345,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/datarequestprocedure.md"
+        <a href="_sources/docs.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -392,23 +382,80 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-diagrams">
+   Data diagrams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-dictionary">
+   Data dictionary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-documentation">
+   Code documentation
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Data Request Procedure</h1>
+                <h1>Documentation</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-diagrams">
+   Data diagrams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-dictionary">
+   Data dictionary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-documentation">
+   Code documentation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -416,8 +463,113 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="data-request-procedure">
-<h1>Data Request Procedure<a class="headerlink" href="#data-request-procedure" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="documentation">
+<h1>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">#</a></h1>
+<p>This section will give you some general guidelines on documenting your analysis data and code.</p>
+<section id="data-diagrams">
+<h2>Data diagrams<a class="headerlink" href="#data-diagrams" title="Permalink to this headline">#</a></h2>
+<p>Data diagram tools like  <a class="reference external" href="https://github.com/mermaid-js/mermaid#readme">Mermaid</a> and <a class="reference external" href="https://plantuml.com">PlantUML</a>
+are useful to document data processing flows and some can be embedded into Markdown files such as a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p>
+<p>By using diagram tools:</p>
+<ul class="simple">
+<li><p>modifications to flowcharts do not have to be re-uploaded with new images every time.</p></li>
+<li><p>Markdown syntax is intuitive therefore documentation process is more efficient.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You may reuse the following source code examples to document your GitHub project repository.
+Add the source code in your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file and make changes to it to document your data flow.</p>
+</div>
+<p>Examples of Data Filtering and Data Integration diagrams created by <code class="docutils literal notranslate"><span class="pre">mermaid</span></code>:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/process_flow.png"><img alt="_images/process_flow.png" src="_images/process_flow.png" style="width: 482.40000000000003px; height: 498.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Example data process flow diagram</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Source code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
+flowchart TB
+    subgraph ID100[ ]
+        ID1[BRFSS 2014 \n n=464,664]==&gt;ID2[Veteran \n n=61,120]
+        ID2==&gt;ID3[Known diabetes status \n n=62,104]
+        ID3==&gt;ID4[Known asthma status \n n=61,833]
+        ID4==&gt;ID5[Known average sleep per night \n n=61,08]
+    end
+ID1--&gt;ID10[Not a Veteran \n n=402,544]
+ID2--&gt;ID11[No information \n on diabetes status \n n=106]
+ID3--&gt;ID12[No asthma \nstatus \n n=181]
+ID4--&gt;ID13[No information \n average sleep \n per night \n n=752]
+``` 
+</pre></div>
+</div>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/data_integration.png"><img alt="_images/data_integration.png" src="_images/data_integration.png" style="width: 434.40000000000003px; height: 456.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Example data integration diagram</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Source code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
+flowchart LR
+    %% creating nodes
+    id1([Data\n Integration])
+    
+    %% linking nodes
+    id2(MBSF -\n enrollment)--&gt;id1
+    id3(MedPar -\n hospitalization)--&gt;id1
+    id4((Air Pollution))--&gt;id1
+    id5[(Census \n&amp; BRFSS)]--&gt;id1
+    id6[[GridMET -\n meteorological]]--&gt;id1
+    
+    %% integration to warehouse
+    id1--&gt;id7[(\n\n Analytic Data \n\n)]
+```
+</pre></div>
+</div>
+<p>See <a class="reference external" href="https://github.com/NSAPH-Data-Processing/sql-utils/tree/main/docs">more examples</a> on Github.</p>
+</section>
+<section id="data-dictionary">
+<h2>Data dictionary<a class="headerlink" href="#data-dictionary" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="code-documentation">
+<span id="readme-md"></span><h2>Code documentation<a class="headerlink" href="#code-documentation" title="Permalink to this headline">#</a></h2>
+<p>A <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file is a standard documentation file where you should put information about the content of your repository.</p>
+<p>Consider adding some of these standard sentences in your <a class="reference external" href="http://README.md">README.md</a> file (change them as needed):</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Software requirements</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">We use the R version: 4.x.y</p></li>
+<li><p class="sd-card-text">We use Python 3.x.y</p></li>
+<li><p class="sd-card-text">You can execute this code in RStudio</p></li>
+<li><p class="sd-card-text">You can execute this code in the command line as follows:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">RScript</span> <span class="n">analysis</span><span class="o">.</span><span class="n">R</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Data Availability</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">All data are publicly available. /
+Some data cannot be shared publicly. /
+No data can be shared publicly.</p>
+<p class="sd-card-text">We use data from the following data sources:</p>
+<ol class="simple">
+<li><p class="sd-card-text">List data sources.</p></li>
+<li><p class="sd-card-text">Medicare/Medicaid. It cannot be shared, but
+you may find synthetic data from CMS
+<a class="reference external" href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF">here</a>.</p></li>
+</ol>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -447,6 +599,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="rce.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Working on RCE</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="software.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">NSAPH Software</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

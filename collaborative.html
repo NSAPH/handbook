@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Documenting data &#8212; NSAPH Handbook</title>
+    <title>Collaborative work on GitHub &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analytic data" href="analytic.html" />
-    <link rel="prev" title="MCBS" href="mcbs.html" />
+    <link rel="next" title="Working on RCE" href="rce.html" />
+    <link rel="prev" title="NSAPH Projects" href="analysis.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,7 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
   Data
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="data.html">
    Data sources
@@ -129,14 +129,19 @@ const thebe_selector_output = ".output, .cell_output"
    MCBS
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Documenting data
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="analytic.html">
    Analytic data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="superset.html">
+   PostgreSQL Data Platform
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dataverse.html">
+   Dataverse
   </a>
  </li>
  <li class="toctree-l1">
@@ -147,23 +152,38 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Analysis
+  Infrastructure and Tools
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="fasse.html">
+   Getting started on FASSE
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="analysis.html">
    NSAPH Projects
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://swcarpentry.github.io/git-novice/">
-   Git tutorial
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Collaborative work on GitHub
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="publishing.html">
-   Publishing
+  <a class="reference internal" href="rce.html">
+   Working on RCE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs.html">
+   Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://swcarpentry.github.io/git-novice/">
+   Git tutorial
   </a>
  </li>
 </ul>
@@ -181,38 +201,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="software.html">
    NSAPH Software
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="contributing.html">
-   Collaborative work on GitHub
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Infrastructure
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="fasse.html">
-   Getting started on FASSE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rce.html">
-   Working on RCE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dataverse.html">
-   Dataverse
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="superset.html">
-   Exploring Data Platform
   </a>
  </li>
 </ul>
@@ -329,7 +317,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fdata_docs.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fcollaborative.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -357,7 +345,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/data_docs.md"
+        <a href="_sources/collaborative.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -417,13 +405,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-diagrams">
-   Data diagrams
+  <a class="reference internal nav-link" href="#create-a-new-branch">
+   Create a new branch
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-dictionary">
-   Data dictionary
+  <a class="reference internal nav-link" href="#commit-and-push-your-contribution">
+   Commit and push your contribution
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-pull-request">
+   Create a pull request
   </a>
  </li>
 </ul>
@@ -435,7 +428,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Documenting data</h1>
+                <h1>Collaborative work on GitHub</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -446,13 +439,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-diagrams">
-   Data diagrams
+  <a class="reference internal nav-link" href="#create-a-new-branch">
+   Create a new branch
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-dictionary">
-   Data dictionary
+  <a class="reference internal nav-link" href="#commit-and-push-your-contribution">
+   Commit and push your contribution
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-pull-request">
+   Create a pull request
   </a>
  </li>
 </ul>
@@ -465,73 +463,56 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="documenting-data">
-<h1>Documenting data<a class="headerlink" href="#documenting-data" title="Permalink to this headline">#</a></h1>
-<section id="data-diagrams">
-<h2>Data diagrams<a class="headerlink" href="#data-diagrams" title="Permalink to this headline">#</a></h2>
-<p>Data diagram tools like  <a class="reference external" href="https://github.com/mermaid-js/mermaid#readme">Mermaid</a> and <a class="reference external" href="https://plantuml.com">PlantUML</a>
-are useful to document data processing flows and some can be embedded into Markdown files such as a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p>
-<p>By using diagram tools:</p>
-<ul class="simple">
-<li><p>modifications to flowcharts do not have to be re-uploaded with new images every time.</p></li>
-<li><p>Markdown syntax is intuitive therefore documentation process is more efficient.</p></li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You may reuse the following source code examples to document your GitHub project repository.
-Add the source code in your <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file and make changes to it to document your data flow.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="collaborative-work-on-github">
+<h1>Collaborative work on GitHub<a class="headerlink" href="#collaborative-work-on-github" title="Permalink to this headline">#</a></h1>
+<p>If you’d like to invite your collaborators to review your code, open a “pull request” in your
+<a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects GitHub repository</a>. Follow the steps below:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you contribute to the official <a class="reference external" href="https://nsaph-software.github.io/intro.html">NSAPH Software</a>,
+check out its contribution gudelines.</p>
 </div>
-<p>Examples of Data Filtering and Data Integration diagrams created by <code class="docutils literal notranslate"><span class="pre">mermaid</span></code>:</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/process_flow.png"><img alt="_images/process_flow.png" src="_images/process_flow.png" style="width: 482.40000000000003px; height: 498.40000000000003px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Example data process flow diagram</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Source code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
-flowchart TB
-    subgraph ID100[ ]
-        ID1[BRFSS 2014 \n n=464,664]==&gt;ID2[Veteran \n n=61,120]
-        ID2==&gt;ID3[Known diabetes status \n n=62,104]
-        ID3==&gt;ID4[Known asthma status \n n=61,833]
-        ID4==&gt;ID5[Known average sleep per night \n n=61,08]
-    end
-ID1--&gt;ID10[Not a Veteran \n n=402,544]
-ID2--&gt;ID11[No information \n on diabetes status \n n=106]
-ID3--&gt;ID12[No asthma \nstatus \n n=181]
-ID4--&gt;ID13[No information \n average sleep \n per night \n n=752]
-``` 
+<section id="create-a-new-branch">
+<h2>Create a new branch<a class="headerlink" href="#create-a-new-branch" title="Permalink to this headline">#</a></h2>
+<p>It is important that you create a <strong>new branch</strong> for your contribution. It is a proper git workflow,
+and it keeps your changes organized and separated from the <code class="docutils literal notranslate"><span class="pre">master</span></code>/<code class="docutils literal notranslate"><span class="pre">main</span></code> branch,
+so you can easily switch between them.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout the main (master) branch - you want your new branch to come from main (master)</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">main</span>
+<span class="c1"># Create a new branch and switch to it</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">newfeature</span>
 </pre></div>
 </div>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/data_integration.png"><img alt="_images/data_integration.png" src="_images/data_integration.png" style="width: 434.40000000000003px; height: 456.8px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Example data integration diagram</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Source code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
-flowchart LR
-    %% creating nodes
-    id1([Data\n Integration])
-    
-    %% linking nodes
-    id2(MBSF -\n enrollment)--&gt;id1
-    id3(MedPar -\n hospitalization)--&gt;id1
-    id4((Air Pollution))--&gt;id1
-    id5[(Census \n&amp; BRFSS)]--&gt;id1
-    id6[[GridMET -\n meteorological]]--&gt;id1
-    
-    %% integration to warehouse
-    id1--&gt;id7[(\n\n Analytic Data \n\n)]
-```
-</pre></div>
-</div>
-<p>See <a class="reference external" href="https://github.com/NSAPH-Data-Processing/sql-utils/tree/main/docs">more examples</a> on Github.</p>
 </section>
-<section id="data-dictionary">
-<h2>Data dictionary<a class="headerlink" href="#data-dictionary" title="Permalink to this headline">#</a></h2>
+<section id="commit-and-push-your-contribution">
+<h2>Commit and push your contribution<a class="headerlink" href="#commit-and-push-your-contribution" title="Permalink to this headline">#</a></h2>
+<p>You can push your branch to a remote repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push origin newfeature
+</pre></div>
+</div>
+</section>
+<section id="create-a-pull-request">
+<h2>Create a pull request<a class="headerlink" href="#create-a-pull-request" title="Permalink to this headline">#</a></h2>
+<p>In the GitHub UI, you will see a button giving you the option to create a pull request.</p>
+<p>Make sure to document your contribution with an informative title and description.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/fork_pr_docs.png"><img alt="_images/fork_pr_docs.png" src="_images/fork_pr_docs.png" style="width: 600.0px; height: 208.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Describe your contribution.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>You can assign reviewers for your pull request after creating one. Follow up with the reviewers and incorporate
+their suggestions in a new commit to your branch. The new commit will be automatically visible in the
+pull request after you push them.</p>
+<p>Once you are done with the temporary (<code class="docutils literal notranslate"><span class="pre">newfeature</span></code>) branch, you can delete it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">d</span> <span class="n">newfeature</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check out official documentation from <a class="reference external" href="https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository">GitHub</a>
+and <a class="reference external" href="https://www.jetbrains.com/help/pycharm/commit-and-push-changes.html">PyCharm</a> on pushing your commits to a remote repository.</p>
+</div>
 </section>
 </section>
 
@@ -562,17 +543,17 @@ flowchart LR
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="mcbs.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="analysis.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">MCBS</p>
+            <p class="prev-next-title">NSAPH Projects</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="analytic.html" title="next page">
+    <a class='right-next' id="next-link" href="rce.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analytic data</p>
+        <p class="prev-next-title">Working on RCE</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

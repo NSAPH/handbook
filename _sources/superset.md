@@ -1,4 +1,4 @@
-# Exploring Data Platform
+# PostgreSQL Data Platform
 
 ## What is Superset
 Superset is a way to query, visualize, and explore the data. Currently, the data hosted on Superset uses Postgres as the meta database engine.
