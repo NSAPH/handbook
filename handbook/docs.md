@@ -74,7 +74,17 @@ See [more examples](https://github.com/NSAPH-Data-Processing/sql-utils/tree/main
 
 ## Data dictionary
 
-(readme-md)=
+A data dictionary is important to communicate to other data users about the content of your data. When you have many variables in your dataset, you can create a dictionary that shows what each variable represents, what data type it is stored as (string, int, etc.), and any other pertinent information, such as what the missing values are encoded as. If you are including a measure as one of your variables, you should include the units of the measure (e.g. grams, degrees Celsius, etc.) in your data dictionary. Below is an example of what a few rows of a data dictionary may look like.
+
+| Variable      | Description |
+| ----------- | ----------- |
+| UserID      | An 8 digit integer containing the user ID for each individual |
+| DOB  | The user's date of birth, encoded as MMDDYYYY. Missing values are encoded as "99999999"  |
+| WGT | An integer containing the user's weight in kilograms. Missing values are encoded as "-1" |
+|  CVD_HSP_PST_YR | A binary variable which states whether the individual has been hospitalized for cardiovascular disease in the past year. |
+
+
+
 ## Code documentation
 
 A `README.md` file is a standard documentation file where you should put information about the content of your repository.
