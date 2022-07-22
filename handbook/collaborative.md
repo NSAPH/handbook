@@ -1,4 +1,4 @@
-# Collaborative work on GitHub
+# Branch-merge workflow on GitHub
 
 If you'd like to invite your collaborators to review your code, open a "pull request" in your 
 [NSAPH Projects GitHub repository](https://github.com/NSAPH-Projects). Follow the steps below:
