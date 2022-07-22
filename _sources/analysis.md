@@ -1,4 +1,4 @@
-# NSAPH Projects
+# Introduction to NSAPH GitHub 
 
 [NSAPH Projects GitHub organization](https://github.com/NSAPH-Projects) is a shared account where all NSAPH members 
 can collaborate across many projects at once.
