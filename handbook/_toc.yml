@@ -7,29 +7,25 @@ parts:
     chapters:
     - file: data 
     - file: mcbs
-    - file: data_docs
     - file: analytic
+    - file: superset
+    - file: dataverse
     - url: https://docs.google.com/forms/d/e/1FAIpQLScV_txoDRI5b6bpsnVO6QaAPZJ4xRo2z4VgyXibSxZ55o_AJg/viewform 
-      title: Training on Data Security 
-  - caption: Analysis
+      title: Training on Data Security
+  - caption: Infrastructure and Tools
     chapters:
+    - file: fasse
     - file: analysis
+    - file: collaborative
+    - file: rce
+    - file: docs
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial
-    - file: publishing 
-  #  - file: datarequestprocedure
   - caption: Software
     chapters:
     - url: https://nsaph-software.github.io/intro.html
       title: NSAPH Software Website
     - file: software
-    - file: contributing
-  - caption: Infrastructure
-    chapters:
-    - file: fasse
-    - file: rce
-    - file: dataverse
-    - file: superset
   - caption: The Team 
     chapters:
     - file: team 
