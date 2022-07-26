@@ -16,7 +16,8 @@ You may reuse the following source code examples to document your GitHub project
 Add the source code in your `README.md` file and make changes to it to document your data flow.
 ```
 
-Examples of Data Filtering and Data Integration diagrams created by `mermaid`:
+Examples of Data Filtering and Data Integration diagrams created by `mermaid`.
+Documenting data selection (rendered diagram):
 
 ```{figure} imgs/process_flow.png
 ---
@@ -26,9 +27,9 @@ align: center
 Example data process flow diagram
 ```
 
-Source code:
+Source code of the diagram for the Markdown file:
 ````
-```
+```mermaid
 flowchart TB
     subgraph ID100[ ]
         ID1[BRFSS 2014 \n n=464,664]==>ID2[Veteran \n n=61,120]
@@ -43,6 +44,8 @@ ID4-->ID13[No information \n average sleep \n per night \n n=752]
 ``` 
 ````
 
+Documenting data sources (rendered diagram):
+
 ```{figure} imgs/data_integration.png
 ---
 scale: 40%
@@ -51,9 +54,9 @@ align: center
 Example data integration diagram
 ```
 
-Source code:
+Source code of the diagram for the Markdown file:
 ````
-```
+```mermaid
 flowchart LR
     %% creating nodes
     id1([Data\n Integration])
