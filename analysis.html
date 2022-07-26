@@ -411,7 +411,7 @@ title="Print to PDF"
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tips-for-using-fasse-and-nsaph-github">
-   Tips for Using FASSE and NSAPH GitHub
+   Tips for using FASSE and NSAPH GitHub
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -424,13 +424,6 @@ title="Print to PDF"
      Uploading files from FASSE to GitHub
     </a>
    </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-fasse-tips">
-   More FASSE Tips
-  </a>
-  <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#using-rstudio-on-fasse">
      Using RStudio on FASSE
@@ -469,7 +462,7 @@ title="Print to PDF"
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tips-for-using-fasse-and-nsaph-github">
-   Tips for Using FASSE and NSAPH GitHub
+   Tips for using FASSE and NSAPH GitHub
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -482,13 +475,6 @@ title="Print to PDF"
      Uploading files from FASSE to GitHub
     </a>
    </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-fasse-tips">
-   More FASSE Tips
-  </a>
-  <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#using-rstudio-on-fasse">
      Using RStudio on FASSE
@@ -542,62 +528,94 @@ do not just transfer ownership to <a class="reference external" href="https://gi
 </div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="tips-for-using-fasse-and-nsaph-github">
-<h1>Tips for Using FASSE and NSAPH GitHub<a class="headerlink" href="#tips-for-using-fasse-and-nsaph-github" title="Permalink to this headline">#</a></h1>
+<h1>Tips for using FASSE and NSAPH GitHub<a class="headerlink" href="#tips-for-using-fasse-and-nsaph-github" title="Permalink to this headline">#</a></h1>
 <section id="creating-a-github-repository-in-fasse">
 <h2>Creating a GitHub repository in FASSE<a class="headerlink" href="#creating-a-github-repository-in-fasse" title="Permalink to this headline">#</a></h2>
 <p>Once you have created a repository on GitHub, you can clone that repository into FASSE, so that you can transfer versions of your files to and from FASSE and GitHub. To clone a GitHub repository into FASSE, start a FASSE Remote Desktop (or Containerized Remote Desktop) session, Open a Terminal window, and write the following lines one-by-one. Note that the first and second lines are different from each other because the first says “http” and second says “https”.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>export http_proxy=http://rcproxy.rc.fas.harvard.edu:3128
-export https_proxy=http://rcproxy.rc.fas.harvard.edu:3128
-cd nsaph_projects/{your project name}
-git clone {url of your repository, which should end in .git and you can copy from github: go to your repository and click on green &quot;Code&quot; button}
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
+<span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
+<span class="nb">cd</span> nsaph_projects/<span class="o">{</span>your project name<span class="o">}</span>
+git clone <span class="o">{</span>url of your repository: go to your repository and click on green <span class="s2">&quot;Code&quot;</span> button<span class="o">}</span>
 </pre></div>
 </div>
 </section>
 <section id="uploading-files-from-fasse-to-github">
 <h2>Uploading files from FASSE to GitHub<a class="headerlink" href="#uploading-files-from-fasse-to-github" title="Permalink to this headline">#</a></h2>
-<p>As you code in FASSE, it’s good practice to upload your code to GitHub often, particular when 1) you’ve made or are about to make significant changes  (this way, you’ll be able to access the current or old versions later and see the changes you’ve made), or 2) you’re about to ask someone for coding help or you’re about to present your research and people may want to see your code, or even 3) you yourself want to see your code without logging into FASSE.</p>
-<p>To add files from FASSE to GitHub, start a Remote Desktop (or Containerized Remote Desktop) session. Open a Terminal window AFTER you’re done editing your files (if you open Terminal before you’ve finished making edits, you’ll end up uploading an old version of your code) and type the following lines one by one.</p>
-<p>Note 1: All of the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> lines are optional; <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> simply lets you see what files are in the current folder, what files have been changed, what files you’re about to commit, etc.</p>
-<p>Note 2: If you want to add all the files in your current folder (tip: run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> first to make sure you’re looking at the right files - check that you’re adding code only, not data, even if you have separate “code” and “data” folders), you can run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">-A</span></code> instead oof <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">{file</span> <span class="pre">name</span> <span class="pre">or</span> <span class="pre">folder/file}</span></code>.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd nsaph_projects/{your project name}/{your repository name}
+<p>As you code in FASSE, it’s good practice to upload your code to GitHub often, particular when</p>
+<ol class="simple">
+<li><p>you’ve made or are about to make significant changes  (this way, you’ll be able to access the current or old versions later and see the changes you’ve made), or</p></li>
+<li><p>you’re about to ask someone for coding help or you’re about to present your research and people may want to see your code, or even</p></li>
+<li><p>you yourself want to see your code without logging into FASSE.</p></li>
+</ol>
+<p>To add files from FASSE to GitHub, start a Remote Desktop (or Containerized Remote Desktop) session.
+Open a Terminal window AFTER you’re done editing your files (if you open Terminal before you’ve finished making edits, you’ll end up uploading an old version of your code) and type the following lines one by one.</p>
+<p>All of the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> lines are optional; <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> simply lets you see what files are in the current folder,
+what files have been changed, what files you’re about to commit, etc.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> nsaph_projects/<span class="o">{</span>your project name<span class="o">}</span>/<span class="o">{</span>your repository name<span class="o">}</span>
 git status
-git add {file name or folder/file}
+git add <span class="o">{</span>file name or folder/file<span class="o">}</span>
 git status
-git commit -m {your commit message, in quotes, for example: &quot;update stratification&quot; or &quot;add sensitivity analysis&quot;}
+git commit -m <span class="s2">&quot;your commit message, in quotes&quot;</span>
 git status
 git push
-{your personal access token, if you&#39;ve set one up (you could save your PAT as a text file in your private FASSE folder)}
+YOUR_ACCESS_TOKEN
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to add all the files in your current folder (tip: run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> first to make sure you’re looking
+at the right files - check that you’re adding code only, not data, even if you have separate <code class="docutils literal notranslate"><span class="pre">code</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span></code> folders),
+you can run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">-A</span></code> instead oof <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">{file</span> <span class="pre">name</span> <span class="pre">or</span> <span class="pre">folder/file}</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your commit message should be informative. For example: “update stratification” or “add sensitivity analysis”.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you’ve set up a personal access token for GitHub, you could save your PAT as a text file in your private FASSE folder.</p>
+</div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="more-fasse-tips">
-<h1>More FASSE Tips<a class="headerlink" href="#more-fasse-tips" title="Permalink to this headline">#</a></h1>
 <section id="using-rstudio-on-fasse">
 <h2>Using RStudio on FASSE<a class="headerlink" href="#using-rstudio-on-fasse" title="Permalink to this headline">#</a></h2>
-<p>There are two ways to use RStudio and access your files on FASSE: 1) RStudio Server or 2) Remote Desktop (or Containerized Remote Desktop). You may find RStudio Server to be the easiest to use because you can use shortcuts like Cmd + C (or Ctrl + C) there. Meanwhile, Remote Desktop (or Containerized Remote Desktop) is useful because you can use Terminal there to upload files to GitHub.</p>
-<p>When starting a RStudio session, you may want to use the following options. Partition: “fasse” (or “test” if “fasse” is taking too long to start because other user(s) are using that partition too). R version to be loaded with Rstudio: “R/4.0.5-fasrc02 Comp gcc” (or whatever version of R you’re looking to use). Location of your R_LIBS_USER folder: “$HOME/apps/{your project name}/R_4.0.5:$R_LIBS_USER”. More on this last option below.</p>
+<p>There are two ways to use RStudio and access your files on FASSE:</p>
+<ol class="simple">
+<li><p>RStudio Server or</p></li>
+<li><p>Remote Desktop (or Containerized Remote Desktop). You may find RStudio Server to be the easiest to use because you can use shortcuts like Cmd + C (or Ctrl + C) there. Meanwhile, Remote Desktop (or Containerized Remote Desktop) is useful because you can use Terminal there to upload files to GitHub.</p></li>
+</ol>
+<p>When starting a RStudio session, you may want to use the following options:</p>
+<ul class="simple">
+<li><p>Partition: “fasse” (or “test” if “fasse” is taking too long to start because other user(s) are using that partition too).</p></li>
+<li><p>R version to be loaded with Rstudio: <code class="docutils literal notranslate"><span class="pre">R/4.0.5-fasrc02</span> <span class="pre">Comp</span> <span class="pre">gcc</span></code> (or whatever version of R you’re looking to use).</p></li>
+<li><p>Location of your R_LIBS_USER folder: <code class="docutils literal notranslate"><span class="pre">$HOME/apps/{your</span> <span class="pre">project</span> <span class="pre">name}/R_4.0.5:$R_LIBS_USER</span></code>. More on this last option below.</p></li>
+</ul>
 </section>
 <section id="installing-r-packages">
 <h2>Installing R Packages<a class="headerlink" href="#installing-r-packages" title="Permalink to this headline">#</a></h2>
-<p>If you don’t want to install the same R packages over and over again each time you open FASSE, create a $R_LIBS_USER file. <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">This link</a> explains some of this, and below are some tips for setting up your $R_LIBS_USER, but you might want to go to Harvard FAS Research Computing’s weekly <a class="reference external" href="https://www.rc.fas.harvard.edu/training/office-hours/">office hours</a> to get more help.</p>
-<p>You’ll want to edit your .bashrc file (which you can see in your home folder by clicking “View” &gt; “Show Hidden Files”) to be the following. In this example, the user wants to use R version 4.0.5. <code class="docutils literal notranslate"><span class="pre">projects</span></code>, <code class="docutils literal notranslate"><span class="pre">ml_r4</span></code>, and <code class="docutils literal notranslate"><span class="pre">ml_rstudio</span></code> are examples of Terminal commands that you may to create “aliases” (i.e., shortcuts) for. After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/projects/projects</span></code> folder or load RStudio (which requires loading R first).</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># .bashrc
+<p>If you don’t want to install the same R packages over and over again each time you open FASSE, create a $R_LIBS_USER file.
+<a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">This link</a> explains some of this, and below are some tips for setting up your $R_LIBS_USER, but you might want to go to Harvard FAS Research Computing’s weekly <a class="reference external" href="https://www.rc.fas.harvard.edu/training/office-hours/">office hours</a> to get more help.</p>
+<p>You’ll want to edit your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file (which you can see in your home folder by clicking “View” &gt; “Show Hidden Files”) to be the following.
+In this example, the user wants to use R version 4.0.5. <code class="docutils literal notranslate"><span class="pre">projects</span></code>, <code class="docutils literal notranslate"><span class="pre">ml_r4</span></code>, and <code class="docutils literal notranslate"><span class="pre">ml_rstudio</span></code> are examples of Terminal commands that you may to create “aliases” (i.e., shortcuts) for.
+After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/projects/projects</span></code> folder or load RStudio (which requires loading R first).</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># .bashrc</span>
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
+<span class="c1"># Source global definitions</span>
+<span class="k">if</span> <span class="o">[</span> -f /etc/bashrc <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
 . /etc/bashrc
-fi
+<span class="k">fi</span>
 
-export R_LIBS_USER=$HOME/apps/{your project name}/R_4.0.5:$R_LIBS_USER
+<span class="nb">export</span> <span class="nv">R_LIBS_USER</span><span class="o">=</span><span class="nv">$HOME</span>/apps/<span class="o">{</span>your project name<span class="o">}</span>/R_4.0.5:<span class="nv">$R_LIBS_USER</span>
 
-# Aliases
-alias projects=&#39;cd /n/dominici_nsaph_l3/projects&#39;
-alias ml_r4=&#39;module load gcc/9.3.0-fasrc01 R/4.0.5-fasrc02&#39;
-alias ml_rstudio=&#39;module load rstudio/1.1.453-fasrc01&#39;
+<span class="c1"># Aliases</span>
+<span class="nb">alias</span> <span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/projects&#39;</span>
+<span class="nb">alias</span> <span class="nv">ml_r4</span><span class="o">=</span><span class="s1">&#39;module load gcc/9.3.0-fasrc01 R/4.0.5-fasrc02&#39;</span>
+<span class="nb">alias</span> <span class="nv">ml_rstudio</span><span class="o">=</span><span class="s1">&#39;module load rstudio/1.1.453-fasrc01&#39;</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>If you want to use your $R_LIBS_USER to access R packages you’ve installed in previous sessions (as already described above, this allows you to not have to <code class="docutils literal notranslate"><span class="pre">install.packages()</span></code> in RStudio every time you start a FASSE session), you’ll need to create a folder, which is called <code class="docutils literal notranslate"><span class="pre">apps/R_4.0.5</span></code> in this example (that is, this example requires a folder called “R_4.0.5” within a folder called “apps”), in your private private home folder.</p>
+</div>
 </section>
 </section>
 
