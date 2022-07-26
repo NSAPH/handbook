@@ -50,8 +50,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Branch-merge workflow on GitHub" href="collaborative.html" />
@@ -578,11 +576,11 @@ git push
 <section id="using-rstudio-on-fasse">
 <h2>Using RStudio on FASSE<a class="headerlink" href="#using-rstudio-on-fasse" title="Permalink to this headline">#</a></h2>
 <p>There are two ways to use RStudio and access your files on FASSE: 1) RStudio Server or 2) Remote Desktop (or Containerized Remote Desktop). You may find RStudio Server to be the easiest to use because you can use shortcuts like Cmd + C (or Ctrl + C) there. Meanwhile, Remote Desktop (or Containerized Remote Desktop) is useful because you can use Terminal there to upload files to GitHub.</p>
-<p>When starting a RStudio session, you may want to use the following options. Partition: “fasse” (or “test” if “fasse” is taking too long to start because other user(s) are using that partition too). R version to be loaded with Rstudio: “R/4.0.5-fasrc02 Comp gcc” (or whatever version of R you’re looking to use). Location of your R_LIBS_USER folder: “<span class="math notranslate nohighlight">\(HOME/apps/{your project name}/R_4.0.5:\)</span>R_LIBS_USER”. More on this last option below.</p>
+<p>When starting a RStudio session, you may want to use the following options. Partition: “fasse” (or “test” if “fasse” is taking too long to start because other user(s) are using that partition too). R version to be loaded with Rstudio: “R/4.0.5-fasrc02 Comp gcc” (or whatever version of R you’re looking to use). Location of your R_LIBS_USER folder: “$HOME/apps/{your project name}/R_4.0.5:$R_LIBS_USER”. More on this last option below.</p>
 </section>
 <section id="installing-r-packages">
 <h2>Installing R Packages<a class="headerlink" href="#installing-r-packages" title="Permalink to this headline">#</a></h2>
-<p>If you don’t want to install the same R packages over and over again each time you open FASSE, create a <span class="math notranslate nohighlight">\(R_LIBS_USER file. [This link](https://docs.rc.fas.harvard.edu/kb/r-packages/) explains some of this, and below are some tips for setting up your \)</span>R_LIBS_USER, but you might want to go to Harvard FAS Research Computing’s weekly <a class="reference external" href="https://www.rc.fas.harvard.edu/training/office-hours/">office hours</a> to get more help.</p>
+<p>If you don’t want to install the same R packages over and over again each time you open FASSE, create a $R_LIBS_USER file. <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">This link</a> explains some of this, and below are some tips for setting up your $R_LIBS_USER, but you might want to go to Harvard FAS Research Computing’s weekly <a class="reference external" href="https://www.rc.fas.harvard.edu/training/office-hours/">office hours</a> to get more help.</p>
 <p>You’ll want to edit your .bashrc file (which you can see in your home folder by clicking “View” &gt; “Show Hidden Files”) to be the following. In this example, the user wants to use R version 4.0.5. <code class="docutils literal notranslate"><span class="pre">projects</span></code>, <code class="docutils literal notranslate"><span class="pre">ml_r4</span></code>, and <code class="docutils literal notranslate"><span class="pre">ml_rstudio</span></code> are examples of Terminal commands that you may to create “aliases” (i.e., shortcuts) for. After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/projects/projects</span></code> folder or load RStudio (which requires loading R first).</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span># .bashrc
 
