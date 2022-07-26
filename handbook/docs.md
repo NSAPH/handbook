@@ -83,7 +83,9 @@ A data dictionary is important to communicate to other data users about the cont
 | WGT | An integer containing the user's weight in kilograms. Missing values are encoded as "-1" |
 |  CVD_HSP_PST_YR | A binary variable which states whether the individual has been hospitalized for cardiovascular disease in the past year. |
 
-
+```{tip}
+View an example of a data dictionary here: https://github.com/ShuxinD/ADRDdata#data-dictionary
+```
 
 ## Code documentation
 

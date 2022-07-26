@@ -1,25 +1,8 @@
 # MCBS
 
-## Data catalog
+## MCBS prior 2015
 
-```
-/n/dominici_nsaph_l3/data
-
-mcbs
-├── 1999 
-│   ├── TODO 
-│   ├── TODO 
-├── 2000 
-│   ├── TODO
-├── 2001 
-│   ├── TODO
-```
-
-## MCBS 2011
-## MCBS 2012
-## MCBS 2013
-## MCBS 2014
-No data exists for this year because the questionnaires were not administered. However, a new baseline panel was still selected.
+The available MCBS data prior 2015 is not optimal for data analysis. No data exists for 2014 because the questionnaires were not administered. However, a new baseline panel was still selected.
 
 ## MCBS 2015
 
