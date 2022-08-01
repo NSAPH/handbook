@@ -136,3 +136,23 @@ pip list | grep nsaph
 You should see packages `nsaph` and `nsaph-utils`.
 
 Step 6: Follow Step 5 - Step 8 in the above [section](access)
+
+## Add data to the platform
+When you have large volumes of CSV files, it is a standard data science project flow to turn these files into relational databases.
+This is to increase records lookup speed supported by the PostgreSQL infrastructure.
+
+Before creating any tables, it is crucial to understand data fields you are trying to ingest. For example, if a file contains fields,
+```
+zipcode | household_income | region | ...
+```
+It is reasonable to infer that ZIPCODE should be `integer`, household_income should be `float`, and region should be `VARCHAR(255)`.
+You can find a work-in-progress file (ADD LINK) that reads CSV files as Pandas DataFrames, and converts the DataFrame data types into PostgreSQL field types.
+
+After the data type for each field of your csv is determined, there are two main ways to upload files onto the platform. The pros and cons of each are explored in the following sections.
+
+### Method 1: `\COPY` command (PSQL)
+
+
+### Method 2: Row by row (Python)
+
+
