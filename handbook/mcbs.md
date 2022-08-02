@@ -1,6 +1,6 @@
 # MCBS
 
-## MCBS prior 2015
+## MCBS Prior To 2015
 
 The available MCBS data prior 2015 is not optimal for data analysis. No data exists for 2014 because the questionnaires were not administered. However, a new baseline panel was still selected.
 
@@ -28,5 +28,149 @@ The survey files contain information regarding various aspects of the beneficiar
 
 In order to learn what each variable represents in these files, please reference the Codebooks folder. For example, to access the code book for the nicotine and alcohol survey, you can navigate to `/n/dominici_nsaph_l3/data/mcbs/2015/survey_file/codebooks/nicoalco_2015.txt` in FASSE to get the codebook. Some variables include the number of drinks per day, if the beneficiary currently smokes, if they ever smoked, etc. The demographic file codebook contains information such as DOB, sex, race, income, state, county, and zipcode. 
 
+#### Data Tree
+
+To access MCBS data, please open FASSE and navigate to `/n/dominici_nsaph_l3/data/mcbs/2015/`. Below, you can see a data tree reflecting the folder structure of the `2015` folder:
+
+``` 
+|-- cost_supplement
+|   |-- codebooks
+|   |-- data
+|   |   |-- csv
+|   |   |-- formats
+|   |   `-- sas
+|   `-- documentation
+`-- survey_file
+    |-- codebooks
+    |-- data
+    |   |-- csv
+    |   |-- formats
+    |   |-- research_claims
+    |   |   |-- csv
+    |   |   `-- sas
+    |   `-- sas
+    |-- documentation
+    `-- questionnaire
+        `-- Showcards\ and\ Reference\ Cards
+            |-- Community
+            |   `-- Community\ Showcards\ HI2-HI6
+            `-- Facility 
+```
+
+
+Above we can see the overall setup of the directories. Most of the files that will likely be used in data analysis are in `/survey_file/data/csv', and these data files are also stored in the SAS .sas7bdat format within the sas folder. The codebooks folder provides information for each variable included in the code, along with the survey logic (e.g. any skip patterns used in the survey), and what the different values signify in the data (the variable used for missing data, any data binning, etc.). The documentation folder contains more detailed information about how the data was collected and describes the contents of each survey at a high level. 
+
+Much of the data of interest will be in the `survey_file/data/csv/` folder. Below we can see the files in this folder:
+
+```
+|-- accesscr.csv
+|-- admnutls.csv
+|-- agreescl.csv
+|-- assist.csv
+|-- cenwgts.csv
+|-- chrncdfl.csv
+|-- chrncond.csv
+|-- demo.csv
+|-- evrwgts.csv
+|-- facasmnt.csv
+|-- facchar.csv
+|-- falls.csv
+|-- foodins.csv
+|-- genhlth.csv
+|-- hhchar.csv
+|-- hisumry.csv
+|-- hitline.csv
+|-- incasset.csv
+|-- interv.csv
+|-- lng3wgts.csv
+|-- lng4wgts.csv
+|-- maplanqx.csv
+|-- mcreplnq.csv
+|-- mds3.csv
+|-- nagidis.csv
+|-- nicoalco.csv
+|-- oasis.csv
+|-- pmuse.csv
+|-- pntact.csv
+|-- prevcare.csv
+|-- rxpartd.csv
+|-- satwcare.csv
+|-- uscppic.csv
+`-- vishear.csv
+```
+The survey data as well as the weight variables are included. Notice that for continuously enrolled weights, you should use `cenwgts.csv`, for ever enrolled weights you should use `evrwgts.csv`, and for longitudinal weights, use `lng3wgts.csv` and `lng4wgts.csv`. `lng2wgts.csv` does not exist for 2015 because surveys were not released for 2014. 
+
+#### Data Dictionary for Nicotine and Alcohol Survey 2015
+Since the nicotine and alcohol survey is of particular interest, below is a data dictionary with several variable names of potential interest and a corresponding description. To access this file, please navigate to `/n/dominici_nsaph_l3/data/mcbs/2015/survey_file/data/csv/nicoalco.csv`. The dictionary below is based upon the codebook for nicotine and alcohol; for additional variables and their information, please reference the codebook located in `/n/dominici_nsaph_l3/data/mcbs/2015/survey_file/codebooks/nicoalco_2015.txt`.
+
+| Variable Name      | Description | Values |
+| ----------- | ----------- | ---- |
+| BASEID       |    Beneficiary's unique ID number, linkable to other MCBS and Medicare files     |   |
+|  EVERSMOK   |      If the beneficiary has ever smoked cigarettes/cigars/tobacco    |  D= Don't know <br> R=Refused <br> 1=Yes <br> 2= No |
+| SMOKNOW | If the beneficiary currently smokes; only asked if the said they ever smoked | . = Inapplicable/Missing <br> R = Refused <br> 1=Yes <br> 2=No |
+| DIDSMOKE| Number of years the beneficiary did smoke; only asked if the beneficiary has ever smoked but is not a current smoker | D=Don't know <br> .=Inapplicable/Missing <br> R=Refused <br> 1-95=Number of years the beneficiary smoked <br> 96=Less than one year of smoking|
+| DRINKDAY | Beneficiary's number of days per month drinking alcohol | D=Don't know <br> .=Inapplicable/Missing <br> R=Refused <br> 0=None <br> 1-31=Number of days drinking per month|
+| DRINKSPD | Beneficiary's number of drinks per day; only asked if the beneficiary drinks at least one day per month | D=Don't know <br> .=Inapplicable/Missing <br> R=Refused <br> 1-16+=Number of drinks consumed per day |
+
+Please note that some of the variables have a high number of inapplicable values denoted ., included SMOKNOW, DIDSMOKE, and DRINKSPD because of their inclusion criteria; you needed to denote that you previously drank/smoked to be included in the question. You can write a script to fill in 0 as a value for some of the inapplicable beneficiaries. For example, you can fill in the number of drinks per day as 0 for people who drink 0 days per month with something similar to the following R script:
+
+```
+for (ben in 1:nrow(nicoalco_data_2015)){
+  if(nicoalco_data_2015[ben,]$DRINKDAY == 0){
+    nicoalco_data_2015[ben,]$DRINKSPD <- 0
+  }
+}
+```
+
+
+
 # MCBS 2016
+
+MCBS in 2016 is similar to that of 2015. The files are organized in the same way as those in 2015 (please reference the data tree above). However, some of the files included in the survey are different. Please reference the list below to see the different file names. Note that in 2016, there are longitudinal weights for 1 and 3 years prior (`lng2wgts.csv` and `lng4wgts.csv`, respectively), but not for 2 years as there were no surveys in 2014.
+```
+|-- accesscr.csv
+|-- admnutls.csv
+|-- assist.csv
+|-- cenwgts.csv
+|-- chrncdfl.csv
+|-- chrncond.csv
+|-- demo.csv
+|-- dental.csv
+|-- diabetes.csv
+|-- evrwgts.csv
+|-- facasmnt.csv
+|-- facchar.csv
+|-- falls.csv
+|-- foodins.csv
+|-- genhlth.csv
+|-- hhchar.csv
+|-- hisumry.csv
+|-- hitline.csv
+|-- incasset.csv
+|-- interv.csv
+|-- lng2wgts.csv
+|-- lng4wgts.csv
+|-- maplanqx.csv
+|-- mcreplnq.csv
+|-- mds3.csv
+|-- menthlth.csv
+|-- mobility.csv
+|-- nagidis.csv
+|-- nicoalco.csv
+|-- oasis.csv
+|-- pmuse.csv
+|-- pntact.csv
+|-- prevcare.csv
+|-- restmln.csv
+|-- rxpartd.csv
+|-- satwcare.csv
+|-- uscare.csv
+`-- vishear.csv
+
+```
+
+For more information on what these surveys contain, please consult the documentation located in the documentation folder which describes the surveys at a higher level, as well as the codebooks in the codebooks folder which explain each variable and what the different values represent.
+
+
+
 
