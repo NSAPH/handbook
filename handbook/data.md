@@ -13,6 +13,44 @@
 - RESDAC Online learning: https://resdac.org/online-learning
 - RESDAC Learning and workshops: https://resdac.org/learn
 
+## PM 2.5 Components
+
+`````{dropdown} PM 2.5 component data
+
+```{list-table}
+:header-rows: 0
+
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2019
+* - temporal_resolution
+  - annually
+* - size
+  - 251 MG
+* - processing_description
+  - These are annual estimations of PM2.5 speciations at ZIP Code-level  across the contiguous US, aggregated from Heresh's grid-level estimations. For a general ZIP Code, which has normal street delivery route and therefore can be represented by a polygonal area, we estimate the ZIP Code-level PM2.5 by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; for other ZIP Codes that do not have polygon representations, for example an apartment building, a military base, or a post office, we consider them as single points and estimate their ZIP Code-level PM2.5 by linking the prediction of the nearest grid cell. For ec, oc, nh4, no3, and so4 the units are microgram per cubic meter; for br, ca, cu, fe, k, ni, pb, si, v, and z the units are nanogram per cubic meter.
+* - fasse_location
+  - `/n/dominici_nsaph_l3/data/pm25_components`
+* - git_repository
+  - https://github.com/yycome/PM25_Components
+* - publication 
+  - Amini, H., M. Danesh-Yazdi, Q. Di, W. Requia, Y. Wei, Y. Abu Awad, L. Shi, M. Franklin, C.-M. Kang, J. M. Wolfson, P. James, R. Habre, Q. Zhu, J. S. Apte, Z. J. Andersen, X. Xing, C. Hultquist, I. Kloog, F. Dominici, P. Koutrakis, J. Schwartz. 2022. Annual Mean PM2.5Components (EC, NH4, NO3, OC, SO4) 50m Urban and 1km Non-Urban Area Grids for Contiguous U.S., 2000-2019 v1. (Preliminary Release). Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). https://doi.org/10.7927/7wj3-en73
+* - dataset_author
+  - weiyg@hsph.harvard.edu
+* - header 
+  - `ZIP, br, ca, cu, ec, fe, k, nh4, ni, no3, oc, pb, si, so4, v, z`
+* - files
+  -
+```
+```
+   ├── 2000.csv
+   ├── ...
+   └── 2019.csv
+```
+`````
 
 ## Commonly Used Public Data Sources
 
