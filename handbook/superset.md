@@ -141,18 +141,35 @@ Step 6: Follow Step 5 - Step 8 in the above [section](access)
 When you have large volumes of CSV files, it is a standard data science project flow to turn these files into relational databases.
 This is to increase records lookup speed supported by the PostgreSQL infrastructure.
 
-Before creating any tables, it is crucial to understand data fields you are trying to ingest. For example, if a file contains fields,
+Before creating any tables, it is crucial to understand the data fields you are trying to ingest. For example, if a file contains fields,
 ```
 zipcode | household_income | region | ...
 ```
-It is reasonable to infer that ZIPCODE should be `integer`, household_income should be `float`, and region should be `VARCHAR(255)`.
-You can find a work-in-progress file (ADD LINK) that reads CSV files as Pandas DataFrames, and converts the DataFrame data types into PostgreSQL field types.
+It is then reasonable to infer that zipcode should be `integer`, household_income should be `float`, and region should be `VARCHAR(255)`.
 
-After the data type for each field of your csv is determined, there are two main ways to upload files onto the platform. The pros and cons of each are explored in the following sections.
+You can find a work-in-progress [file](https://github.com/NSAPH-Data-Processing/sql-utils/blob/main/src/etl.py) that reads CSV files in as Pandas DataFrames, and converts the DataFrame data types into PostgreSQL field types. It then connects to PostgreSQL database and creates an empty table.
 
-### Method 1: `\COPY` command (PSQL)
+After the data type for each field of your csv is determined, create a table with the corresponding field and data type. 
 
+*After* an empty table is created. You may upload the CSV to PSQL directly.
 
-### Method 2: Row by row (Python)
+First, enter the PostgreSQL database by typing
+```
+psql -d nsaph2
+```
 
+```{note}
+ This assumes you have logged onto the NSAPH server via 
+ `ssh -L8088:localhost:8088 username@nsaph.rc.fas.harvard.edu`
+```
 
+Check your current directory **inside** the PSQL engine with
+`\! Pwd`. The CSV location you specify below should be in relation to the current directory.
+
+Copy the entire CSV over using command
+```
+\COPY schema.table_name FROM 'your_csv_location' 
+DELIMITER ',' 
+CSV HEADER;
+```
+In the event you would like to filter or modify csv, do so in programming languages like Python or R, then export the completed DataFrame to CSV and follow the above instructions.
