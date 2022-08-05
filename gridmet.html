@@ -403,6 +403,16 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-reference">
+   Quick Reference
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-this-project">
+   About this project
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-sources">
    Data sources
   </a>
@@ -413,28 +423,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#crosswalk">
-   Crosswalk
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Gridmet
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#processing-code">
-   Processing code
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#netcdf-tutorial-notebook">
-   NetCDF tutorial notebook
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#q-as">
-   Q&amp;As
+  <a class="reference internal nav-link" href="#notes">
+   Notes
   </a>
  </li>
 </ul>
@@ -457,6 +447,16 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-reference">
+   Quick Reference
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-this-project">
+   About this project
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-sources">
    Data sources
   </a>
@@ -467,28 +467,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#crosswalk">
-   Crosswalk
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Gridmet
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#processing-code">
-   Processing code
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#netcdf-tutorial-notebook">
-   NetCDF tutorial notebook
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#q-as">
-   Q&amp;As
+  <a class="reference internal nav-link" href="#notes">
+   Notes
   </a>
  </li>
 </ul>
@@ -503,49 +483,129 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="gridmet">
 <h1>Gridmet<a class="headerlink" href="#gridmet" title="Permalink to this headline">#</a></h1>
+<section id="quick-reference">
+<h2>Quick Reference<a class="headerlink" href="#quick-reference" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><ul>
+<li><p>dataset_name</p></li>
+<li><p>GRIDMET</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>dataset_author</p></li>
+<li><p>Nate Fairbank</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>date_created</p></li>
+<li><p>15JUL22</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>data_source</p></li>
+<li><p>GRIDMET, Census Bureau</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>spatial_coverage</p></li>
+<li><p>Continental US</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>spatial_resolution</p></li>
+<li><p>4x4km aggregated to zipcode (really to Zip Code Tabulation Area)</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>temporal_coverage</p></li>
+<li><p>2000-2018</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>temporal_resolution</p></li>
+<li><p>daily</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>processing_description</p></li>
+<li><p>Stage 1: Crosswalk Development (done in ArcGIS):</p>
+<ol class="simple">
+<li><p>GRIDMET’s 4x4km grid was imported and transformed into defined polygon formats (rather than raster or point features)</p></li>
+<li><p>Census Bureau’s ZCTA shapefiles for that year were imported</p></li>
+<li><p>The “tabulate intersection” tool was used to calculate, for each ZCTA/grid pair, the proportion of the ZCTA’s area that the grid square contributed. For example, if ZCTA 12345 overlapped 3 grids, there would be three rows: (12345, Grid A, .4), (12345, Grid B, .2), (12345, Grid C, .4).</p></li>
+<li><p>The crosswalk produced in step 3 was exported</p></li>
+</ol>
+</li>
+<li><p>Stage 2: Area-weighted aggregation:</p>
+<ol class="simple">
+<li><p>The crosswalk for that year is is imported.</p></li>
+<li><p>For each day, the GRIDMET file is imported.</p></li>
+<li><p>The data for each grid (all 16 variables) is joined to the crosswalk by lat/long pair for that grid. Note that if a grid square overlaps, say, three ZCTAs, then its data will be repeated 3 times so that it can be weighted appropriately for each ZCTA.</p></li>
+<li><p>The data is multiplied by the ZCTA proportion for that grid square.</p></li>
+<li><p>The data is grouped by ZCTA with the aggregation method “sum”.</p></li>
+<li><p>That day is appended to the netCDF file</p></li>
+<li><p>An annual netCDF file is exported.</p></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>fasse_location</p></li>
+<li><p>/n/dominici_nsaph_l3/data/gridmet/</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="about-this-project">
+<h2>About this project<a class="headerlink" href="#about-this-project" title="Permalink to this headline">#</a></h2>
+<p>This project is the first component of a broader effort to create reproducable tools that can re-aggregate exposure data into social boundaries such as zip codes or census tracts that can be then joined with data available at those social units such as Medicare or Census data.</p>
+<p>Specifically it does the following:</p>
+<ol class="simple">
+<li><p>Start point: GRIDMET climate data (4x4km grid), Census Bureau Zip Code Tabulation Area (ZCTA) boundaries</p></li>
+<li><p>Aggregation technique: area weight</p></li>
+<li><p>Output: ZCTAs with the area-weighted average of each GRIDMET variable</p></li>
+</ol>
+</section>
 <section id="data-sources">
 <h2>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Census maps</p></li>
-<li><p>Weird stuff</p></li>
-<li><p>Why ZCTA</p></li>
-<li><p>What’s the difference between ZCTA and zipcode</p></li>
+<li><p>GRIDMET data: <a class="reference external" href="https://www.northwestknowledge.net/metdata/data/permanent/">https://www.northwestknowledge.net/metdata/data/permanent/</a></p></li>
+<li><p>Census Bureau Zip Code Tabulation Area (ZCTA) TIGER/Line Files and Shapefiles: <a class="reference external" href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2000.html">https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2000.html</a></p>
+<ul>
+<li><p>For more about ZCTAs, read here: <a class="reference external" href="https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html">https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html</a></p></li>
+<li><p>ZCTAs were used because they represent the government’s “best guess” at what the spacial boundaries of a zip code are. While zip codes are commonly percieved as denoting spatial boundaries, they are in fact just a collection of addresses. Furthermore, they are “working units” that are defined and changed based on the needs (and whims) of the postal service. There is a degree of compromise/subjectivity here. The best answer would be “don’t use zip codes as a unit of analysis”. If they must be used, ZCTAs represent the best solution.</p></li>
+<li><p>NOT ALL ZIP CODES HAVE A CORRESPONDING ZCTA. ZCTAs are a trademark of the Census Bureau, an organization fundamentally concerned with PEOPLE. Zip Codes are a trademark of the US Postal Service, an organization fundamentally concerned with MAIL. Some zip codes map to a single address or very small collection of addresses. These represent high-volume mail facilities (think like PO boxes, etc), and are NOT included as seperate ZCTAs. While frustrating from a pure data perspective (why is there all this unmatched data!?) this makes sense from a practical perspective. If a Medicare patient gave a PO Box as their address, and we use that PO Box’s zip code to infer what their exposure was we’d be making an inappropriate inference, as that patient doesn’t actually live inside their PO Box. If matching all these “point” zip codes is necessary, a zip to ZCTA crosswalk is available here: ~/shared_space/ci3_exposure/locations/zcta/crosswalk/</p></li>
+<li><p>Because zip codes change constantly, ZCTAs have to be updated. They were first created following the 2000 census, and started receiving annual updates in 2007. Thus, this process uses the annual file for all data for that year, and the 2000 census file for years 2000-2006.</p></li>
+<li><p>The Census has made major updates to the ZCTAs every decade. For the 2000 Census, they include suffixes such as “XX” and “HH” to indicate large, unpopulated land areas such as national parks and bodies of water.
+“HH” suffix used to represent large water bodies</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="processing">
 <h2>Processing<a class="headerlink" href="#processing" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Where is the data?</p></li>
-<li><p>What variables are in there?</p></li>
-<li><p>Data dictionary</p></li>
-<li><p>See <a class="reference external" href="https://gist.github.com/atrisovic/93d379dd84e31f0d63b965de8d529777">https://gist.github.com/atrisovic/93d379dd84e31f0d63b965de8d529777</a> for docs ideas</p></li>
-<li><p>What software was used (version)</p></li>
+<li><p>What variables are in there?: All original GRIDMET varaibles are preserved. There are a total of 18:</p>
+<ul>
+<li><p>For documentation on GRIDMET variables please refer to their materials: <a class="reference external" href="https://www.climatologylab.org/gridmet.html">https://www.climatologylab.org/gridmet.html</a></p></li>
+<li><p>Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)</p></li>
+<li><p>Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)</p></li>
+<li><p>Variables from data processing (2):
+-CRS: originally “coordinate reference system”, this had a value of “1” for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these “1”s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code.
+-AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA’s area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA’s area was accounted for. Thus this represents a “check” on the process. A small minority of the data does NOT sum to “1”. These are cases on the edge of the map, such as the Florida Keys, that GRIDMET’s data does not fully cover.</p></li>
+</ul>
+</li>
 </ul>
 </section>
-<section id="crosswalk">
-<h2>Crosswalk<a class="headerlink" href="#crosswalk" title="Permalink to this headline">#</a></h2>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>What is here</p></li>
-<li><p>How’s created</p></li>
+<li><p>Notes from the GRIDMET files (these were buried in the files themselves and might otherwise not be visible):
+-author : John Abatzoglou - University of Idaho, <a class="reference external" href="mailto:jabatzoglou&#37;&#52;&#48;uidaho&#46;edu">jabatzoglou<span>&#64;</span>uidaho<span>&#46;</span>edu</a>
+-note1 : The projection information for this file is: GCS WGS 1984.
+note2 :Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
+-note3 : Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)</p></li>
 </ul>
-</section>
-<section id="id1">
-<h2>Gridmet<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="processing-code">
-<h2>Processing code<a class="headerlink" href="#processing-code" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="netcdf-tutorial-notebook">
-<h2>NetCDF tutorial notebook<a class="headerlink" href="#netcdf-tutorial-notebook" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Maybe add to the handbook as a new page</p></li>
-</ul>
-</section>
-<section id="q-as">
-<h2>Q&amp;As<a class="headerlink" href="#q-as" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
-<li></li>
-</ol>
 </section>
 </section>
 
