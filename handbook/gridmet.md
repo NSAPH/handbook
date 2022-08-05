@@ -1,23 +1,23 @@
 # Gridmet
 
 ## Quick Reference
-* - dataset_name
+* dataset_name
   - GRIDMET
-* - dataset_author
+* dataset_author
   - Nate Fairbank
-* - date_created
+* date_created
   - 15JUL22
-* - data_source
+* data_source
   - GRIDMET, Census Bureau
-* - spatial_coverage
+* spatial_coverage
   - Continental US
-* - spatial_resolution
+* spatial_resolution
   - 4x4km aggregated to zipcode (really to Zip Code Tabulation Area)
-* - temporal_coverage
+* temporal_coverage
   - 2000-2018
-* - temporal_resolution
+* temporal_resolution
   - daily
-* - processing_description
+* processing_description
   - Stage 1: Crosswalk Development (done in ArcGIS):
       1) GRIDMET's 4x4km grid was imported and transformed into defined polygon formats (rather than raster or point features)
       2) Census Bureau's ZCTA shapefiles for that year were imported
@@ -63,13 +63,13 @@ Specifically it does the following:
      - Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)
      - Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)
      - Variables from data processing (2):
-          -CRS: originally "coordinate reference system", this had a value of "1" for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these "1"s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code. 
-          -AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA's area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA's area was accounted for. Thus this represents a "check" on the process. A small minority of the data does NOT sum to "1". These are cases on the edge of the map, such as the Florida Keys, that GRIDMET's data does not fully cover. 
+          - CRS: originally "coordinate reference system", this had a value of "1" for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these "1"s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code. 
+          - AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA's area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA's area was accounted for. Thus this represents a "check" on the process. A small minority of the data does NOT sum to "1". These are cases on the edge of the map, such as the Florida Keys, that GRIDMET's data does not fully cover. 
 
 ## Notes
 - Notes from the GRIDMET files (these were buried in the files themselves and might otherwise not be visible):
-      -author : John Abatzoglou - University of Idaho, jabatzoglou@uidaho.edu
-      -note1 : The projection information for this file is: GCS WGS 1984.
-      note2 :Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
-      -note3 : Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)
+      - author : John Abatzoglou - University of Idaho, jabatzoglou@uidaho.edu
+      - note1 : The projection information for this file is: GCS WGS 1984.
+      - note2 :Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
+      - note3 : Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)
 
