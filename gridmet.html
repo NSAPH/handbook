@@ -486,48 +486,48 @@ title="Print to PDF"
 <section id="quick-reference">
 <h2>Quick Reference<a class="headerlink" href="#quick-reference" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><ul>
-<li><p>dataset_name</p></li>
+<li><p>dataset_name</p>
+<ul>
 <li><p>GRIDMET</p></li>
 </ul>
 </li>
-<li><ul>
-<li><p>dataset_author</p></li>
+<li><p>dataset_author</p>
+<ul>
 <li><p>Nate Fairbank</p></li>
 </ul>
 </li>
-<li><ul>
-<li><p>date_created</p></li>
+<li><p>date_created</p>
+<ul>
 <li><p>15JUL22</p></li>
 </ul>
 </li>
-<li><ul>
-<li><p>data_source</p></li>
+<li><p>data_source</p>
+<ul>
 <li><p>GRIDMET, Census Bureau</p></li>
 </ul>
 </li>
-<li><ul>
-<li><p>spatial_coverage</p></li>
+<li><p>spatial_coverage</p>
+<ul>
 <li><p>Continental US</p></li>
 </ul>
 </li>
-<li><ul>
-<li><p>spatial_resolution</p></li>
+<li><p>spatial_resolution</p>
+<ul>
 <li><p>4x4km aggregated to zipcode (really to Zip Code Tabulation Area)</p></li>
 </ul>
 </li>
-<li><ul>
-<li><p>temporal_coverage</p></li>
+<li><p>temporal_coverage</p>
+<ul>
 <li><p>2000-2018</p></li>
 </ul>
 </li>
-<li><ul>
-<li><p>temporal_resolution</p></li>
+<li><p>temporal_resolution</p>
+<ul>
 <li><p>daily</p></li>
 </ul>
 </li>
-<li><ul>
-<li><p>processing_description</p></li>
+<li><p>processing_description</p>
+<ul>
 <li><p>Stage 1: Crosswalk Development (done in ArcGIS):</p>
 <ol class="simple">
 <li><p>GRIDMET’s 4x4km grid was imported and transformed into defined polygon formats (rather than raster or point features)</p></li>
@@ -590,9 +590,12 @@ title="Print to PDF"
 <li><p>For documentation on GRIDMET variables please refer to their materials: <a class="reference external" href="https://www.climatologylab.org/gridmet.html">https://www.climatologylab.org/gridmet.html</a></p></li>
 <li><p>Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)</p></li>
 <li><p>Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)</p></li>
-<li><p>Variables from data processing (2):
--CRS: originally “coordinate reference system”, this had a value of “1” for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these “1”s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code.
--AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA’s area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA’s area was accounted for. Thus this represents a “check” on the process. A small minority of the data does NOT sum to “1”. These are cases on the edge of the map, such as the Florida Keys, that GRIDMET’s data does not fully cover.</p></li>
+<li><p>Variables from data processing (2):</p>
+<ul>
+<li><p>CRS: originally “coordinate reference system”, this had a value of “1” for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these “1”s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code.</p></li>
+<li><p>AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA’s area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA’s area was accounted for. Thus this represents a “check” on the process. A small minority of the data does NOT sum to “1”. These are cases on the edge of the map, such as the Florida Keys, that GRIDMET’s data does not fully cover.</p></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -601,10 +604,10 @@ title="Print to PDF"
 <h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Notes from the GRIDMET files (these were buried in the files themselves and might otherwise not be visible):
--author : John Abatzoglou - University of Idaho, <a class="reference external" href="mailto:jabatzoglou&#37;&#52;&#48;uidaho&#46;edu">jabatzoglou<span>&#64;</span>uidaho<span>&#46;</span>edu</a>
--note1 : The projection information for this file is: GCS WGS 1984.
-note2 :Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
--note3 : Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)</p></li>
+- author : John Abatzoglou - University of Idaho, <a class="reference external" href="mailto:jabatzoglou&#37;&#52;&#48;uidaho&#46;edu">jabatzoglou<span>&#64;</span>uidaho<span>&#46;</span>edu</a>
+- note1 : The projection information for this file is: GCS WGS 1984.
+- note2 :Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
+- note3 : Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)</p></li>
 </ul>
 </section>
 </section>
