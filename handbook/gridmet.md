@@ -68,8 +68,8 @@ Specifically it does the following:
 
 ## Notes
 - Notes from the GRIDMET files (these were buried in the files themselves and might otherwise not be visible):
-      - author : John Abatzoglou - University of Idaho, jabatzoglou@uidaho.edu
-      - note1 : The projection information for this file is: GCS WGS 1984.
-      - note2 :Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
-      - note3 : Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)
+    - author : John Abatzoglou - University of Idaho, jabatzoglou@uidaho.edu
+    - note1 : The projection information for this file is: GCS WGS 1984.
+    - note2 :Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
+    - note3 : Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)
 
