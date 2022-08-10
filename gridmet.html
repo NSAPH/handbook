@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Gridmet &#8212; NSAPH Handbook</title>
+    <title>&lt;no title&gt; &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analytic data" href="analytic.html" />
-    <link rel="prev" title="MCBS" href="mcbs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,7 +116,7 @@ const thebe_selector_output = ".output, .cell_output"
   Data
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="data.html">
    Data sources
@@ -127,11 +125,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="mcbs.html">
    MCBS
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Gridmet
   </a>
  </li>
  <li class="toctree-l1">
@@ -408,32 +401,7 @@ title="Print to PDF"
         <i class="fas fa-list"></i> Contents
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quick-reference">
-   Quick Reference
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#about-this-project">
-   About this project
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-sources">
-   Data sources
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#processing">
-   Processing
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#notes">
-   Notes
-  </a>
- </li>
+        <ul class="simple visible nav section-nav flex-column">
 </ul>
 
     </nav>
@@ -443,7 +411,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Gridmet</h1>
+                <h1><no title></h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -452,32 +420,7 @@ title="Print to PDF"
                             <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quick-reference">
-   Quick Reference
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#about-this-project">
-   About this project
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-sources">
-   Data sources
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#processing">
-   Processing
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#notes">
-   Notes
-  </a>
- </li>
+                            <ul class="simple visible nav section-nav flex-column">
 </ul>
 
                         </nav>
@@ -488,140 +431,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="gridmet">
-<h1>Gridmet<a class="headerlink" href="#gridmet" title="Permalink to this headline">#</a></h1>
-<section id="quick-reference">
-<h2>Quick Reference<a class="headerlink" href="#quick-reference" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>dataset_name</p>
-<ul>
-<li><p>GRIDMET</p></li>
-</ul>
-</li>
-<li><p>dataset_author</p>
-<ul>
-<li><p>Nate Fairbank</p></li>
-</ul>
-</li>
-<li><p>date_created</p>
-<ul>
-<li><p>15JUL22</p></li>
-</ul>
-</li>
-<li><p>data_source</p>
-<ul>
-<li><p>GRIDMET, Census Bureau</p></li>
-</ul>
-</li>
-<li><p>spatial_coverage</p>
-<ul>
-<li><p>Continental US</p></li>
-</ul>
-</li>
-<li><p>spatial_resolution</p>
-<ul>
-<li><p>4x4km aggregated to zipcode (really to Zip Code Tabulation Area)</p></li>
-</ul>
-</li>
-<li><p>temporal_coverage</p>
-<ul>
-<li><p>2000-2018</p></li>
-</ul>
-</li>
-<li><p>temporal_resolution</p>
-<ul>
-<li><p>daily</p></li>
-</ul>
-</li>
-<li><p>processing_description</p>
-<ul>
-<li><p>Stage 1: Crosswalk Development (done in ArcGIS):</p>
-<ol class="simple">
-<li><p>GRIDMET’s 4x4km grid was imported and transformed into defined polygon formats (rather than raster or point features)</p></li>
-<li><p>Census Bureau’s ZCTA shapefiles for that year were imported</p></li>
-<li><p>The “tabulate intersection” tool was used to calculate, for each ZCTA/grid pair, the proportion of the ZCTA’s area that the grid square contributed. For example, if ZCTA 12345 overlapped 3 grids, there would be three rows: (12345, Grid A, .4), (12345, Grid B, .2), (12345, Grid C, .4).</p></li>
-<li><p>The crosswalk produced in step 3 was exported</p></li>
-</ol>
-</li>
-<li><p>Stage 2: Area-weighted aggregation:</p>
-<ol class="simple">
-<li><p>The crosswalk for that year is is imported.</p></li>
-<li><p>For each day, the GRIDMET file is imported.</p></li>
-<li><p>The data for each grid (all 16 variables) is joined to the crosswalk by lat/long pair for that grid. Note that if a grid square overlaps, say, three ZCTAs, then its data will be repeated 3 times so that it can be weighted appropriately for each ZCTA.</p></li>
-<li><p>The data is multiplied by the ZCTA proportion for that grid square.</p></li>
-<li><p>The data is grouped by ZCTA with the aggregation method “sum”.</p></li>
-<li><p>That day is appended to the netCDF file</p></li>
-<li><p>An annual netCDF file is exported.</p></li>
-</ol>
-</li>
-</ul>
-</li>
-<li><ul>
-<li><p>fasse_location</p></li>
-<li><p>/n/dominici_nsaph_l3/data/gridmet/</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="about-this-project">
-<h2>About this project<a class="headerlink" href="#about-this-project" title="Permalink to this headline">#</a></h2>
-<p>This project is the first component of a broader effort to create reproducable tools that can re-aggregate exposure data into social boundaries such as zip codes or census tracts that can be then joined with data available at those social units such as Medicare or Census data.</p>
-<p>Specifically it does the following:</p>
-<ol class="simple">
-<li><p>Start point: GRIDMET climate data (4x4km grid), Census Bureau Zip Code Tabulation Area (ZCTA) boundaries</p></li>
-<li><p>Aggregation technique: area weight</p></li>
-<li><p>Output: ZCTAs with the area-weighted average of each GRIDMET variable</p></li>
-</ol>
-</section>
-<section id="data-sources">
-<h2>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>GRIDMET data: <a class="reference external" href="https://www.northwestknowledge.net/metdata/data/permanent/">https://www.northwestknowledge.net/metdata/data/permanent/</a></p></li>
-<li><p>Census Bureau Zip Code Tabulation Area (ZCTA) TIGER/Line Files and Shapefiles: <a class="reference external" href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2000.html">https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2000.html</a></p>
-<ul>
-<li><p>For more about ZCTAs, read here: <a class="reference external" href="https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html">https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html</a></p></li>
-<li><p>ZCTAs were used because they represent the government’s “best guess” at what the spacial boundaries of a zip code are. While zip codes are commonly percieved as denoting spatial boundaries, they are in fact just a collection of addresses. Furthermore, they are “working units” that are defined and changed based on the needs (and whims) of the postal service. There is a degree of compromise/subjectivity here. The best answer would be “don’t use zip codes as a unit of analysis”. If they must be used, ZCTAs represent the best solution.</p></li>
-<li><p>NOT ALL ZIP CODES HAVE A CORRESPONDING ZCTA. ZCTAs are a trademark of the Census Bureau, an organization fundamentally concerned with PEOPLE. Zip Codes are a trademark of the US Postal Service, an organization fundamentally concerned with MAIL. Some zip codes map to a single address or very small collection of addresses. These represent high-volume mail facilities (think like PO boxes, etc), and are NOT included as seperate ZCTAs. While frustrating from a pure data perspective (why is there all this unmatched data!?) this makes sense from a practical perspective. If a Medicare patient gave a PO Box as their address, and we use that PO Box’s zip code to infer what their exposure was we’d be making an inappropriate inference, as that patient doesn’t actually live inside their PO Box. If matching all these “point” zip codes is necessary, a zip to ZCTA crosswalk is available here: ~/shared_space/ci3_exposure/locations/zcta/crosswalk/</p></li>
-<li><p>Because zip codes change constantly, ZCTAs have to be updated. They were first created following the 2000 census, and started receiving annual updates in 2007. Thus, this process uses the annual file for all data for that year, and the 2000 census file for years 2000-2006.</p></li>
-<li><p>The Census has made major updates to the ZCTAs every decade. For the 2000 Census, they include suffixes such as “XX” and “HH” to indicate large, unpopulated land areas such as national parks and bodies of water.
-“HH” suffix used to represent large water bodies</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="processing">
-<h2>Processing<a class="headerlink" href="#processing" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>What variables are in there?: All original GRIDMET varaibles are preserved. There are a total of 18:</p>
-<ul>
-<li><p>For documentation on GRIDMET variables please refer to their materials: <a class="reference external" href="https://www.climatologylab.org/gridmet.html">https://www.climatologylab.org/gridmet.html</a></p></li>
-<li><p>Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)</p></li>
-<li><p>Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)</p></li>
-<li><p>Variables from data processing (2):</p>
-<ul>
-<li><p>CRS: originally “coordinate reference system”, this had a value of “1” for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these “1”s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code.</p></li>
-<li><p>AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA’s area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA’s area was accounted for. Thus this represents a “check” on the process. A small minority of the data does NOT sum to “1”. These are cases on the edge of the map, such as the Florida Keys, that GRIDMET’s data does not fully cover.</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="notes">
-<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Notes from the GRIDMET files (these were buried in the files themselves and might otherwise not be visible):</p>
-<ul>
-<li><p>author : John Abatzoglou - University of Idaho, <a class="reference external" href="mailto:jabatzoglou&#37;&#52;&#48;uidaho&#46;edu">jabatzoglou<span>&#64;</span>uidaho<span>&#46;</span>edu</a></p></li>
-<li><p>note1 : The projection information for this file is: GCS WGS 1984.</p></li>
-<li><p>note2 :Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413</p></li>
-<li><p>note3 : Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-
+  
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -649,20 +459,6 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="mcbs.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">MCBS</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="analytic.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analytic data</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
