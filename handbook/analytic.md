@@ -1,7 +1,5 @@
 # Analytic data
 
-The following data is available at: **`/n/dominici_nsaph_l3/projects/analytic/`**
-
 ```{include} _analytic.md
 ```
 

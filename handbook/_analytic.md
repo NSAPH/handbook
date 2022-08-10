@@ -1,4 +1,10 @@
-`````{dropdown} 1. MedPar (Admissions)
+## Catalog
+
+The following data is available at: **`/n/dominici_nsaph_l3/projects/analytic/`**
+
+### MedPar (Admissions)
+
+`````{dropdown} **admissions_by_year**
 
 ```{list-table}
 :header-rows: 0
@@ -113,7 +119,8 @@ Dual                     : int
 ````
 `````
 
-`````{dropdown} 2. MBSF (Denominator) 
+### MBSF (Denominator)
+`````{dropdown}  **denom**
 
 ```{list-table}
 :header-rows: 0
@@ -179,8 +186,8 @@ max_year: 2016
 ````
 `````
 
-
-`````{dropdown} 3. Annual Exposure per Medicare Beneficiary
+### Annual Exposure per Medicare Beneficiary
+`````{dropdown} **qid_yr_exposures**
 
 ```{list-table}
 :header-rows: 0
@@ -250,8 +257,8 @@ qid : chr
 ````
 `````
 
-
-`````{dropdown} 4. MBSF (Enrollment file, denominator) 
+### MBSF (Enrollment file, denominator) 
+`````{dropdown} **denom_by_year**
 
 ```{list-table}
 :header-rows: 0
@@ -355,8 +362,8 @@ winter_rmax                 : num
 ````
 `````
 
-
-`````{dropdown} 5. AD/ADRD Hospitalization
+### AD/ADRD Hospitalization
+`````{dropdown} **hospitalization**
 
 ```{list-table}
 :header-rows: 0
@@ -393,8 +400,8 @@ year : num
 ````
 `````
 
-
-`````{dropdown} 6. Medicare Entry Age
+### Medicare Entry Age
+`````{dropdown} **medicare_entry_age**
 
 ```{list-table}
 :header-rows: 0
@@ -423,7 +430,8 @@ year : num
 ```
 `````
 
-`````{dropdown} 7. Years in Medicare 
+### Years in Medicare 
+`````{dropdown} **years_in_medicare**
 ```{list-table}
 :header-rows: 0
 
@@ -457,7 +465,8 @@ year : num
 ```
 `````
 
-`````{dropdown} 8. Temperature Humidity Precipitation 
+### Temperature Humidity Precipitation 
+`````{dropdown} **temperature_seasonal_zipcode**
 ```{list-table}
 :header-rows: 0
 * - rce_location
@@ -496,7 +505,8 @@ year : num
 ```
 `````
 
-`````{dropdown} 9.  Pollution-Census-Temperature covariates
+### Pollution-Census-Temperature covariates
+`````{dropdown} **merged_covariates_pm_census_temp**
 ```{list-table}
 :header-rows: 0
 * - data_source
@@ -533,7 +543,8 @@ year : num
 ```
 `````
 
-`````{dropdown} 10.  Medicaid - Children
+### Medicaid - Respiratory Hospitalizations in Children
+`````{dropdown} **medicaid_children_99-12**
 ```{list-table}
 :header-rows: 0
 * - data_source
@@ -577,8 +588,9 @@ year : num
 ```
 `````
 
-`````{dropdown} 11.  Exposure-census-BRFFS confounders
-```{list-table}
+### Exposure-census-BRFFS confounders
+`````{dropdown} **confounders** 
+```{list-table} 
 :header-rows: 0
 * - data_source
   - US Census, BRFSS
@@ -614,7 +626,8 @@ year : num
 ```
 `````
 
-`````{dropdown} 12.  ZIP to ZCTA crosswalk (2015)
+### ZIP to ZCTA crosswalk (2015)
+`````{dropdown} **zip_to_zcta**
 ```{list-table}
 :header-rows: 0
 * - rce_location
@@ -637,7 +650,8 @@ year : num
 ```
 `````
 
-`````{dropdown} 13. ADRD Hospitalization Records
+### ADRD Hospitalization Records
+`````{dropdown} **adrd_hospitalization**
 ```{list-table}
 :header-rows: 0
 * - dataset_author
@@ -710,7 +724,8 @@ ADRD_secondary: logi
 ````
 `````
 
-`````{dropdown} 14. Medpar File 2000-2016 Clean 
+### Medpar File 2000-2016 Clean 
+`````{dropdown} **medpar_hospital_clean_0619**
 ```{list-table}
 :header-rows: 0
 * - dataset_author
@@ -743,7 +758,8 @@ ADRD_secondary: logi
 ```
 `````
 
-`````{dropdown} 15. Denominator File 2000-2016 Clean 
+### Denominator File 2000-2016 Clean 
+`````{dropdown} **denominator_clean_0619**
 ```{list-table}
 :header-rows: 0
 * - dataset_author
@@ -776,7 +792,8 @@ ADRD_secondary: logi
 ```
 `````
 
-`````{dropdown} 16. Denominator Clean Merged with Exposure and Covariate Data 
+### Denominator Clean Merged with Exposure and Covariate Data 
+`````{dropdown} **merged_denominator_clean_0619_exp_conf**
 ```{list-table}
 :header-rows: 0
 * - dataset_author
@@ -810,7 +827,8 @@ ADRD_secondary: logi
 ```
 `````
 
-`````{dropdown} 17. Hospital Admissions Merged with Denominator, Exposure, and Covariates
+### Hospital Admissions Merged with Denominator, Exposure, and Covariates
+`````{dropdown} **national_exp_0621**
 ```{list-table}
 :header-rows: 0
 * - dataset_author
