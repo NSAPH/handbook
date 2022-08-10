@@ -7,7 +7,6 @@ parts:
     chapters:
     - file: data 
     - file: mcbs
-    - file: gridmet
     - file: analytic
     - file: superset
     - file: dataverse
