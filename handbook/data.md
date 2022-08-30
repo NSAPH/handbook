@@ -142,6 +142,12 @@ For documentation on GRIDMET variables please refer to [their materials](https:/
 
 
 ```{glossary}
+CMS
+  Centers for Medicare and Medicaid Services
+  
+FASSE
+  Faculty of Arts and Sciences Secure Environment research computing cluster
+  
 FFS
   fee-for-service
 
