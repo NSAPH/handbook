@@ -13,6 +13,10 @@ parts:
     - file: dataverse
     - url: https://docs.google.com/forms/d/e/1FAIpQLScV_txoDRI5b6bpsnVO6QaAPZJ4xRo2z4VgyXibSxZ55o_AJg/viewform 
       title: Training on Data Security
+  - caption: Forms
+    chapters:
+    - url: https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform
+      title: Onboarding Form
   - caption: Infrastructure and Tools
     chapters:
     - file: fasse
