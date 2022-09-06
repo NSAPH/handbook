@@ -16,13 +16,13 @@ parts:
   - caption: NSAPH Forms
     chapters:
     - url: https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform
-      title: On-boarding Form
-    - url: https://docs.google.com/forms/d/e/1FAIpQLSccxSUt7NclkqTkeltAPzOBn8ttqz4_ZVIp2MbP9Th7Ja0W5Q/viewform
-      title: Off-Boarding Form
+      title: On-Boarding Form
     - url: https://docs.google.com/forms/d/e/1FAIpQLSd5P0ILjOlGQrk5fzqDJb9mBbHcBZVEMDQTWA_AhI9A24Hk5Q/viewform
       title: Project Initiation Form
     - url: https://docs.google.com/forms/d/e/1FAIpQLSfT_Hw930NjPnqnN-SZKBhlmVvsHjIqOdwkNPLEYjzdXqOn_w/viewform
       title: Project Progress Form
+    - url: https://docs.google.com/forms/d/e/1FAIpQLSccxSUt7NclkqTkeltAPzOBn8ttqz4_ZVIp2MbP9Th7Ja0W5Q/viewform
+      title: Off-Boarding Form
   - caption: Infrastructure and Tools
     chapters:
     - file: fasse
