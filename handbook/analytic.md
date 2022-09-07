@@ -11,7 +11,7 @@ You will be able to use data with symlinks as normal.
 Create the symlink in your `data` folder in the following way:
 ```
 cd data
-ln -s /n/dominici_nsaph_l3/projects/analytic/fasse_location .
+ln -s /n/dominici_nsaph_l3/Lab/projects/analytic/fasse_location .
 ```
 ````
 

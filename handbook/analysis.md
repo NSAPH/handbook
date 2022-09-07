@@ -105,7 +105,7 @@ If you don't want to install the same R packages over and over again each time y
 
 You'll want to edit your `.bashrc` file (which you can see in your home folder by clicking "View" > "Show Hidden Files") to be the following. 
 In this example, the user wants to use R version 4.0.5. `projects`, `ml_r4`, and `ml_rstudio` are examples of Terminal commands that you may to create "aliases" (i.e., shortcuts) for. 
-After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the `/n/dominici_nsaph_l3/projects/projects` folder or load RStudio (which requires loading R first).
+After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the `/n/dominici_nsaph_l3/Lab/projects/projects` folder or load RStudio (which requires loading R first).
 
 ```shell
 # .bashrc
@@ -118,7 +118,7 @@ fi
 export R_LIBS_USER=$HOME/apps/{your project name}/R_4.0.5:$R_LIBS_USER
 
 # Aliases
-alias projects='cd /n/dominici_nsaph_l3/projects'
+alias projects='cd /n/dominici_nsaph_l3/Lab/projects'
 alias ml_r4='module load gcc/9.3.0-fasrc01 R/4.0.5-fasrc02'
 alias ml_rstudio='module load rstudio/1.1.453-fasrc01'
 ```

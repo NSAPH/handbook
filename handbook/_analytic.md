@@ -1,6 +1,6 @@
 ## Catalog
 
-The following data is available at: **`/n/dominici_nsaph_l3/projects/analytic/`**
+The following data is available at: **`/n/dominici_nsaph_l3/Lab/projects/analytic/`**
 
 ### MedPar (Admissions)
 
