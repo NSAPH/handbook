@@ -42,13 +42,13 @@ the "git status" command before committing to confirm what you are committing.*
 
 *Inefficient use of compute resources by a single user can prevent the entire team from getting work done. Users should develop and benchmark their models using the Rstudio profiler on small subsets of their data prior to grabbing large chunks of memory. We monitor compute usage, and users using the cluster inefficiently may have their jobs cancelled.*
 
-2. Set up GitHub under[https://github.com/orgs/NSAPH-Projects](https://github.com/orgs/NSAPH-Projects)and link it to FASSE project space.
+2. Set up GitHub under [https://github.com/orgs/NSAPH-Projects](https://github.com/orgs/NSAPH-Projects) and link it to FASSE project space.
 
-*To ensure reproducibility & transparency. For more details, please see [*https://nsaph.info/fasse.html#step-4-create-a-git-repository-on-github*](https://nsaph.info/fasse.html#step-4-create-a-git-repository-on-github)
+*For more details, please see instructions [*here*](https://nsaph.info/fasse.html#step-4-create-a-git-repository-on-github)
 
 3. Work under the project space, and **not** in your home folder.
 
-* Instructions on how to create a project folder and a GitHub repository can be found [*here*](https://nsaph.info/fasse.html#step-3-project-workspace).
+*Instructions on how to create a project folder and a GitHub repository can be found [*here*](https://nsaph.info/fasse.html#step-3-project-workspace).
 
 4. Use a Symbolic link to read in data from your project folder.
 
