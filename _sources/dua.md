@@ -52,4 +52,4 @@ the "git status" command before committing to confirm what you are committing.*
 
 **4. Use a Symbolic link to read in data from your project folder.**
 
-*In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under /n/dominici_nsaph_l3/projects. **Please do not copy the data**; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click [*here*](https://nsaph.info/fasse.html#step-5-analytic-data).*
+* In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under `/n/dominici_nsaph_l3/Lab/projects`. **Please do not copy the data**; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click [*here*](https://nsaph.info/fasse.html#step-5-analytic-data).

@@ -628,7 +628,7 @@ you can run <code class="docutils literal notranslate"><span class="pre">git</sp
 <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">This link</a> explains some of this, and below are some tips for setting up your $R_LIBS_USER, but you might want to go to Harvard FAS Research Computing’s weekly <a class="reference external" href="https://www.rc.fas.harvard.edu/training/office-hours/">office hours</a> to get more help.</p>
 <p>You’ll want to edit your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file (which you can see in your home folder by clicking “View” &gt; “Show Hidden Files”) to be the following.
 In this example, the user wants to use R version 4.0.5. <code class="docutils literal notranslate"><span class="pre">projects</span></code>, <code class="docutils literal notranslate"><span class="pre">ml_r4</span></code>, and <code class="docutils literal notranslate"><span class="pre">ml_rstudio</span></code> are examples of Terminal commands that you may to create “aliases” (i.e., shortcuts) for.
-After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/projects/projects</span></code> folder or load RStudio (which requires loading R first).</p>
+After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/projects/projects</span></code> folder or load RStudio (which requires loading R first).</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># .bashrc</span>
 
 <span class="c1"># Source global definitions</span>
@@ -639,7 +639,7 @@ After you do this, you can open a Terminal window (or more than one Terminal win
 <span class="nb">export</span> <span class="nv">R_LIBS_USER</span><span class="o">=</span><span class="nv">$HOME</span>/apps/<span class="o">{</span>your project name<span class="o">}</span>/R_4.0.5:<span class="nv">$R_LIBS_USER</span>
 
 <span class="c1"># Aliases</span>
-<span class="nb">alias</span> <span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/projects&#39;</span>
+<span class="nb">alias</span> <span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/Lab/projects&#39;</span>
 <span class="nb">alias</span> <span class="nv">ml_r4</span><span class="o">=</span><span class="s1">&#39;module load gcc/9.3.0-fasrc01 R/4.0.5-fasrc02&#39;</span>
 <span class="nb">alias</span> <span class="nv">ml_rstudio</span><span class="o">=</span><span class="s1">&#39;module load rstudio/1.1.453-fasrc01&#39;</span>
 </pre></div>

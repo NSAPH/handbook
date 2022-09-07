@@ -75,7 +75,7 @@ In practice, you may have multiple exposures and outcomes.
 In that case, use your best judgement for your **project name** based on the guidelines. 
 Avoid adding information such as usernames and current date or year.
 
-Next, you should create a folder with your **project name** in the NSAPH projects folder at `/n/dominici_nsaph_l3/projects`.
+Next, you should create a folder with your **project name** in the NSAPH projects folder at `/n/dominici_nsaph_l3/Lab/projects`.
 You can do that by opening "File System" in FAS-RC Remote Desktop and navigating to the projects folder (see Fig.).
 
 ```{figure} imgs/img_1.png
@@ -88,7 +88,7 @@ align: center
 Create there a new folder with your **project name** (ie, `heat_alert-mortality-rl`).
 
 ```{note}
-Use your **project name** folder in `/n/dominici_nsaph_l3/projects` as a workspace 
+Use your **project name** folder in `/n/dominici_nsaph_l3/Lab/projects` as a workspace 
 for your analysis data and code. 
 ```
 
