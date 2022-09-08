@@ -11,7 +11,7 @@ parts:
     - file: analytic
     - file: superset
     - file: dataverse
-    - file: Required Data Security Trainings
+    - file: trainings
   - caption: NSAPH Forms
     chapters:
     - url: https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform
