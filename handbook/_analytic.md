@@ -474,7 +474,7 @@ year : num
 * - fasse_location
   - `temperature_seasonal_zipcode`
 * - dataset_author
-  - Xiao Wi, Ben Sabath
+  - Xiao Wu, Ben Sabath
 * - date_created
   - Jul 23,  2020
 * - data_source
@@ -516,7 +516,7 @@ year : num
 * - fasse_location
   - `merged_covariates_pm_census_temp`
 * - dataset_author
-  - Xiao Wi, Ben Sabath
+  - Xiao Wu, Ben Sabath
 * - date_created
   - May 29, 2019
 * - spatial_coverage
@@ -540,6 +540,40 @@ year : num
 ```
 ```
    └── merged_covariates.csv
+```
+`````
+
+### Population-Weighted Daily County-Level Heat Metrics
+`````{dropdown} **county_heat_metrics**
+```{list-table}
+:header-rows: 0
+* - data_source
+  - ERA5-Land gridded data
+* - fasse_location
+  - "Heatvars_County_2000-2020_v1.2.Rds"
+* - dataset_author
+  - Keith Spangler
+* - date_created
+  - June 17, 2022
+* - spatial_coverage
+  - contiguous US
+* - spatial_resolution
+  - county
+* - temporal_coverage
+  - 2000-2020
+* - temporal_resolution
+  - daily
+* - data descriptor publication 
+  - https://pubmed.ncbi.nlm.nih.gov/35715416/
+* - size
+  - 1.03 GB
+* - header 
+  - "StCoFIPS", "Date", "Tmin_C", "Tmax_C", "Tmean_C", "TDmin_C", "TDmax_C", "TDmean_C", "NETmin_C", "NETmax_C", "NETmean_C", "HImin_C", "HImax_C", "HImean_C", "HXmin_C", "HXmax_C", "HXmean_C", "WBGTmin_C", "WBGTmax_C", "WBGTmean_C", "UTCImin_C", "UTCImax_C", "UTCImean_C", "Flag_T", "Flag_TD", "Flag_NET", "Flag_HI", "Flag_HX", "Flag_WBGT", "Flag_UTCI"
+* - files
+  - 
+```
+```
+   └── Heatvars_County_2000-2020_v1.2.Rds
 ```
 `````
 
