@@ -1,6 +1,6 @@
 title: NSAPH Handbook 
 author: NSAPH 
-logo: logo.png
+logo: imgs/NSAPH_logo.png
 
 execute:
   execute_notebooks: force
