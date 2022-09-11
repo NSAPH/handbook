@@ -79,6 +79,12 @@ password=*****
 
 Step 8: query the database. A sample query file can be found [here](https://github.com/NSAPH-Data-Processing/sql-utils/blob/main/src/query.py)
 
+**Both [query.py](https://github.com/NSAPH-Data-Processing/sql-utils/blob/main/src/query.py) and database.ini should be located in l3 spaces.**
+
+```{warning}
+While these two files can live outside of l3, executing [query.py](https://github.com/NSAPH-Data-Processing/sql-utils/blob/main/src/query.py) with database.ini credentials while outside of l3 will write the file to that directory, which WILL be a violation of CMS data policies.
+```
+
 To execute the query:
 ```
 python -u query.py database.ini nsaph2
