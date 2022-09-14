@@ -550,7 +550,7 @@ year : num
 * - data_source
   - ERA5-Land gridded data
 * - fasse_location
-  - "Heatvars_County_2000-2020_v1.2.Rds"
+  - `heatvars_county_2000-2020`
 * - dataset_author
   - Keith Spangler
 * - date_created
@@ -568,7 +568,7 @@ year : num
 * - size
   - 1.03 GB
 * - header 
-  - "StCoFIPS", "Date", "Tmin_C", "Tmax_C", "Tmean_C", "TDmin_C", "TDmax_C", "TDmean_C", "NETmin_C", "NETmax_C", "NETmean_C", "HImin_C", "HImax_C", "HImean_C", "HXmin_C", "HXmax_C", "HXmean_C", "WBGTmin_C", "WBGTmax_C", "WBGTmean_C", "UTCImin_C", "UTCImax_C", "UTCImean_C", "Flag_T", "Flag_TD", "Flag_NET", "Flag_HI", "Flag_HX", "Flag_WBGT", "Flag_UTCI"
+  - `"StCoFIPS", "Date", "Tmin_C", "Tmax_C", "Tmean_C", "TDmin_C", "TDmax_C", "TDmean_C", "NETmin_C", "NETmax_C", "NETmean_C", "HImin_C", "HImax_C", "HImean_C", "HXmin_C", "HXmax_C", "HXmean_C", "WBGTmin_C", "WBGTmax_C", "WBGTmean_C", "UTCImin_C", "UTCImax_C", "UTCImean_C", "Flag_T", "Flag_TD", "Flag_NET", "Flag_HI", "Flag_HX", "Flag_WBGT", "Flag_UTCI"`
 * - files
   - 
 ```
