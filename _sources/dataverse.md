@@ -8,3 +8,4 @@ NSAPH Dataverse:
 
 Or see at: [http://biostatsdata.org](http://biostatsdata.org)
 
+To contribute data to dataverse, please see https://support.dataverse.harvard.edu/getting-started [select the NSAPH collection]
