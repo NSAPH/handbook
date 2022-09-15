@@ -187,3 +187,7 @@ data/
 *.nc
 *.rst
 ```
+
+```{note}
+Make sure to acknowledge the use of FASRC in your publications. From [the FASRC website](https://www.rc.fas.harvard.edu/cluster/publications/), "Please use the following text as a guideline: 'The computations in this paper were run on the FASRC Cannon cluster supported by the FAS Division of Science Research Computing Group at Harvard University.'" 
+```
