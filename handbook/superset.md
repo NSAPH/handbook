@@ -1,12 +1,21 @@
-# PostgreSQL Data Platform
+# NSAPH PostgreSQL Data Platform
 
-## What is Superset
-Superset is a way to query, visualize, and explore the data. Currently, the data hosted on Superset uses Postgres as the meta database engine.
+The [NSAPH Data Platform](https://github.com/NSAPH-Data-Platform) consists of a series of ETL pipelines that deploy a PostgreSQL database. The platform's documentation is found [here](https://github.com/NSAPH-Data-Platform/nsaph-platform-docs) (and the documentation's source code is [here](https://github.com/NSAPH-Data-Platform/nsaph-platform-docs))
 
-## Accessing Superset in Web Browser
-In order to access Superset, you would first need access to FASSE and the NSAPH host (instructions [here](fasse.md))
+A deployed database resides in the Harvard University’s FASRC clusters. Access to the FASRC clusters require a [FASRC user username and password](https://docs.rc.fas.harvard.edu/kb/quickstart-guide/). The database is hosted in an RC environment which is accessed by SSH at `nsaph.rc.fas.harvard.edu` (and not at `fasselogin.rc.fas.harvard.edu`). New **DS support team members** can request access to this environment via an [RC ticket](https://portal.rc.fas.harvard.edu/request/account/new) with the authorization of a PI. Additional documentation for superusers regarding administration of the database and onboarding of new users is found [here](https://github.com/NSAPH/data-paltform-internal-docs/blob/master/docs/Administration.md) and [here](https://github.com/NSAPH/data-paltform-internal-docs/blob/master/docs/Onboarding.md).
 
-Open Terminal, and enter the following command: 
+## Database querying in the `nsaph` host
+
+There are multiple ways to query a database. Two options are offered below: Superset and Jupyterlab. 
+
+### Using Superset to explore the DB
+
+Superset is an application that allows working with a database interactively. It offers functionalities to query, visualize, and explore the data.
+
+A Superset instance, that is installed and connected to the database, remains active in the `nsaph` host.
+
+### Accessing Superset in Web Browser
+If you have been granted access to the `nsaph` host, you would first need to connect to FASRC VPN (instructions [here](fasse.md)) and then to the `nsaph` host. Open Terminal, and enter the following command: 
 ```
 ssh -L8088:localhost:8088 username@nsaph.rc.fas.harvard.edu
 ```
@@ -14,7 +23,7 @@ After logging in through this specific port, you can access the Superset interfa
 
 Enter your Superset credentials.
 ```{warning}
-If you don't know your Superset credentials, stop immediately and contact us.
+If you don't know your Superset credentials, contact a superuser. Superset credentials are different to database or RC credentials.
 ```
 
 Once the Superset authentication is completed, you can now explore the datasets you are granted access to. Start by going to SQL Editor under SQL Lab.
@@ -32,14 +41,14 @@ Option to `Download to csv` retrieves the data locally. Do NOT click it if query
 ```
 
 (access)=
-## Access Superset with Jupyter Lab
-Accessing Superset via Jupyter Lab will allow you to query the databases and create data query pipelines with Python. The environment is configured to be accessible to all NSAPH users. 
+### Jupyter Lab
+Jupyter Lab will allow you to query the databases and create data query pipelines with Python.
 
 ```{note}
 If you would like to customize your own environment, follow this [section](customize). Not sure if you need to? Do NOT customize it.
 ```
 
-Step 1: Login to the NSAPH host
+Step 1: Login to the `nsaph` host
 ```
 ssh -L8088:localhost:8088 username@nsaph.rc.fas.harvard.edu
 ```
@@ -92,7 +101,7 @@ python -u query.py database.ini nsaph2
 The query will be converted to a .csv file and is saved under the working directory. You can then use Jupyter Lab to explore the data.
 
 (customize)=
-## Customize your own conda environment
+### Customize your own conda environment
 
 In futures cases where nsaph packages are updated and no longer compatible to the existing environment, follow the instructions below to setup a new environment. This also applies if you would like to install new packages beyond those in `superset_final`.
 
