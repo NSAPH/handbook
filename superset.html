@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>PostgreSQL Data Platform &#8212; NSAPH Handbook</title>
+    <title>NSAPH PostgreSQL Data Platform &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -141,7 +141,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   PostgreSQL Data Platform
+   NSAPH PostgreSQL Data Platform
   </a>
  </li>
  <li class="toctree-l1">
@@ -442,24 +442,37 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-superset">
-   What is Superset
+  <a class="reference internal nav-link" href="#database-querying-in-the-nsaph-host">
+   Database querying in the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     nsaph
+    </span>
+   </code>
+   host
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#accessing-superset-in-web-browser">
-   Accessing Superset in Web Browser
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#access-superset-with-jupyter-lab">
-   Access Superset with Jupyter Lab
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#customize-your-own-conda-environment">
-   Customize your own conda environment
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-superset-to-explore-the-db">
+     Using Superset to explore the DB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#accessing-superset-in-web-browser">
+     Accessing Superset in Web Browser
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-lab">
+     Jupyter Lab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#customize-your-own-conda-environment">
+     Customize your own conda environment
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-data-to-the-platform">
@@ -475,7 +488,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>PostgreSQL Data Platform</h1>
+                <h1>NSAPH PostgreSQL Data Platform</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -486,24 +499,37 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-superset">
-   What is Superset
+  <a class="reference internal nav-link" href="#database-querying-in-the-nsaph-host">
+   Database querying in the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     nsaph
+    </span>
+   </code>
+   host
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#accessing-superset-in-web-browser">
-   Accessing Superset in Web Browser
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#access-superset-with-jupyter-lab">
-   Access Superset with Jupyter Lab
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#customize-your-own-conda-environment">
-   Customize your own conda environment
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-superset-to-explore-the-db">
+     Using Superset to explore the DB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#accessing-superset-in-web-browser">
+     Accessing Superset in Web Browser
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-lab">
+     Jupyter Lab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#customize-your-own-conda-environment">
+     Customize your own conda environment
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-data-to-the-platform">
@@ -520,16 +546,21 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="postgresql-data-platform">
-<h1>PostgreSQL Data Platform<a class="headerlink" href="#postgresql-data-platform" title="Permalink to this headline">#</a></h1>
-<section id="what-is-superset">
-<h2>What is Superset<a class="headerlink" href="#what-is-superset" title="Permalink to this headline">#</a></h2>
-<p>Superset is a way to query, visualize, and explore the data. Currently, the data hosted on Superset uses Postgres as the meta database engine.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="nsaph-postgresql-data-platform">
+<h1>NSAPH PostgreSQL Data Platform<a class="headerlink" href="#nsaph-postgresql-data-platform" title="Permalink to this headline">#</a></h1>
+<p>The <a class="reference external" href="https://github.com/NSAPH-Data-Platform">NSAPH Data Platform</a> consists of a series of ETL pipelines that deploy a PostgreSQL database. The platform’s documentation is found <a class="reference external" href="https://github.com/NSAPH-Data-Platform/nsaph-platform-docs">here</a> (and the documentation’s source code is <a class="reference external" href="https://github.com/NSAPH-Data-Platform/nsaph-platform-docs">here</a>)</p>
+<p>A deployed database resides in the Harvard University’s FASRC clusters. Access to the FASRC clusters require a <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/quickstart-guide/">FASRC user username and password</a>. The database is hosted in an RC environment which is accessed by SSH at <code class="docutils literal notranslate"><span class="pre">nsaph.rc.fas.harvard.edu</span></code> (and not at <code class="docutils literal notranslate"><span class="pre">fasselogin.rc.fas.harvard.edu</span></code>). New <strong>DS support team members</strong> can request access to this environment via an <a class="reference external" href="https://portal.rc.fas.harvard.edu/request/account/new">RC ticket</a> with the authorization of a PI. Additional documentation for superusers regarding administration of the database and onboarding of new users is found <a class="reference external" href="https://github.com/NSAPH/data-paltform-internal-docs/blob/master/docs/Administration.md">here</a> and <a class="reference external" href="https://github.com/NSAPH/data-paltform-internal-docs/blob/master/docs/Onboarding.md">here</a>.</p>
+<section id="database-querying-in-the-nsaph-host">
+<h2>Database querying in the <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> host<a class="headerlink" href="#database-querying-in-the-nsaph-host" title="Permalink to this headline">#</a></h2>
+<p>There are multiple ways to query a database. Two options are offered below: Superset and Jupyterlab.</p>
+<section id="using-superset-to-explore-the-db">
+<h3>Using Superset to explore the DB<a class="headerlink" href="#using-superset-to-explore-the-db" title="Permalink to this headline">#</a></h3>
+<p>Superset is an application that allows working with a database interactively. It offers functionalities to query, visualize, and explore the data.</p>
+<p>A Superset instance, that is installed and connected to the database, remains active in the <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> host.</p>
 </section>
 <section id="accessing-superset-in-web-browser">
-<h2>Accessing Superset in Web Browser<a class="headerlink" href="#accessing-superset-in-web-browser" title="Permalink to this headline">#</a></h2>
-<p>In order to access Superset, you would first need access to FASSE and the NSAPH host (instructions <a class="reference internal" href="fasse.html"><span class="doc std std-doc">here</span></a>)</p>
-<p>Open Terminal, and enter the following command:</p>
+<h3>Accessing Superset in Web Browser<a class="headerlink" href="#accessing-superset-in-web-browser" title="Permalink to this headline">#</a></h3>
+<p>If you have been granted access to the <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> host, you would first need to connect to FASRC VPN (instructions <a class="reference internal" href="fasse.html"><span class="doc std std-doc">here</span></a>) and then to the <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> host. Open Terminal, and enter the following command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">L8088</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8088</span> <span class="n">username</span><span class="nd">@nsaph</span><span class="o">.</span><span class="n">rc</span><span class="o">.</span><span class="n">fas</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span>
 </pre></div>
 </div>
@@ -537,7 +568,7 @@ title="Print to PDF"
 <p>Enter your Superset credentials.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If you don’t know your Superset credentials, stop immediately and contact us.</p>
+<p>If you don’t know your Superset credentials, contact a superuser. Superset credentials are different to database or RC credentials.</p>
 </div>
 <p>Once the Superset authentication is completed, you can now explore the datasets you are granted access to. Start by going to SQL Editor under SQL Lab.</p>
 <figure class="align-center" id="id1">
@@ -551,14 +582,14 @@ title="Print to PDF"
 <p>Option to <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">to</span> <span class="pre">csv</span></code> retrieves the data locally. Do NOT click it if querying medical data.</p>
 </div>
 </section>
-<section id="access-superset-with-jupyter-lab">
-<span id="access"></span><h2>Access Superset with Jupyter Lab<a class="headerlink" href="#access-superset-with-jupyter-lab" title="Permalink to this headline">#</a></h2>
-<p>Accessing Superset via Jupyter Lab will allow you to query the databases and create data query pipelines with Python. The environment is configured to be accessible to all NSAPH users.</p>
+<section id="jupyter-lab">
+<span id="access"></span><h3>Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Permalink to this headline">#</a></h3>
+<p>Jupyter Lab will allow you to query the databases and create data query pipelines with Python.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you would like to customize your own environment, follow this <a class="reference internal" href="#customize"><span class="std std-ref">section</span></a>. Not sure if you need to? Do NOT customize it.</p>
 </div>
-<p>Step 1: Login to the NSAPH host</p>
+<p>Step 1: Login to the <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> host</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">L8088</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8088</span> <span class="n">username</span><span class="nd">@nsaph</span><span class="o">.</span><span class="n">rc</span><span class="o">.</span><span class="n">fas</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span>
 </pre></div>
 </div>
@@ -605,7 +636,7 @@ title="Print to PDF"
 <p>The query will be converted to a .csv file and is saved under the working directory. You can then use Jupyter Lab to explore the data.</p>
 </section>
 <section id="customize-your-own-conda-environment">
-<span id="customize"></span><h2>Customize your own conda environment<a class="headerlink" href="#customize-your-own-conda-environment" title="Permalink to this headline">#</a></h2>
+<span id="customize"></span><h3>Customize your own conda environment<a class="headerlink" href="#customize-your-own-conda-environment" title="Permalink to this headline">#</a></h3>
 <p>In futures cases where nsaph packages are updated and no longer compatible to the existing environment, follow the instructions below to setup a new environment. This also applies if you would like to install new packages beyond those in <code class="docutils literal notranslate"><span class="pre">superset_final</span></code>.</p>
 <p>Step 1: Login to the NSAPH host</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">L8088</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8088</span> <span class="n">username</span><span class="nd">@nsaph</span><span class="o">.</span><span class="n">rc</span><span class="o">.</span><span class="n">fas</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span>
@@ -651,6 +682,7 @@ title="Print to PDF"
 </div>
 <p>You should see packages <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> and <code class="docutils literal notranslate"><span class="pre">nsaph-utils</span></code>.</p>
 <p>Step 6: Follow Step 5 - Step 8 in the above <a class="reference internal" href="#access"><span class="std std-ref">section</span></a></p>
+</section>
 </section>
 <section id="add-data-to-the-platform">
 <h2>Add data to the platform<a class="headerlink" href="#add-data-to-the-platform" title="Permalink to this headline">#</a></h2>
