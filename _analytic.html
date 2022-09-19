@@ -529,6 +529,11 @@ title="Print to PDF"
    Hospital Admissions Merged with Denominator, Exposure, and Covariates
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aggregated-2010-2016-medicare-mortality-data-with-pm2-5-exposure-and-zip-code-level-variables">
+   Aggregated 2010-2016 Medicare Mortality Data with PM2.5 Exposure and ZIP code level variables
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -636,6 +641,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#hospital-admissions-merged-with-denominator-exposure-and-covariates">
    Hospital Admissions Merged with Denominator, Exposure, and Covariates
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aggregated-2010-2016-medicare-mortality-data-with-pm2-5-exposure-and-zip-code-level-variables">
+   Aggregated 2010-2016 Medicare Mortality Data with PM2.5 Exposure and ZIP code level variables
   </a>
  </li>
 </ul>
@@ -998,7 +1008,7 @@ header (qid_yr_xxx.fst):<div class="sd-summary-down docutils">
 <tr class="row-odd"><td><p class="sd-card-text">fasse_location</p></td>
 <td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">denom_by_year</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">GitHub</p></td>
+<tr class="row-even"><td><p class="sd-card-text">git_repository</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://github.com/NSAPH/National-Causal-Analysis/tree/master/MergedData">github.com/NSAPH/National-Causal-Analysis</a></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text">dataset_author</p></td>
@@ -1317,7 +1327,7 @@ header<div class="sd-summary-down docutils">
 <tr class="row-even"><td><p class="sd-card-text">description</p></td>
 <td><p class="sd-card-text">This dataset contains information on temperature, relative humidity, and total precipitation data. The data is available as raster files on Google earth engine. The temporal and spatial resolutions varied by data source, but all were available at a daily resolution or more frequently. Where the time resolution of the rasters is more than daily, daily averages for each raster were calculated. Next, using Google earth engine’s spatial averaging algorithms and a set of polygons representing the areas of interest, the daily value for each polygon was calculated. The polygons used were the ones described in the preceding section. The results of this calculation were then downloaded as a csv file to the RCE. At this point, there is one file for each year. Following this, annual averages are calculated for each location, and these are combined in to a single file. The daily values are also combined in to a single file. For the <code class="docutils literal notranslate"><span class="pre">combined_zips</span></code> files (which combine the zip code polygon based measures with the the point based estimates to address zip codes without area) there is an additional step. Values for zip codes not in the polygon based measure are taken from the point based measures to address the ~7000 zip codes without area that are missing from the polygon shape file.</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">GitHub</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">git_repository</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://github.com/NSAPH/data_documentation/blob/master/earth_engine_docs/earth_engine_data.Rmd">NSAPH/data_documentation</a></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text">meterological</p></td>
@@ -1384,7 +1394,7 @@ header<div class="sd-summary-down docutils">
 <tr class="row-even"><td><p class="sd-card-text">publication</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://www.science.org/doi/10.1126/sciadv.aba5692">https://www.science.org/doi/10.1126/sciadv.aba5692</a></p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">GitHub</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">git_repository</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://github.com/NSAPH/data_documentation/blob/master/nejm_confounder_summary/nejm_confounders.csv">nejm_confounder_summary/nejm_confounder</a> and <a class="reference external" href="https://github.com/NSAPH/data_documentation/blob/master/rce_data_list/confounder_data.csv">rce_data_list/confounder_data</a></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text">size</p></td>
@@ -1442,7 +1452,7 @@ header<div class="sd-summary-down docutils">
 <tr class="row-even"><td><p class="sd-card-text">temporal_resolution</p></td>
 <td><p class="sd-card-text">daily</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">data descriptor publication</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">publication</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/35715416/">https://pubmed.ncbi.nlm.nih.gov/35715416/</a></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text">size</p></td>
@@ -1506,7 +1516,7 @@ header<div class="sd-summary-down docutils">
 <tr class="row-even"><td><p class="sd-card-text">description</p></td>
 <td><p class="sd-card-text">The data prepared for this project consists of the Medicaid Fee For Service population, with unrestricted Medicaid benefits, under the age of 20 from 1999-2012. This data also includes all hospitalizations for that population, with indicators included regarding whether or not they were associated with a set of respiratory hospitalizations. See the schema for the hospitalization data below for details on specific indicators.</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">GitHub</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">git_repository</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://github.com/NSAPH/data_requests/tree/master/request_projects/feb2021_jenny_medicaid_resp">NSAPH/data_requests</a></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text">exposures</p></td>
@@ -1574,7 +1584,7 @@ header<div class="sd-summary-down docutils">
 <tr class="row-odd"><td><p class="sd-card-text">temporal_resolution</p></td>
 <td><p class="sd-card-text">annually</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">GitHub</p></td>
+<tr class="row-even"><td><p class="sd-card-text">git_repository</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://github.com/NSAPH/data_requests/blob/master/request_projects/jan2021_whanhee_fisrt_hosps/code/6_join_exposure_to_confounders.R">data_requests</a></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text">size</p></td>
@@ -1686,7 +1696,7 @@ header<div class="sd-summary-down docutils">
 <tr class="row-odd"><td><p class="sd-card-text">size</p></td>
 <td><p class="sd-card-text">1.9 GB</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">GitHub</p></td>
+<tr class="row-even"><td><p class="sd-card-text">git_repository</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://github.com/ShuxinD/ADRDdata">https://github.com/ShuxinD/ADRDdata</a></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text">other</p></td>
@@ -1973,6 +1983,70 @@ header<div class="sd-summary-down docutils">
 </tbody>
 </table>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   └── national_exp_0621.fst
+</pre></div>
+</div>
+</div>
+</details></section>
+<section id="aggregated-2010-2016-medicare-mortality-data-with-pm2-5-exposure-and-zip-code-level-variables">
+<h2>Aggregated 2010-2016 Medicare Mortality Data with PM2.5 Exposure and ZIP code level variables<a class="headerlink" href="#aggregated-2010-2016-medicare-mortality-data-with-pm2-5-exposure-and-zip-code-level-variables" title="Permalink to this headline">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>aggregate_medicare_data_2010to2016</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p class="sd-card-text">description</p></td>
+<td><p class="sd-card-text">This data contain (annually aggregated) exposure to PM2.5 data, demographic data from census and mortality data + individual level characteristics for the entire Medicare population in 1999-2016.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">dataset_author</p></td>
+<td><p class="sd-card-text">Xiao Wu, Ben Sabath</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">date_created</p></td>
+<td><p class="sd-card-text">2020</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">data_source</p></td>
+<td><p class="sd-card-text">Medicaid, Exposure Data, Census Data</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">spatial_coverage</p></td>
+<td><p class="sd-card-text">US</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">spatial_resolution</p></td>
+<td><p class="sd-card-text">zipcode</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">temporal_coverage</p></td>
+<td><p class="sd-card-text">2010-2016</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">temporal_resolution</p></td>
+<td><p class="sd-card-text">Annually</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">publication</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://www.science.org/doi/10.1126/sciadv.aba5692">https://www.science.org/doi/10.1126/sciadv.aba5692</a></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">processing_description</p></td>
+<td><p class="sd-card-text">See <a class="reference external" href="https://www.science.org/doi/10.1126/sciadv.aba5692">Xiao’s paper</a> for processing description.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">rce_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">~shared_space/ci3_analysis/causal_rule_ensemble</span> <span class="pre">/aggregate_medicare_data_2010to2016.fst</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">fasse_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">aggregate_medicare_data_2010to2016</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">git_repository</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://github.com/wxwx1993/National_Causal">https://github.com/wxwx1993/National_Causal</a></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">files</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   └── aggregate_medicare_data_2010to2016.fst
 </pre></div>
 </div>
 </div>
