@@ -269,7 +269,7 @@ qid : chr
   - `~/shared_space/ci3_health_data/medicare/mortality/ 1999_2016/wu/cache_data/merged_by_year_v2`
 * - fasse_location
   - `denom_by_year`
-* - GitHub 
+* - git_repository 
   - [github.com/NSAPH/National-Causal-Analysis](https://github.com/NSAPH/National-Causal-Analysis/tree/master/MergedData)
 * - dataset_author
   - Ben Sabath, Xiao Wu
@@ -489,7 +489,7 @@ year : num
   - annually
 * - description
   - This dataset contains information on temperature, relative humidity, and total precipitation data. The data is available as raster files on Google earth engine. The temporal and spatial resolutions varied by data source, but all were available at a daily resolution or more frequently. Where the time resolution of the rasters is more than daily, daily averages for each raster were calculated. Next, using Google earth engine's spatial averaging algorithms and a set of polygons representing the areas of interest, the daily value for each polygon was calculated. The polygons used were the ones described in the preceding section. The results of this calculation were then downloaded as a csv file to the RCE. At this point, there is one file for each year. Following this, annual averages are calculated for each location, and these are combined in to a single file. The daily values are also combined in to a single file. For the `combined_zips` files (which combine the zip code polygon based measures with the the point based estimates to address zip codes without area) there is an additional step. Values for zip codes not in the polygon based measure are taken from the point based measures to address the ~7000 zip codes without area that are missing from the polygon shape file.
-* - GitHub 
+* - git_repository 
   - [NSAPH/data_documentation](https://github.com/NSAPH/data_documentation/blob/master/earth_engine_docs/earth_engine_data.Rmd)
 * - meterological
   - Temperature (K) - variable name: tmmx (Source: GRIDMET); Relative Humidity - variable name: rmax (Source: GRIDMET)
@@ -529,7 +529,7 @@ year : num
   - annually
 * - publication 
   - https://www.science.org/doi/10.1126/sciadv.aba5692
-* - GitHub 
+* - git_repository 
   - [nejm_confounder_summary/nejm_confounder](https://github.com/NSAPH/data_documentation/blob/master/nejm_confounder_summary/nejm_confounders.csv) and [rce_data_list/confounder_data](https://github.com/NSAPH/data_documentation/blob/master/rce_data_list/confounder_data.csv)
 * - size
   - 296 MB
@@ -563,7 +563,7 @@ year : num
   - 2000-2020
 * - temporal_resolution
   - daily
-* - data descriptor publication 
+* - publication 
   - https://pubmed.ncbi.nlm.nih.gov/35715416/
 * - size
   - 1.03 GB
@@ -601,7 +601,7 @@ year : num
   - annually
 * - description
   - The data prepared for this project consists of the Medicaid Fee For Service population, with unrestricted Medicaid benefits, under the age of 20 from 1999-2012. This data also includes all hospitalizations for that population, with indicators included regarding whether or not they were associated with a set of respiratory hospitalizations. See the schema for the hospitalization data below for details on specific indicators.
-* - GitHub 
+* - git_repository 
   - [NSAPH/data_requests](https://github.com/NSAPH/data_requests/tree/master/request_projects/feb2021_jenny_medicaid_resp)
 * - exposures
   - Xiao Wu's CausalGPS PM2.5 data 
@@ -644,7 +644,7 @@ year : num
   - 2000-2016
 * - temporal_resolution
   - annually
-* - GitHub
+* - git_repository
   - [data_requests](https://github.com/NSAPH/data_requests/blob/master/request_projects/jan2021_whanhee_fisrt_hosps/code/6_join_exposure_to_confounders.R)
 * - size
   - 247 MB
@@ -710,7 +710,7 @@ year : num
   - `adrd_hospitalization`
 * - size
   - 1.9 GB
-* - GitHub
+* - git_repository
   - https://github.com/ShuxinD/ADRDdata
 * - other
   - The Chronic Condition Warehouse list for ADRD: https://www2.ccwdata.org/web/guest/condition-categories
@@ -892,5 +892,44 @@ ADRD_secondary: logi
 ```
 ```
    └── national_exp_0621.fst
+```
+`````
+
+
+### Aggregated 2010-2016 Medicare Mortality Data with PM2.5 Exposure and ZIP code level variables
+`````{dropdown} **aggregate_medicare_data_2010to2016**
+```{list-table}
+:header-rows: 0
+* - description
+  - This data contain (annually aggregated) exposure to PM2.5 data, demographic data from census and mortality data + individual level characteristics for the entire Medicare population in 1999-2016. 
+* - dataset_author
+  - Xiao Wu, Ben Sabath
+* - date_created
+  - 2020
+* - data_source
+  - Medicaid, Exposure Data, Census Data
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2010-2016
+* - temporal_resolution
+  - Annually
+* - publication
+  - https://www.science.org/doi/10.1126/sciadv.aba5692
+* - processing_description
+  - See [Xiao’s paper](https://www.science.org/doi/10.1126/sciadv.aba5692) for processing description. 
+* - rce_location
+  - `~shared_space/ci3_analysis/causal_rule_ensemble /aggregate_medicare_data_2010to2016.fst`
+* - fasse_location
+  - `aggregate_medicare_data_2010to2016`
+* - git_repository
+  - https://github.com/wxwx1993/National_Causal
+* - files
+  -
+```
+```
+   └── aggregate_medicare_data_2010to2016.fst
 ```
 `````
