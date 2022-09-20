@@ -57,17 +57,17 @@ align: center
 scale: 60%
 align: center 
 ---
-``````{figure} imgs/Step3b.png
+```{figure} imgs/Step3b.png
 ---
 scale: 60%
 align: center 
 ---
-``````{figure} imgs/Step4b.png
+```{figure} imgs/Step4b.png
 ---
 scale: 60%
 align: center 
 ---
-``````{figure} imgs/Step5b.png
+```{figure} imgs/Step5b.png
 ---
 scale: 60%
 align: center 
