@@ -31,13 +31,13 @@ Please note:\
 **How to access the training:**\
 After logging into your institutional CITI account, click on "View courses" > "Add a Course", and make the below selections when prompted with the questions:\
 
-```{figure} imgs/Step 1.png
+```{figure} handbook/imgs/Step 1.png
 ---
 scale: 60%
 align: center 
 ---
 ```
-```{figure} imgs/Step 2.png
+```{figure} handbook/imgs/Step 2.png
 ---
 scale: 60%
 align: center 
@@ -46,7 +46,7 @@ align: center
 **Non-Harvard Affiliate Instructions**\
 If you are a non-Harvard affiliate, please refer to the instructions outlined in the steps below to find the appropriate Data Security Training.\
 
-```{figure} imgs/Guide_CITI_DataSecurity.pdf
+```{figure} handbook/imgs/Guide_CITI_DataSecurity.pdf
 ---
 scale: 60%
 align: center 
