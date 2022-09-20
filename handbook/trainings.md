@@ -31,13 +31,13 @@ Please note:\
 **How to access the training:**\
 After logging into your institutional CITI account, click on "View courses" > "Add a Course", and make the below selections when prompted with the questions:\
 
-```{figure} imgs/Step~1.png
+```{figure} imgs/Step1.png
 ---
 scale: 60%
 align: center 
 ---
 ```
-```{figure} imgs/Step~2.png
+```{figure} imgs/Step2.png
 ---
 scale: 60%
 align: center 
