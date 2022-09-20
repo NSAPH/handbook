@@ -46,7 +46,28 @@ align: center
 **Non-Harvard Affiliate Instructions**\
 If you are a non-Harvard affiliate, please refer to the instructions outlined in the steps below to find the appropriate Data Security Training.\
 
-```{figure} handbook/imgs/Guide_CITI_DataSecurity.pdf
+```{figure} handbook/imgs/Step1b.png
+---
+scale: 60%
+align: center 
+---
+```
+```{figure} handbook/imgs/Step2b.png
+---
+scale: 60%
+align: center 
+---
+``````{figure} handbook/imgs/Step3b.png
+---
+scale: 60%
+align: center 
+---
+``````{figure} handbook/imgs/Step4b.png
+---
+scale: 60%
+align: center 
+---
+``````{figure} handbook/imgs/Step5b.png
 ---
 scale: 60%
 align: center 
