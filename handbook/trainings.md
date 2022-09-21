@@ -44,7 +44,7 @@ align: center
 ---
 ```
 **Non-Harvard Affiliate Instructions**\
-If you are a non-Harvard affiliate, please refer to the instructions outlined in the steps below to find the appropriate Data Security Training.\
+If you are a non-Harvard affiliate, please refer to the instructions outlined in the steps below to find the appropriate Data Security Training.
 
 ```{figure} imgs/Step1b.png
 ---
