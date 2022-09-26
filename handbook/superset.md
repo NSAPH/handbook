@@ -6,11 +6,11 @@ A deployed database resides in the Harvard University’s FASRC clusters. Access
 
 ## Database querying in the `nsaph` host
 
-There are multiple ways to query a database. Two options are offered below: Superset and Jupyterlab. 
+There are multiple ways to query a database. Two options are offered below: Superset interactice sessions and python scripts. Superset and/or database passwords are required.
 
 ### Using Superset to explore the DB
 
-Superset is an application that allows working with a database interactively. It offers functionalities to query, visualize, and explore the data.
+Superset allows working with a database interactively. It offers functionalities to query, visualize, and explore the data.
 
 A Superset instance, that is installed and connected to the database, remains active in the `nsaph` host.
 
@@ -41,8 +41,8 @@ Option to `Download to csv` retrieves the data locally. Do NOT click it if query
 ```
 
 (access)=
-### Jupyter Lab
-Jupyter Lab will allow you to query the databases and create data query pipelines with Python.
+### Using Python to query the DB
+Packages that allow you to query the database are pre-packaged in a conda environment in the `nsaph` host. 
 
 ```{note}
 If you would like to customize your own environment, follow this [section](customize). Not sure if you need to? Do NOT customize it.
@@ -50,7 +50,7 @@ If you would like to customize your own environment, follow this [section](custo
 
 Step 1: Login to the `nsaph` host
 ```
-ssh -L8088:localhost:8088 username@nsaph.rc.fas.harvard.edu
+ssh username@nsaph.rc.fas.harvard.edu
 ```
 
 Step 2: Initialize the Anaconda environment
@@ -68,16 +68,18 @@ You should find an environment called `superset_final`. Activate that environmen
 ```
 source activate superset_final
 ```
-Step 4: Ensure package `nsaph` and `nsaph-utils` are installed
+Ensure package `nsaph` and `nsaph-utils` are installed
 ```
 pip list | grep nsaph
 ```
-Step 5: Go to your dedicated Jupyter Lab directory in NSAPH
 
-Step 6: Access Jupyter Lab via OOD here: https://fasseood.rc.fas.harvard.edu/
+Step 4: Make sure to create a symlink to an l3 `<folder>` to work in.
 
-Step 7: Create a `database.ini` file. The content should look something like:
+```
+ln -s /n/dominici_nsaph_l3/<folder>
+```
 
+Step 5: `cd` into `<folder>` and create a `database.ini` file. The content should look something like:
 ```
 [nsaph2]
 host=localhost
@@ -85,8 +87,9 @@ database=nsaph2
 user=username
 password=*****
 ```
+Use your database password.
 
-Step 8: query the database. A sample query file can be found [here](https://github.com/NSAPH-Data-Processing/sql-utils/blob/main/src/query.py)
+Step 6: Create a python script and include functions that connect to the database and SQL queries. A sample query file can be found [here](https://github.com/NSAPH-Data-Processing/sql-utils/blob/main/src/query.py)
 
 **Both [query.py](https://github.com/NSAPH-Data-Processing/sql-utils/blob/main/src/query.py) and database.ini should be located in l3 spaces.**
 
@@ -99,6 +102,8 @@ To execute the query:
 python -u query.py database.ini nsaph2
 ```
 The query will be converted to a .csv file and is saved under the working directory. You can then use Jupyter Lab to explore the data.
+
+Step 7: Go to your dedicated Jupyter Lab directory in NSAPH. Access Jupyter Lab via OOD here: https://fasseood.rc.fas.harvard.edu/
 
 (customize)=
 ### Customize your own conda environment
@@ -150,7 +155,7 @@ pip list | grep nsaph
 ```
 You should see packages `nsaph` and `nsaph-utils`.
 
-Step 6: Follow Step 5 - Step 8 in the above [section](access)
+Step 6: Follow Step 5 - Step 7 in the above [section](access)
 
 ## Add data to the platform
 When you have large volumes of CSV files, it is a standard data science project flow to turn these files into relational databases.
