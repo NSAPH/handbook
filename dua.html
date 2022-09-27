@@ -521,9 +521,9 @@ usage policy and agree to it. Please take a few minutes to read the information 
 <p><em>Per the DUA and IRB, data has to be on the RCE/FASSE level 3 data cluster ONLY and cannot be
 downloaded from the level 3 RCE/FASSE. Violations come with serious consequences that jeopardize
 everyone’s work. We are very much encouraging sharing reproducible code on GitHub, but please use
-it only for CODE and publicly available data. We suggest adding a .gitignore file to your
+it only for CODE and publicly available data. We suggest adding a <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file to your
 repository and using it to prevent unintentional upload of data files. We also suggest using
-the “git status” command before committing to confirm what you are committing.</em></p>
+the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> command before committing to confirm what you are committing.</em></p>
 <p><strong>2. CMS Cell size suppression Policy is enforced by the DUA.</strong></p>
 <p><em>As outlined for researchers in the data use agreement (DUA), the CMS cell size suppression policy sets minimum thresholds for the display of CMS data. The policy stipulates that no cell (e.g. admissions, discharges, patients, services, etc.) containing a value of 1 to 10 can be reported directly. A value of zero does not violate the minimum cell size policy. In addition, no cell can be reported that allows a value of 1 to 10 to be derived from other reported cells or information. For more information, click <a class="reference external" href="https://resdac.org/articles/cms-cell-size-suppression-policy"><em>here</em></a>.</em></p>
 </section>
@@ -531,14 +531,12 @@ the “git status” command before committing to confirm what you are committin
 <h2>Data Use<a class="headerlink" href="#data-use" title="Permalink to this headline">#</a></h2>
 <p><strong>1. Compute resources are limited.</strong></p>
 <p><em>Inefficient use of compute resources by a single user can prevent the entire team from getting work done. Users should develop and benchmark their models using the Rstudio profiler on small subsets of their data prior to grabbing large chunks of memory. We monitor compute usage, and users using the cluster inefficiently may have their jobs cancelled.</em></p>
-<p><strong>2. Set up GitHub under <a class="reference external" href="https://github.com/orgs/NSAPH-Projects">https://github.com/orgs/NSAPH-Projects</a> and link it to FASSE project space.</strong></p>
-<p><em>For more details, please see instructions <a class="reference external" href="https://nsaph.info/fasse.html#step-4-create-a-git-repository-on-github"><em>here</em></a>.</em></p>
+<p><strong>2. Set up GitHub under <a class="reference external" href="https://github.com/orgs/NSAPH-Projects">NSAPH-Projects</a> and link it to FASSE project space.</strong></p>
+<p><em>For more details, please see instructions <a class="reference external" href="https://nsaph.info/fasse.html#step-4-create-a-git-repository-on-github">here</a>.</em></p>
 <p><strong>3. Work under the project space, and not in your home folder.</strong></p>
 <p><em>Instructions on how to create a project folder and a GitHub repository can be found <a class="reference external" href="https://nsaph.info/fasse.html#step-3-project-workspace"><em>here</em></a>.</em></p>
 <p><strong>4. Use a Symbolic link to read in data from your project folder.</strong></p>
-<ul class="simple">
-<li><p>In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/projects</span></code>. <strong>Please do not copy the data</strong>; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click <a class="reference external" href="https://nsaph.info/fasse.html#step-5-analytic-data"><em>here</em></a>.</p></li>
-</ul>
+<p><em>In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/projects</span></code>. <strong>Please do not copy the data</strong>; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click <a class="reference external" href="https://nsaph.info/fasse.html#step-5-analytic-data">here</a>.</em></p>
 </section>
 </section>
 

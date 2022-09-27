@@ -23,10 +23,10 @@ The following data is available at: **`/n/dominici_nsaph_l3/Lab/projects/analyti
   - 
 ```
 ```
-   ├── admissions_1999.fst
-   ├── admissions_2000.fst
-   ├── ...
-   └── admissions_2016.fst
+   ├── admissions_1999.fst
+   ├── admissions_2000.fst
+   ├── ...
+   └── admissions_2016.fst
 ```
 ````{dropdown} header
 ```
@@ -135,12 +135,12 @@ Dual                     : int
   - 
 ```
 ```
-   ├── qid_data_2009.fst
-   ├── qid_data_2010.fst
-   ├── ...
-   ├── qid_data_2016.fst
-   ├── qid_entry_exit.fst
-   └── year_zip_confounders.fst
+   ├── qid_data_2009.fst
+   ├── qid_data_2010.fst
+   ├── ...
+   ├── qid_data_2016.fst
+   ├── qid_entry_exit.fst
+   └── year_zip_confounders.fst
 ```
 ````{dropdown} header (qid_data_yyyy)
 ```
@@ -288,9 +288,9 @@ qid : chr
 ```
 
 ```
-   ├── confounder_exposure_merged_nodups_health_1999.fst
-   ├── ...
-   └── confounder_exposure_merged_nodups_health_2016.fst
+   ├── confounder_exposure_merged_nodups_health_1999.fst
+   ├── ...
+   └── confounder_exposure_merged_nodups_health_2016.fst
 ```
 ````{dropdown} header
 ```
@@ -384,12 +384,12 @@ winter_rmax                 : num
   - 
 ```
 ```
-   ├── First_hosp_AD_any.fst
-   ├── First_hosp_AD_primary.fst
-   ├── First_hosp_ADRD_any.fst
-   ├── First_hosp_ADRD_primary.fst
-   ├── First_hosp_ADRD_secondary.fst
-   └── First_hosp_AD_secondary.fst
+   ├── First_hosp_AD_any.fst
+   ├── First_hosp_AD_primary.fst
+   ├── First_hosp_ADRD_any.fst
+   ├── First_hosp_ADRD_primary.fst
+   ├── First_hosp_ADRD_secondary.fst
+   └── First_hosp_AD_secondary.fst
 ```
 ````{dropdown} header
 ```
@@ -426,7 +426,7 @@ year : num
   -
 ```
 ```
-   └── medicare_entry_age.csv
+   └── medicare_entry_age.csv
 ```
 `````
 
@@ -459,9 +459,9 @@ year : num
   -
 ```
 ```
-   ├── follow_up_year_2000.fst
-   ├── ...
-   └── follow_up_year_2016.fst
+   ├── follow_up_year_2000.fst
+   ├── ...
+   └── follow_up_year_2016.fst
 ```
 `````
 
@@ -501,7 +501,7 @@ year : num
   -
 ```
 ```
-   └── temperature_seasonal_zipcode_combined.csv
+   └── temperature_seasonal_zipcode_combined.csv
 ```
 `````
 
@@ -539,7 +539,7 @@ year : num
   - 
 ```
 ```
-   └── merged_covariates.csv
+   └── merged_covariates.csv
 ```
 `````
 
@@ -573,7 +573,7 @@ year : num
   - 
 ```
 ```
-   └── Heatvars_County_2000-2020_v1.2.Rds
+   └── Heatvars_County_2000-2020_v1.2.Rds
 ```
 `````
 
@@ -612,9 +612,9 @@ year : num
 ``` 
 ```
 ├── denom
-│   ├── denom_under_20_1999.fst
-│   ├── ...
-│   └── denom_under_20_2012.fst
+│   ├── denom_under_20_1999.fst
+│   ├── ...
+│   └── denom_under_20_2012.fst
 └── hosps
     ├── under_20_admissions_1999.fst
     ├── ...
@@ -654,9 +654,9 @@ year : num
   - 
 ```
 ```
-   ├── merged_confounders_2000.csv
-   ├── ...
-   └── merged_confounders_2016.csv
+   ├── merged_confounders_2000.csv
+   ├── ...
+   └── merged_confounders_2016.csv
 ```
 `````
 
@@ -680,7 +680,7 @@ year : num
   - 
 ```
 ```
-   └── Zip_to_ZCTA_crosswalk_2015_JSI.csv
+   └── Zip_to_ZCTA_crosswalk_2015_JSI.csv
 ```
 `````
 
@@ -931,5 +931,77 @@ ADRD_secondary: logi
 ```
 ```
    └── aggregate_medicare_data_2010to2016.fst
+```
+`````
+
+### Nationwide Medicare Strata
+
+`````{dropdown} **erc_strata**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Kevin Josey
+* - date_created
+  - Aug 5 2022
+* - data_source
+  - Medicare File from Xiao et al.'s Science Advances paper (see `denom_by_year`)
+* - spatial_coverage
+  - contiguous US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annual
+* - processing_description
+  - Data were divided and aggregated into custom strata, then subsetted depending on several individual factors. I further merged these data tables with neighborhood level covariates.
+* - rce_location
+  - `~/shared_space/ci3_analysis/josey_erc_strata/Data`
+* - fasse_location
+  - `erc_strata`
+* - git_repository
+  - https://github.com/kevjosey/erc-strata
+* - size
+  - 6.9 GB
+* - files
+  -
+```
+```
+├── aggregate_data_qd.RData
+├── aggregate_data_rm.RData
+├── national_merged2016_qd.RData
+├── national_merged2016_rm.RData
+├── qd
+│   ├── 0_all_qd.RData
+│   ├── 0_asian_qd.RData
+│   ├── 0_black_qd.RData
+│   ├── 0_hispanic_qd.RData
+│   ├── 0_white_qd.RData
+│   ├── 1_all_qd.RData
+│   ├── 1_asian_qd.RData
+│   ├── 1_black_qd.RData
+│   ├── 1_hispanic_qd.RData
+│   ├── 1_white_qd.RData
+│   ├── 2_all_qd.RData
+│   ├── 2_asian_qd.RData
+│   ├── 2_black_qd.RData
+│   ├── 2_hispanic_qd.RData
+│   └── 2_white_qd.RData
+└── rm
+    ├── 0_all_rm.RData
+    ├── 0_asian_rm.RData
+    ├── 0_black_rm.RData
+    ├── 0_hispanic_rm.RData
+    ├── 0_white_rm.RData
+    ├── 1_all_rm.RData
+    ├── 1_asian_rm.RData
+    ├── 1_black_rm.RData
+    ├── 1_hispanic_rm.RData
+    ├── 1_white_rm.RData
+    ├── 2_all_rm.RData
+    ├── 2_asian_rm.RData
+    ├── 2_black_rm.RData
+    ├── 2_hispanic_rm.RData
+    └── 2_white_rm.RData
 ```
 `````

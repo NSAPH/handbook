@@ -7,7 +7,11 @@ If your FASSE session has crashed due to insufficient memory, it may be due to u
 
 
 
-Sometimes the data you are working with can require a very large amount of memory, such as individual data from Medicare enrollment files. If you are anticipating using a lot of memory, you should request from the fasse_bigmem partition. Here is a link to the FASSE partitions: https://docs.rc.fas.harvard.edu/kb/fasse/#articleTOC_15
+Sometimes the data you are working with can require a very large amount of memory, such as individual data from Medicare enrollment files. If you are anticipating using a lot of memory, you should request from the fasse_bigmem partition. 
+
+```{note}
+To view FASSE partions and learn more, see [the official FASSE documentation](https://docs.rc.fas.harvard.edu/kb/fasse/#articleTOC_15).
+```
 
 For your convenience, the list is also below, updated August 2022:
 |Partition	|Number of Nodes	|Cores per Node	|CPU Core Types|	Mem per Node (GB)|	Time Limit	|Max Jobs	|Max Cores	|MPI Suitable?	|GPU Capable?|
@@ -21,4 +25,3 @@ For your convenience, the list is also below, updated August 2022:
 |PI/Lab nodes|	varies|	varies	|varies|	varies|	none|	none|	none|	varies|	varies|
 
 
-For more information, please reference https://docs.rc.fas.harvard.edu/kb/fasse/#articleTOC_15
