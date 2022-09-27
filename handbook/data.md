@@ -6,6 +6,76 @@
 | [MBSF](https://resdac.org/cms-data/files/mbsf-base)     | The enrollment file and also has mortality for everyone (1999-2018) | 
 | MCBS                                                    | Survey for sample of all Medicare or just FFS (1999-2004, 2007-2013, 2015-2017) |
 
+## Original (raw) data location
+
+Medicare data is located at: `data/ci3_d_medicare/original_data/cms_medicare/data`\
+Size: `733 GB`\
+Folder structure:
+
+`````{dropdown} Medicare data folder tree
+```
+├── 1999
+│     ├── denominator
+│     └── inpatient
+├── 2000
+│     ├── denominator
+│     └── inpatient
+├── 2001
+│     ├── denominator
+│     └── inpatient
+├── 2002
+│     ├── denominator
+│     └── inpatient
+├── 2003
+│     ├── denominator
+│     └── inpatient
+├── 2004
+│     ├── denominator
+│     └── inpatient
+├── 2005
+│     ├── denominator
+│     └── inpatient
+├── 2006
+│     ├── denominator
+│     └── inpatient
+├── 2007
+│     ├── denominator
+│     └── inpatient
+├── 2008
+│     ├── denominator
+│     └── inpatient
+├── 2009
+│     ├── denominator
+│     └── inpatient
+├── 2010
+│     ├── denominator
+│     └── inpatient
+├── 4334
+│     ├── 2011
+│     ├── 2012
+│     ├── 2015
+│     └── Extract File Documentation
+├── 4580
+│     ├── 2013
+├── 5819
+│     ├── 2014
+│     └── Extract File Documentation
+├── 7087
+│     ├── 2015
+│     └── Extract File Documentation
+├── 8183
+│     ├── 2016
+│     └── Extract File Documentation
+├── 10411
+│     └── 2017
+├── 2018
+│     └── extract_file_documentation
+├── Medicare Claims
+├── Medicare Enrollment
+└── Xwalk
+```
+`````
+
 ## Heath data references
 
 - RESDAC [Using Medicare Hospitalization Information and the MedPAR]("http://resdac.umn.edu/sites/resdac.umn.edu/files/Using%20Medicare%20Hospitalization%20Information%20and%20the%20MedPAR%20(Slides).pdf") 
@@ -159,4 +229,7 @@ MBSF
 
 MEDPAR
   Medicare Provider Analysis and Review
+  
+IRB
+  The Institutional Review Board
 ```
