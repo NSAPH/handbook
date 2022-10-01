@@ -104,7 +104,7 @@ your **project name**.
 
 Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
 If you are not familiar with using `git`, check out this [git tutorial](https://swcarpentry.github.io/git-novice/). 
-Also, check out [our guidelines](https://nsaph.info/contributing.html) for collaborative work on GitHub.
+Also, check out [our guidelines](https://nsaph.info/collaborative.html) for collaborative work on GitHub.
 
 ````{note}
 You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE's command line. 
@@ -115,6 +115,10 @@ git config --global user.name "Mona Lisa"
 git config --global user.email "email@example.com"
 ```
 ````
+While you may find FASRC documents suggesting the use of SSH to your repositories, FASSE environments are configured specifically so that the port used for SSH is blocked. Therefore, you should use the HTTPS version of git repo address when VCS your projects. This does mean that you are required to enter username and password each time a sync is performed between remote and the local. 
+```{note}
+The prompt for your password is NOT your actual Github password. Instead, you need to enter the generated token in replacement of the password. See how to generate token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token).
+```
 
 ## Step 5. Analytic Data
 
