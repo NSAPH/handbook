@@ -638,7 +638,7 @@ can collaborate across many projects at once. If you are not already a member of
 your <strong>project name</strong>.</p>
 <p>Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
 If you are not familiar with using <code class="docutils literal notranslate"><span class="pre">git</span></code>, check out this <a class="reference external" href="https://swcarpentry.github.io/git-novice/">git tutorial</a>.
-Also, check out <a class="reference external" href="https://nsaph.info/contributing.html">our guidelines</a> for collaborative work on GitHub.</p>
+Also, check out <a class="reference external" href="https://nsaph.info/collaborative.html">our guidelines</a> for collaborative work on GitHub.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE’s command line.
@@ -647,6 +647,11 @@ By doing this, all code contributions (commits) from FASSE will be linked to you
 <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;email@example.com&quot;</span>
 </pre></div>
 </div>
+</div>
+<p>While you may find FASRC documents suggesting the use of SSH to your repositories, FASSE environments are configured specifically so that the port used for SSH is blocked. Therefore, you should use the HTTPS version of git repo address when VCS your projects. This does mean that you are required to enter username and password each time a sync is performed between remote and the local.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The prompt for your password is NOT your actual Github password. Instead, you need to enter the generated token in replacement of the password. See how to generate token <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token">here</a>.</p>
 </div>
 </section>
 <section id="step-5-analytic-data">
