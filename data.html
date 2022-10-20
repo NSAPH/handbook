@@ -195,7 +195,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="fasse_partitions.html">
-   FASSE Partitions
+   FASSE Compute Partitions
   </a>
  </li>
  <li class="toctree-l1">
@@ -442,13 +442,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#original-raw-data-location">
-   Original (raw) data location
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#heath-data-references">
-   Heath data references
+  <a class="reference internal nav-link" href="#health-data-original-raw-cms-data">
+   Health data (original/raw CMS data)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -462,20 +457,15 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#variables">
-     Variables
+    <a class="reference internal nav-link" href="#gridmet-variables">
+     Gridmet Variables
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#commonly-used-public-data-sources">
-   Commonly Used Public Data Sources
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#common-acronyms">
-   Common Acronyms
+  <a class="reference internal nav-link" href="#other-commonly-used-public-data-sources">
+   Other Commonly Used Public Data Sources
   </a>
  </li>
 </ul>
@@ -498,13 +488,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#original-raw-data-location">
-   Original (raw) data location
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#heath-data-references">
-   Heath data references
+  <a class="reference internal nav-link" href="#health-data-original-raw-cms-data">
+   Health data (original/raw CMS data)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -518,20 +503,15 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#variables">
-     Variables
+    <a class="reference internal nav-link" href="#gridmet-variables">
+     Gridmet Variables
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#commonly-used-public-data-sources">
-   Commonly Used Public Data Sources
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#common-acronyms">
-   Common Acronyms
+  <a class="reference internal nav-link" href="#other-commonly-used-public-data-sources">
+   Other Commonly Used Public Data Sources
   </a>
  </li>
 </ul>
@@ -546,29 +526,39 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="data-sources">
 <h1>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this headline">#</a></h1>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Medical</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
+<p>On this page you can find a description of common data sources and their location on the cluster.</p>
+<section id="health-data-original-raw-cms-data">
+<h2>Health data (original/raw CMS data)<a class="headerlink" href="#health-data-original-raw-cms-data" title="Permalink to this headline">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+MBSF and MedPar<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://resdac.org/cms-data/files/medpar">MedPar data</a></p></td>
-<td><p>Includes hospitalizations for FFS individuals (1999-2018)</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">data_source</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://resdac.org/cms-data/files/mbsf-base">MBSF</a> and <a class="reference external" href="https://resdac.org/cms-data/files/medpar">MedPar</a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://resdac.org/cms-data/files/mbsf-base">MBSF</a></p></td>
-<td><p>The enrollment file and also has mortality for everyone (1999-2018)</p></td>
+<tr class="row-even"><td><p class="sd-card-text">description</p></td>
+<td><p class="sd-card-text">MedPar includes hospitalizations for FFS individuals (1999-2018). MBSF or the enrollment file and also has mortality for everyone (1999-2018).</p></td>
 </tr>
-<tr class="row-even"><td><p>MCBS</p></td>
-<td><p>Survey for sample of all Medicare or just FFS (1999-2004, 2007-2013, 2015-2017)</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">fasse_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">data/ci3_d_medicare/original_data/cms_medicare/data</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">size</p></td>
+<td><p class="sd-card-text">733 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">files</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<section id="original-raw-data-location">
-<h2>Original (raw) data location<a class="headerlink" href="#original-raw-data-location" title="Permalink to this headline">#</a></h2>
-<p>Medicare data is located at: <code class="docutils literal notranslate"><span class="pre">data/ci3_d_medicare/original_data/cms_medicare/data</span></code><br />
-Size: <code class="docutils literal notranslate"><span class="pre">733</span> <span class="pre">GB</span></code><br />
-Folder structure:</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Medicare data folder tree<div class="sd-summary-down docutils">
@@ -638,15 +628,49 @@ Medicare data folder tree<div class="sd-summary-down docutils">
 </pre></div>
 </div>
 </div>
-</details></section>
-<section id="heath-data-references">
-<h2>Heath data references<a class="headerlink" href="#heath-data-references" title="Permalink to this headline">#</a></h2>
+</details></div>
+</details><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Check out the following resources about the CMS health data:</p>
 <ul class="simple">
-<li><p>RESDAC <span class="xref myst">Using Medicare Hospitalization Information and the MedPAR</span></p></li>
-<li><p><a class="reference external" href="https://www.healthaffairs.org/doi/pdf/10.1377/hlthaff.2021.01054?casa_token=mwc33u4-yscAAAAA:E5OXpiodc6LWCqMSdqt_7bfFj-zlhi9IVq3-8IJSg7cA_xTpDuF1CvANoBMHbk_18JqI9uPU0g">Coverage Denials</a></p></li>
-<li><p>RESDAC Online learning: <a class="reference external" href="https://resdac.org/online-learning">https://resdac.org/online-learning</a></p></li>
-<li><p>RESDAC Learning and workshops: <a class="reference external" href="https://resdac.org/learn">https://resdac.org/learn</a></p></li>
+<li><p><a class="reference external" href="http://resdac.umn.edu/sites/resdac.umn.edu/files/Using%20Medicare%20Hospitalization%20Information%20and%20the%20MedPAR%20(Slides).pdf">RESDAC Using Medicare Hospitalization Information and the MedPAR</a></p></li>
+<li><p><a class="reference external" href="https://www.healthaffairs.org/doi/pdf/10.1377/hlthaff.2021.01054">Coverage Denials: Government And Private Insurer Policies For Medical Necessity In Medicare</a></p></li>
+<li><p><a class="reference external" href="https://resdac.org/online-learning">RESDAC Online learning</a></p></li>
+<li><p><a class="reference external" href="https://resdac.org/learn">RESDAC Learning and workshops</a></p></li>
 </ul>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+MCBS<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p class="sd-card-text">data_source</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS">MCBS</a></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">description</p></td>
+<td><p class="sd-card-text">Survey for sample of all Medicare or just FFS (1999-2004, 2007-2013, 2015-2017).</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">fasse_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/data/mcbs/</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">size</p></td>
+<td><p class="sd-card-text">placeholder</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Check out NSAPH MCBS documentation <a class="reference internal" href="mcbs.html"><span class="doc std std-doc">here</span></a>.</p>
+</div>
 </section>
 <section id="pm-2-5-components">
 <h2>PM 2.5 Components<a class="headerlink" href="#pm-2-5-components" title="Permalink to this headline">#</a></h2>
@@ -711,43 +735,15 @@ PM 2.5 component data<div class="sd-summary-down docutils">
 <section id="gridmet">
 <h2>Gridmet<a class="headerlink" href="#gridmet" title="Permalink to this headline">#</a></h2>
 <p>This project aggregates exposure data into social boundaries such as zip codes or census tracts
-that can be then joined with data available at those social units such as Medicare or Census data.</p>
-<p>Specifically it does the following:</p>
+that can be then joined with data available at those social units such as Medicare or Census data. Specifically it does the following:</p>
 <ol class="simple">
 <li><p>Start point: GRIDMET climate data (4x4km grid), Census Bureau Zip Code Tabulation Area (ZCTA) boundaries</p></li>
 <li><p>Aggregation technique: area weight</p></li>
 <li><p>Output: ZCTAs with the area-weighted average of each GRIDMET variable</p></li>
 </ol>
-<section id="variables">
-<h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h3>
-<p>All original GRIDMET varaibles are preserved. There are a total of 18:</p>
-<ul class="simple">
-<li><p>Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)</p></li>
-<li><p>Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)</p></li>
-<li><p>Variables from data processing (2):</p>
-<ul>
-<li><p>CRS: originally “coordinate reference system”, this had a value of “1” for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these “1”s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code.</p></li>
-<li><p>AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA’s area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA’s area was accounted for. Thus this represents a “check” on the process. A small minority of the data does NOT sum to “1”. These are cases on the edge of the map, such as the Florida Keys, that GRIDMET’s data does not fully cover.</p></li>
-</ul>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For documentation on GRIDMET variables please refer to <a class="reference external" href="https://www.climatologylab.org/gridmet.html">their materials</a>.</p>
-</div>
-<ul class="simple">
-<li><p>Notes from the GRIDMET files:</p>
-<ul>
-<li><p>author: John Abatzoglou - University of Idaho, <a class="reference external" href="mailto:jabatzoglou&#37;&#52;&#48;uidaho&#46;edu">jabatzoglou<span>&#64;</span>uidaho<span>&#46;</span>edu</a></p></li>
-<li><p>The projection information for this file is: GCS WGS 1984.</p></li>
-<li><p>Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413</p></li>
-<li><p>Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)</p></li>
-</ul>
-</li>
-</ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Gridmet<div class="sd-summary-down docutils">
+Gridmet data<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -832,10 +828,37 @@ processing_description<div class="sd-summary-down docutils">
 </ul>
 </div>
 </details></div>
-</details></section>
+</details><section id="gridmet-variables">
+<h3>Gridmet Variables<a class="headerlink" href="#gridmet-variables" title="Permalink to this headline">#</a></h3>
+<p>All original GRIDMET varaibles are preserved. There are a total of 18:</p>
+<ul class="simple">
+<li><p>Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)</p></li>
+<li><p>Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)</p></li>
+<li><p>Variables from data processing (2):</p>
+<ul>
+<li><p>CRS: originally “coordinate reference system”, this had a value of “1” for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these “1”s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code.</p></li>
+<li><p>AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA’s area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA’s area was accounted for. Thus this represents a “check” on the process. A small minority of the data does NOT sum to “1”. These are cases on the edge of the map, such as the Florida Keys, that GRIDMET’s data does not fully cover.</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For documentation on GRIDMET variables please refer to <a class="reference external" href="https://www.climatologylab.org/gridmet.html">their materials</a>.</p>
+</div>
+<ul class="simple">
+<li><p>Notes from the GRIDMET files:</p>
+<ul>
+<li><p>author: John Abatzoglou - University of Idaho, <a class="reference external" href="mailto:jabatzoglou&#37;&#52;&#48;uidaho&#46;edu">jabatzoglou<span>&#64;</span>uidaho<span>&#46;</span>edu</a></p></li>
+<li><p>The projection information for this file is: GCS WGS 1984.</p></li>
+<li><p>Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413</p></li>
+<li><p>Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)</p></li>
+</ul>
+</li>
+</ul>
 </section>
-<section id="commonly-used-public-data-sources">
-<h2>Commonly Used Public Data Sources<a class="headerlink" href="#commonly-used-public-data-sources" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="other-commonly-used-public-data-sources">
+<h2>Other Commonly Used Public Data Sources<a class="headerlink" href="#other-commonly-used-public-data-sources" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF">CMS Synthetic data: 2008, 2009, and 2010</a></p></li>
 <li><p><a class="reference external" href="https://www.cdc.gov/brfss/annual_data/annual_2008.htm">CDC, Behavioral Risk Factor Surveillance System (BRFSS) data for body mass index and smoking status</a></p></li>
@@ -843,25 +866,6 @@ processing_description<div class="sd-summary-down docutils">
 <li><p><a class="reference external" href="https://www.census.gov/data/developers/data-sets/acs-5year.2010.html">Census data</a></p></li>
 <li><p><a class="reference external" href="https://www.climatologylab.org/gridmet.html">GridMET data</a></p></li>
 </ul>
-</section>
-<section id="common-acronyms">
-<h2>Common Acronyms<a class="headerlink" href="#common-acronyms" title="Permalink to this headline">#</a></h2>
-<dl class="glossary simple">
-<dt id="term-CMS">CMS<a class="headerlink" href="#term-CMS" title="Permalink to this term">#</a></dt><dd><p>Centers for Medicare and Medicaid Services</p>
-</dd>
-<dt id="term-FASSE">FASSE<a class="headerlink" href="#term-FASSE" title="Permalink to this term">#</a></dt><dd><p>Faculty of Arts and Sciences Secure Environment research computing cluster</p>
-</dd>
-<dt id="term-FFS">FFS<a class="headerlink" href="#term-FFS" title="Permalink to this term">#</a></dt><dd><p>fee-for-service</p>
-</dd>
-<dt id="term-MCBS">MCBS<a class="headerlink" href="#term-MCBS" title="Permalink to this term">#</a></dt><dd><p>Medicare Current Beneficiary Summary</p>
-</dd>
-<dt id="term-MBSF">MBSF<a class="headerlink" href="#term-MBSF" title="Permalink to this term">#</a></dt><dd><p>Master Beneficiary Summary File</p>
-</dd>
-<dt id="term-MEDPAR">MEDPAR<a class="headerlink" href="#term-MEDPAR" title="Permalink to this term">#</a></dt><dd><p>Medicare Provider Analysis and Review</p>
-</dd>
-<dt id="term-IRB">IRB<a class="headerlink" href="#term-IRB" title="Permalink to this term">#</a></dt><dd><p>The Institutional Review Board</p>
-</dd>
-</dl>
 </section>
 </section>
 
