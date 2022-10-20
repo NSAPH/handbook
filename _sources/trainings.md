@@ -24,7 +24,7 @@ The following two courses are accepted by the Harvard Longwood Campus Institutio
 ```{note}
 Please note:
 - The training does not have to be done in one sitting, you can save your progress and resume at a later time.
-- Once you are done, save your CITI training certificate as a pdf (`First`Name_LastName_CITI`) and upload it to the forms when requested.
+- Once you are done, save your CITI training certificate as a pdf (`FirstName_LastName_CITI`) and upload it to the forms when requested.
 - Your CITI certificate should have an expiry date, otherwise it means you haven't completed the required modules.
 ```
 
