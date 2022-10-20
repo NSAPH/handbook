@@ -1,18 +1,26 @@
 # Data sources
 
-| Medical                                                 | Description |
-|---------------------------------------------------------| ----------- |
-| [MedPar data](https://resdac.org/cms-data/files/medpar) | Includes hospitalizations for FFS individuals (1999-2018) | 
-| [MBSF](https://resdac.org/cms-data/files/mbsf-base)     | The enrollment file and also has mortality for everyone (1999-2018) | 
-| MCBS                                                    | Survey for sample of all Medicare or just FFS (1999-2004, 2007-2013, 2015-2017) |
+On this page you can find a description of common data sources and their location on the cluster.
 
-## Original (raw) data location
+## Health data (original/raw CMS data)
 
-Medicare data is located at: `data/ci3_d_medicare/original_data/cms_medicare/data`\
-Size: `733 GB`\
-Folder structure:
+`````{dropdown} MBSF and MedPar
 
-`````{dropdown} Medicare data folder tree
+```{list-table}
+:header-rows: 0
+
+* - data_source
+  - [MBSF](https://resdac.org/cms-data/files/mbsf-base) and [MedPar](https://resdac.org/cms-data/files/medpar)
+* - description
+  - MedPar includes hospitalizations for FFS individuals (1999-2018). MBSF or the enrollment file and also has mortality for everyone (1999-2018).
+* - fasse_location
+  - `data/ci3_d_medicare/original_data/cms_medicare/data`
+* - size
+  - 733 GB
+* - files
+  - 
+```
+````{dropdown} Medicare data folder tree
 ```
 ├── 1999
 │     ├── denominator
@@ -74,14 +82,36 @@ Folder structure:
 ├── Medicare Enrollment
 └── Xwalk
 ```
+````
 `````
 
-## Heath data references
+``` {seealso}
+Check out the following resources about the CMS health data:
+- [RESDAC Using Medicare Hospitalization Information and the MedPAR](http://resdac.umn.edu/sites/resdac.umn.edu/files/Using%20Medicare%20Hospitalization%20Information%20and%20the%20MedPAR%20(Slides).pdf) 
+- [Coverage Denials: Government And Private Insurer Policies For Medical Necessity In Medicare](https://www.healthaffairs.org/doi/pdf/10.1377/hlthaff.2021.01054)
+- [RESDAC Online learning](https://resdac.org/online-learning)
+- [RESDAC Learning and workshops](https://resdac.org/learn)
+```
 
-- RESDAC [Using Medicare Hospitalization Information and the MedPAR]("http://resdac.umn.edu/sites/resdac.umn.edu/files/Using%20Medicare%20Hospitalization%20Information%20and%20the%20MedPAR%20(Slides).pdf") 
-- [Coverage Denials](https://www.healthaffairs.org/doi/pdf/10.1377/hlthaff.2021.01054?casa_token=mwc33u4-yscAAAAA:E5OXpiodc6LWCqMSdqt_7bfFj-zlhi9IVq3-8IJSg7cA_xTpDuF1CvANoBMHbk_18JqI9uPU0g)
-- RESDAC Online learning: https://resdac.org/online-learning
-- RESDAC Learning and workshops: https://resdac.org/learn
+`````{dropdown} MCBS
+
+```{list-table}
+:header-rows: 0
+
+* - data_source
+  - [MCBS](https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS)
+* - description
+  - Survey for sample of all Medicare or just FFS (1999-2004, 2007-2013, 2015-2017).
+* - fasse_location
+  - `/n/dominici_nsaph_l3/data/mcbs/`
+* - size
+  - placeholder
+```
+`````
+
+``` {seealso}
+Check out NSAPH MCBS documentation [here](./mcbs.md).
+```
 
 ## PM 2.5 Components
 
@@ -125,35 +155,13 @@ Folder structure:
 ## Gridmet
 
 This project aggregates exposure data into social boundaries such as zip codes or census tracts 
-that can be then joined with data available at those social units such as Medicare or Census data. 
-
-Specifically it does the following: 
+that can be then joined with data available at those social units such as Medicare or Census data. Specifically it does the following: 
 
 1. Start point: GRIDMET climate data (4x4km grid), Census Bureau Zip Code Tabulation Area (ZCTA) boundaries
 2. Aggregation technique: area weight
 3. Output: ZCTAs with the area-weighted average of each GRIDMET variable
 
-### Variables 
-
-All original GRIDMET varaibles are preserved. There are a total of 18: 
-  - Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)
-  - Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)
-  - Variables from data processing (2):
-       - CRS: originally "coordinate reference system", this had a value of "1" for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these "1"s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code. 
-       - AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA's area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA's area was accounted for. Thus this represents a "check" on the process. A small minority of the data does NOT sum to "1". These are cases on the edge of the map, such as the Florida Keys, that GRIDMET's data does not fully cover. 
-
-```{note}
-For documentation on GRIDMET variables please refer to [their materials](https://www.climatologylab.org/gridmet.html).
-```
-
-- Notes from the GRIDMET files:
-    - author: John Abatzoglou - University of Idaho, jabatzoglou@uidaho.edu
-    - The projection information for this file is: GCS WGS 1984.
-    - Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
-    - Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)
-
-
-`````{dropdown} Gridmet
+`````{dropdown} Gridmet data
 
 ```{list-table}
 :header-rows: 0
@@ -199,8 +207,29 @@ For documentation on GRIDMET variables please refer to [their materials](https:/
     6. That day is appended to the netCDF file
     7. An annual netCDF file is exported. 
 ```
+`````
 
-## Commonly Used Public Data Sources
+### Gridmet Variables 
+
+All original GRIDMET varaibles are preserved. There are a total of 18: 
+  - Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)
+  - Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)
+  - Variables from data processing (2):
+       - CRS: originally "coordinate reference system", this had a value of "1" for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these "1"s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code. 
+       - AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA's area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA's area was accounted for. Thus this represents a "check" on the process. A small minority of the data does NOT sum to "1". These are cases on the edge of the map, such as the Florida Keys, that GRIDMET's data does not fully cover. 
+
+```{note}
+For documentation on GRIDMET variables please refer to [their materials](https://www.climatologylab.org/gridmet.html).
+```
+
+- Notes from the GRIDMET files:
+    - author: John Abatzoglou - University of Idaho, jabatzoglou@uidaho.edu
+    - The projection information for this file is: GCS WGS 1984.
+    - Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
+    - Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)
+    
+
+## Other Commonly Used Public Data Sources
 
 - [CMS Synthetic data: 2008, 2009, and 2010](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF)
 - [CDC, Behavioral Risk Factor Surveillance System (BRFSS) data for body mass index and smoking status](https://www.cdc.gov/brfss/annual_data/annual_2008.htm)
@@ -208,28 +237,3 @@ For documentation on GRIDMET variables please refer to [their materials](https:/
 - [Census data](https://www.census.gov/data/developers/data-sets/acs-5year.2010.html)
 - [GridMET data](https://www.climatologylab.org/gridmet.html)
 
-## Common Acronyms
-
-
-```{glossary}
-CMS
-  Centers for Medicare and Medicaid Services
-  
-FASSE
-  Faculty of Arts and Sciences Secure Environment research computing cluster
-  
-FFS
-  fee-for-service
-
-MCBS
-  Medicare Current Beneficiary Summary
-
-MBSF
-  Master Beneficiary Summary File
-
-MEDPAR
-  Medicare Provider Analysis and Review
-  
-IRB
-  The Institutional Review Board
-```

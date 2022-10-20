@@ -1,4 +1,4 @@
-## FASSE Partitions
+# FASSE Compute Partitions
 
 If your FASSE session has crashed due to insufficient memory, it may be due to using the incorrect partition. A partition is a queue for your work, and FASSE has several of these, each with different sizes and restrictions. In RStudio, you can select which partition you would like to use before you start your session. Below you can see where to type the name of the desired partition. 
 
