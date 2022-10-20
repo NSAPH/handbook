@@ -1051,3 +1051,226 @@ ADRD_secondary: logi
 └── [ 899]  r.submit
 ```
 `````
+
+
+### Aggregated CVD cohort Medicare
+
+`````{dropdown} **aggregated_cvd_cohort_medicare**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Jochem Klompmaker
+* - date_created
+  - April 2022
+* - data_source
+  - MedPar (admissions), MBSF (denominator)
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - description
+  - Denominator file linked with hospitalization data and merged with confounders and exposures (NO2, PM2.5, ozone, temperature, humidity). Person records were aggregated by zip code, year and individual demographics
+* - rce_location
+  - `~/shared_space/ci3_health_data/medicare/gen_admission /1999_2016/Klompmaker/merged_data/cvd2/`
+* - fasse_location
+  - `aggregated_cvd_cohort_medicare`
+* - size
+  - 38 GB
+* - files
+  -
+```
+```
+├── [4.2G]  aggregate_CVD_65yrs.fst
+├── [3.8G]  aggregate_CVD_75yrs.fst
+├── [3.1G]  aggregate_CVD_85yrs.fst
+├── [6.5G]  aggregate_CVD.fst
+├── [4.8G]  aggregate_death_CVD.fst
+├── [4.6G]  aggregate__excl_1yrhosp_CVD.fst
+├── [4.3G]  aggregate_excl_1yrhosp_RES.fst
+├── [1.2M]  cc_zipyear_all.fst
+├── [1.2M]  cc_zipyear_confounder.fst
+├── [941K]  cc_zipyear_cvd.fst
+├── [347M]  CVD_count.fst
+├── [354M]  CVD_death_count.fst
+├── [439M]  time_count.fst
+└── [439M]  time_death_count.fst
+```
+`````
+
+### Aggregated CHD cohort Medicare
+
+`````{dropdown} **aggregated_chd_cohort_medicare**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Jochem Klompmaker
+* - date_created
+  - April 2022
+* - data_source
+  - MedPar (admissions), MBSF (denominator)
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - description
+  - Denominator file linked with hospitalization data and merged with confounders and exposures (NO2, PM2.5, ozone, temperature, humidity). Person records were aggregated by zip code, year and individual demographics
+* - rce_location
+  - `~/shared_space/ci3_health_data/medicare /gen_admission /1999_2016/Klompmaker/merged_data/chd2/`
+* - fasse_location
+  - `aggregated_chd_cohort_medicare`
+* - size
+  - 35 GB
+* - files
+  -
+```
+```
+├── [4.1G]  aggregate_CHD_65yrs.fst
+├── [3.8G]  aggregate_CHD_75yrs.fst
+├── [3.2G]  aggregate_CHD_85yrs.fst
+├── [ 14G]  aggregate_CHD.fst
+├── [4.3G]  aggregate_excl_1yrhosp_CHD.fst
+├── [1.2M]  cc_zipyear_chd.fst
+├── [ 92M]  CHD_count.fst
+└── [116M]  time_count.fst
+```
+`````
+
+### Aggregated CBV cohort Medicare
+
+`````{dropdown} **aggregated_cbv_cohort_medicare**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Jochem Klompmaker
+* - date_created
+  - April 2022
+* - data_source
+  - MedPar (admissions), MBSF (denominator)
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - description
+  - Denominator file linked with hospitalization data and merged with confounders and exposures (NO2, PM2.5, ozone, temperature, humidity). Person records were aggregated by zip code, year and individual demographics
+* - rce_location
+  - `~/shared_space/ci3_health_data/medicare/gen_admission /1999_2016/Klompmaker/merged_data/cbv2/`
+* - fasse_location
+  - `aggregated_cbv_cohort_medicare`
+* - size
+  - 35 GB
+* - files
+  -
+```
+```
+├── [4.1G]  aggregate_CBV_65yrs.fst
+├── [3.8G]  aggregate_CBV_75yrs.fst
+├── [3.2G]  aggregate_CBV_85yrs.fst
+├── [ 14G]  aggregate_CBV.fst
+├── [4.4G]  aggregate__excl_1yrhosp_CBV.fst
+├── [ 93M]  CBV_count.fst
+├── [1.2M]  cc_zipyear_cbv.fst
+└── [117M]  time_count.fst
+```
+`````
+
+
+### Aggregated ADRD cohort Medicare
+
+`````{dropdown} **aggregated_adrd_cohort_medicare**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Jochem Klompmaker
+* - date_created
+  - February 2022
+* - data_source
+  - MedPar (admissions), MBSF (denominator)
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - description
+  - Denominator file linked with hospitalization data and merged with confounders and exposures (NDVI, blue space, park cover, NO2, PM2.5, ozone, temperature, humidity). Person records were aggregated by zip code, year and individual demographics
+* - rce_location
+  - `~/shared_space/ci3_health_data/medicare/gen_admission /1999_2016/Klompmaker/merged_data/alz2/`
+* - fasse_location
+  - `aggregated_adrd_cohort_medicare`
+* - size
+  - 28 GB
+* - files
+  -
+```
+```
+├── [3.6G]  aggregate_ALZ_65yrs.fst
+├── [3.4G]  aggregate_ALZ_75yrs.fst
+├── [2.8G]  aggregate_ALZ_85yrs.fst
+├── [4.5G]  aggregate_ALZ.fst
+├── [4.4G]  aggregate_death_ALZ.fst
+├── [3.8G]  aggregate_excl_1yrhosp_ALZ.fst
+├── [358M]  ALZ_count.fst
+├── [387M]  ALZ_death_count.fst
+├── [471M]  time_count.fst
+└── [472M]  time_death_count.fst
+```
+`````
+
+### Aggregated PD cohort Medicare
+
+
+`````{dropdown} **aggregated_pd_cohort_medicare**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Jochem Klompmaker
+* - date_created
+  - February 2022
+* - data_source
+  - MedPar (admissions), MBSF (denominator)
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - description
+  - Denominator file linked with hospitalization data and merged with confounders and exposures (NDVI, blue space, park cover, NO2, PM2.5, ozone, temperature, humidity). Person records were aggregated by zip code, year and individual demographics.
+* - rce_location
+  - `~/shared_space/ci3_health_data/medicare /gen_admission/1999_2016 /Klompmaker/merged_data/par2/`
+* - fasse_location
+  - `aggregated_pd_cohort_medicare`
+* - size
+  - 29 GB
+* - files
+  -
+```
+```
+├── [4.4G]  aggregate_death_PAR.fst
+├── [4.4G]  aggregate_excl_1yrhosp_PAR.fst
+├── [3.7G]  aggregate_PAR_65yrs.fst
+├── [3.4G]  aggregate_PAR_75yrs.fst
+├── [2.9G]  aggregate_PAR_85yrs.fst
+├── [4.6G]  aggregate_PAR.fst
+├── [ 94M]  PAR_count.fst
+├── [405M]  PAR_death_count.fst
+├── [222M]  time_count.fst
+└── [486M]  time_death_count.fst
+```
+`````
