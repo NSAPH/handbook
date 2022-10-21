@@ -21,6 +21,28 @@ repository page: "Settings" -> "Danger Zone" -> "Transfer ownership". Have a loo
 [official GitHub guidelines](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository).
 :::
 
+:::{admonition} Existing project from code.harvard.edu
+:class: note 
+In this case, you can add a new `remote` (or replace the current) in your local git repository. First, navigate to NASPH-Projects on GitHub and create a new repository there. 
+Then, navigate to your local git repository and add a new remote like this:
+
+```shell
+git remote add nsaph https://github.com/NSAPH-Projects/REPO_NAME.git
+# verify new remote 
+git remote -v 
+```
+
+Last, you should push the repository to the new remote so that all commits stay intact:
+
+```shell
+git push -u nsaph master
+```
+Going forward, make sure to keep the `nsaph` remote up to date!
+
+Alternatively, instead of adding a `nsaph` remote, you can change the address of your current remote with the command `git remote set-url`. 
+Have a look at the official documentation [here](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
+:::
+
 :::{admonition} Published project 
 :class: note 
 If you have a git repository of a completed project under own username that you reference in a publication, 
