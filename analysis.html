@@ -554,6 +554,23 @@ repository page: “Settings” -&gt; “Danger Zone” -&gt; “Transfer owners
 <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository">official GitHub guidelines</a>.</p>
 </div>
 <div class="note admonition">
+<p class="admonition-title">Existing project from <a class="reference external" href="http://code.harvard.edu">code.harvard.edu</a></p>
+<p>In this case, you can add a new <code class="docutils literal notranslate"><span class="pre">remote</span></code> (or replace the current) in your local git repository. First, navigate to NASPH-Projects on GitHub and create a new repository there.
+Then, navigate to your local git repository and add a new remote like this:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git remote add nsaph https://github.com/NSAPH-Projects/REPO_NAME.git
+<span class="c1"># verify new remote </span>
+git remote -v 
+</pre></div>
+</div>
+<p>Last, you should push the repository to the new remote so that all commits stay intact:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git push -u nsaph master
+</pre></div>
+</div>
+<p>Going forward, make sure to keep the <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> remote up to date!</p>
+<p>Alternatively, instead of adding a <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> remote, you can change the address of your current remote with the command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">set-url</span></code>.
+Have a look at the official documentation <a class="reference external" href="https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url">here</a>.</p>
+</div>
+<div class="note admonition">
 <p class="admonition-title">Published project </p>
 <p>If you have a git repository of a completed project under own username that you reference in a publication,
 do not just transfer ownership to <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a>. In this case, you should:</p>
