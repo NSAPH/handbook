@@ -574,6 +574,11 @@ title="Print to PDF"
    Daily County Level Heatwave Associated Hospitalizations
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hospitalizations-for-kidney-disease-and-comorbidities">
+   Hospitalizations for kidney disease and comorbidities
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -726,6 +731,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#daily-county-level-heatwave-associated-hospitalizations">
    Daily County Level Heatwave Associated Hospitalizations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hospitalizations-for-kidney-disease-and-comorbidities">
+   Hospitalizations for kidney disease and comorbidities
   </a>
  </li>
 </ul>
@@ -2815,6 +2825,70 @@ header<div class="sd-summary-down docutils">
         │   └── Daily_Heat_CCS_2006-2016_with_Temperature_v0.Rda
         ├── readme.md
         └── schema.yml
+</pre></div>
+</div>
+</div>
+</details></section>
+<section id="hospitalizations-for-kidney-disease-and-comorbidities">
+<h2>Hospitalizations for kidney disease and comorbidities<a class="headerlink" href="#hospitalizations-for-kidney-disease-and-comorbidities" title="Permalink to this headline">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>medicare_for_kidney_diseases</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p class="sd-card-text">dataset_author</p></td>
+<td><p class="sd-card-text">Ana Trisovic</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">date_created</p></td>
+<td><p class="sd-card-text">July 10, 2022</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">data_source</p></td>
+<td><p class="sd-card-text">MedPar (admissions), MBSF (denominator), confounders</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">spatial_coverage</p></td>
+<td><p class="sd-card-text">US</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">spatial_resolution</p></td>
+<td><p class="sd-card-text">zipcode</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">temporal_coverage</p></td>
+<td><p class="sd-card-text">2000-2016</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">temporal_resolution</p></td>
+<td><p class="sd-card-text">annually</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">git_repository</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://github.com/NSAPH-Data-Processing/mbsf-medpar-aki-first-hospitalization">mbsf-medpar-aki-first-hospitalization</a></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">description</p></td>
+<td><p class="sd-card-text">Special modifications for the kidney diseases for numerators and denominators (people at risk) for the analysis by Whanhee Lee.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">rce_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">~/shared_space/ci3_analysis/whanhee_revisions</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">fasse_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">medicare_for_kidney_diseases</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">size</p></td>
+<td><p class="sd-card-text">31 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">header</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">year,sex,race,zip,dual,follow_up,entry_age_group,aki_primary_secondary_first_hosp,aki_primary_secondary_first_hosp_denom,ckdhosp_prior_aki,ckdhosp_prior_aki_denom,diabeteshosp_prior_aki,diabeteshosp_prior_aki_denom,diabetes_primary_aki_secondary_first_hosp,diabetes_primary_aki_secondary_first_hosp_denom,csd_primary_aki_secondary_first_hosp,csd_primary_aki_secondary_first_hosp_denom,ihd_primary_aki_secondary_first_hosp,ihd_primary_aki_secondary_first_hosp_denom,pneumonia_primary_aki_secondary_first_hosp,pneumonia_primary_aki_secondary_first_hosp_denom,hf_primary_aki_secondary_first_hosp,hf_primary_aki_secondary_first_hosp_denom,ami_primary_aki_secondary_first_hosp,ami_primary_aki_secondary_first_hosp_denom,cerd_primary_aki_secondary_first_hosp,cerd_primary_aki_secondary_first_hosp_denom,uti_primary_aki_secondary_first_hosp,uti_primary_aki_secondary_first_hosp_denom,zcta,poverty,popdensity,medianhousevalue,pct_blk,medhouseholdincome,pct_owner_occ,hispanic,education,population,pct_asian,pct_native,pct_white,smoke_rate,mean_bmi,pm25.current_year,ozone.current_year,no2.current_year,ozone_summer.current_year,pm25.one_year_lag,ozone.one_year_lag,no2.one_year_lag,ozone_summer.one_year_lag</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">files</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>└── [ 27G]  final.csv
 </pre></div>
 </div>
 </div>

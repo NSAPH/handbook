@@ -1437,3 +1437,43 @@ ADRD_secondary: logi
         └── schema.yml
 ```
 `````
+
+
+### Hospitalizations for kidney disease and comorbidities
+
+`````{dropdown} **medicare_for_kidney_diseases**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Ana Trisovic
+* - date_created
+  - July 10, 2022
+* - data_source
+  - MedPar (admissions), MBSF (denominator), confounders
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - git_repository
+  - [mbsf-medpar-aki-first-hospitalization](https://github.com/NSAPH-Data-Processing/mbsf-medpar-aki-first-hospitalization)
+* - description
+  - Special modifications for the kidney diseases for numerators and denominators (people at risk) for the analysis by Whanhee Lee. 
+* - rce_location
+  - `~/shared_space/ci3_analysis/whanhee_revisions`
+* - fasse_location
+  - `medicare_for_kidney_diseases`
+* - size
+  - 31 GB
+* - header
+  - `year,sex,race,zip,dual,follow_up,entry_age_group,aki_primary_secondary_first_hosp,aki_primary_secondary_first_hosp_denom,ckdhosp_prior_aki,ckdhosp_prior_aki_denom,diabeteshosp_prior_aki,diabeteshosp_prior_aki_denom,diabetes_primary_aki_secondary_first_hosp,diabetes_primary_aki_secondary_first_hosp_denom,csd_primary_aki_secondary_first_hosp,csd_primary_aki_secondary_first_hosp_denom,ihd_primary_aki_secondary_first_hosp,ihd_primary_aki_secondary_first_hosp_denom,pneumonia_primary_aki_secondary_first_hosp,pneumonia_primary_aki_secondary_first_hosp_denom,hf_primary_aki_secondary_first_hosp,hf_primary_aki_secondary_first_hosp_denom,ami_primary_aki_secondary_first_hosp,ami_primary_aki_secondary_first_hosp_denom,cerd_primary_aki_secondary_first_hosp,cerd_primary_aki_secondary_first_hosp_denom,uti_primary_aki_secondary_first_hosp,uti_primary_aki_secondary_first_hosp_denom,zcta,poverty,popdensity,medianhousevalue,pct_blk,medhouseholdincome,pct_owner_occ,hispanic,education,population,pct_asian,pct_native,pct_white,smoke_rate,mean_bmi,pm25.current_year,ozone.current_year,no2.current_year,ozone_summer.current_year,pm25.one_year_lag,ozone.one_year_lag,no2.one_year_lag,ozone_summer.one_year_lag`
+* - files
+  -
+```
+```
+└── [ 27G]  final.csv
+```
+`````
