@@ -1477,3 +1477,54 @@ ADRD_secondary: logi
 └── [ 27G]  final.csv
 ```
 `````
+
+### IHD medicare hospitalizations (2005)
+
+`````{dropdown} **ihd_medicare_hosp_2005**
+```{list-table}
+:header-rows: 0
+* - dataset_name
+  - IHD medicare hospitalizations (2005)
+* - dataset_author
+  - Cory Zigler
+* - date_created
+  - Oct 4 2018
+* - data_source
+  - MedPar (admissions)
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2005
+* - temporal_resolution
+  - annually
+* - size
+  - 234 MB
+* - rce_location
+  - `~/shared_space/ci3_analysis/zigler_lab/projects/BipartiteInterference_GPS/BipartiteInterference_GPS/Data/out.zip_pp.rda`
+* - fasse_location
+  - `ihd_medicare_hosp_2005`
+* - files
+  -
+```
+```
+├── [4.8K]  00Tree.html
+├── [348K]  AnnualFacilityData.Rda
+├── [773K]  AnnualUnitData.Rda
+├── [ 12K]  Create Analysis Data.R
+├── [6.4K]  Create HyADS Adjacency Matrix.R
+├── [9.3K]  Create Power Plant Data.R
+├── [5.8K]  Create Zip Code Data.R
+├── [ 10M]  data_nomed.Rda
+├── [ 31K]  facilities_for_analysis.Rda
+├── [ 53M]  HyADSmat.Rda
+├── [108M]  HyADSmat_replaced20191212.Rda
+├── [3.1M]  MonthlyFacilityData.Rda
+├── [9.7M]  MonthlyUnitData.Rda
+├── [ 11M]  out.zip_pp.rda
+├── [ 114]  Readme
+├── [5.6M]  ZipcodeData.Rda
+└── [ 89K]  zips_included.rda
+```
+`````
