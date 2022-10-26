@@ -205,7 +205,7 @@ Check out NSAPH MCBS documentation [here](./mcbs.md).
 * - processing_description
   - These are annual estimations of PM2.5 speciations at ZIP Code-level  across the contiguous US, aggregated from Heresh's grid-level estimations. For a general ZIP Code, which has normal street delivery route and therefore can be represented by a polygonal area, we estimate the ZIP Code-level PM2.5 by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; for other ZIP Codes that do not have polygon representations, for example an apartment building, a military base, or a post office, we consider them as single points and estimate their ZIP Code-level PM2.5 by linking the prediction of the nearest grid cell. For ec, oc, nh4, no3, and so4 the units are microgram per cubic meter; for br, ca, cu, fe, k, ni, pb, si, v, and z the units are nanogram per cubic meter.
 * - fasse_location
-  - `/n/dominici_nsaph_l3/data/pm25_components`
+  - `/data/pm25_components`
 * - git_repository
   - https://github.com/yycome/PM25_Components
 * - publication 
@@ -278,6 +278,56 @@ that can be then joined with data available at those social units such as Medica
     5. The data is grouped by ZCTA with the aggregation method "sum". 
     6. That day is appended to the netCDF file
     7. An annual netCDF file is exported. 
+```
+`````
+
+## Shapefiles
+
+`````{dropdown} zcta_shape_files
+
+```{list-table}
+:header-rows: 0
+* - fasse_location
+  - `/data/shapefiles`
+* - files
+  -
+```
+```
+└── zcta_shape_files
+     ├── cb_2018_us_zcta510_500k.cpg
+     ├── cb_2018_us_zcta510_500k.dbf
+     ├── cb_2018_us_zcta510_500k.prj
+     ├── cb_2018_us_zcta510_500k.shp
+     ├── cb_2018_us_zcta510_500k.shp.ea.iso.xml
+     ├── cb_2018_us_zcta510_500k.shp.iso.xml
+     └── cb_2018_us_zcta510_500k.shx
+```
+`````
+
+`````{dropdown} zip_shape_files
+
+```{list-table}
+:header-rows: 0
+* - fasse_location
+  - `/data/shapefiles`
+* - files
+  -
+```
+```
+└── zip_shape_files
+    ├── 2000
+    ├── 2004
+    ├── 2005
+    ├── 2006
+    ├── 2007
+    ├── 2009
+    ├── 2010
+    ├── 2012
+    ├── 2013
+    ├── 2014
+    ├── 2015
+    ├── 2016
+    └── 2017
 ```
 `````
 
