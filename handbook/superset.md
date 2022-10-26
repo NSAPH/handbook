@@ -149,7 +149,7 @@ This is to increase records lookup speed supported by the PostgreSQL infrastruct
 
 For our specific databases hosted on FASSE, it is recommend that you follow the below instructions on ingesting non-health data (For ingesting health data, check out: https://github.com/NSAPH/data-paltform-internal-docs/blob/ingestion/docs/cms_ingestion.md).
 
-Below we will walk through an example of ingesting PM2.5 data onto the `sandbox` database. (`/n/dominici_nsaph_l3/Lab/data/pm25_components/pm25_components`). 
+Below we will walk through an example of ingesting PM2.5 data onto the `sandbox` database. (`/n/dominici_nsaph_l3/Lab/data/pm25_components/pm25_components`, GitHub: https://github.com/yycome/PM25_Components). 
 
 ```{note}
 There are both `sandbox` and `nsaph2` databases hosted on FASSE. `sandbox` is used for testing, ingesting, building the database without affect the production database `nsaph2`.
