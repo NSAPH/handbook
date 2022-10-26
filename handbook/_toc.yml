@@ -32,6 +32,8 @@ parts:
     - file: docs
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial
+    - url: https://github.com/NSAPH/data-paltform-internal-docs
+      title: Data-Platform Internal Docs
   - caption: Software
     chapters:
     - url: https://nsaph-software.github.io/intro.html
