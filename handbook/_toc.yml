@@ -30,6 +30,7 @@ parts:
     - file: collaborative
     - file: rce
     - file: docs
+    - file: singularity
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial
   - caption: Software
