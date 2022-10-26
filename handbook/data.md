@@ -113,6 +113,78 @@ Check out the following resources about the CMS health data:
 Check out NSAPH MCBS documentation [here](./mcbs.md).
 ```
 
+## ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US
+
+`````{dropdown} PM2.5, Ozone, NO2
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Yaguang Wei
+* - date_created
+  - Oct 19, 2022
+* - data_source
+  - Gridded PM2.5, PM2.5 components, ozone, and NO2; Esri ZIP code area and point files; U.S. ZIP code database.
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016 for PM2.5, ozone, and NO2; 2000-2019 for PM2.5 components.
+* - temporal_resolution
+  - daily, annually
+* - description
+  - For general ZIP Codes with a polygon representation, we estimated their pollution levels by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; For other ZIP Codes such as Post Offices or large volume single customers, we treated them as a single point and predicted their pollution levels by assigning the predictions of the nearest grid cell. These are updated ZIP code-level predictions. We filled in the missing values for grids, and added about 200 zip codes that are missing in the Esri files each year. The geographic information for the additional zip codes is extracted from US ZIP code database.
+* - git_repository
+  - [ZIP_add_missing](https://github.com/NSAPH-Data-Processing/ZIP_add_missing) and private [ZIP_add_missing](https://github.com/yycome/ZIP_add_missing)
+* - publication
+  - TBD
+* - fasse_location
+  - `data/pm25_pm25_components_o3_no2`
+* - files
+  -
+```
+```
+├── [2.3G]  NO2
+│   ├── [6.5M]  Annual
+│   │   ├── [394K]  2000.rds
+│   │   ├── [391K]  ...
+│   │   └── [391K]  2016.rds
+│   └── [2.3G]  Daily
+│       ├── [393K]  20000101.rds
+│       ├── [392K]  ...
+│       └── [395K]  20161231.rds
+├── [2.3G]  O3
+│   ├── [6.4M]  Annual
+│   │   ├── [390K]  2000.rds
+│   │   ├── [385K]  ...
+│   │   └── [384K]  2016.rds
+│   ├── [2.3G]  Daily
+│   │   ├── [394K]  20000101.rds
+│   │   ├── [388K]  ...
+│   │   └── [371K]  20161231.rds
+│   └── [6.5M]  Summer
+│       ├── [391K]  2000_summer.rds
+│       ├── [387K]  ...
+│       ├── [386K]  2016_summer.rds
+│       └── [ 101]  readme.txt
+├── [2.3G]  PM25
+│   ├── [6.5M]  Annual
+│   │   ├── [395K]  2000.rds
+│   │   ├── [392K]  ...
+│   │   └── [392K]  2016.rds
+│   └── [2.3G]  Daily
+│       ├── [397K]  20000101.rds
+│       ├── [395K]  ...
+│       └── [393K]  20161231.rds
+├── [ 88M]  PM25_components
+│   ├── [4.4M]  2000.rds
+│   ├── [4.4M]  ...
+│   ├── [4.4M]  2019.rds
+│   └── [ 850]  readme.txt
+└── [ 974]  README.md
+```
+`````
+
 ## PM 2.5 Components
 
 `````{dropdown} PM 2.5 component data
@@ -139,7 +211,7 @@ Check out NSAPH MCBS documentation [here](./mcbs.md).
 * - publication 
   - Amini, H., M. Danesh-Yazdi, Q. Di, W. Requia, Y. Wei, Y. Abu Awad, L. Shi, M. Franklin, C.-M. Kang, J. M. Wolfson, P. James, R. Habre, Q. Zhu, J. S. Apte, Z. J. Andersen, X. Xing, C. Hultquist, I. Kloog, F. Dominici, P. Koutrakis, J. Schwartz. 2022. Annual Mean PM2.5Components (EC, NH4, NO3, OC, SO4) 50m Urban and 1km Non-Urban Area Grids for Contiguous U.S., 2000-2019 v1. (Preliminary Release). Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). https://doi.org/10.7927/7wj3-en73
 * - dataset_author
-  - weiyg@hsph.harvard.edu
+  - Yaguang Wei
 * - header 
   - `ZIP, br, ca, cu, ec, fe, k, nh4, ni, no3, oc, pb, si, so4, v, z`
 * - files
