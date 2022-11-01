@@ -139,7 +139,7 @@ Check out NSAPH MCBS documentation [here](./mcbs.md).
 * - publication
   - TBD
 * - fasse_location
-  - `data/pm25_pm25_components_o3_no2`
+  - `data/exposure/ozone/O3`, `data/exposure/pm25/PM25`, `data/exposure/no2/NO2`, `data/exposure/pm25_components/pm25_components_v2`
 * - files
   -
 ```
@@ -203,9 +203,9 @@ Check out NSAPH MCBS documentation [here](./mcbs.md).
 * - size
   - 251 MG
 * - processing_description
-  - These are annual estimations of PM2.5 speciations at ZIP Code-level  across the contiguous US, aggregated from Heresh's grid-level estimations. For a general ZIP Code, which has normal street delivery route and therefore can be represented by a polygonal area, we estimate the ZIP Code-level PM2.5 by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; for other ZIP Codes that do not have polygon representations, for example an apartment building, a military base, or a post office, we consider them as single points and estimate their ZIP Code-level PM2.5 by linking the prediction of the nearest grid cell. For ec, oc, nh4, no3, and so4 the units are microgram per cubic meter; for br, ca, cu, fe, k, ni, pb, si, v, and z the units are nanogram per cubic meter.
+  - Superseded by `data/exposure/pm25_components/pm25_components_v2`. These are annual estimations of PM2.5 speciations at ZIP Code-level  across the contiguous US, aggregated from Heresh's grid-level estimations. For a general ZIP Code, which has normal street delivery route and therefore can be represented by a polygonal area, we estimate the ZIP Code-level PM2.5 by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; for other ZIP Codes that do not have polygon representations, for example an apartment building, a military base, or a post office, we consider them as single points and estimate their ZIP Code-level PM2.5 by linking the prediction of the nearest grid cell. For ec, oc, nh4, no3, and so4 the units are microgram per cubic meter; for br, ca, cu, fe, k, ni, pb, si, v, and z the units are nanogram per cubic meter.
 * - fasse_location
-  - `/data/pm25_components`
+  - `data/exposure/pm25_components/pm25_components_v1`
 * - git_repository
   - https://github.com/yycome/PM25_Components
 * - publication 
