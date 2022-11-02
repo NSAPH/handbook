@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to the NSAPH Handbook &#8212; NSAPH Handbook</title>
+    <title>Singularity &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="NSAPH Data Usage Policies" href="dua.html" />
+    <link rel="next" title="NSAPH Software" href="software.html" />
+    <link rel="prev" title="Documentation" href="docs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -106,8 +107,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to the NSAPH Handbook
                 </a>
             </li>
@@ -186,7 +187,7 @@ const thebe_selector_output = ".output, .cell_output"
   Infrastructure and Tools
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fasse.html">
    Getting started on FASSE
@@ -217,8 +218,8 @@ const thebe_selector_output = ".output, .cell_output"
    Documentation
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="singularity.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Singularity
   </a>
  </li>
@@ -363,7 +364,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fsingularity.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -391,7 +392,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/intro.md"
+        <a href="_sources/singularity.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -451,25 +452,30 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#web-page">
-   Web page
+  <a class="reference internal nav-link" href="#downloading-a-rocker-docker-image-with-singularity">
+   Downloading a rocker/docker image with singularity
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#github-presence">
-   GitHub presence
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-of-content">
-   Table of content
+  <a class="reference internal nav-link" href="#running-a-rocker-docker-image-with-singularity">
+   Running a rocker/docker image with singularity
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#options">
+     Options
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quit-and-exit">
+     Quit and exit
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#common-acronyms">
-   Common acronyms
+  <a class="reference internal nav-link" href="#installing-additional-r-packages">
+   Installing additional R packages
   </a>
  </li>
 </ul>
@@ -481,7 +487,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Welcome to the NSAPH Handbook</h1>
+                <h1>Singularity</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -492,25 +498,30 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#web-page">
-   Web page
+  <a class="reference internal nav-link" href="#downloading-a-rocker-docker-image-with-singularity">
+   Downloading a rocker/docker image with singularity
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#github-presence">
-   GitHub presence
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#table-of-content">
-   Table of content
+  <a class="reference internal nav-link" href="#running-a-rocker-docker-image-with-singularity">
+   Running a rocker/docker image with singularity
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#options">
+     Options
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quit-and-exit">
+     Quit and exit
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#common-acronyms">
-   Common acronyms
+  <a class="reference internal nav-link" href="#installing-additional-r-packages">
+   Installing additional R packages
   </a>
  </li>
 </ul>
@@ -523,102 +534,73 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-the-nsaph-handbook">
-<h1>Welcome to the NSAPH Handbook<a class="headerlink" href="#welcome-to-the-nsaph-handbook" title="Permalink to this headline">#</a></h1>
-<p>The handbook offers information on data, software and analysis.</p>
-<section id="web-page">
-<h2>Web page<a class="headerlink" href="#web-page" title="Permalink to this headline">#</a></h2>
-<p>Find the National Studies on Air Pollution and Health (NSAPH) group official web page <a class="reference external" href="https://www.hsph.harvard.edu/nsaph/">here.</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="singularity">
+<h1>Singularity<a class="headerlink" href="#singularity" title="Permalink to this headline">#</a></h1>
+<p>On occasion, the operating system and Rstudio installations that are available via <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/vdi-apps/">FASRC VDI Apps</a> are not compatible with some R packages.</p>
+<p>A viable way to surmount package incompatibility issues is using docker containers. The <a class="reference external" href="https://rocker-project.org/images/">Rocker Project</a> images run R and Rstudio containerized installations that come in various flavors. Three of the most popular rocker image builds are: <code class="docutils literal notranslate"><span class="pre">rocker/tidyverse</span></code>, <code class="docutils literal notranslate"><span class="pre">rocker/verse</span></code>, and <code class="docutils literal notranslate"><span class="pre">rocker/geospatial</span></code>. The official overview of these images is found <a class="reference external" href="https://rocker-project.org/images/versioned/rstudio.html#overview">here</a>.</p>
+<p>Docker is usually not available on HPC clusters, Singularity is a secure HPC alternative to Docker.</p>
+<section id="downloading-a-rocker-docker-image-with-singularity">
+<h2>Downloading a rocker/docker image with singularity<a class="headerlink" href="#downloading-a-rocker-docker-image-with-singularity" title="Permalink to this headline">#</a></h2>
+<p>To work on a containerized Rstudio in FASSE, first identify the rocker distribution that best fits your needs. For the purpose of this tutorial, we will work with <code class="docutils literal notranslate"><span class="pre">rocker/geospatial:3.6.3</span></code>.</p>
+<p>Once logged in to FASSE, create an <code class="docutils literal notranslate"><span class="pre">images</span></code> folder in your user directory and run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">images</span>
+<span class="n">singularity</span> <span class="n">pull</span> <span class="n">docker</span><span class="p">:</span><span class="o">//</span><span class="n">rocker</span><span class="o">/</span><span class="n">geospatial</span><span class="p">:</span><span class="mf">3.6.3</span>
+</pre></div>
+</div>
+<p>Once the download has completed you should be able to see the file <code class="docutils literal notranslate"><span class="pre">geospatial_3.6.0.sif</span></code>.</p>
 </section>
-<section id="github-presence">
-<h2>GitHub presence<a class="headerlink" href="#github-presence" title="Permalink to this headline">#</a></h2>
-<p>A GitHub organization is a shared account where all organization members can collaborate across many projects at once. NSAPH has five organizations on GitHub meant to help you find and use group resources:</p>
-<ol class="simple">
-<li><p><a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH Projects</a> - Host a GitHub repository for all NSAPH-led member projects; moving forward, all NSAPH member-led projects should have a repository here;</p></li>
-<li><p><a class="reference external" href="https://github.com/orgs/NSAPH/teams/research">NSAPH</a> - Can be leveraged to read NSAPH members’ private codebases; no new projects should be started here;</p></li>
-<li><p><a class="reference external" href="https://github.com/orgs/NSAPH-Software">NSAPH Software</a> - The development of reusable software packages for analysis;</p></li>
-<li><p><a class="reference external" href="https://github.com/NSAPH-Data-Platform">NSAPH Data Platform</a> - Captures all the code that went into creating and maintaining the data platform;</p></li>
-<li><p><a class="reference external" href="https://github.com/NSAPH-Data-Processing">NSAPH Data Processing</a> - Captures the data pipelines for data transformations and aggregation;</p></li>
-<li><p><a class="reference external" href="https://github.com/NSAPH">NSAPH</a> - Gathers past projects but will continue to be used for miscellaneous projects that don’t belong in the previous categories.</p></li>
-</ol>
+<section id="running-a-rocker-docker-image-with-singularity">
+<h2>Running a rocker/docker image with singularity<a class="headerlink" href="#running-a-rocker-docker-image-with-singularity" title="Permalink to this headline">#</a></h2>
+<p>Go to <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/vdi-apps/">FASRC VDI Apps</a> and open a Remote Desktop session. Within the Remote Desktop, open a new terminal and inside the images folder run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">singularity</span> <span class="n">shell</span> <span class="n">images</span><span class="o">/</span><span class="n">geospatial_3</span><span class="mf">.6.3</span><span class="o">.</span><span class="n">sif</span>
+</pre></div>
+</div>
+<p>Inside the running container the location of the rserver in the container is <code class="docutils literal notranslate"><span class="pre">/usr/lib/rstudio-server/bin/rserver</span></code>. To run it simply write</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rserver</span>
+</pre></div>
+</div>
+<p>Open firefox (to do this you can open a new terminal tab and run the command <code class="docutils literal notranslate"><span class="pre">firefox</span></code>) and position the browser in <code class="docutils literal notranslate"><span class="pre">localhost:8787</span></code>. Now you can start working in your dockerized Rstudio session!</p>
+<section id="options">
+<h3>Options<a class="headerlink" href="#options" title="Permalink to this headline">#</a></h3>
+<p>Some useful options include <code class="docutils literal notranslate"><span class="pre">RSTUDIO_SESSION_TIMEOUT='0'</span></code>, <code class="docutils literal notranslate"><span class="pre">--bind</span> <span class="pre">&lt;directory&gt;</span></code>, and <code class="docutils literal notranslate"><span class="pre">--no-mount</span> <span class="pre">&lt;directory&gt;</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">singularity</span> <span class="pre">shell</span> <span class="pre">apps/geospatial_3.6.3.sif</span> <span class="pre">RSTUDIO_SESSION_TIMEOUT='0'</span></code> will avoid Rstudio from timing out.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">singularity</span> <span class="pre">shell</span> <span class="pre">--bind</span> <span class="pre">&lt;directory&gt;</span> <span class="pre">apps/geospatial_3.6.3.sif</span></code> is useful when directories inside the container are not mapped to the host system.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">singularity</span> <span class="pre">shell</span> <span class="pre">--no-mount</span> <span class="pre">&lt;directory&gt;</span> <span class="pre">apps/geospatial_3.6.3.sif</span></code> will overide the mounting of a specific directory.</p></li>
+</ul>
 </section>
-<section id="table-of-content">
-<h2>Table of content<a class="headerlink" href="#table-of-content" title="Permalink to this headline">#</a></h2>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dua.html">NSAPH Data Usage Policies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data.html">Data sources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mcbs.html">MCBS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mcbs.html#mcbs-2016">MCBS 2016</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analytic.html">Analytic data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="superset.html">NSAPH PostgreSQL Data Platform</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dataverse.html">Dataverse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="trainings.html">NSAPH Required Trainings</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">NSAPH Forms</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform">On-Boarding Form</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSd5P0ILjOlGQrk5fzqDJb9mBbHcBZVEMDQTWA_AhI9A24Hk5Q/viewform">Project Initiation Form</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSfT_Hw930NjPnqnN-SZKBhlmVvsHjIqOdwkNPLEYjzdXqOn_w/viewform">Project Progress Form</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSccxSUt7NclkqTkeltAPzOBn8ttqz4_ZVIp2MbP9Th7Ja0W5Q/viewform">Off-Boarding Form</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Infrastructure and Tools</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="fasse.html">Getting started on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analysis.html">Introduction to NSAPH GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analysis.html#tips-for-using-fasse-and-nsaph-github">Tips for using FASSE and NSAPH GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collaborative.html">Branch-merge workflow on GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rce.html">Working on RCE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docs.html">Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="singularity.html">Singularity</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://swcarpentry.github.io/git-novice/">Git tutorial</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/NSAPH/data-paltform-internal-docs">Data-Platform Internal Docs</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://nsaph-software.github.io/intro.html">NSAPH Software Website</a></li>
-<li class="toctree-l1"><a class="reference internal" href="software.html">NSAPH Software</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">The Team</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="team.html">The team</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
-</ul>
+<section id="quit-and-exit">
+<h3>Quit and exit<a class="headerlink" href="#quit-and-exit" title="Permalink to this headline">#</a></h3>
+<p>When you have finished working, quit the R session and quit firefox. T do this, in the terminal that is running the container type <code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+</span> <span class="pre">c</span></code> which will stop the rserver and <code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+</span> <span class="pre">d</span></code> which will stop the running container.</p>
+<p>To list and clean the cached information of your containers, use</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">singularity</span> <span class="n">cache</span> <span class="nb">list</span>
+<span class="n">singularity</span> <span class="n">cache</span> <span class="n">clean</span>
+</pre></div>
 </div>
 </section>
-<section id="common-acronyms">
-<h2>Common acronyms<a class="headerlink" href="#common-acronyms" title="Permalink to this headline">#</a></h2>
-<dl class="glossary simple">
-<dt id="term-CMS">CMS<a class="headerlink" href="#term-CMS" title="Permalink to this term">#</a></dt><dd><p>Centers for Medicare and Medicaid Services</p>
-</dd>
-<dt id="term-FASSE">FASSE<a class="headerlink" href="#term-FASSE" title="Permalink to this term">#</a></dt><dd><p>Faculty of Arts and Sciences Secure Environment research computing cluster</p>
-</dd>
-<dt id="term-FFS">FFS<a class="headerlink" href="#term-FFS" title="Permalink to this term">#</a></dt><dd><p>fee-for-service</p>
-</dd>
-<dt id="term-MCBS">MCBS<a class="headerlink" href="#term-MCBS" title="Permalink to this term">#</a></dt><dd><p>Medicare Current Beneficiary Summary</p>
-</dd>
-<dt id="term-MBSF">MBSF<a class="headerlink" href="#term-MBSF" title="Permalink to this term">#</a></dt><dd><p>Master Beneficiary Summary File</p>
-</dd>
-<dt id="term-MEDPAR">MEDPAR<a class="headerlink" href="#term-MEDPAR" title="Permalink to this term">#</a></dt><dd><p>Medicare Provider Analysis and Review</p>
-</dd>
-<dt id="term-IRB">IRB<a class="headerlink" href="#term-IRB" title="Permalink to this term">#</a></dt><dd><p>The Institutional Review Board</p>
-</dd>
-</dl>
+</section>
+<section id="installing-additional-r-packages">
+<h2>Installing additional R packages<a class="headerlink" href="#installing-additional-r-packages" title="Permalink to this headline">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">rocker</span></code> images are meant to have the minimal amount of pre-installed packages. As such, users can add the packages (R or system/linux) that are specific for a project. While it may be practical to install packages in a running container, creating an image that is specific for your project is ideal for reproducibility purposes. How to-do’s are provided next.</p>
+<ul class="simple">
+<li><p>To <strong>install packages in a running rocker container</strong> follow the instructions provided by FASRC. Found <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages-with-singularity/">here</a>.</p></li>
+<li><p>To <strong>create a project specific image for reproducibility purposes</strong> work locally in your machine. First, install docker and decide a name for your image, for the purpose of the example we use <code class="docutils literal notranslate"><span class="pre">core_geospatial</span></code>. Make a folder with the same name of the image and inside the folder create a file named <code class="docutils literal notranslate"><span class="pre">dockerfile</span></code>. The content of the dockerfile will be similar to</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FROM</span> <span class="n">rocker</span><span class="o">/</span><span class="n">geospatial</span><span class="p">:</span><span class="mf">3.6.3</span>
+
+<span class="n">RUN</span> <span class="n">install2</span><span class="o">.</span><span class="n">r</span> <span class="o">--</span><span class="n">error</span> \
+    <span class="n">tictoc</span> \
+    <span class="n">fst</span>
+</pre></div>
+</div>
+<p>Which is found <a class="reference external" href="https://github.com/audiracmichelle/images/tree/main/core_geospatial">here</a>. Instead of <code class="docutils literal notranslate"><span class="pre">tictoc</span></code> and <code class="docutils literal notranslate"><span class="pre">fst</span></code>, sustitute with the packages that you used in your project.</p>
+<p>Build the image with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">core_geospatial</span>
+<span class="n">docker</span> <span class="n">build</span> <span class="o">-</span><span class="n">t</span> <span class="o">.</span> <span class="n">core_geospatial</span>
+</pre></div>
+</div>
+<p>Create a docker account and push into dockerhub following instructions <a class="reference external" href="https://docs.docker.com/docker-hub/repos/#pushing-a-docker-container-image-to-docker-hub">here</a>.</p>
+<p>You can then pull the image you created into FASSE with <code class="docutils literal notranslate"><span class="pre">singularity</span> <span class="pre">pull</span></code> as explained at the beginning of the <strong>Singularity</strong> section.</p>
 </section>
 </section>
 
@@ -649,10 +631,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="dua.html" title="next page">
+    <a class='left-prev' id="prev-link" href="docs.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Documentation</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="software.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">NSAPH Data Usage Policies</p>
+        <p class="prev-next-title">NSAPH Software</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
