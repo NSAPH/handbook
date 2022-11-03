@@ -1579,3 +1579,47 @@ ADRD_secondary: logi
     └── [450K]  zip_denom_2016.fst
 ```
 `````
+
+### Coal PM2.5 Source Impacts
+
+`````{dropdown} **coal_exposure_pm25**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Lucas Henneman
+* - date_created
+  - Sep 14, 2022
+* - data_source
+  - HyADS exposure modeling
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 1999-2020
+* - temporal_resolution
+  - annually
+* - rce_location
+  - `/nfs/home/H/henneman /shared_space/ci3_nsaph/ LucasH/disperseR/ main/output/ zips_model.lm.cv_single_poly`
+* - fasse_location
+  - `coal_exposure_pm25`
+* - GitHub repository/directory on how the data was processed
+  - https://github.com/lhenneman/coal_unit_PM25
+* - exposures
+  - This was created with the HyADS model using emissions from EPA's CAMD database.
+* - meterological
+  - NOAA/NCAR reanalysis data.
+* - size
+  - 6.3 GB
+* - files
+  -
+```
+```
+├── [300M]  zips_pm25_byunit_1999.fst
+├── [291M]  ...
+├── [134M]  zips_pm25_byunit_2020.fst
+├── [599K]  zips_pm25_total_1999.fst
+├── [599K]  ...
+└── [599K]  zips_pm25_total_2020.fst
+```
+`````
