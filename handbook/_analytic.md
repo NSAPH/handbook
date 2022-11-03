@@ -1623,3 +1623,42 @@ ADRD_secondary: logi
 └── [599K]  zips_pm25_total_2020.fst
 ```
 `````
+
+### Aggregated 2000-2016 Medicare Mortality Data with PM2.5 Exposure by ZIP code
+
+`````{dropdown} **aggregated_2000-2016_medicare_mortality_pm25_zip**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Xiao Wu, Ben Sabath
+* - date_created
+  - 2020
+* - data_source
+  - Medicaid, Exposure Data, Census Data
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - Annually
+* - processing_description
+  - See [Xiao’s paper](https://www.science.org/doi/10.1126/sciadv.aba5692) for processing description.
+* - rce_location
+  - `~/shared_space/ci3_mic6949/ input_data/aggregate_data.RDS`
+* - fasse_location
+  - `aggregated_2000-2016_medicare_mortality_pm25_zip`
+* - publication
+  - [Xiao’s paper](https://www.science.org/doi/10.1126/sciadv.aba5692)
+* - git_repository
+  - [National_Causal](https://github.com/wxwx1993/National_Causal)
+* - size
+  - 166 MB
+* - files
+  -
+```
+```
+└── [166M]  aggregate_data.RDS
+```
+`````
