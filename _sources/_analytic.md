@@ -1277,7 +1277,7 @@ ADRD_secondary: logi
 
 ### Daily County Level Heatwave Associated Hospitalizations
 
-`````{dropdown} **aggregated_chd_cohort_medicare**
+`````{dropdown} **daily_county_level_heatwave_assosciated_hospitalizations**
 ```{list-table}
 :header-rows: 0
 * - dataset_author
@@ -1301,7 +1301,7 @@ ADRD_secondary: logi
 * - rce_location
   - `~/shared_space/ci3_health_data/medicare/heat_related`
 * - fasse_location
-  - `aggregated_chd_cohort_medicare`
+  - `daily_county_level_heatwave_assosciated_hospitalizations`
 * - publication
   - https://arxiv.org/abs/2102.10478
 * - git_repository
@@ -1315,118 +1315,34 @@ ADRD_secondary: logi
 │       ├── cache_dir
 │       │   ├── daily_counts
 │       │   │   ├── daily_counts_by_ccs_1999.fst
-│       │   │   ├── daily_counts_by_ccs_2000.fst
-│       │   │   ├── daily_counts_by_ccs_2001.fst
-│       │   │   ├── daily_counts_by_ccs_2002.fst
-│       │   │   ├── daily_counts_by_ccs_2003.fst
-│       │   │   ├── daily_counts_by_ccs_2004.fst
-│       │   │   ├── daily_counts_by_ccs_2005.fst
-│       │   │   ├── daily_counts_by_ccs_2006.fst
-│       │   │   ├── daily_counts_by_ccs_2007.fst
-│       │   │   ├── daily_counts_by_ccs_2008.fst
-│       │   │   ├── daily_counts_by_ccs_2009.fst
-│       │   │   ├── daily_counts_by_ccs_2010.fst
-│       │   │   ├── daily_counts_by_ccs_2011.fst
-│       │   │   ├── daily_counts_by_ccs_2012.fst
-│       │   │   ├── daily_counts_by_ccs_2013.fst
-│       │   │   ├── daily_counts_by_ccs_2014.fst
-│       │   │   ├── daily_counts_by_ccs_2015.fst
+│       │   │   ├── ...
 │       │   │   └── daily_counts_by_ccs_2016.fst
 │       │   └── denom
 │       │       ├── ffs_patient_summary_by_county_1999.fst
-│       │       ├── ffs_patient_summary_by_county_2000.fst
-│       │       ├── ffs_patient_summary_by_county_2001.fst
-│       │       ├── ffs_patient_summary_by_county_2002.fst
-│       │       ├── ffs_patient_summary_by_county_2003.fst
-│       │       ├── ffs_patient_summary_by_county_2004.fst
-│       │       ├── ffs_patient_summary_by_county_2005.fst
-│       │       ├── ffs_patient_summary_by_county_2006.fst
-│       │       ├── ffs_patient_summary_by_county_2007.fst
-│       │       ├── ffs_patient_summary_by_county_2008.fst
-│       │       ├── ffs_patient_summary_by_county_2009.fst
-│       │       ├── ffs_patient_summary_by_county_2010.fst
-│       │       ├── ffs_patient_summary_by_county_2011.fst
-│       │       ├── ffs_patient_summary_by_county_2012.fst
-│       │       ├── ffs_patient_summary_by_county_2013.fst
-│       │       ├── ffs_patient_summary_by_county_2014.fst
-│       │       ├── ffs_patient_summary_by_county_2015.fst
+│       │       ├── ...
 │       │       └── ffs_patient_summary_by_county_2016.fst
 │       ├── data
 │       │   ├── daily_ccs_heatwave_counts_by_fips_1999.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2000.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2001.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2002.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2003.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2004.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2005.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2006.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2007.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2008.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2009.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2010.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2011.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2012.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2013.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2014.fst
-│       │   ├── daily_ccs_heatwave_counts_by_fips_2015.fst
+│       │   ├── ...
 │       │   └── daily_ccs_heatwave_counts_by_fips_2016.fst
 │       └── data_daily_hosp_mort
 │           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_1999.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2000.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2001.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2002.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2003.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2004.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2005.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2006.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2007.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2008.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2009.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2010.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2011.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2012.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2013.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2014.fst
-│           ├── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2015.fst
+│           ├── ...
 │           └── daily_only_ccs_heatwave_hosp_mort_counts_by_fips_2016.fst
 └── 2006_2016
     └── county_ccs_hosps
         ├── cache_dir
         │   ├── daily_counts
         │   │   ├── daily_counts_by_ccs_2006.fst
-        │   │   ├── daily_counts_by_ccs_2007.fst
-        │   │   ├── daily_counts_by_ccs_2008.fst
-        │   │   ├── daily_counts_by_ccs_2009.fst
-        │   │   ├── daily_counts_by_ccs_2010.fst
-        │   │   ├── daily_counts_by_ccs_2011.fst
-        │   │   ├── daily_counts_by_ccs_2012.fst
-        │   │   ├── daily_counts_by_ccs_2013.fst
-        │   │   ├── daily_counts_by_ccs_2014.fst
-        │   │   ├── daily_counts_by_ccs_2015.fst
+        │   │   ├── ...
         │   │   └── daily_counts_by_ccs_2016.fst
         │   └── denom
         │       ├── ffs_patient_summary_by_county_2006.fst
-        │       ├── ffs_patient_summary_by_county_2007.fst
-        │       ├── ffs_patient_summary_by_county_2008.fst
-        │       ├── ffs_patient_summary_by_county_2009.fst
-        │       ├── ffs_patient_summary_by_county_2010.fst
-        │       ├── ffs_patient_summary_by_county_2011.fst
-        │       ├── ffs_patient_summary_by_county_2012.fst
-        │       ├── ffs_patient_summary_by_county_2013.fst
-        │       ├── ffs_patient_summary_by_county_2014.fst
-        │       ├── ffs_patient_summary_by_county_2015.fst
+        │       ├── ...
         │       └── ffs_patient_summary_by_county_2016.fst
         ├── data
         │   ├── daily_ccs_heatwave_counts_by_fips_2006.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2007.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2008.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2009.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2010.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2011.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2012.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2013.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2014.fst
-        │   ├── daily_ccs_heatwave_counts_by_fips_2015.fst
+        │   ├── ...
         │   ├── daily_ccs_heatwave_counts_by_fips_2016.fst
         │   ├── Daily_Heat_CCS_2006-2016_with_Temperature_by_WFO.Rda
         │   ├── Daily_Heat_CCS_2006-2016_with_Temperature_by_WFO_v0.Rda
