@@ -26,6 +26,7 @@ parts:
     chapters:
     - file: fasse
     - file: fasse_partitions
+    - file: fasse_github
     - file: analysis
     - file: collaborative
     - file: rce
