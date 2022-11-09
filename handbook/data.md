@@ -255,14 +255,23 @@ The following is the description of the air pollution exposure data.
 * - git_repository
   - [daily-10km-smokePM](https://github.com/echolab-stanford/daily-10km-smokePM)
 * - size
-  - 
+  - 6 GB
 * - files
   -
 ```
 ```
-   ├── 2000.csv
-   ├── ...
-   └── 2019.csv
+├── 10km_grid
+│   ├── 10km_grid_wgs84
+├── county
+│   └── tl_2019_us_county
+├── tract
+│   └── tracts
+│       ├── tl_2019_01_tract
+│       ├── tl_2019_04_tract
+│       ├── ... 
+│       └── tl_2019_56_tract
+└── zcta
+    └── tl_2019_us_zcta510
 ```
 `````
 
