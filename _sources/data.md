@@ -2,7 +2,9 @@
 
 On this page you can find a description of common data sources and their location on the cluster.
 
-## Health data (original/raw CMS data)
+## Health data
+
+The following contains the description of the original/raw CMS data.
 
 `````{dropdown} MBSF and MedPar
 
@@ -85,14 +87,6 @@ On this page you can find a description of common data sources and their locatio
 ````
 `````
 
-``` {seealso}
-Check out the following resources about the CMS health data:
-- [RESDAC Using Medicare Hospitalization Information and the MedPAR](http://resdac.umn.edu/sites/resdac.umn.edu/files/Using%20Medicare%20Hospitalization%20Information%20and%20the%20MedPAR%20(Slides).pdf) 
-- [Coverage Denials: Government And Private Insurer Policies For Medical Necessity In Medicare](https://www.healthaffairs.org/doi/pdf/10.1377/hlthaff.2021.01054)
-- [RESDAC Online learning](https://resdac.org/online-learning)
-- [RESDAC Learning and workshops](https://resdac.org/learn)
-```
-
 `````{dropdown} MCBS
 
 ```{list-table}
@@ -101,7 +95,7 @@ Check out the following resources about the CMS health data:
 * - data_source
   - [MCBS](https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS)
 * - description
-  - Survey for sample of all Medicare or just FFS (1999-2004, 2007-2013, 2015-2017).
+  - Survey for sample of all Medicare or just FFS (1999-2004, 2007-2013, 2015-2017). Check out NSAPH MCBS documentation [here](./mcbs.md).
 * - fasse_location
   - `/n/dominici_nsaph_l3/data/mcbs/`
 * - size
@@ -110,10 +104,18 @@ Check out the following resources about the CMS health data:
 `````
 
 ``` {seealso}
-Check out NSAPH MCBS documentation [here](./mcbs.md).
+Check out the following resources about the CMS health data:
+- [RESDAC Using Medicare Hospitalization Information and the MedPAR](http://resdac.umn.edu/sites/resdac.umn.edu/files/Using%20Medicare%20Hospitalization%20Information%20and%20the%20MedPAR%20(Slides).pdf) 
+- [Coverage Denials: Government And Private Insurer Policies For Medical Necessity In Medicare](https://www.healthaffairs.org/doi/pdf/10.1377/hlthaff.2021.01054)
+- [RESDAC Online learning](https://resdac.org/online-learning)
+- [RESDAC Learning and workshops](https://resdac.org/learn)
 ```
 
-## ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US
+## Exposure data
+
+The following is the description of the air pollution exposure data.
+
+### ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US
 
 `````{dropdown} PM2.5, Ozone, NO2
 ```{list-table}
@@ -185,10 +187,9 @@ Check out NSAPH MCBS documentation [here](./mcbs.md).
 ```
 `````
 
-## PM 2.5 Components
+### PM2.5 Components
 
-`````{dropdown} PM 2.5 component data
-
+`````{dropdown} PM2.5 component data
 ```{list-table}
 :header-rows: 0
 
@@ -224,9 +225,52 @@ Check out NSAPH MCBS documentation [here](./mcbs.md).
 ```
 `````
 
-## Gridmet
+### Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020
 
-This project aggregates exposure data into social boundaries such as zip codes or census tracts 
+`````{dropdown} Predicted daily smoke PM2.5
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Marissa Childs
+* - date_created
+  - October 24, 2020
+* - data_source
+  - other (exposure predictions)
+* - spatial_coverage
+  - Contiguous US
+* - spatial_resolution
+  - originally 10 km (gridded), aggregated to zcta, census tract, and county by area and population-weighted averages
+* - temporal_coverage
+  - 2006 - 2020
+* - temporal_resolution
+  - daily
+* - exposures
+  - PM2.5 from smoke 
+* - processing_description
+  - none
+* - fasse_location
+  - `data/exposure/predicted_daily_smoke_pm25`
+* - publication
+  - https://doi.org/10.1021/acs.est.2c02934 
+* - git_repository
+  - [daily-10km-smokePM](https://github.com/echolab-stanford/daily-10km-smokePM)
+* - size
+  - 
+* - files
+  -
+```
+```
+   ├── 2000.csv
+   ├── ...
+   └── 2019.csv
+```
+`````
+
+## Confounder data
+
+### Gridmet
+
+This project aggregates Gridmet data into social boundaries such as zip codes or census tracts 
 that can be then joined with data available at those social units such as Medicare or Census data. Specifically it does the following: 
 
 1. Start point: GRIDMET climate data (4x4km grid), Census Bureau Zip Code Tabulation Area (ZCTA) boundaries
@@ -238,7 +282,7 @@ that can be then joined with data available at those social units such as Medica
 ```{list-table}
 :header-rows: 0
 * - fasse_location
-  - `/n/dominici_nsaph_l3/data/gridmet/`
+  - `data/gridmet/`
 * - dataset_author
   - Nate Fairbank
 * - date_created
@@ -255,14 +299,29 @@ that can be then joined with data available at those social units such as Medica
   - GRIDMET, Census Bureau
 ```
 ``` {dropdown} data_source description
-- [GRIDMET data](https://www.northwestknowledge.net/metdata/data/permanent/)
-- [Census Bureau Zip Code Tabulation Area (ZCTA) TIGER/Line Files and Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2000.html)
-- For more about ZCTAs, read here: https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html
-- ZCTAs were used because they represent the government's "best guess" at what the spacial boundaries of a zip code are. While zip codes are commonly percieved as denoting spatial boundaries, they are in fact just a collection of addresses. Furthermore, they are "working units" that are defined and changed based on the needs (and whims) of the postal service. There is a degree of compromise/subjectivity here. The best answer would be "don't use zip codes as a unit of analysis". If they must be used, ZCTAs represent the best solution. 
-- NOT ALL ZIP CODES HAVE A CORRESPONDING ZCTA. ZCTAs are a trademark of the Census Bureau, an organization fundamentally concerned with PEOPLE. Zip Codes are a trademark of the US Postal Service, an organization fundamentally concerned with MAIL. Some zip codes map to a single address or very small collection of addresses. These represent high-volume mail facilities (think like PO boxes, etc), and are NOT included as seperate ZCTAs. While frustrating from a pure data perspective (why is there all this unmatched data!?) this makes sense from a practical perspective. If a Medicare patient gave a PO Box as their address, and we use that PO Box's zip code to infer what their exposure was we'd be making an inappropriate inference, as that patient doesn't actually live inside their PO Box. If matching all these "point" zip codes is necessary, a zip to ZCTA crosswalk is available here: ~/shared_space/ci3_exposure/locations/zcta/crosswalk/
+1. [GRIDMET data](https://www.northwestknowledge.net/metdata/data/permanent/)
+
+All original GRIDMET varaibles are preserved. There are a total of 18: 
+  - Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)
+  - Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)
+  - Variables from data processing (2):
+       - CRS: originally "coordinate reference system", this had a value of "1" for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these "1"s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code. 
+       - AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA's area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA's area was accounted for. Thus this represents a "check" on the process. A small minority of the data does NOT sum to "1". These are cases on the edge of the map, such as the Florida Keys, that GRIDMET's data does not fully cover. 
+- For documentation on GRIDMET variables please refer to [their materials](https://www.climatologylab.org/gridmet.html).
+- Notes from the GRIDMET files:
+    - author: John Abatzoglou - University of Idaho, jabatzoglou@uidaho.edu
+    - The projection information for this file is: GCS WGS 1984.
+    - Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
+    - Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)
+    
+2. [Census Bureau Zip Code Tabulation Area (ZCTA) TIGER/Line Files and Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2000.html)
+
+ZCTAs were used because they represent the government's "best guess" at what the spacial boundaries of a zip code are. While zip codes are commonly percieved as denoting spatial boundaries, they are in fact just a collection of addresses. Furthermore, they are "working units" that are defined and changed based on the needs (and whims) of the postal service. There is a degree of compromise/subjectivity here. The best answer would be "don't use zip codes as a unit of analysis". If they must be used, ZCTAs represent the best solution. 
+- NOT ALL ZIP CODES HAVE A CORRESPONDING ZCTA. ZCTAs are a trademark of the Census Bureau, an organization fundamentally concerned with PEOPLE. Zip Codes are a trademark of the US Postal Service, an organization fundamentally concerned with MAIL. Some zip codes map to a single address or very small collection of addresses. These represent high-volume mail facilities (think like PO boxes, etc), and are NOT included as seperate ZCTAs. While frustrating from a pure data perspective (why is there all this unmatched data!?) this makes sense from a practical perspective. If a Medicare patient gave a PO Box as their address, and we use that PO Box's zip code to infer what their exposure was we'd be making an inappropriate inference, as that patient doesn't actually live inside their PO Box. If matching all these "point" zip codes is necessary, a zip to ZCTA crosswalk is available here: `/data/shapefiles/zip_to_zcta`
 - Because zip codes change constantly, ZCTAs have to be updated. They were first created following the 2000 census, and started receiving annual updates in 2007. Thus, this process uses the annual file for all data for that year, and the 2000 census file for years 2000-2006.
 - The Census has made major updates to the ZCTAs every decade. For the 2000 Census, they include suffixes such as "XX" and "HH" to indicate large, unpopulated land areas such as national parks and bodies of water. 
-"HH" suffix used to represent large water bodies
+- "HH" suffix used to represent large water bodies
+- For more about ZCTAs, read [here](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html)
 ```
 ``` {dropdown} processing_description
 - Stage 1: Crosswalk Development (done in ArcGIS):
@@ -331,27 +390,33 @@ that can be then joined with data available at those social units such as Medica
 ```
 `````
 
-### Gridmet Variables 
-
-All original GRIDMET varaibles are preserved. There are a total of 18: 
-  - Primary Climate Variables (9): Maximum temperature, minimum temperature, precipitation accumulation, downward surface shortwave radiation, wind-velocity, wind direction, humidity (maximum and minimum relative humidity and specific humidity)
-  - Derived variables (7): Reference evapotranspiration (ASCE Penman-Montieth), Energy Release Component*, Burning Index*, 100-hour and 1000-hour dead fuel moisture, mean vapor pressure deficit, 10-day Palmer Drought Severity Index *fuel model G (conifer forest)
-  - Variables from data processing (2):
-       - CRS: originally "coordinate reference system", this had a value of "1" for every grid in GRIDMET. As these grids were tabulated into ZCTAs, these "1"s were tabulated as well. Thus, this number indicates how many grids (partial or whole) were part of the area aggregation for that zip code. 
-       - AreaProp: To do the area weighting, each ZCTA/grid pairing was given a percentage of how much of the ZCTA's area was contained in that grid. For each ZCTA, these proportions sum to 1, meaning that 100% of the ZCTA's area was accounted for. Thus this represents a "check" on the process. A small minority of the data does NOT sum to "1". These are cases on the edge of the map, such as the Florida Keys, that GRIDMET's data does not fully cover. 
-
-```{note}
-For documentation on GRIDMET variables please refer to [their materials](https://www.climatologylab.org/gridmet.html).
+### ZIP to ZCTA crosswalk (2015)
+`````{dropdown} **zip_to_zcta**
+```{list-table}
+:header-rows: 0
+* - rce_location
+  - `~/shared_space/ci3_exposure/locations/zcta/crosswalk/`
+* - fasse_location
+  - `/data/shapefiles/zip_to_zcta`
+* - date_created
+  - Nov 2, 2015
+* - spatial_coverage
+  - contiguous US
+* - size
+  - 1.8 MB
+* - header 
+  - `ZIP,PO_NAME,STATE,ZIP_TYPE,ZCTA`
+* - files
+  - 
 ```
+```
+   └── Zip_to_ZCTA_crosswalk_2015_JSI.csv
+```
+`````
 
-- Notes from the GRIDMET files:
-    - author: John Abatzoglou - University of Idaho, jabatzoglou@uidaho.edu
-    - The projection information for this file is: GCS WGS 1984.
-    - Citation: Abatzoglou, J.T., 2013, Development of gridded surface meteorological data for ecological applications and modeling, International Journal of Climatology, DOI: 10.1002/joc.3413
-    - Days correspond approximately to calendar days ending at midnight, Mountain Standard Time (7 UTC the next calendar day)
-    
+## Other data 
 
-## Other Commonly Used Public Data Sources
+The following are other commonly-used public data sources:
 
 - [CMS Synthetic data: 2008, 2009, and 2010](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF)
 - [CDC, Behavioral Risk Factor Surveillance System (BRFSS) data for body mass index and smoking status](https://www.cdc.gov/brfss/annual_data/annual_2008.htm)
