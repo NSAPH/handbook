@@ -660,30 +660,6 @@ year : num
 ```
 `````
 
-### ZIP to ZCTA crosswalk (2015)
-`````{dropdown} **zip_to_zcta**
-```{list-table}
-:header-rows: 0
-* - rce_location
-  - `~/shared_space/ci3_exposure/locations/zcta/crosswalk/`
-* - fasse_location
-  - `zip_to_zcta`
-* - date_created
-  - Nov 2, 2015
-* - spatial_coverage
-  - contiguous US
-* - size
-  - 1.8 MB
-* - header 
-  - `ZIP,PO_NAME,STATE,ZIP_TYPE,ZCTA`
-* - files
-  - 
-```
-```
-   └── Zip_to_ZCTA_crosswalk_2015_JSI.csv
-```
-`````
-
 ### ADRD Hospitalization Records
 `````{dropdown} **adrd_hospitalization**
 ```{list-table}
