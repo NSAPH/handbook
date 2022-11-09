@@ -26,8 +26,7 @@ usage policy and agree to it. Please take a few minutes to read the information 
 **1. Health data CANNOT be moved from the RCE/FASSE.**
 
 *Per the DUA and IRB, data has to be on the RCE/FASSE level 3 data cluster ONLY and cannot be 
-downloaded from the level 3 RCE/FASSE. Violations come with serious consequences that jeopardize 
-everyone's work. We are very much encouraging sharing reproducible code on GitHub, but please use 
+downloaded from the level 3 RCE/FASSE. Datasets CANNOT be downloaded or moved from RCE/FASSE even if they do not have identifying information. Violations come with serious consequences that jeopardize everyone's work. We are very much encouraging sharing reproducible code on GitHub, but please use 
 it only for CODE and publicly available data. We suggest adding a `.gitignore` file to your 
 repository and using it to prevent unintentional upload of data files. We also suggest using 
 the `git status` command before committing to confirm what you are committing.*
