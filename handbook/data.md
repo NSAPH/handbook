@@ -187,7 +187,7 @@ The following is the description of the air pollution exposure data.
 ```
 `````
 
-### PM2.5 Components
+### PM2.5 Components - Obsolete
 
 `````{dropdown} PM2.5 component data
 ```{list-table}
