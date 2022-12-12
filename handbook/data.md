@@ -141,7 +141,7 @@ The following is the description of the air pollution exposure data.
 * - publication
   - TBD
 * - fasse_location
-  - Append `/n/dominici_nsaph_l3/Lab/data/` to the beginning of the paths: `exposure/ozone/O3`, `data/exposure/pm25/PM25`, `exposure/no2/NO2`, `exposure/pm25_components/pm25_components_v2`
+  - Append `/n/dominici_nsaph_l3/Lab/data/` to the beginning of the paths: `exposure/ozone/O3`, `exposure/pm25/PM25`, `exposure/no2/NO2`, `exposure/pm25_components/pm25_components_v2`
 * - files
   -
 ```
