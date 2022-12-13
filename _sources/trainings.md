@@ -4,7 +4,7 @@ Data Security trainings are a required component of the NSAPH on-boarding proces
 We require three trainings:
 1. CITI- Social and Behavioral/Biomedical Research Investigators Training
 2. CITI- Yearly Data Security/Information Privacy and Security (IPS) Training
-3. [Additional NSAPH Data Security Training](https://docs.google.com/forms/d/e/1FAIpQLScV_txoDRI5b6bpsnVO6QaAPZJ4xRo2z4VgyXibSxZ55o_AJg/viewform?usp=sf_link)
+3. [Additional NSAPH Data Security Training](https://docs.google.com/forms/d/e/1FAIpQLScU69szWvPCPhrcXhT8959B3osxn6KW5vzTyOMpdzb8FQlhEw/viewform)
 
 
 ```{tip}
