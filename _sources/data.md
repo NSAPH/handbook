@@ -16,7 +16,7 @@ The following contains the description of the original/raw CMS data.
 * - description
   - MedPar includes hospitalizations for FFS individuals (1999-2018). MBSF or the enrollment file and also has mortality for everyone (1999-2018).
 * - fasse_location
-  - `data/ci3_d_medicare/original_data/cms_medicare/data`
+  - Append `/n/dominici_nsaph_l3/Lab/data/` to the beginning of the paths: `ci3_d_medicare/original_data/cms_medicare/data`
 * - size
   - 733 GB
 * - files
@@ -141,7 +141,7 @@ The following is the description of the air pollution exposure data.
 * - publication
   - TBD
 * - fasse_location
-  - `data/exposure/ozone/O3`, `data/exposure/pm25/PM25`, `data/exposure/no2/NO2`, `data/exposure/pm25_components/pm25_components_v2`
+  - Append `/n/dominici_nsaph_l3/Lab/data/` to the beginning of the paths: `exposure/ozone/O3`, `exposure/pm25/PM25`, `exposure/no2/NO2`, `exposure/pm25_components/pm25_components_v2`
 * - files
   -
 ```
@@ -204,9 +204,9 @@ The following is the description of the air pollution exposure data.
 * - size
   - 251 MG
 * - processing_description
-  - Superseded by `data/exposure/pm25_components/pm25_components_v2`. These are annual estimations of PM2.5 speciations at ZIP Code-level  across the contiguous US, aggregated from Heresh's grid-level estimations. For a general ZIP Code, which has normal street delivery route and therefore can be represented by a polygonal area, we estimate the ZIP Code-level PM2.5 by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; for other ZIP Codes that do not have polygon representations, for example an apartment building, a military base, or a post office, we consider them as single points and estimate their ZIP Code-level PM2.5 by linking the prediction of the nearest grid cell. For ec, oc, nh4, no3, and so4 the units are microgram per cubic meter; for br, ca, cu, fe, k, ni, pb, si, v, and z the units are nanogram per cubic meter.
+  - Superseded by `/n/dominici_nsaph_l3/Lab/data/exposure/ pm25_components/pm25_components_v2`. These are annual estimations of PM2.5 speciations at ZIP Code-level  across the contiguous US, aggregated from Heresh's grid-level estimations. For a general ZIP Code, which has normal street delivery route and therefore can be represented by a polygonal area, we estimate the ZIP Code-level PM2.5 by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; for other ZIP Codes that do not have polygon representations, for example an apartment building, a military base, or a post office, we consider them as single points and estimate their ZIP Code-level PM2.5 by linking the prediction of the nearest grid cell. For ec, oc, nh4, no3, and so4 the units are microgram per cubic meter; for br, ca, cu, fe, k, ni, pb, si, v, and z the units are nanogram per cubic meter.
 * - fasse_location
-  - `data/exposure/pm25_components/pm25_components_v1`
+  - Append `/n/dominici_nsaph_l3/Lab/data/` to the beginning of the paths: `exposure/pm25_components/pm25_components_v1`
 * - git_repository
   - https://github.com/yycome/PM25_Components
 * - publication 
@@ -249,7 +249,7 @@ The following is the description of the air pollution exposure data.
 * - processing_description
   - none
 * - fasse_location
-  - `data/exposure/predicted_daily_smoke_pm25`
+  - Append `/n/dominici_nsaph_l3/Lab/data/` to the beginning of the paths: `exposure/predicted_daily_smoke_pm25`
 * - publication
   - https://doi.org/10.1021/acs.est.2c02934 
 * - git_repository
@@ -291,7 +291,7 @@ that can be then joined with data available at those social units such as Medica
 ```{list-table}
 :header-rows: 0
 * - fasse_location
-  - `data/gridmet/`
+  - `/n/dominici_nsaph_l3/Lab/data/data/gridmet/`
 * - dataset_author
   - Nate Fairbank
 * - date_created
@@ -326,7 +326,7 @@ All original GRIDMET varaibles are preserved. There are a total of 18:
 2. [Census Bureau Zip Code Tabulation Area (ZCTA) TIGER/Line Files and Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2000.html)
 
 ZCTAs were used because they represent the government's "best guess" at what the spacial boundaries of a zip code are. While zip codes are commonly percieved as denoting spatial boundaries, they are in fact just a collection of addresses. Furthermore, they are "working units" that are defined and changed based on the needs (and whims) of the postal service. There is a degree of compromise/subjectivity here. The best answer would be "don't use zip codes as a unit of analysis". If they must be used, ZCTAs represent the best solution. 
-- NOT ALL ZIP CODES HAVE A CORRESPONDING ZCTA. ZCTAs are a trademark of the Census Bureau, an organization fundamentally concerned with PEOPLE. Zip Codes are a trademark of the US Postal Service, an organization fundamentally concerned with MAIL. Some zip codes map to a single address or very small collection of addresses. These represent high-volume mail facilities (think like PO boxes, etc), and are NOT included as seperate ZCTAs. While frustrating from a pure data perspective (why is there all this unmatched data!?) this makes sense from a practical perspective. If a Medicare patient gave a PO Box as their address, and we use that PO Box's zip code to infer what their exposure was we'd be making an inappropriate inference, as that patient doesn't actually live inside their PO Box. If matching all these "point" zip codes is necessary, a zip to ZCTA crosswalk is available here: `/data/shapefiles/zip_to_zcta`
+- NOT ALL ZIP CODES HAVE A CORRESPONDING ZCTA. ZCTAs are a trademark of the Census Bureau, an organization fundamentally concerned with PEOPLE. Zip Codes are a trademark of the US Postal Service, an organization fundamentally concerned with MAIL. Some zip codes map to a single address or very small collection of addresses. These represent high-volume mail facilities (think like PO boxes, etc), and are NOT included as seperate ZCTAs. While frustrating from a pure data perspective (why is there all this unmatched data!?) this makes sense from a practical perspective. If a Medicare patient gave a PO Box as their address, and we use that PO Box's zip code to infer what their exposure was we'd be making an inappropriate inference, as that patient doesn't actually live inside their PO Box. If matching all these "point" zip codes is necessary, a zip to ZCTA crosswalk is available here: `/n/dominici_nsaph_l3/Lab/data/shapefiles/`
 - Because zip codes change constantly, ZCTAs have to be updated. They were first created following the 2000 census, and started receiving annual updates in 2007. Thus, this process uses the annual file for all data for that year, and the 2000 census file for years 2000-2006.
 - The Census has made major updates to the ZCTAs every decade. For the 2000 Census, they include suffixes such as "XX" and "HH" to indicate large, unpopulated land areas such as national parks and bodies of water. 
 - "HH" suffix used to represent large water bodies
@@ -356,7 +356,7 @@ ZCTAs were used because they represent the government's "best guess" at what the
 ```{list-table}
 :header-rows: 0
 * - fasse_location
-  - `/data/shapefiles`
+  - `/n/dominici_nsaph_l3/Lab/data/shapefiles`
 * - files
   -
 ```
@@ -377,7 +377,7 @@ ZCTAs were used because they represent the government's "best guess" at what the
 ```{list-table}
 :header-rows: 0
 * - fasse_location
-  - `/data/shapefiles`
+  - `/n/dominici_nsaph_l3/Lab/data/shapefiles`
 * - files
   -
 ```
@@ -406,7 +406,7 @@ ZCTAs were used because they represent the government's "best guess" at what the
 * - rce_location
   - `~/shared_space/ci3_exposure/locations/zcta/crosswalk/`
 * - fasse_location
-  - `/data/shapefiles/zip_to_zcta`
+  - `/n/dominici_nsaph_l3/Lab/data/shapefiles/zip_to_zcta`
 * - date_created
   - Nov 2, 2015
 * - spatial_coverage
