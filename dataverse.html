@@ -434,12 +434,48 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uploading-data-to-nsaph-dataverse-collection">
+   Uploading data to NSAPH Dataverse collection
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#upload-within-the-collection">
+     Upload within the collection
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#upload-from-the-main-page">
+     Upload from the main page
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -451,6 +487,31 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uploading-data-to-nsaph-dataverse-collection">
+   Uploading data to NSAPH Dataverse collection
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#upload-within-the-collection">
+     Upload within the collection
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#upload-from-the-main-page">
+     Upload from the main page
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -460,14 +521,40 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="dataverse">
 <h1>Dataverse<a class="headerlink" href="#dataverse" title="Permalink to this headline">#</a></h1>
-<p>NSAPH Dataverse:</p>
+<p>There are three NSAPH collections at <a class="reference external" href="https://dataverse.harvard.edu">Harvard Dataverse</a>:</p>
 <ul class="simple">
-<li><p>Main: <a class="reference external" href="https://dataverse.harvard.edu/dataverse/biostats">https://dataverse.harvard.edu/dataverse/biostats</a></p></li>
+<li><p>General: <a class="reference external" href="https://dataverse.harvard.edu/dataverse/biostats">https://dataverse.harvard.edu/dataverse/biostats</a></p></li>
 <li><p>Open data collection: <a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaphopendata">https://dataverse.harvard.edu/dataverse/nsaphopendata</a></p></li>
 <li><p>Analysis data collection: <a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaphanalysis">https://dataverse.harvard.edu/dataverse/nsaphanalysis</a></p></li>
 </ul>
-<p>Or see at: <a class="reference external" href="http://biostatsdata.org">http://biostatsdata.org</a></p>
-<p>To contribute data to dataverse, please see <a class="reference external" href="https://support.dataverse.harvard.edu/getting-started">https://support.dataverse.harvard.edu/getting-started</a> [select the NSAPH collection]</p>
+<section id="uploading-data-to-nsaph-dataverse-collection">
+<h2>Uploading data to NSAPH Dataverse collection<a class="headerlink" href="#uploading-data-to-nsaph-dataverse-collection" title="Permalink to this headline">#</a></h2>
+<p>There are two ways to upload data to a NSAPH Dataverse collection.</p>
+<section id="upload-within-the-collection">
+<h3>Upload within the collection<a class="headerlink" href="#upload-within-the-collection" title="Permalink to this headline">#</a></h3>
+<p>The first is:</p>
+<ol class="simple">
+<li><p>Navigate to one of the NSAPH collections: <a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaphopendata">NSAPH Open Data</a>,
+<a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaphanalysis">NSAPH Analysis data</a> or
+<a class="reference external" href="https://dataverse.harvard.edu/dataverse/biostats">NSAPH General</a>.</p></li>
+<li><p>Within the collection, click “Add Data” &gt; “New Dataset” (see figure):</p></li>
+</ol>
+<p><img alt="" src="_images/dv1.jpg" /></p>
+</section>
+<section id="upload-from-the-main-page">
+<h3>Upload from the main page<a class="headerlink" href="#upload-from-the-main-page" title="Permalink to this headline">#</a></h3>
+<p>Another way to upload data to a NSAPH Dataverse collection is by selecting the collection at upload:</p>
+<ol class="simple">
+<li><p>On the main <a class="reference external" href="https://dataverse.harvard.edu">Harvard Dataverse</a> page, click “Add Data”.</p></li>
+<li><p>Next, specify the Host Dataverse (i.e., the collection) name in the upload form like in the figure below:</p></li>
+</ol>
+<p><img alt="" src="_images/dv2.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For additional guidence on data upload, please see documentation here: <a class="reference external" href="https://support.dataverse.harvard.edu/getting-started">https://support.dataverse.harvard.edu/getting-started</a></p>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
