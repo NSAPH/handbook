@@ -572,13 +572,13 @@ repository page: “Settings” -&gt; “Danger Zone” -&gt; “Transfer owners
 <p class="admonition-title">Existing project from <a class="reference external" href="http://code.harvard.edu">code.harvard.edu</a></p>
 <p>In this case, you can add a new <code class="docutils literal notranslate"><span class="pre">remote</span></code> (or replace the current) in your local git repository. First, navigate to NASPH-Projects on GitHub and create a new repository there.
 Then, navigate to your local git repository and add a new remote like this:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git remote add nsaph https://github.com/NSAPH-Projects/REPO_NAME.git
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>nsaph<span class="w"> </span>https://github.com/NSAPH-Projects/REPO_NAME.git
 <span class="c1"># verify new remote </span>
-git remote -v 
+git<span class="w"> </span>remote<span class="w"> </span>-v<span class="w"> </span>
 </pre></div>
 </div>
 <p>Last, you should push the repository to the new remote so that all commits stay intact:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git push -u nsaph master
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>nsaph<span class="w"> </span>master
 </pre></div>
 </div>
 <p>Going forward, make sure to keep the <code class="docutils literal notranslate"><span class="pre">nsaph</span></code> remote up to date!</p>
@@ -601,10 +601,10 @@ do not just transfer ownership to <a class="reference external" href="https://gi
 <section id="creating-a-github-repository-in-fasse">
 <h2>Creating a GitHub repository in FASSE<a class="headerlink" href="#creating-a-github-repository-in-fasse" title="Permalink to this headline">#</a></h2>
 <p>Once you have created a repository on GitHub, you can clone that repository into FASSE, so that you can transfer versions of your files to and from FASSE and GitHub. To clone a GitHub repository into FASSE, start a FASSE Remote Desktop (or Containerized Remote Desktop) session, Open a Terminal window, and write the following lines one-by-one. Note that the first and second lines are different from each other because the first says “http” and second says “https”.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
-<span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
-<span class="nb">cd</span> nsaph_projects/<span class="o">{</span>your project name<span class="o">}</span>
-git clone <span class="o">{</span>url of your repository: go to your repository and click on green <span class="s2">&quot;Code&quot;</span> button<span class="o">}</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">http_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
+<span class="nb">export</span><span class="w"> </span><span class="nv">https_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
+<span class="nb">cd</span><span class="w"> </span>nsaph_projects/<span class="o">{</span>your<span class="w"> </span>project<span class="w"> </span>name<span class="o">}</span>
+git<span class="w"> </span>clone<span class="w"> </span><span class="o">{</span>url<span class="w"> </span>of<span class="w"> </span>your<span class="w"> </span>repository:<span class="w"> </span>go<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span>repository<span class="w"> </span>and<span class="w"> </span>click<span class="w"> </span>on<span class="w"> </span>green<span class="w"> </span><span class="s2">&quot;Code&quot;</span><span class="w"> </span>button<span class="o">}</span>
 </pre></div>
 </div>
 </section>
@@ -620,13 +620,13 @@ git clone <span class="o">{</span>url of your repository: go to your repository 
 Open a Terminal window AFTER you’re done editing your files (if you open Terminal before you’ve finished making edits, you’ll end up uploading an old version of your code) and type the following lines one by one.</p>
 <p>All of the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> lines are optional; <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> simply lets you see what files are in the current folder,
 what files have been changed, what files you’re about to commit, etc.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> nsaph_projects/<span class="o">{</span>your project name<span class="o">}</span>/<span class="o">{</span>your repository name<span class="o">}</span>
-git status
-git add <span class="o">{</span>file name or folder/file<span class="o">}</span>
-git status
-git commit -m <span class="s2">&quot;your commit message, in quotes&quot;</span>
-git status
-git push
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>nsaph_projects/<span class="o">{</span>your<span class="w"> </span>project<span class="w"> </span>name<span class="o">}</span>/<span class="o">{</span>your<span class="w"> </span>repository<span class="w"> </span>name<span class="o">}</span>
+git<span class="w"> </span>status
+git<span class="w"> </span>add<span class="w"> </span><span class="o">{</span>file<span class="w"> </span>name<span class="w"> </span>or<span class="w"> </span>folder/file<span class="o">}</span>
+git<span class="w"> </span>status
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;your commit message, in quotes&quot;</span>
+git<span class="w"> </span>status
+git<span class="w"> </span>push
 YOUR_ACCESS_TOKEN
 </pre></div>
 </div>
@@ -669,16 +669,16 @@ After you do this, you can open a Terminal window (or more than one Terminal win
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># .bashrc</span>
 
 <span class="c1"># Source global definitions</span>
-<span class="k">if</span> <span class="o">[</span> -f /etc/bashrc <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-. /etc/bashrc
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>/etc/bashrc<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+.<span class="w"> </span>/etc/bashrc
 <span class="k">fi</span>
 
-<span class="nb">export</span> <span class="nv">R_LIBS_USER</span><span class="o">=</span><span class="nv">$HOME</span>/apps/<span class="o">{</span>your project name<span class="o">}</span>/R_4.0.5:<span class="nv">$R_LIBS_USER</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">R_LIBS_USER</span><span class="o">=</span><span class="nv">$HOME</span>/apps/<span class="o">{</span>your<span class="w"> </span>project<span class="w"> </span>name<span class="o">}</span>/R_4.0.5:<span class="nv">$R_LIBS_USER</span>
 
 <span class="c1"># Aliases</span>
-<span class="nb">alias</span> <span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/Lab/projects&#39;</span>
-<span class="nb">alias</span> <span class="nv">ml_r4</span><span class="o">=</span><span class="s1">&#39;module load gcc/9.3.0-fasrc01 R/4.0.5-fasrc02&#39;</span>
-<span class="nb">alias</span> <span class="nv">ml_rstudio</span><span class="o">=</span><span class="s1">&#39;module load rstudio/1.1.453-fasrc01&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/Lab/projects&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ml_r4</span><span class="o">=</span><span class="s1">&#39;module load gcc/9.3.0-fasrc01 R/4.0.5-fasrc02&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ml_rstudio</span><span class="o">=</span><span class="s1">&#39;module load rstudio/1.1.453-fasrc01&#39;</span>
 </pre></div>
 </div>
 <div class="admonition note">

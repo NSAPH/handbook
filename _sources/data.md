@@ -135,13 +135,13 @@ The following is the description of the air pollution exposure data.
 * - temporal_resolution
   - daily, annually
 * - description
-  - For general ZIP Codes with a polygon representation, we estimated their pollution levels by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; For other ZIP Codes such as Post Offices or large volume single customers, we treated them as a single point and predicted their pollution levels by assigning the predictions of the nearest grid cell. These are updated ZIP code-level predictions. We filled in the missing values for grids, and added about 200 zip codes that are missing in the Esri files each year. The geographic information for the additional zip codes is extracted from US ZIP code database.
+  - For general ZIP Codes with a polygon representation, we estimated their pollution levels by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; For other ZIP Codes such as Post Offices or large volume single customers, we treated them as a single point and predicted their pollution levels by assigning the predictions of the nearest grid cell. These are updated ZIP code-level predictions. We filled in the missing values for grids, and added about 200 zip codes that are missing in the Esri files each year. The geographic information for the additional zip codes is extracted from US ZIP code database. **Version 2 update:** The v2 files (`exposure/ozone/O3_v2`, `exposure/pm25/PM25_v2`, `exposure/no2/NO2_v2`): (1) exclude zip codes that are outside the contiguous US; (2) a `state` column is added to each file, so we know which zip code belongs to which state. No exposure values were changed. This version (v2) is available on [NASA SEDAC]((https://sedac.ciesin.columbia.edu/data/set/aqdh-pm2-5-o3-no2-concentrations-zipcode-contiguous-us-2000-2016)).
 * - git_repository
   - [ZIP_add_missing](https://github.com/NSAPH-Data-Processing/ZIP_add_missing) and private [ZIP_add_missing](https://github.com/yycome/ZIP_add_missing)
 * - publication
-  - TBD
+  - The data are officially published through NASA SEDAC at [sedac.ciesin.columbia.edu](https://sedac.ciesin.columbia.edu/data/set/aqdh-pm2-5-o3-no2-concentrations-zipcode-contiguous-us-2000-2016).
 * - fasse_location
-  - Append `/n/dominici_nsaph_l3/Lab/data/` to the beginning of the paths: `exposure/ozone/O3`, `exposure/pm25/PM25`, `exposure/no2/NO2`, `exposure/pm25_components/pm25_components_v2`
+  - Add `/n/dominici_nsaph_l3/Lab/data/` to the beginning of the paths: `exposure/ozone/O3_v1`, `exposure/ozone/O3_v2`, `exposure/pm25/PM25_v1`, `exposure/pm25/PM25_v2`, `exposure/no2/NO2_v1`, `exposure/no2/NO2_v2`, `exposure/pm25_components/pm25_components_v2`
 * - files
   -
 ```
