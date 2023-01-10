@@ -425,11 +425,13 @@ ZCTAs were used because they represent the government's "best guess" at what the
 
 ## Other data 
 
-The following are other commonly-used public data sources:
+The following are other commonly-used public data sources, many of which may be found in the **confounders** folder on FASSE.
 
 - [CMS Synthetic data: 2008, 2009, and 2010](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF)
 - [CDC, Behavioral Risk Factor Surveillance System (BRFSS) data for body mass index and smoking status](https://www.cdc.gov/brfss/annual_data/annual_2008.htm)
 - [PM2.5 concentrations (US) from Di et al. 2019](https://beta.sedac.ciesin.columbia.edu/data/set/aqdh-pm2-5-concentrations-contiguous-us-1-km-2000-2016)
 - [Census data](https://www.census.gov/data/developers/data-sets/acs-5year.2010.html)
 - [GridMET data](https://www.climatologylab.org/gridmet.html)
+- [County Presidential Election Returns 2000-2020](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ&version=10.0)
+- [United States Broadband Usage Percentages Dataset](https://github.com/microsoft/USBroadbandUsagePercentages)
 
