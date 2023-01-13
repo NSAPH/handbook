@@ -275,6 +275,41 @@ The following is the description of the air pollution exposure data.
 ```
 `````
 
+### Space weather data 
+
+`````{dropdown} Space weather data 
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Carolina L Zilli Vieira
+* - date_created
+  - Oct 17 2022
+* - data_source
+  - [NASA](applewebdata://2B7CDFAB-4F4C-4BF8-9222-201B5E9C2E1B/NASA) - solar and geomagnetic activity data from https://omniweb.gsfc.nasa.gov/html/omni_source.html, DAAC NASA (solar radiation) from https://daac.ornl.gov/, BARTOL Neutron Station (neutrons) from https://neutronm.bartol.udel.edu/
+* - spatial_coverage
+  - Global UTC (from raw data) converted to local time.
+* - spatial_resolution
+  - county
+* - temporal_coverage
+  - 1996-2022
+* - temporal_resolution
+  - daily
+* - processing_description
+  - We processed the data in UTC to US time zone data. From this source, it is not possible to have spatial data. To do so, we converted UTC global data to US local time data. Then we used these local time zone data to identify county. The numbers change a little by location based in the time zone. We provided daily data, which can be aggregated them to monthly and annual data.
+* - fasse_location
+  - `/n/dominici_nsaph_l3/exposures/solar_activity`  
+* - git_repository
+  - TBD
+* - size
+  - TBD
+* - files
+  -
+```
+```
+TBD
+```
+`````
+
 ## Confounder data
 
 ### Gridmet
