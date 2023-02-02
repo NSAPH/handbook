@@ -299,7 +299,7 @@ The following is the description of the air pollution exposure data.
 * - fasse_location
   - `/n/dominici_nsaph_l3/exposures/solar_activity`  
 * - git_repository
-  - TBD
+  - [solar_data_timezone_to_zipcode](https://github.com/NSAPH-Data-Processing/solar_data_timezone_to_zipcode)
 * - size
   - TBD
 * - files
