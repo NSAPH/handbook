@@ -1,4 +1,4 @@
-# Lifecycle
+# NSAPH Research Project Lifecycle
 
 ## NSAPH RESEARCH PROJECT LIFE CYCLE
 
