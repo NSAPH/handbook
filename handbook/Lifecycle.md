@@ -1,14 +1,18 @@
-**NSAPH RESEARCH PROJECT LIFE CYCLE**
+# Lifecycle
+
+## NSAPH RESEARCH PROJECT LIFE CYCLE
 
 <img width="1422" alt="NSAPH-Research-Lifecycle_LK.png">
 
-**Getting Started For New Users: NSAPH On-boarding**
+## Getting Started For New Users: NSAPH On-boarding
+
 1. Create a GitHub account if you do not already have one
 2. Complete the required CITI trainings listed here
 3. Submit the NSAPH On-Boarding form
 Please note that submitting this form will not give you access to data, this is the first step that needs to be completed for every new user.
 
-**Starting a New Project & Getting Access to Data:**
+## Starting a New Project & Getting Access to Data
+
 1. Submit a [Project Initiation Form] (https://docs.google.com/forms/d/e/1FAIpQLSe6HflNjmJCQeJ5qKGoQFOchvfjeZbDRV0fJX7dCp9jzIfW6Q/viewform)
 A Project Initiation form is required for every new project even if you already have access to the data, and regardless of whether or not the project involves CMS data usage. 
 Researchers  are required to complete this form prior to starting a project for the following reasons:
@@ -32,7 +36,8 @@ To Create an FASRC Account, and to Request Access to NSAPH FASSE Group: see inst
 - Link GitHub Account to FASSE Project Workspace
 
 
-**Continuing to work on your existing project**
+## Continuing to work on your existing project
+
 Submit Project Progress Forms Every Fall & Spring Semester
 Project Progress Form submissions are required to be submitted for every active and approved project at the beginning of every Fall & Spring Semester to ensure compliance and to maintain your access to data. 
 In addition to filling out the form, double check for the following:
@@ -40,9 +45,11 @@ In addition to filling out the form, double check for the following:
 2. Continue to Work Under NSAPH Projects: Double check that all analysis is being housed under your GitHub Repository, which should be located under [NSAPH Projects] (https://github.com/orgs/NSAPH-Projects/teams) (not your personal Git!).
 
 
-**Completing a Project**
+## Completing a Project
+
 Once your project has been accepted for publication, kindly complete the [Project Completion Form](https://docs.google.com/forms/d/e/1FAIpQLSfZT-Cs-buXTIvLUEHQgyTSdqY1ys5R6MIKUUkzdZd6TGq2xQ/viewform). Once published, it will be featured on the NSAPH website {https://www.hsph.harvard.edu/nsaph/}.  
 
 
-**Leaving NSAPH**
+## Leaving NSAPH
+
 If you completed your project, and no longer plan to start new projects at NSAPH, kindly complete the NSAPH Off-boarding form. 
