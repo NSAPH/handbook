@@ -2,7 +2,7 @@
 
 ## NSAPH RESEARCH PROJECT LIFE CYCLE
 
-<img width="1422" alt="NSAPH-Research-Lifecycle_LK.png">
+<img="NSAPH-Research-Lifecycle_LK.png">
 
 ## Getting Started For New Users: NSAPH On-boarding
 
