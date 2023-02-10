@@ -1,8 +1,11 @@
-# NSAPH Research Project Lifecycle
+# NSAPH RESEARCH PROJECT LIFE CYCLE
 
-## NSAPH RESEARCH PROJECT LIFE CYCLE
-
-<img="NSAPH-Research-Lifecycle_LK.png">
+```{figure} imgs/NSAPH-Research-Lifecycle_LK.png
+---
+scale: 60%
+align: center 
+---
+```
 
 ## Getting Started For New Users: NSAPH On-boarding
 
