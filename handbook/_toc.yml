@@ -5,7 +5,7 @@ root: intro
 parts:
   - caption: Data
     chapters:
-    - file: NSAPH-Research-Lifecycle
+    - file: Lifecycle
     - file: dua
     - file: data 
     - file: mcbs
