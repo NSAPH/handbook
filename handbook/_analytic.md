@@ -1554,3 +1554,45 @@ ADRD_secondary: logi
 └── [166M]  aggregate_data.RDS
 ```
 `````
+
+## Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020
+
+`````{dropdown} Predicted daily smoke PM2.5
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Marissa Childs
+* - date_created
+  - October 24, 2020
+* - data_source
+  - other (exposure predictions)
+* - spatial_coverage
+  - Contiguous US
+* - spatial_resolution
+  - originally 10 km (gridded), aggregated to zcta, census tract, and county by area and population-weighted averages
+* - temporal_coverage
+  - 2006 - 2020
+* - temporal_resolution
+  - daily
+* - exposures
+  - PM2.5 from smoke 
+* - processing_description
+  - none
+* - fasse_location
+  - `data/analytic/daily_10km_smoke_PM`
+* - publication
+  - https://doi.org/10.1021/acs.est.2c02934 
+* - git_repository
+  - [daily-10km-smokePM](https://github.com/echolab-stanford/daily-10km-smokePM)
+* - size
+  - 4 GB
+* - files
+  -
+```
+```
+   ├── smokePM2pt5_predictions_daily_10km_20060101-20201231.csv
+   ├── smokePM2pt5_predictions_daily_county_20060101-20201231.csv
+   ├── smokePM2pt5_predictions_daily_tract_20060101-20201231.csv
+   └── smokePM2pt5_predictions_daily_zcta_20060101-20201231.csv
+```
+`````
