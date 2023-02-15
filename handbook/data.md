@@ -275,6 +275,45 @@ The following is the description of the air pollution exposure data.
 ```
 `````
 
+### PM2.5 US High Resolution Grid, 2000-2016
+
+`````{dropdown} PM2.5 US Grid
+```{list-table}
+:header-rows: 0
+
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - 1km x 1km
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - size
+  - ~80 MB/year
+* - fasse_location
+  - `/n/dominici_nsaph_l3/Lab/data/exposure/pm25/whole_us/annual/grid_pts/qd_new_predictions`.
+* - processing_description
+  - Merge by row the 1-column matrix PM2.5 values (`PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds`) with the corresponding 1km x 1km United States Grid Matrix (`USGridSite.rds`).
+* - data_visualization
+  - See https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R.
+* - publication 
+  - Q. Di, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, J. Schwartz, An ensemble-based model of PM2.5 concentration across the contiguous United States with high spatiotemporal resolution. Environ. Int. 130, 104909 (2019). https://pubmed.ncbi.nlm.nih.gov/31272018/
+* - files
+  -
+```
+```
+   ├── annual_grid_pm.csv (not documented)					 
+   ├── combine_files.R (not documented)					  
+   ├── ModelPrediction_ExtractPoints.R (not documented)		  
+   ├── PredictionStep2_Annual_PM25_USGrid_20000101_20001231.rds  
+   ├── ...
+   ├── PredictionStep2_Annual_PM25_USGrid_20160101_20161231.rds
+   ├── readme.txt
+   └── USGridSite.rds
+```
+`````
+
 ## Confounder data
 
 ### Gridmet
