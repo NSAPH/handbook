@@ -30,6 +30,7 @@ parts:
     - file: fasse_github
     - file: analysis
     - file: collaborative
+    - file: vscode
     - file: rce
     - file: docs
     - file: singularity
