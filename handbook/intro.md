@@ -6,6 +6,22 @@ The handbook offers information on data, software and analysis.
 
 Find the National Studies on Air Pollution and Health (NSAPH) group official web page [here.](https://www.hsph.harvard.edu/nsaph/)
 
+## Basecamp
+
+Basecamp is the main channel of communication of **NSAPH**. It is central to all meaningful collaboration and teamwork.
+
+![](./imgs/basecamp.png)
+
+Once you've been added to Basecamp, from the homepage you can connect with people by joining multiple groups/projects. The two main groups are: 
+
+**NSAPH group** brings together researchers, visiting researchers, program coordinators, and data scientists from multiple Universities and Organizations with a common goal, understanding climate change and environmental impacts on health outcomes and regulatory policy.
+
+**NSAPH biostats group** it is mostly comprised of active members in the Harvard departments of Biostatistics, Epidemiology, and Environmental Health.
+
+Depending on your role, you can be added to additional groups/projects. Each group has message boards, chats, schedule information and more.
+
+If you are going to start a new research project, read [**NSAPH RESEARCH PROJECT LIFE CYCLE**](https://nsaph.info/Lifecycle.html).  
+
 ## GitHub presence
 
 A GitHub organization is a shared account where all organization members can collaborate across many projects at once. NSAPH has five organizations on GitHub meant to help you find and use group resources:
@@ -16,6 +32,8 @@ A GitHub organization is a shared account where all organization members can col
 4. [NSAPH Data Platform](https://github.com/NSAPH-Data-Platform) - Captures all the code that went into creating and maintaining the data platform; 
 5. [NSAPH Data Processing](https://github.com/NSAPH-Data-Processing) - Captures the data pipelines for data transformations and aggregation;
 6. [NSAPH](https://github.com/NSAPH) - Gathers past projects but will continue to be used for miscellaneous projects that don't belong in the previous categories.
+
+If you do not have write access to a repository, ask for help. As an NSAPH member, it is not necessary to create forks to contribute. 
 
 ## Table of content
 
