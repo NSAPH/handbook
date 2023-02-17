@@ -33,7 +33,7 @@ A GitHub organization is a shared account where all organization members can col
 5. [NSAPH Data Processing](https://github.com/NSAPH-Data-Processing) - Captures the data pipelines for data transformations and aggregation;
 6. [NSAPH](https://github.com/NSAPH) - Gathers past projects but will continue to be used for miscellaneous projects that don't belong in the previous categories.
 
-If you do not have write access to a repository, ask for help. As an NSAPH member, it is not necessary to create forks to contribute. 
+If you do not have write access to a repository, ask for help. **As an NSAPH member, it is not necessary to create forks to contribute**. 
 
 ## Table of content
 
