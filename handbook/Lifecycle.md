@@ -1,7 +1,6 @@
 # NSAPH RESEARCH PROJECT LIFE CYCLE
 
 ```{figure} imgs/NSAPH-Research-Lifecycle_LK.png
----
 ```
 
 ## Getting Started For New Users: NSAPH On-boarding
