@@ -2,8 +2,6 @@
 
 ```{figure} imgs/NSAPH-Research-Lifecycle_LK.png
 ---
-align: center 
----
 ```
 
 ## Getting Started For New Users: NSAPH On-boarding
