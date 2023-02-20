@@ -2,7 +2,6 @@
 
 ```{figure} imgs/NSAPH-Research-Lifecycle_LK.png
 ---
-scale: 70%
 align: center 
 ---
 ```
