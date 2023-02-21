@@ -5,7 +5,7 @@ root: intro
 parts:
   - caption: Data
     chapters:
-    - file: Lifecycle
+    - file: lifecycle
     - file: dua
     - file: data 
     - file: mcbs
