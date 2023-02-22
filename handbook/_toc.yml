@@ -5,7 +5,7 @@ root: intro
 parts:
   - caption: Data
     chapters:
-    - file: Lifecycle
+    - file: lifecycle
     - file: dua
     - file: data 
     - file: mcbs
@@ -29,6 +29,7 @@ parts:
     - file: fasse_partitions
     - file: fasse_github
     - file: analysis
+    - file: rstudio
     - file: collaborative
     - file: rce
     - file: docs

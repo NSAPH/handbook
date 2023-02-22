@@ -6,7 +6,7 @@ However, we do not have to stop using GitHub! To avoid this problem, you and you
 
 Since you will have multiple folders, it is especially important to remember to use symbolic links to your input data as these files can be very large. When you and your teammates have completed your work on the project, you can collapse back down to your `health_pollution` folder, which should reference the main branch from your GitHub repository.
 
-### Summary
+## Summary
 
 - Each teammate should have their own project folder in FASSE which is connected to one GitHub repository
 - Use symbolic links to data sources
