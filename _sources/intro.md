@@ -20,7 +20,7 @@ Once you've been added to Basecamp, from the homepage you can connect with peopl
 
 Depending on your role, you can be added to additional groups/projects. Each group has message boards, chats, schedule information and more.
 
-If you are going to start a new research project, read [**NSAPH RESEARCH PROJECT LIFE CYCLE**](https://nsaph.info/Lifecycle.html).  
+If you are going to start a new research project, read [**NSAPH Research Project Life Cycle**](/lifecycle.md).  
 
 ## GitHub presence
 
