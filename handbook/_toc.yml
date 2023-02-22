@@ -29,6 +29,7 @@ parts:
     - file: fasse_partitions
     - file: fasse_github
     - file: analysis
+    - file: rstudio
     - file: collaborative
     - file: rce
     - file: docs
