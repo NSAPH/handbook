@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>NSAPH Data Usage Policies &#8212; NSAPH Handbook</title>
+    <title>Using RStudio on FASSE &#8212; NSAPH Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Data sources" href="data.html" />
-    <link rel="prev" title="NSAPH Research Project Lifecycle" href="lifecycle.html" />
+    <link rel="next" title="Branch-merge workflow on GitHub" href="collaborative.html" />
+    <link rel="prev" title="Introduction to NSAPH GitHub" href="analysis.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,14 +118,14 @@ const thebe_selector_output = ".output, .cell_output"
   Data
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="lifecycle.html">
    NSAPH Research Project Lifecycle
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dua.html">
    NSAPH Data Usage Policies
   </a>
  </li>
@@ -192,7 +192,7 @@ const thebe_selector_output = ".output, .cell_output"
   Infrastructure and Tools
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fasse.html">
    Getting started on FASSE
@@ -213,8 +213,8 @@ const thebe_selector_output = ".output, .cell_output"
    Introduction to NSAPH GitHub
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rstudio.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Using RStudio on FASSE
   </a>
  </li>
@@ -379,7 +379,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fdua.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Frstudio.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -407,7 +407,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/dua.md"
+        <a href="_sources/rstudio.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -466,19 +466,14 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-access">
-   Data Access
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Using RStudio on FASSE
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-sharing">
-   Data Sharing
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-use">
-   Data Use
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-r-packages">
+   Installing R Packages
   </a>
  </li>
 </ul>
@@ -490,7 +485,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>NSAPH Data Usage Policies</h1>
+                <h1>Using RStudio on FASSE</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -500,19 +495,14 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-access">
-   Data Access
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Using RStudio on FASSE
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-sharing">
-   Data Sharing
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-use">
-   Data Use
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-r-packages">
+   Installing R Packages
   </a>
  </li>
 </ul>
@@ -525,43 +515,52 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="nsaph-data-usage-policies">
-<h1>NSAPH Data Usage Policies<a class="headerlink" href="#nsaph-data-usage-policies" title="Permalink to this headline">#</a></h1>
-<p>We would like to take this opportunity to make sure that all RCE/FASSE users have read the following
-usage policy and agree to it. Please take a few minutes to read the information below.</p>
-<section id="data-access">
-<h2>Data Access<a class="headerlink" href="#data-access" title="Permalink to this headline">#</a></h2>
-<p><strong>1. RCE and FASSE accounts are individual accounts that are not sharable.</strong></p>
-<p><em>You are not allowed to share your account password with anyone. Allowing other individuals to log into your account or use your account is a violation of our DUA and will result in immediate termination of your account.</em></p>
-<p><strong>2. Our DUA and IRB approvals are project specific.</strong></p>
-<p><em>Before starting a new project with any health data, you must check in with our team to ensure that this is an approved project. Please do so by submitting a project initiation form. Even if the data already exists and you already have access to it please submit a new request for every new project. Failure to do so will result in immediate termination of your account.</em></p>
-<p><strong>3. CMS health data cannot be accessed outside the United States.</strong></p>
-<p><em>If you are traveling internationally, please plan for a pause in your work. For more information click <a class="reference external" href="https://resdac.org/articles/cms-non-us-based-researcher-policy"><em>here</em></a>.</em></p>
-<p><strong>4. IRB coverage &amp; data security trainings are required.</strong></p>
-<p><em>Everyone with data access need to be on IRB and have completed all the data security trainings required.</em></p>
+  <section id="using-rstudio-on-fasse">
+<h1>Using RStudio on FASSE<a class="headerlink" href="#using-rstudio-on-fasse" title="Permalink to this headline">#</a></h1>
+<p>There are two ways to use RStudio and access your files on FASSE:</p>
+<ol class="simple">
+<li><p>RStudio Server or</p></li>
+<li><p>Remote Desktop (or Containerized Remote Desktop). You may find RStudio Server to be the easiest to use because you can use shortcuts like Cmd + C (or Ctrl + C) there. Meanwhile, Remote Desktop (or Containerized Remote Desktop) is useful because you can use Terminal there to upload files to GitHub.</p></li>
+</ol>
+<p>When starting a RStudio session, you may want to use the following options:</p>
+<ul class="simple">
+<li><p>Partition: “fasse” (or “test” if “fasse” is taking too long to start because other user(s) are using that partition too).</p></li>
+<li><p>R version to be loaded with Rstudio: <code class="docutils literal notranslate"><span class="pre">R/4.0.5-fasrc02</span> <span class="pre">Comp</span> <span class="pre">gcc</span></code> (or whatever version of R you’re looking to use).</p></li>
+<li><p>Location of your R_LIBS_USER folder: <code class="docutils literal notranslate"><span class="pre">$HOME/apps/{your</span> <span class="pre">project</span> <span class="pre">name}/R_4.0.5:$R_LIBS_USER</span></code>. More on this last option below.</p></li>
+</ul>
 </section>
-<section id="data-sharing">
-<h2>Data Sharing<a class="headerlink" href="#data-sharing" title="Permalink to this headline">#</a></h2>
-<p><strong>1. Health data CANNOT be moved from the RCE/FASSE.</strong></p>
-<p><em>Per the DUA and IRB, data has to be on the RCE/FASSE level 3 data cluster ONLY and cannot be
-downloaded from the level 3 RCE/FASSE. Datasets CANNOT be downloaded or moved from RCE/FASSE even if they do not have identifying information. Violations come with serious consequences that jeopardize everyone’s work. We are very much encouraging sharing reproducible code on GitHub, but please use
-it only for CODE and publicly available data. We suggest adding a <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file to your
-repository and using it to prevent unintentional upload of data files. We also suggest using
-the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> command before committing to confirm what you are committing.</em></p>
-<p><strong>2. CMS Cell size suppression Policy is enforced by the DUA.</strong></p>
-<p><em>As outlined for researchers in the data use agreement (DUA), the CMS cell size suppression policy sets minimum thresholds for the display of CMS data. The policy stipulates that no cell (e.g. admissions, discharges, patients, services, etc.) containing a value of 1 to 10 can be reported directly. A value of zero does not violate the minimum cell size policy. In addition, no cell can be reported that allows a value of 1 to 10 to be derived from other reported cells or information. For more information, click <a class="reference external" href="https://resdac.org/articles/cms-cell-size-suppression-policy"><em>here</em></a>.</em></p>
-</section>
-<section id="data-use">
-<h2>Data Use<a class="headerlink" href="#data-use" title="Permalink to this headline">#</a></h2>
-<p><strong>1. Compute resources are limited.</strong></p>
-<p><em>Inefficient use of compute resources by a single user can prevent the entire team from getting work done. Users should develop and benchmark their models using the Rstudio profiler on small subsets of their data prior to grabbing large chunks of memory. We monitor compute usage, and users using the cluster inefficiently may have their jobs cancelled.</em></p>
-<p><strong>2. Set up GitHub under <a class="reference external" href="https://github.com/orgs/NSAPH-Projects">NSAPH-Projects</a> and link it to FASSE project space.</strong></p>
-<p><em>For more details, please see instructions <a class="reference external" href="https://nsaph.info/fasse.html#step-4-create-a-git-repository-on-github">here</a>.</em></p>
-<p><strong>3. Work under the project space, and not in your home folder.</strong></p>
-<p><em>Instructions on how to create a project folder and a GitHub repository can be found <a class="reference external" href="https://nsaph.info/fasse.html#step-3-project-workspace"><em>here</em></a>.</em></p>
-<p><strong>4. Use a Symbolic link to read in data from your project folder.</strong></p>
-<p><em>In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/projects</span></code>. <strong>Please do not copy the data</strong>; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click <a class="reference external" href="https://nsaph.info/fasse.html#step-5-analytic-data">here</a>.</em></p>
-</section>
+<section id="installing-r-packages">
+<h1>Installing R Packages<a class="headerlink" href="#installing-r-packages" title="Permalink to this headline">#</a></h1>
+<p>To install R packages in RStudio Server in the FASEE cluster, you will need to configure the proxies according to our <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/proxy-settings/">Proxy Settings</a> guidelines. To prepare for package installation, run the following two commands on RStudio Server before installing any packages. In this example, we want to install package <code class="docutils literal notranslate"><span class="pre">argparse</span></code> as explained by <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/rstudio-server-vs-rstudio-desktop/#Installing_R_packages_in_RStudio_Server_in_the_FASSE_cluster">this link</a>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Sys.setenv<span class="o">(</span><span class="nv">http_proxy</span><span class="o">=</span><span class="s2">&quot;http://rcproxy.rc.fas.harvard.edu:3128&quot;</span><span class="o">)</span>
+Sys.setenv<span class="o">(</span><span class="nv">https_proxy</span><span class="o">=</span><span class="s2">&quot;http://rcproxy.rc.fas.harvard.edu:3128&quot;</span><span class="o">)</span>
+install.packages<span class="o">(</span><span class="s2">&quot;argparse&quot;</span><span class="o">)</span>
+</pre></div>
+</div>
+<p>If you don’t want to install the same R packages over and over again each time you open FASSE, create a $R_LIBS_USER file.
+<a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">This link</a> explains some of this, and below are some tips for setting up your $R_LIBS_USER, but you might want to go to Harvard FAS Research Computing’s weekly <a class="reference external" href="https://www.rc.fas.harvard.edu/training/office-hours/">office hours</a> to get more help.</p>
+<p>You’ll want to edit your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file (which you can see in your home folder by clicking “View” &gt; “Show Hidden Files”) to be the following.
+In this example, the user wants to use R version 4.0.5. <code class="docutils literal notranslate"><span class="pre">projects</span></code>, <code class="docutils literal notranslate"><span class="pre">ml_r4</span></code>, and <code class="docutils literal notranslate"><span class="pre">ml_rstudio</span></code> are examples of Terminal commands that you may to create “aliases” (i.e., shortcuts) for.
+After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/projects/projects</span></code> folder or load RStudio (which requires loading R first).</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># .bashrc</span>
+
+<span class="c1"># Source global definitions</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>/etc/bashrc<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+.<span class="w"> </span>/etc/bashrc
+<span class="k">fi</span>
+
+<span class="nb">export</span><span class="w"> </span><span class="nv">R_LIBS_USER</span><span class="o">=</span><span class="nv">$HOME</span>/apps/<span class="o">{</span>your<span class="w"> </span>project<span class="w"> </span>name<span class="o">}</span>/R_4.0.5:<span class="nv">$R_LIBS_USER</span>
+
+<span class="c1"># Aliases</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/Lab/projects&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ml_r4</span><span class="o">=</span><span class="s1">&#39;module load gcc/9.3.0-fasrc01 R/4.0.5-fasrc02&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ml_rstudio</span><span class="o">=</span><span class="s1">&#39;module load rstudio/1.1.453-fasrc01&#39;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to use your $R_LIBS_USER to access R packages you’ve installed in previous sessions (as already described above, this allows you to not have to <code class="docutils literal notranslate"><span class="pre">install.packages()</span></code> in RStudio every time you start a FASSE session), you’ll need to create a folder, which is called <code class="docutils literal notranslate"><span class="pre">apps/R_4.0.5</span></code> in this example (that is, this example requires a folder called “R_4.0.5” within a folder called “apps”), in your private private home folder.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -591,17 +590,17 @@ the <code class="docutils literal notranslate"><span class="pre">git</span> <spa
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="lifecycle.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="analysis.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">NSAPH Research Project Lifecycle</p>
+            <p class="prev-next-title">Introduction to NSAPH GitHub</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="data.html" title="next page">
+    <a class='right-next' id="next-link" href="collaborative.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data sources</p>
+        <p class="prev-next-title">Branch-merge workflow on GitHub</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
