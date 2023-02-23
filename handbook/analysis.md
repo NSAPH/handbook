@@ -106,3 +106,19 @@ Your commit message should be informative. For example: "update stratification" 
 ```{tip}
 If you've set up a personal access token for GitHub, you could save your PAT as a text file in your private FASSE folder.
 ```
+
+## Obtaining GitHub Token
+
+You can follow the following steps, to obtain a GitHub token:
+
+- Log in to your GitHub account and go to your "Settings" page.
+- Click on "Developer settings" in the left-hand sidebar.
+- Click on "Personal access tokens" and choose "Tokens (classic)".
+- Click on "Generate new token" then "Generate new token (classic)" .
+- Give your token a description, so you can remember what it is for.
+- Select all the scopes available.
+- Click on "Generate token".
+- Your new token will be displayed. Be sure to copy it and save it for future use, as you won't be able to see it again.
+- Once you have generated a token, you can use it to authenticate with the GitHub API or access repositories that require authentication. Keep your token secret and avoid sharing it with others to protect your GitHub account's security.
+
+
