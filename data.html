@@ -496,6 +496,11 @@ title="Print to PDF"
      Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pm2-5-us-high-resolution-grid-2000-2016">
+     PM2.5 US High Resolution Grid, 2000-2016
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -569,6 +574,11 @@ title="Print to PDF"
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#predicted-daily-smoke-pm2-5-over-the-contiguous-us-2006-2020">
      Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pm2-5-us-high-resolution-grid-2000-2016">
+     PM2.5 US High Resolution Grid, 2000-2016
     </a>
    </li>
   </ul>
@@ -986,6 +996,59 @@ Predicted daily smoke PM2.5<div class="sd-summary-down docutils">
 │       └── tl_2019_56_tract
 └── zcta
     └── tl_2019_us_zcta510
+</pre></div>
+</div>
+</div>
+</details></section>
+<section id="pm2-5-us-high-resolution-grid-2000-2016">
+<h3>PM2.5 US High Resolution Grid, 2000-2016<a class="headerlink" href="#pm2-5-us-high-resolution-grid-2000-2016" title="Permalink to this headline">#</a></h3>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+PM2.5 US Grid<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p class="sd-card-text">spatial_coverage</p></td>
+<td><p class="sd-card-text">US</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">spatial_resolution</p></td>
+<td><p class="sd-card-text">1km x 1km</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">temporal_coverage</p></td>
+<td><p class="sd-card-text">2000-2016</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">temporal_resolution</p></td>
+<td><p class="sd-card-text">annually</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">size</p></td>
+<td><p class="sd-card-text">~80 MB/year</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">fasse_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/data/exposure/pm25/whole_us/annual/grid_pts/qd_new_predictions</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">processing_description</p></td>
+<td><p class="sd-card-text">Merge by row the 1-column matrix PM2.5 values (<code class="docutils literal notranslate"><span class="pre">PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds</span></code>) with the corresponding 1km x 1km United States Grid Matrix (<code class="docutils literal notranslate"><span class="pre">USGridSite.rds</span></code>). For data visualization, see: <a class="reference external" href="https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R">https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">publication</p></td>
+<td><p class="sd-card-text">Q. Di, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, J. Schwartz, An ensemble-based model of PM2.5 concentration across the contiguous United States with high spatiotemporal resolution. Environ. Int. 130, 104909 (2019). <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/31272018/">https://pubmed.ncbi.nlm.nih.gov/31272018/</a></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">files</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   ├── PredictionStep2_Annual_PM25_USGrid_20000101_20001231.rds  
+   ├── ...
+   ├── PredictionStep2_Annual_PM25_USGrid_20160101_20161231.rds
+   ├── readme.txt
+   └── USGridSite.rds
 </pre></div>
 </div>
 </div>
