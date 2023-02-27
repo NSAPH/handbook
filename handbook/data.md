@@ -298,7 +298,7 @@ The following is the description of the air pollution exposure data.
 * - processing_description
   - We processed the data in UTC to US time zone data. From this source, it is not possible to have spatial data. To do so, we converted UTC global data to US local time data. Then we used these local time zone data to identify county. The numbers change a little by location based in the time zone. We provided daily data, which can be aggregated them to monthly and annual data.
 * - fasse_location
-  - `/n/dominici_nsaph_l3/exposures/solar_activity`  
+  - `/n/dominici_nsaph_l3/data/exposure/solar_activity`  
 * - git_repository
   - [solar_data_timezone_to_zipcode](https://github.com/NSAPH-Data-Processing/solar_data_timezone_to_zipcode)
 * - size
