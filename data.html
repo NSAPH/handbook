@@ -497,8 +497,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pm2-5-us-high-resolution-grid-2000-2016">
-     PM2.5 US High Resolution Grid, 2000-2016
+    <a class="reference internal nav-link" href="#space-weather-data">
+     Space weather data
     </a>
    </li>
   </ul>
@@ -577,8 +577,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pm2-5-us-high-resolution-grid-2000-2016">
-     PM2.5 US High Resolution Grid, 2000-2016
+    <a class="reference internal nav-link" href="#space-weather-data">
+     Space weather data
     </a>
    </li>
   </ul>
@@ -1000,11 +1000,11 @@ Predicted daily smoke PM2.5<div class="sd-summary-down docutils">
 </div>
 </div>
 </details></section>
-<section id="pm2-5-us-high-resolution-grid-2000-2016">
-<h3>PM2.5 US High Resolution Grid, 2000-2016<a class="headerlink" href="#pm2-5-us-high-resolution-grid-2000-2016" title="Permalink to this headline">#</a></h3>
+<section id="space-weather-data">
+<h3>Space weather data<a class="headerlink" href="#space-weather-data" title="Permalink to this headline">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-PM2.5 US Grid<div class="sd-summary-down docutils">
+Space weather data <div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1015,35 +1015,71 @@ PM2.5 US Grid<div class="sd-summary-down docutils">
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p class="sd-card-text">spatial_coverage</p></td>
-<td><p class="sd-card-text">US</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">dataset_author</p></td>
+<td><p class="sd-card-text">Carolina L Zilli Vieira</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">spatial_resolution</p></td>
-<td><p class="sd-card-text">1km x 1km</p></td>
+<tr class="row-even"><td><p class="sd-card-text">date_created</p></td>
+<td><p class="sd-card-text">Oct 17 2022</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">temporal_coverage</p></td>
-<td><p class="sd-card-text">2000-2016</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">data_source</p></td>
+<td><p class="sd-card-text"><span class="xref myst">NASA</span> - solar and geomagnetic activity data from <a class="reference external" href="https://omniweb.gsfc.nasa.gov/html/omni_source.html">https://omniweb.gsfc.nasa.gov/html/omni_source.html</a>, DAAC NASA (solar radiation) from <a class="reference external" href="https://daac.ornl.gov/">https://daac.ornl.gov/</a>, BARTOL Neutron Station (neutrons) from <a class="reference external" href="https://neutronm.bartol.udel.edu/">https://neutronm.bartol.udel.edu/</a></p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">temporal_resolution</p></td>
-<td><p class="sd-card-text">annually</p></td>
+<tr class="row-even"><td><p class="sd-card-text">spatial_coverage</p></td>
+<td><p class="sd-card-text">Global UTC (from raw data) converted to local time.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">spatial_resolution</p></td>
+<td><p class="sd-card-text">county</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">temporal_coverage</p></td>
+<td><p class="sd-card-text">1996-2022</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">temporal_resolution</p></td>
+<td><p class="sd-card-text">daily</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">processing_description</p></td>
+<td><p class="sd-card-text">We processed the data in UTC to US time zone data. From this source, it is not possible to have spatial data. To do so, we converted UTC global data to US local time data. Then we used these local time zone data to identify county. The numbers change a little by location based in the time zone. We provided daily data, which can be aggregated them to monthly and annual data.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">fasse_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/exposures/solar_activity</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">git_repository</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://github.com/NSAPH-Data-Processing/solar_data_timezone_to_zipcode">solar_data_timezone_to_zipcode</a></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text">size</p></td>
-<td><p class="sd-card-text">~80 MB/year</p></td>
+<td><p class="sd-card-text">1.18 GB</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">fasse_location</p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/data/exposure/pm25/whole_us/annual/grid_pts/qd_new_predictions</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">processing_description</p></td>
-<td><p class="sd-card-text">Merge by row the 1-column matrix PM2.5 values (<code class="docutils literal notranslate"><span class="pre">PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds</span></code>) with the corresponding 1km x 1km United States Grid Matrix (<code class="docutils literal notranslate"><span class="pre">USGridSite.rds</span></code>). For data visualization, see: <a class="reference external" href="https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R">https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R</a>.</p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text">publication</p></td>
-<td><p class="sd-card-text">Q. Di, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, J. Schwartz, An ensemble-based model of PM2.5 concentration across the contiguous United States with high spatiotemporal resolution. Environ. Int. 130, 104909 (2019). <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/31272018/">https://pubmed.ncbi.nlm.nih.gov/31272018/</a></p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">files</p></td>
+<tr class="row-even"><td><p class="sd-card-text">files</p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+### PM2.5 US High Resolution Grid, 2000-2016
+
+`````{dropdown} PM2.5 US Grid
+```{list-table}
+:header-rows: 0
+
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - 1km x 1km
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - size
+  - ~80 MB/year
+* - fasse_location
+  - `/n/dominici_nsaph_l3/Lab/data/exposure/pm25/whole_us/annual/grid_pts/qd_new_predictions`.
+* - processing_description
+  - Merge by row the 1-column matrix PM2.5 values (`PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds`) with the corresponding 1km x 1km United States Grid Matrix (`USGridSite.rds`). For data visualization, see: https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R.
+* - publication 
+  - Q. Di, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, J. Schwartz, An ensemble-based model of PM2.5 concentration across the contiguous United States with high spatiotemporal resolution. Environ. Int. 130, 104909 (2019). https://pubmed.ncbi.nlm.nih.gov/31272018/
+* - files
+  -
+</pre></div>
+</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   ├── PredictionStep2_Annual_PM25_USGrid_20000101_20001231.rds  
    ├── ...
    ├── PredictionStep2_Annual_PM25_USGrid_20160101_20161231.rds
