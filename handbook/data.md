@@ -275,6 +275,7 @@ The following is the description of the air pollution exposure data.
 ```
 `````
 
+
 ### Space weather data 
 
 `````{dropdown} Space weather data 
@@ -301,12 +302,43 @@ The following is the description of the air pollution exposure data.
 * - git_repository
   - [solar_data_timezone_to_zipcode](https://github.com/NSAPH-Data-Processing/solar_data_timezone_to_zipcode)
 * - size
-  - TBD
+  - 1.18 GB
 * - files
   -
 ```
 ```
-TBD
+
+### PM2.5 US High Resolution Grid, 2000-2016
+
+`````{dropdown} PM2.5 US Grid
+```{list-table}
+:header-rows: 0
+
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - 1km x 1km
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - size
+  - ~80 MB/year
+* - fasse_location
+  - `/n/dominici_nsaph_l3/Lab/data/exposure/pm25/whole_us/annual/grid_pts/qd_new_predictions`.
+* - processing_description
+  - Merge by row the 1-column matrix PM2.5 values (`PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds`) with the corresponding 1km x 1km United States Grid Matrix (`USGridSite.rds`). For data visualization, see: https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R.
+* - publication 
+  - Q. Di, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, J. Schwartz, An ensemble-based model of PM2.5 concentration across the contiguous United States with high spatiotemporal resolution. Environ. Int. 130, 104909 (2019). https://pubmed.ncbi.nlm.nih.gov/31272018/
+* - files
+  -
+```
+```	  
+   ├── PredictionStep2_Annual_PM25_USGrid_20000101_20001231.rds  
+   ├── ...
+   ├── PredictionStep2_Annual_PM25_USGrid_20160101_20161231.rds
+   ├── readme.txt
+   └── USGridSite.rds
 ```
 `````
 
@@ -460,11 +492,13 @@ ZCTAs were used because they represent the government's "best guess" at what the
 
 ## Other data 
 
-The following are other commonly-used public data sources:
+The following are other commonly-used public data sources, many of which may be found in the **confounders** folder on FASSE.
 
 - [CMS Synthetic data: 2008, 2009, and 2010](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF)
 - [CDC, Behavioral Risk Factor Surveillance System (BRFSS) data for body mass index and smoking status](https://www.cdc.gov/brfss/annual_data/annual_2008.htm)
 - [PM2.5 concentrations (US) from Di et al. 2019](https://beta.sedac.ciesin.columbia.edu/data/set/aqdh-pm2-5-concentrations-contiguous-us-1-km-2000-2016)
 - [Census data](https://www.census.gov/data/developers/data-sets/acs-5year.2010.html)
 - [GridMET data](https://www.climatologylab.org/gridmet.html)
+- [County Presidential Election Returns 2000-2020](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ&version=10.0)
+- [United States Broadband Usage Percentages Dataset](https://github.com/microsoft/USBroadbandUsagePercentages)
 

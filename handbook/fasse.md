@@ -192,6 +192,10 @@ data/
 *.rst
 ```
 
+### Note: 
+
+The terminology of CPUs, nodes, and cores can be confusing in FASSE. One node is like a computer, and it contains one CPU and many cores. The multiple cores can do calculations at the same time. When requesting a job in FASSE, you request a portion of a node. However, the Slurm job management system refers to CPUs as the cores of the CPU.
+
 ```{note}
 Make sure to acknowledge the use of FASRC in your publications. From [the FASRC website](https://www.rc.fas.harvard.edu/cluster/publications/), "Please use the following text as a guideline: 'The computations in this paper were run on the FASRC Cannon cluster supported by the FAS Division of Science Research Computing Group at Harvard University.'" 
 ```
