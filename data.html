@@ -1,48 +1,56 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Data sources &#8212; NSAPH Handbook</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=4ec06e9971c5264fbd345897d5258098f11cc577" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=8bf782fb4ee92b3d3646425e50f299c4e1fd152d"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,61 +58,620 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'data';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="MCBS" href="mcbs.html" />
     <link rel="prev" title="NSAPH Data Usage Policies" href="dua.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fa-solid fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="intro.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="_static/NSAPH_logo.png" class="logo__image only-light" alt="Logo image">
+    <img src="_static/NSAPH_logo.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
         
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="lifecycle.html">
+                        NSAPH Research Project Lifecycle
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="dua.html">
+                        NSAPH Data Usage Policies
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        Data sources
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="mcbs.html">
+                        MCBS
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="analytic.html">
+                        Analytic data
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="superset.html">
+                        NSAPH PostgreSQL Data Platform
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="dataverse.html">
+                        Dataverse
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="trainings.html">
+                        NSAPH Required Trainings
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform">
+                        On-Boarding Form
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://docs.google.com/forms/d/e/1FAIpQLSe6HflNjmJCQeJ5qKGoQFOchvfjeZbDRV0fJX7dCp9jzIfW6Q/viewform?usp=sf_link">
+                        Project Initiation Form
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://docs.google.com/forms/d/e/1FAIpQLScXqm3Chutm1Y4dk6M1SRtMpcCAbzcETYeiMhznrQ3cB9wNFw/viewform?usp=sf_link">
+                        Project Progress Forms
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://docs.google.com/forms/d/e/1FAIpQLSccxSUt7NclkqTkeltAPzOBn8ttqz4_ZVIp2MbP9Th7Ja0W5Q/viewform">
+                        Off-Boarding Form
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="fasse.html">
+                        Getting started on FASSE
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="fasse_partitions.html">
+                        FASSE Compute Partitions
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="fasse_github.html">
+                        FASSE and GitHub Project Work
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="analysis.html">
+                        Introduction to NSAPH GitHub
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="rstudio.html">
+                        Using RStudio on FASSE
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="collaborative.html">
+                        Branch-merge workflow on GitHub
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="vscode.html">
+                        VS Code
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="rce.html">
+                        Working on RCE
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="docs.html">
+                        Documentation
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="singularity.html">
+                        Singularity
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://swcarpentry.github.io/git-novice/">
+                        Git tutorial
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://github.com/NSAPH/data-paltform-internal-docs">
+                        Data-Platform Internal Docs
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://nsaph-software.github.io/intro.html">
+                        NSAPH Software Website
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="software.html">
+                        NSAPH Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="team.html">
+                        The team
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="references.html">
+                        References
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+        <div class="navbar-end-item navbar-persistent--container">
+          
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+        </div>
       
       
-      <img src="_static/NSAPH_logo.png" class="logo" alt="logo">
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
       
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
       
-      <h1 class="site-logo" id="site-title">NSAPH Handbook</h1>
+    </div>
+  </div>
+
+
+  
+  
+    <div class="navbar-persistent--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+    </div>
+  
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="lifecycle.html">
+                        NSAPH Research Project Lifecycle
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="dua.html">
+                        NSAPH Data Usage Policies
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        Data sources
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="mcbs.html">
+                        MCBS
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="analytic.html">
+                        Analytic data
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="superset.html">
+                        NSAPH PostgreSQL Data Platform
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="dataverse.html">
+                        Dataverse
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="trainings.html">
+                        NSAPH Required Trainings
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform">
+                        On-Boarding Form
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://docs.google.com/forms/d/e/1FAIpQLSe6HflNjmJCQeJ5qKGoQFOchvfjeZbDRV0fJX7dCp9jzIfW6Q/viewform?usp=sf_link">
+                        Project Initiation Form
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://docs.google.com/forms/d/e/1FAIpQLScXqm3Chutm1Y4dk6M1SRtMpcCAbzcETYeiMhznrQ3cB9wNFw/viewform?usp=sf_link">
+                        Project Progress Forms
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://docs.google.com/forms/d/e/1FAIpQLSccxSUt7NclkqTkeltAPzOBn8ttqz4_ZVIp2MbP9Th7Ja0W5Q/viewform">
+                        Off-Boarding Form
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="fasse.html">
+                        Getting started on FASSE
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="fasse_partitions.html">
+                        FASSE Compute Partitions
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="fasse_github.html">
+                        FASSE and GitHub Project Work
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="analysis.html">
+                        Introduction to NSAPH GitHub
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="rstudio.html">
+                        Using RStudio on FASSE
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="collaborative.html">
+                        Branch-merge workflow on GitHub
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="vscode.html">
+                        VS Code
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="rce.html">
+                        Working on RCE
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="docs.html">
+                        Documentation
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="singularity.html">
+                        Singularity
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://swcarpentry.github.io/git-novice/">
+                        Git tutorial
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://github.com/NSAPH/data-paltform-internal-docs">
+                        Data-Platform Internal Docs
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://nsaph-software.github.io/intro.html">
+                        NSAPH Software Website
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="software.html">
+                        NSAPH Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="team.html">
+                        The team
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="references.html">
+                        References
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">
+  
+
+
+<a class="navbar-brand logo" href="intro.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="_static/NSAPH_logo.png" class="logo__image only-light" alt="Logo image">
+    <img src="_static/NSAPH_logo.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    </div>
+    <div class="sidebar-start-items__item">
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -113,520 +680,287 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Data
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="lifecycle.html">
-   NSAPH Research Project Lifecycle
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dua.html">
-   NSAPH Data Usage Policies
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Data sources
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="mcbs.html">
-   MCBS
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="analytic.html">
-   Analytic data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="superset.html">
-   NSAPH PostgreSQL Data Platform
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dataverse.html">
-   Dataverse
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="trainings.html">
-   NSAPH Required Trainings
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="lifecycle.html">NSAPH Research Project Lifecycle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dua.html">NSAPH Data Usage Policies</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mcbs.html">MCBS</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="analytic.html">Analytic data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="superset.html">NSAPH PostgreSQL Data Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataverse.html">Dataverse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trainings.html">NSAPH Required Trainings</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  NSAPH Forms
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">NSAPH Forms</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform">
-   On-Boarding Form
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSe6HflNjmJCQeJ5qKGoQFOchvfjeZbDRV0fJX7dCp9jzIfW6Q/viewform?usp=sf_link">
-   Project Initiation Form
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLScXqm3Chutm1Y4dk6M1SRtMpcCAbzcETYeiMhznrQ3cB9wNFw/viewform?usp=sf_link">
-   Project Progress Forms
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSccxSUt7NclkqTkeltAPzOBn8ttqz4_ZVIp2MbP9Th7Ja0W5Q/viewform">
-   Off-Boarding Form
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform">On-Boarding Form</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSe6HflNjmJCQeJ5qKGoQFOchvfjeZbDRV0fJX7dCp9jzIfW6Q/viewform?usp=sf_link">Project Initiation Form</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLScXqm3Chutm1Y4dk6M1SRtMpcCAbzcETYeiMhznrQ3cB9wNFw/viewform?usp=sf_link">Project Progress Forms</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSccxSUt7NclkqTkeltAPzOBn8ttqz4_ZVIp2MbP9Th7Ja0W5Q/viewform">Off-Boarding Form</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Infrastructure and Tools
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Infrastructure and Tools</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="fasse.html">
-   Getting started on FASSE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="fasse_partitions.html">
-   FASSE Compute Partitions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="fasse_github.html">
-   FASSE and GitHub Project Work
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="analysis.html">
-   Introduction to NSAPH GitHub
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rstudio.html">
-   Using RStudio on FASSE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="collaborative.html">
-   Branch-merge workflow on GitHub
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="vscode.html">
-   VS Code
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rce.html">
-   Working on RCE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="docs.html">
-   Documentation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="singularity.html">
-   Singularity
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://swcarpentry.github.io/git-novice/">
-   Git tutorial
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://github.com/NSAPH/data-paltform-internal-docs">
-   Data-Platform Internal Docs
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="fasse.html">Getting started on FASSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fasse_github.html">FASSE and GitHub Project Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysis.html">Introduction to NSAPH GitHub</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="rstudio.html">Using RStudio on FASSE</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="collaborative.html">Branch-merge workflow on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">VS Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rce.html">Working on RCE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="singularity.html">Singularity</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://swcarpentry.github.io/git-novice/">Git tutorial</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/NSAPH/data-paltform-internal-docs">Data-Platform Internal Docs</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Software
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference external" href="https://nsaph-software.github.io/intro.html">
-   NSAPH Software Website
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="software.html">
-   NSAPH Software
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference external" href="https://nsaph-software.github.io/intro.html">NSAPH Software Website</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">NSAPH Software</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  The Team
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The Team</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="team.html">
-   The team
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">The team</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  References
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="references.html">
-   References
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
+</nav>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  </div>
+  
 
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
 
-          
+  
+  <div id="rtd-footer-container"></div>
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
+      </div>
+      <main id="main-content" class="bd-main">
         
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
 
 
 
 <div class="col py-1 d-flex header-article-main">
     <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+        <label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" data-toggle="tooltip" data-placement="right" title="Toggle primary sidebar">
+            <span class="fa-solid fa-bars"></span>
+        </label>
     </div>
     <div class="header-article__right">
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
+  class="btn btn-sm"
   data-toggle="tooltip"
 data-placement="bottom"
 title="Fullscreen mode"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+
+<div class="dropdown dropdown-repository-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/NSAPH/handbook"
-   class="headerbtn"
+  <ul class="dropdown-menu">
+      <li><a href="https://github.com/NSAPH/handbook" target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Source repository"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fab fa-github"></i>
   </span>
-<span class="headerbtn__text-container">repository</span>
+<span class="btn__text-container">repository</span>
 </a>
-
-      </li>
+</a>
       
-      <li>
-        <a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fdata.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
+      <li><a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fdata.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Open an issue"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-lightbulb"></i>
   </span>
-<span class="headerbtn__text-container">open issue</span>
+<span class="btn__text-container">open issue</span>
 </a>
-
-      </li>
+</a>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/data.md"
-   class="headerbtn"
+  <ul class="dropdown-menu">
+      <li><a href="_sources/data.md" target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Download source file"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="btn__text-container">.md</span>
 </a>
-
-      </li>
+</a>
       
       <li>
-        
 <button onclick="printPdf(this)"
-  class="headerbtn"
+  class="btn btn-sm dropdown-item"
   data-toggle="tooltip"
 data-placement="left"
 title="Print to PDF"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file-pdf"></i>
   </span>
-<span class="headerbtn__text-container">.pdf</span>
+<span class="btn__text-container">.pdf</span>
 </button>
-
-      </li>
+</a>
       
-    </ul>
-  </div>
+  </ul>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
+            <span class="fa-solid fa-list"></span>
+        </label>
     </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#health-data">
-   Health data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exposure-data">
-   Exposure data
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zip-code-level-pm2-5-pm2-5-components-ozone-and-no2-in-the-contiguous-us">
-     ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pm2-5-components-obsolete">
-     PM2.5 Components - Obsolete
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#predicted-daily-smoke-pm2-5-over-the-contiguous-us-2006-2020">
-     Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#space-weather-data">
-     Space weather data
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#confounder-data">
-   Confounder data
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gridmet">
-     Gridmet
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shapefiles">
-   Shapefiles
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zip-to-zcta-crosswalk-2015">
-     ZIP to ZCTA crosswalk (2015)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#other-data">
-   Other data
-  </a>
- </li>
-</ul>
-
-    </nav>
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Data sources</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#health-data">
-   Health data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exposure-data">
-   Exposure data
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zip-code-level-pm2-5-pm2-5-components-ozone-and-no2-in-the-contiguous-us">
-     ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pm2-5-components-obsolete">
-     PM2.5 Components - Obsolete
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#predicted-daily-smoke-pm2-5-over-the-contiguous-us-2006-2020">
-     Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#space-weather-data">
-     Space weather data
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#confounder-data">
-   Confounder data
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gridmet">
-     Gridmet
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shapefiles">
-   Shapefiles
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zip-to-zcta-crosswalk-2015">
-     ZIP to ZCTA crosswalk (2015)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#other-data">
-   Other data
-  </a>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
             </div>
-            <main id="main-content" role="main">
-                
-              <div>
-                
+            
+            
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Data sources</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#health-data">
+   Health data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exposure-data">
+   Exposure data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zip-code-level-pm2-5-pm2-5-components-ozone-and-no2-in-the-contiguous-us">
+     ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pm2-5-components-obsolete">
+     PM2.5 Components - Obsolete
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#predicted-daily-smoke-pm2-5-over-the-contiguous-us-2006-2020">
+     Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#space-weather-data">
+     Space weather data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pm2-5-us-high-resolution-grid-2000-2016">
+     PM2.5 US High Resolution Grid, 2000-2016
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#confounder-data">
+   Confounder data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gridmet">
+     Gridmet
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shapefiles">
+   Shapefiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zip-to-zcta-crosswalk-2015">
+     ZIP to ZCTA crosswalk (2015)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-data">
+   Other data
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+            <article class="bd-article" role="main">
+              
   <section class="tex2jax_ignore mathjax_ignore" id="data-sources">
-<h1>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this headline">#</a></h1>
+<h1>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this heading">#</a></h1>
 <p>On this page you can find a description of common data sources and their location on the cluster.</p>
 <section id="health-data">
-<h2>Health data<a class="headerlink" href="#health-data" title="Permalink to this headline">#</a></h2>
+<h2>Health data<a class="headerlink" href="#health-data" title="Permalink to this heading">#</a></h2>
 <p>The following contains the description of the original/raw CMS data.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -636,10 +970,6 @@ MBSF and MedPar<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">data_source</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://resdac.org/cms-data/files/mbsf-base">MBSF</a> and <a class="reference external" href="https://resdac.org/cms-data/files/medpar">MedPar</a></p></td>
@@ -736,10 +1066,6 @@ MCBS<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">data_source</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS">MCBS</a></p></td>
@@ -768,10 +1094,10 @@ MCBS<div class="sd-summary-down docutils">
 </div>
 </section>
 <section id="exposure-data">
-<h2>Exposure data<a class="headerlink" href="#exposure-data" title="Permalink to this headline">#</a></h2>
+<h2>Exposure data<a class="headerlink" href="#exposure-data" title="Permalink to this heading">#</a></h2>
 <p>The following is the description of the air pollution exposure data.</p>
 <section id="zip-code-level-pm2-5-pm2-5-components-ozone-and-no2-in-the-contiguous-us">
-<h3>ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US<a class="headerlink" href="#zip-code-level-pm2-5-pm2-5-components-ozone-and-no2-in-the-contiguous-us" title="Permalink to this headline">#</a></h3>
+<h3>ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US<a class="headerlink" href="#zip-code-level-pm2-5-pm2-5-components-ozone-and-no2-in-the-contiguous-us" title="Permalink to this heading">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 PM2.5, Ozone, NO2<div class="sd-summary-down docutils">
@@ -780,10 +1106,6 @@ PM2.5, Ozone, NO2<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">dataset_author</p></td>
 <td><p class="sd-card-text">Yaguang Wei</p></td>
@@ -866,7 +1188,7 @@ PM2.5, Ozone, NO2<div class="sd-summary-down docutils">
 </div>
 </details></section>
 <section id="pm2-5-components-obsolete">
-<h3>PM2.5 Components - Obsolete<a class="headerlink" href="#pm2-5-components-obsolete" title="Permalink to this headline">#</a></h3>
+<h3>PM2.5 Components - Obsolete<a class="headerlink" href="#pm2-5-components-obsolete" title="Permalink to this heading">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 PM2.5 component data<div class="sd-summary-down docutils">
@@ -875,10 +1197,6 @@ PM2.5 component data<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">spatial_coverage</p></td>
 <td><p class="sd-card-text">US</p></td>
@@ -902,7 +1220,7 @@ PM2.5 component data<div class="sd-summary-down docutils">
 <td><p class="sd-card-text">Append <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/data/</span></code> to the beginning of the paths: <code class="docutils literal notranslate"><span class="pre">exposure/pm25_components/pm25_components_v1</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text">git_repository</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="https://github.com/yycome/PM25_Components">https://github.com/yycome/PM25_Components</a></p></td>
+<td><p class="sd-card-text"><a class="github reference external" href="https://github.com/yycome/PM25_Components">yycome/PM25_Components</a></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text">publication</p></td>
 <td><p class="sd-card-text">Amini, H., M. Danesh-Yazdi, Q. Di, W. Requia, Y. Wei, Y. Abu Awad, L. Shi, M. Franklin, C.-M. Kang, J. M. Wolfson, P. James, R. Habre, Q. Zhu, J. S. Apte, Z. J. Andersen, X. Xing, C. Hultquist, I. Kloog, F. Dominici, P. Koutrakis, J. Schwartz. 2022. Annual Mean PM2.5Components (EC, NH4, NO3, OC, SO4) 50m Urban and 1km Non-Urban Area Grids for Contiguous U.S., 2000-2019 v1. (Preliminary Release). Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). <a class="reference external" href="https://doi.org/10.7927/7wj3-en73">https://doi.org/10.7927/7wj3-en73</a></p></td>
@@ -926,7 +1244,7 @@ PM2.5 component data<div class="sd-summary-down docutils">
 </div>
 </details></section>
 <section id="predicted-daily-smoke-pm2-5-over-the-contiguous-us-2006-2020">
-<h3>Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020<a class="headerlink" href="#predicted-daily-smoke-pm2-5-over-the-contiguous-us-2006-2020" title="Permalink to this headline">#</a></h3>
+<h3>Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020<a class="headerlink" href="#predicted-daily-smoke-pm2-5-over-the-contiguous-us-2006-2020" title="Permalink to this heading">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Predicted daily smoke PM2.5<div class="sd-summary-down docutils">
@@ -935,10 +1253,6 @@ Predicted daily smoke PM2.5<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">dataset_author</p></td>
 <td><p class="sd-card-text">Marissa Childs</p></td>
@@ -1001,7 +1315,7 @@ Predicted daily smoke PM2.5<div class="sd-summary-down docutils">
 </div>
 </details></section>
 <section id="space-weather-data">
-<h3>Space weather data<a class="headerlink" href="#space-weather-data" title="Permalink to this headline">#</a></h3>
+<h3>Space weather data<a class="headerlink" href="#space-weather-data" title="Permalink to this heading">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Space weather data <div class="sd-summary-down docutils">
@@ -1010,10 +1324,6 @@ Space weather data <div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">dataset_author</p></td>
 <td><p class="sd-card-text">Carolina L Zilli Vieira</p></td>
@@ -1053,33 +1363,48 @@ Space weather data <div class="sd-summary-down docutils">
 </tr>
 </tbody>
 </table>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-### PM2.5 US High Resolution Grid, 2000-2016
-
-`````{dropdown} PM2.5 US Grid
-```{list-table}
-:header-rows: 0
-
-* - spatial_coverage
-  - US
-* - spatial_resolution
-  - 1km x 1km
-* - temporal_coverage
-  - 2000-2016
-* - temporal_resolution
-  - annually
-* - size
-  - ~80 MB/year
-* - fasse_location
-  - `/n/dominici_nsaph_l3/Lab/data/exposure/pm25/whole_us/annual/grid_pts/qd_new_predictions`.
-* - processing_description
-  - Merge by row the 1-column matrix PM2.5 values (`PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds`) with the corresponding 1km x 1km United States Grid Matrix (`USGridSite.rds`). For data visualization, see: https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R.
-* - publication 
-  - Q. Di, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, J. Schwartz, An ensemble-based model of PM2.5 concentration across the contiguous United States with high spatiotemporal resolution. Environ. Int. 130, 104909 (2019). https://pubmed.ncbi.nlm.nih.gov/31272018/
-* - files
-  -
-</pre></div>
 </div>
+</details></section>
+<section id="pm2-5-us-high-resolution-grid-2000-2016">
+<h3>PM2.5 US High Resolution Grid, 2000-2016<a class="headerlink" href="#pm2-5-us-high-resolution-grid-2000-2016" title="Permalink to this heading">#</a></h3>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+PM2.5 US Grid<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p class="sd-card-text">spatial_coverage</p></td>
+<td><p class="sd-card-text">US</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">spatial_resolution</p></td>
+<td><p class="sd-card-text">1km x 1km</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">temporal_coverage</p></td>
+<td><p class="sd-card-text">2000-2016</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">temporal_resolution</p></td>
+<td><p class="sd-card-text">annually</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">size</p></td>
+<td><p class="sd-card-text">~80 MB/year</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">fasse_location</p></td>
+<td><p class="sd-card-text">Append <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/data/exposure</span></code> to <code class="docutils literal notranslate"><span class="pre">/pm25/whole_us/annual/grid_pts/qd_new_predictions</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">processing_description</p></td>
+<td><p class="sd-card-text">Merge by row the 1-column matrix PM2.5 values (<code class="docutils literal notranslate"><span class="pre">PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds</span></code>) with the corresponding 1km x 1km United States Grid Matrix (<code class="docutils literal notranslate"><span class="pre">USGridSite.rds</span></code>). For data visualization, see: <a class="github reference external" href="https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R">wxwx1993/National_Causal</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">publication</p></td>
+<td><p class="sd-card-text">Q. Di, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, J. Schwartz, An ensemble-based model of PM2.5 concentration across the contiguous United States with high spatiotemporal resolution. Environ. Int. 130, 104909 (2019). <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/31272018/">https://pubmed.ncbi.nlm.nih.gov/31272018/</a></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">files</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   ├── PredictionStep2_Annual_PM25_USGrid_20000101_20001231.rds  
    ├── ...
    ├── PredictionStep2_Annual_PM25_USGrid_20160101_20161231.rds
@@ -1091,12 +1416,12 @@ Space weather data <div class="sd-summary-down docutils">
 </details></section>
 </section>
 <section id="confounder-data">
-<h2>Confounder data<a class="headerlink" href="#confounder-data" title="Permalink to this headline">#</a></h2>
+<h2>Confounder data<a class="headerlink" href="#confounder-data" title="Permalink to this heading">#</a></h2>
 <section id="gridmet">
-<h3>Gridmet<a class="headerlink" href="#gridmet" title="Permalink to this headline">#</a></h3>
+<h3>Gridmet<a class="headerlink" href="#gridmet" title="Permalink to this heading">#</a></h3>
 <p>This project aggregates Gridmet data into social boundaries such as zip codes or census tracts
 that can be then joined with data available at those social units such as Medicare or Census data. Specifically it does the following:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Start point: GRIDMET climate data (4x4km grid), Census Bureau Zip Code Tabulation Area (ZCTA) boundaries</p></li>
 <li><p>Aggregation technique: area weight</p></li>
 <li><p>Output: ZCTAs with the area-weighted average of each GRIDMET variable</p></li>
@@ -1109,10 +1434,6 @@ Gridmet data<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">fasse_location</p></td>
 <td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/data/data/gridmet/</span></code></p></td>
@@ -1147,7 +1468,7 @@ data_source description<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<ol class="simple">
+<ol class="arabic simple">
 <li><p class="sd-card-text"><a class="reference external" href="https://www.northwestknowledge.net/metdata/data/permanent/">GRIDMET data</a></p></li>
 </ol>
 <p class="sd-card-text">All original GRIDMET varaibles are preserved. There are a total of 18:</p>
@@ -1170,7 +1491,7 @@ data_source description<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ul>
-<ol class="simple">
+<ol class="arabic simple" start="2">
 <li><p class="sd-card-text"><a class="reference external" href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2000.html">Census Bureau Zip Code Tabulation Area (ZCTA) TIGER/Line Files and Shapefiles</a></p></li>
 </ol>
 <p class="sd-card-text">ZCTAs were used because they represent the government’s “best guess” at what the spacial boundaries of a zip code are. While zip codes are commonly percieved as denoting spatial boundaries, they are in fact just a collection of addresses. Furthermore, they are “working units” that are defined and changed based on the needs (and whims) of the postal service. There is a degree of compromise/subjectivity here. The best answer would be “don’t use zip codes as a unit of analysis”. If they must be used, ZCTAs represent the best solution.</p>
@@ -1191,7 +1512,7 @@ processing_description<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
 <li><p class="sd-card-text">Stage 1: Crosswalk Development (done in ArcGIS):</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p class="sd-card-text">GRIDMET’s 4x4km grid was imported and transformed into defined polygon formats (rather than raster or point features)</p></li>
 <li><p class="sd-card-text">Census Bureau’s ZCTA shapefiles for that year were imported</p></li>
 <li><p class="sd-card-text">The “tabulate intersection” tool was used to calculate, for each ZCTA/grid pair, the proportion of the ZCTA’s area that the grid square contributed. For example, if ZCTA 12345 overlapped 3 grids, there would be three rows: (12345, Grid A, .4), (12345, Grid B, .2), (12345, Grid C, .4).</p></li>
@@ -1199,7 +1520,7 @@ processing_description<div class="sd-summary-down docutils">
 </ol>
 </li>
 <li><p class="sd-card-text">Stage 2: Area-weighted aggregation:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p class="sd-card-text">The crosswalk for that year is is imported.</p></li>
 <li><p class="sd-card-text">For each day, the GRIDMET file is imported.</p></li>
 <li><p class="sd-card-text">The data for each grid (all 16 variables) is joined to the crosswalk by lat/long pair for that grid. Note that if a grid square overlaps, say, three ZCTAs, then its data will be repeated 3 times so that it can be weighted appropriately for each ZCTA.</p></li>
@@ -1215,7 +1536,7 @@ processing_description<div class="sd-summary-down docutils">
 </details></section>
 </section>
 <section id="shapefiles">
-<h2>Shapefiles<a class="headerlink" href="#shapefiles" title="Permalink to this headline">#</a></h2>
+<h2>Shapefiles<a class="headerlink" href="#shapefiles" title="Permalink to this heading">#</a></h2>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 zcta_shape_files<div class="sd-summary-down docutils">
@@ -1224,10 +1545,6 @@ zcta_shape_files<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">fasse_location</p></td>
 <td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/data/shapefiles</span></code></p></td>
@@ -1256,10 +1573,6 @@ zip_shape_files<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">fasse_location</p></td>
 <td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/data/shapefiles</span></code></p></td>
@@ -1287,7 +1600,7 @@ zip_shape_files<div class="sd-summary-down docutils">
 </div>
 </div>
 </details><section id="zip-to-zcta-crosswalk-2015">
-<h3>ZIP to ZCTA crosswalk (2015)<a class="headerlink" href="#zip-to-zcta-crosswalk-2015" title="Permalink to this headline">#</a></h3>
+<h3>ZIP to ZCTA crosswalk (2015)<a class="headerlink" href="#zip-to-zcta-crosswalk-2015" title="Permalink to this heading">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <strong>zip_to_zcta</strong><div class="sd-summary-down docutils">
@@ -1296,10 +1609,6 @@ zip_shape_files<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p class="sd-card-text">rce_location</p></td>
 <td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">~/shared_space/ci3_exposure/locations/zcta/crosswalk/</span></code></p></td>
@@ -1331,7 +1640,7 @@ zip_shape_files<div class="sd-summary-down docutils">
 </details></section>
 </section>
 <section id="other-data">
-<h2>Other data<a class="headerlink" href="#other-data" title="Permalink to this headline">#</a></h2>
+<h2>Other data<a class="headerlink" href="#other-data" title="Permalink to this heading">#</a></h2>
 <p>The following are other commonly-used public data sources, many of which may be found in the <strong>confounders</strong> folder on FASSE.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF">CMS Synthetic data: 2008, 2009, and 2010</a></p></li>
@@ -1365,50 +1674,166 @@ zip_shape_files<div class="sd-summary-down docutils">
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
-              
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
+            </article>
+            
+
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="dua.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">NSAPH Data Usage Policies</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="mcbs.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">MCBS</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+  <a class='left-prev' id="prev-link" href="dua.html" title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">NSAPH Data Usage Policies</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="mcbs.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">MCBS</p>
+  </div>
+  <i class="fa-solid fa-angle-right"></i>
+  </a>
 </div>
             </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
   
-    By NSAPH<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
-    
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#health-data">
+   Health data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exposure-data">
+   Exposure data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zip-code-level-pm2-5-pm2-5-components-ozone-and-no2-in-the-contiguous-us">
+     ZIP code-level PM2.5, PM2.5 components, Ozone, and NO2 in the contiguous US
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pm2-5-components-obsolete">
+     PM2.5 Components - Obsolete
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#predicted-daily-smoke-pm2-5-over-the-contiguous-us-2006-2020">
+     Predicted daily smoke PM2.5 over the Contiguous US, 2006 - 2020
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#space-weather-data">
+     Space weather data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pm2-5-us-high-resolution-grid-2000-2016">
+     PM2.5 US High Resolution Grid, 2000-2016
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#confounder-data">
+   Confounder data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gridmet">
+     Gridmet
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shapefiles">
+   Shapefiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zip-to-zcta-crosswalk-2015">
+     ZIP to ZCTA crosswalk (2015)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-data">
+   Other data
+  </a>
+ </li>
+</ul>
+
+</nav>
 </div>
 
-
-      </div>
-    </div>
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+<div class="bd-footer-content__inner container">
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <div class="footer-item">
+    
+<p class="component-author">
+By NSAPH
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+Last updated on None.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </div>
+        </footer>
+        
+
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
 
   </body>
 </html>
