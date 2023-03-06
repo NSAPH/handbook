@@ -306,7 +306,7 @@ The following is the description of the air pollution exposure data.
 * - files
   -
 ```
-```
+`````
 
 ### PM2.5 US High Resolution Grid, 2000-2016
 
@@ -325,7 +325,7 @@ The following is the description of the air pollution exposure data.
 * - size
   - ~80 MB/year
 * - fasse_location
-  - `/n/dominici_nsaph_l3/Lab/data/exposure/pm25/whole_us/annual/grid_pts/qd_new_predictions`.
+  - Append `/n/dominici_nsaph_l3/Lab/data/exposure` to `/pm25/whole_us/annual/grid_pts/qd_new_predictions`.
 * - processing_description
   - Merge by row the 1-column matrix PM2.5 values (`PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds`) with the corresponding 1km x 1km United States Grid Matrix (`USGridSite.rds`). For data visualization, see: https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R.
 * - publication 
