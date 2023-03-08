@@ -275,6 +275,73 @@ The following is the description of the air pollution exposure data.
 ```
 `````
 
+
+### Space weather data 
+
+`````{dropdown} Space weather data 
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Carolina L Zilli Vieira
+* - date_created
+  - Oct 17 2022
+* - data_source
+  - [NASA](applewebdata://2B7CDFAB-4F4C-4BF8-9222-201B5E9C2E1B/NASA) - solar and geomagnetic activity data from https://omniweb.gsfc.nasa.gov/html/omni_source.html, DAAC NASA (solar radiation) from https://daac.ornl.gov/, BARTOL Neutron Station (neutrons) from https://neutronm.bartol.udel.edu/
+* - spatial_coverage
+  - Global UTC (from raw data) converted to local time.
+* - spatial_resolution
+  - county
+* - temporal_coverage
+  - 1996-2022
+* - temporal_resolution
+  - daily
+* - processing_description
+  - We processed the data in UTC to US time zone data. From this source, it is not possible to have spatial data. To do so, we converted UTC global data to US local time data. Then we used these local time zone data to identify county. The numbers change a little by location based in the time zone. We provided daily data, which can be aggregated them to monthly and annual data.
+* - fasse_location
+  - `/n/dominici_nsaph_l3/data/exposure/solar_activity`  
+* - git_repository
+  - [solar_data_timezone_to_zipcode](https://github.com/NSAPH-Data-Processing/solar_data_timezone_to_zipcode)
+* - size
+  - 1.18 GB
+* - files
+  -
+```
+`````
+
+### PM2.5 US High Resolution Grid, 2000-2016
+
+`````{dropdown} PM2.5 US Grid
+```{list-table}
+:header-rows: 0
+
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - 1km x 1km
+* - temporal_coverage
+  - 2000-2016
+* - temporal_resolution
+  - annually
+* - size
+  - ~80 MB/year
+* - fasse_location
+  - Append `/n/dominici_nsaph_l3/Lab/data/exposure` to `/pm25/whole_us/annual/grid_pts/qd_new_predictions`.
+* - processing_description
+  - Merge by row the 1-column matrix PM2.5 values (`PredictionStep2_Annual_PM25_USGrid_20**0101_20**1231.rds`) with the corresponding 1km x 1km United States Grid Matrix (`USGridSite.rds`). For data visualization, see: https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R.
+* - publication 
+  - Q. Di, H. Amini, L. Shi, I. Kloog, R. Silvern, J. Kelly, M. B. Sabath, C. Choirat, P. Koutrakis, A. Lyapustin, Y. Wang, L. J. Mickley, J. Schwartz, An ensemble-based model of PM2.5 concentration across the contiguous United States with high spatiotemporal resolution. Environ. Int. 130, 104909 (2019). https://pubmed.ncbi.nlm.nih.gov/31272018/
+* - files
+  -
+```
+```	  
+   ├── PredictionStep2_Annual_PM25_USGrid_20000101_20001231.rds  
+   ├── ...
+   ├── PredictionStep2_Annual_PM25_USGrid_20160101_20161231.rds
+   ├── readme.txt
+   └── USGridSite.rds
+```
+`````
+
 ## Confounder data
 
 ### Gridmet
