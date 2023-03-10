@@ -418,53 +418,71 @@ ZCTAs were used because they represent the government's "best guess" at what the
 
 ## Shapefiles
 
-`````{dropdown} zcta_shape_files
-
+`````{dropdown} Zipcode_info
 ```{list-table}
 :header-rows: 0
+* - dataset_author
+  - Yaguang Wei
+* - date_created
+  - Jun 3, 2020
+* - data_source
+  - The daily and annual estimations of ambient PM2.5 at ZIP Codes; U.S. ZIP code database.
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2000-2016 
+* - temporal_resolution
+  - annually
+* - description
+  - For general ZIP Codes with a polygon representation, we estimated their
+pollution levels by averaging the predictions of grid cells whose centroids lie inside the polygon of that ZIP Code; For other ZIP Codes such as Post Offices or large volume single customers, we treated them as a single point and predicted their pollution levels by assigning the predictions of the nearest grid cell. Further description is available on [Spatial_aggregation]((https://www.overleaf.com/project/6248df38346ed665a2b1fb08)).
+* - git_repository
+  - [Yaguang_pm25_code](https://github.com/NSAPH/National-Causal-Analysis/tree/master/Exposures/code/yaguang_pm25_code) 
+
 * - fasse_location
-  - `/n/dominici_nsaph_l3/Lab/data/shapefiles`
+  - `/n/dominici_nsaph_l3/Lab/data/shapefiles/zip_shape_files/Zipcode_Info`
 * - files
   -
 ```
+pobox_csv  
 ```
-└── zcta_shape_files
-     ├── cb_2018_us_zcta510_500k.cpg
-     ├── cb_2018_us_zcta510_500k.dbf
-     ├── cb_2018_us_zcta510_500k.prj
-     ├── cb_2018_us_zcta510_500k.shp
-     ├── cb_2018_us_zcta510_500k.shp.ea.iso.xml
-     ├── cb_2018_us_zcta510_500k.shp.iso.xml
-     └── cb_2018_us_zcta510_500k.shx
+├── pobox_csv
+│   ├── ESRI00USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI01USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI02USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI03USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI04USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI05USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI06USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI07USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI08USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI09USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI10USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI11USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI12USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI13USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI14USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI15USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI16USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI17USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI18USZIP5_POINT_WGS84_POBOX.csv
+│   └── ESRI19USZIP5_POINT_WGS84_POBOX.csv
+└── polygon
+    ├── ESRI<yy>USZIP5_POLY_WGS84.cpg
+    ├── ESRI<yy>USZIP5_POLY_WGS84.dbf
+    ├── ESRI<yy>USZIP5_POLY_WGS84.prj
+    ├── ESRI<yy>USZIP5_POLY_WGS84.sbn
+    ├── ESRI<yy>USZIP5_POLY_WGS84.sbx
+    ├── ESRI<yy>USZIP5_POLY_WGS84.shp
+    ├── ESRI<yy>USZIP5_POLY_WGS84.shp.xml
+    └── ESRI<yy>USZIP5_POLY_WGS84.shx
+
+yy: 00, 01, ..., 18, 19
 ```
 `````
 
-`````{dropdown} zip_shape_files
-
-```{list-table}
-:header-rows: 0
-* - fasse_location
-  - `/n/dominici_nsaph_l3/Lab/data/shapefiles`
-* - files
-  -
-```
-```
-└── zip_shape_files
-    ├── 2000
-    ├── 2004
-    ├── 2005
-    ├── 2006
-    ├── 2007
-    ├── 2009
-    ├── 2010
-    ├── 2012
-    ├── 2013
-    ├── 2014
-    ├── 2015
-    ├── 2016
-    └── 2017
-```
-`````
 
 ### ZIP to ZCTA crosswalk (2015)
 `````{dropdown} **zip_to_zcta**
