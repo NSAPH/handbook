@@ -375,76 +375,44 @@ pollution levels by averaging the predictions of grid cells whose centroids lie 
   - [Yaguang_pm25_code](https://github.com/NSAPH/National-Causal-Analysis/tree/master/Exposures/code/yaguang_pm25_code) 
 
 * - fasse_location
-  - `n/dominici_nsaph_l3/Lab/data/shapefiles/zip_shape_files/Zipcode_info`
+  - `/n/dominici_nsaph_l3/Lab/data/shapefiles/zip_shape_files/Zipcode_Info`
 * - files
   -
 ```
+pobox_csv  
 ```
-└── zip_shape_files
-    ├── 2000
-    ├── 2004
-    ├── 2005
-    ├── 2006
-    ├── 2007
-    ├── 2009
-    ├── 2010
-    ├── 2012
-    ├── 2013
-    ├── 2014
-    ├── 2015
-    ├── 2016
-    └── 2017
-```
-`````
+├── pobox_csv
+│   ├── ESRI00USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI01USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI02USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI03USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI04USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI05USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI06USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI07USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI08USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI09USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI10USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI11USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI12USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI13USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI14USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI15USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI16USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI17USZIP5_POINT_WGS84_POBOX.csv
+│   ├── ESRI18USZIP5_POINT_WGS84_POBOX.csv
+│   └── ESRI19USZIP5_POINT_WGS84_POBOX.csv
+└── polygon
+    ├── ESRI<yy>USZIP5_POLY_WGS84.cpg
+    ├── ESRI<yy>USZIP5_POLY_WGS84.dbf
+    ├── ESRI<yy>USZIP5_POLY_WGS84.prj
+    ├── ESRI<yy>USZIP5_POLY_WGS84.sbn
+    ├── ESRI<yy>USZIP5_POLY_WGS84.sbx
+    ├── ESRI<yy>USZIP5_POLY_WGS84.shp
+    ├── ESRI<yy>USZIP5_POLY_WGS84.shp.xml
+    └── ESRI<yy>USZIP5_POLY_WGS84.shx
 
-
-
-`````{dropdown} Zipcode Info
-
-```{list-table}
-:header-rows: 0
-* - fasse_location
-  - `/n/dominici_nsaph_l3/Lab/data/shapefiles`
-* - files
-  -
-```
-```
-└── zip_shape_files
-    ├── 2000
-    ├── 2004
-    ├── 2005
-    ├── 2006
-    ├── 2007
-    ├── 2009
-    ├── 2010
-    ├── 2012
-    ├── 2013
-    ├── 2014
-    ├── 2015
-    ├── 2016
-    └── 2017
-```
-`````
-
-
-`````{dropdown} zcta_shape_files
-
-```{list-table}
-:header-rows: 0
-* - fasse_location
-  - `/n/dominici_nsaph_l3/Lab/data/shapefiles`
-* - files
-  -
-```
-```
-└── zcta_shape_files
-     ├── cb_2018_us_zcta510_500k.cpg
-     ├── cb_2018_us_zcta510_500k.dbf
-     ├── cb_2018_us_zcta510_500k.prj
-     ├── cb_2018_us_zcta510_500k.shp
-     ├── cb_2018_us_zcta510_500k.shp.ea.iso.xml
-     ├── cb_2018_us_zcta510_500k.shp.iso.xml
-     └── cb_2018_us_zcta510_500k.shx
+yy: 00, 01, ..., 18, 19
 ```
 `````
 
