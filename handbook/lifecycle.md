@@ -9,8 +9,8 @@ align: center
 
 ## Getting Started For New Users: NSAPH On-boarding
 
-1. Create a GitHub account if you do not already have one
-2. Complete the required CITI trainings listed below
+1. Create a GitHub account if you do not already have one.
+2. Complete the required NSAPH trainings listed [here](https://nsaph.info/trainings.html).
 3. Submit the [NSAPH On-Boarding form](https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform).
 Please note that submitting this form will not give you access to data, this is the first step that needs to be completed for every new user.
 
