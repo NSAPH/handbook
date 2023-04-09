@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,8 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -398,6 +398,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">MCBS</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intro-to-mcbs">Intro to MCBS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mcbs-prior-to-2015">MCBS Prior To 2015</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mcbs-2015">MCBS 2015</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changes-in-2015">Changes in 2015</a><ul class="nav section-nav flex-column">
@@ -429,9 +430,19 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="mcbs">
 <h1>MCBS<a class="headerlink" href="#mcbs" title="Permalink to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please only use MCBS data from 2015 and 2016. Pre-2015 data is not usable at this time.</p>
+</div>
+<section id="intro-to-mcbs">
+<h2>Intro to MCBS<a class="headerlink" href="#intro-to-mcbs" title="Permalink to this heading">#</a></h2>
+<p>MCBS, or Medicare Current Beneficiary Survey, is a survey of a small subset of Medicare beneficiaries. It contains detailed survey questions about a variety of topics, including health, demographics, income, housing, and more. For complete information about any particular survey, please visit the <a class="reference external" href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS">CMS website</a>. The topics included change each year, so it is important to check the documentation if you are interested in using a certain variable. Each year, the total number of beneficiaries in MCBS is about ~12,000, but this number varies by response rate.</p>
+<p>The survey uses a panel design, where a new panel of beneficiaries is recruited each year and they are kept in the study for four years (unless they are censored from the survey). There will be three other panels in the study at the same time. You can think of it like a high school; every year, a new class of students come in and the class that has completed four years graduates out of the high school. This is similar to MCBS’s design, and participants will be asked questions for four years.</p>
+<p>MCBS uses a survey design, so individuals are not randomly sampled from across all Medicare beneficiaries. Certain regions and demographics are sampled more, and there are survey weights to work with the survey design.</p>
+</section>
 <section id="mcbs-prior-to-2015">
 <h2>MCBS Prior To 2015<a class="headerlink" href="#mcbs-prior-to-2015" title="Permalink to this heading">#</a></h2>
-<p>The available MCBS data prior 2015 is not optimal for data analysis. No data exists for 2014 because the questionnaires were not administered. However, a new baseline panel was still selected.</p>
+<p>Please only use MCBS data from 2015 and 2016. Do not use the data for MCBS prior to 2015. They are the wrong files and do not correspond to the Access to Care files; instead, we suspect they are the Cost and Use files which are not for analysis. No data exists for 2014 because the questionnaires were not administered. However, a new baseline panel was still selected.</p>
 </section>
 <section id="mcbs-2015">
 <h2>MCBS 2015<a class="headerlink" href="#mcbs-2015" title="Permalink to this heading">#</a></h2>
@@ -643,7 +654,10 @@ document.write(`
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="data.html"
@@ -663,7 +677,10 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -679,6 +696,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">MCBS</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intro-to-mcbs">Intro to MCBS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mcbs-prior-to-2015">MCBS Prior To 2015</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mcbs-2015">MCBS 2015</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changes-in-2015">Changes in 2015</a><ul class="nav section-nav flex-column">
@@ -705,7 +723,7 @@ document.write(`
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -735,7 +753,7 @@ By NSAPH
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -744,8 +762,8 @@ By NSAPH
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
