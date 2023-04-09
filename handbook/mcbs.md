@@ -1,8 +1,19 @@
 # MCBS
 
+```{warning}
+Please only use MCBS data from 2015 and 2016. Pre-2015 data is not usable at this time.
+```
+## Intro to MCBS
+
+MCBS, or Medicare Current Beneficiary Survey, is a survey of a small subset of Medicare beneficiaries. It contains detailed survey questions about a variety of topics, including health, demographics, income, housing, and more. For complete information about any particular survey, please visit the [CMS website](https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS). The topics included change each year, so it is important to check the documentation if you are interested in using a certain variable. Each year, the total number of beneficiaries in MCBS is about ~12,000, but this number varies by response rate.
+
+The survey uses a panel design, where a new panel of beneficiaries is recruited each year and they are kept in the study for four years (unless they are censored from the survey). There will be three other panels in the study at the same time. You can think of it like a high school; every year, a new class of students come in and the class that has completed four years graduates out of the high school. This is similar to MCBS's design, and participants will be asked questions for four years. 
+
+MCBS uses a survey design, so individuals are not randomly sampled from across all Medicare beneficiaries. Certain regions and demographics are sampled more, and there are survey weights to work with the survey design.
+
 ## MCBS Prior To 2015
 
-The available MCBS data prior 2015 is not optimal for data analysis. No data exists for 2014 because the questionnaires were not administered. However, a new baseline panel was still selected.
+Please only use MCBS data from 2015 and 2016. Do not use the data for MCBS prior to 2015. They are the wrong files and do not correspond to the Access to Care files; instead, we suspect they are the Cost and Use files which are not for analysis. No data exists for 2014 because the questionnaires were not administered. However, a new baseline panel was still selected.
 
 ## MCBS 2015
 
