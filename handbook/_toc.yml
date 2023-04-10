@@ -30,6 +30,7 @@ parts:
     - file: fasse_github
     - file: analysis
     - file: rstudio
+    - file: cannon
     - file: collaborative
     - file: vscode    
     - file: rce
