@@ -1554,3 +1554,67 @@ ADRD_secondary: logi
 └── [166M]  aggregate_data.RDS
 ```
 `````
+
+
+### Mortality Prediction
+
+`````{dropdown} **Mortality Prediction**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Kaela Nelson
+* - date_created
+  - check
+* - data_source
+  - check
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2011-2016
+* - temporal_resolution
+  - Annually
+* - rce_location
+  - `check`
+* - fasse_location
+  - `mortality_prediction`
+* - githutb_repository
+  - [NSAPH-Data-Processing/mortality_prediction](https://github.com/NSAPH-Data-Processing/mortality_prediction/tree/main)
+* - size
+  - 103 G
+* - files
+  -
+```
+```
+.
+├── [177M]  hosp_aggregated_zip_2011_2016.csv
+├── [ 73G]  medicare_2011_2016.csv
+├── [ 69M]  medicare_aggregated_zip_2011_2016.csv
+├── [175M]  medicare_deaths_monthly_2011_2016.csv
+├── [4.6G]  medicare_hosp_admin_2011_2016.csv
+├── [893M]  medicare_hosp_merged_zip_2011_2016.csv
+├── [151M]  merged_df3.csv
+├── [1.4G]  merged_df3_monthly.csv
+├── [1.4G]  merged_med_seasonal_2011_2016_v2.csv
+├── [330M]  monthly_temp_by_zip.csv
+├── [195M]  seasonal_environmental_data.csv
+├── [144M]  state_nerged_aggregated_.csv
+├── [ 86M]  train_test_merged.csv
+├── [159M]  zip_test_monthly.csv
+├── [220M]  zip_test_monthly_v2.csv
+├── [ 14M]  zip_test_yearly.csv
+├── [7.3M]  zip_test_yearly_higher_pop.csv
+├── [6.8M]  zip_test_yearly_lower_pop.csv
+├── [ 14M]  zip_test_yearly_v2.csv
+├── [818M]  zip_train_monthly.csv
+├── [1.1G]  zip_train_monthly_v2.csv
+├── [ 73M]  zip_train_yearly.csv
+├── [ 37M]  zip_train_yearly_higher_pop.csv
+├── [ 34M]  zip_train_yearly_lower_pop.csv
+└── [ 71M]  zip_train_yearly_v2.csv
+```
+`````
+
+
+
