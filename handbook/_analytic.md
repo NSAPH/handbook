@@ -1564,9 +1564,9 @@ ADRD_secondary: logi
 * - dataset_author
   - Kaela Nelson
 * - date_created
-  - check
+  - March, 2021
 * - data_source
-  - check
+  - Medicare and Medicaid Beneficiary Summary files, Census, and environmental/exposure data
 * - spatial_coverage
   - US
 * - spatial_resolution
@@ -1575,8 +1575,6 @@ ADRD_secondary: logi
   - 2011-2016
 * - temporal_resolution
   - Annually
-* - rce_location
-  - `check`
 * - fasse_location
   - `mortality_prediction`
 * - githutb_repository
