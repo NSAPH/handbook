@@ -1577,6 +1577,8 @@ ADRD_secondary: logi
   - Annually
 * - fasse_location
   - `mortality_prediction`
+* - description
+  - The hospitalization data was processed by converting the primary and secondary diagnoses into binary indicators. The data was then aggregated by zipcode and year, with cause-specific hospitalizations summed and other variables such as age averaged. For the seasonal environmental and exposure data, rolling averages were calculated over a 4-year period to capture long-term trends. Predictors were included for winter, spring, summer, and fall, as well as temperature and humidity. The demographic data obtained from the US Census Bureau was already available by zipcode and year. Subsequently, the census, hospitalization, and environmental/exposure data were merged by zipcode and year. To determine yearly death counts by zipcode, the number of deaths per year per zipcode was summed. In order to predict the death counts for the following year, all death counts were shifted one year forward for each zipcode.
 * - githutb_repository
   - [NSAPH-Data-Processing/mortality_prediction](https://github.com/NSAPH-Data-Processing/mortality_prediction/tree/main)
 * - size
