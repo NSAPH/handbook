@@ -1,4 +1,4 @@
-# Getting started on FASSE
+# How to access CMS data on FASSE
 
 The following are instructions for logging in to FASSE and setting up your own workspace.
 
