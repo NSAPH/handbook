@@ -59,50 +59,50 @@ align: center
 Question 7.
 ```
 
-## How to access the training as a Non-Harvard Affiliate
+# How to access the training as a Non-Harvard Affiliate
 
-If you are a non-Harvard affiliate, please refer to the instructions outlined in the steps below to find the appropriate Data Security Training.
+#If you are a non-Harvard affiliate, please refer to the instructions outlined in the steps below to find the appropriate Data Security Training.
 
-```{figure} imgs/Step1b.png
+#```{figure} imgs/Step1b.png
 ---
 width: 100%
 align: center 
 ---
-First add an institution.
+#First add an institution.
 ```
 
-Then: 
+#Then: 
 
-```{figure} imgs/Step2b.png
+#```{figure} imgs/Step2b.png
 ---
-width: 60%
-align: center 
+#width: 60%
+#align: center 
 ---
-Put Harvard University.
+#Put Harvard University.
 ```
 
-Next:
+#Next:
 
-```{figure} imgs/Step3b.png
+#```{figure} imgs/Step3b.png
 ---
 width: 100%
 align: center 
 ---
-Put Biostatistics as department and select courses.
+#Put Biostatistics as department and select courses.
 ```
-```{figure} imgs/Step4b.png
+#```{figure} imgs/Step4b.png
 ---
-width: 60%
-align: center 
+#width: 60%
+#align: center 
 ---
-Select "Researchers" in Question 7.
+#Select "Researchers" in Question 7.
 ```
 
-Last, you should see:
-```{figure} imgs/Step5b.png
+#Last, you should see:
+#```{figure} imgs/Step5b.png
 ---
 width: 60%
 align: center 
 ---
-You are done!
+#You are done!
 ```
