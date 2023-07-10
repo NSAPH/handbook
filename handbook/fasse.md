@@ -192,6 +192,20 @@ data/
 *.rst
 ```
 
+## Step 8. Scratch Space
+
+Scratch space provides a dedicated area for temporary storage, improves performance, streamlines workflows, enhances data protection, enables resource isolation, and facilitates efficient clean-up. It is particularly valuable in high-performance computing (HPC), scientific research, data analysis, and other computationally intensive tasks.
+
+We have created a scratch space within our FASSE space: 
+
+```
+Directory: /n/holyscratch01/LABS/dominici_nsaph/Lab 
+```
+
+Scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. The high-performance storage and resource isolation capabilities of a scratch space enhance performance, streamline workflows, and protect valuable data. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical.
+
+
+
 ### Note: 
 
 The terminology of CPUs, nodes, and cores can be confusing in FASSE. One node is like a computer, and it contains one CPU and many cores. The multiple cores can do calculations at the same time. When requesting a job in FASSE, you request a portion of a node. However, the Slurm job management system refers to CPUs as the cores of the CPU.
