@@ -194,15 +194,47 @@ data/
 
 ## Step 8. Scratch Space
 
-Scratch space provides a dedicated area for temporary storage, improves performance, streamlines workflows, enhances data protection, enables resource isolation, and facilitates efficient clean-up. It is particularly valuable in high-performance computing (HPC), scientific research, data analysis, and other computationally intensive tasks.
+Scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. The high-performance storage and resource isolation capabilities of a scratch space enhance performance, streamline workflows, and protect valuable data. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical.
 
 We have created a scratch space within our FASSE space: 
 
 ```
 Directory: /n/holyscratch01/LABS/dominici_nsaph/Lab 
 ```
+You should create your own directory in this scratch space based on your project name. For example: `/heat-stress-project`
 
-Scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. The high-performance storage and resource isolation capabilities of a scratch space enhance performance, streamline workflows, and protect valuable data. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical.
+Here is an instructions on how to use the scratch folder using R. Ideally a symlink the path folder should be incorporated within the project repo that is using the scratch space and not full paths.
+
+This is the example of your project path: 
+
+```
+project-name
+├── README.md
+├── data/
+├── code/
+├── figures/
+├── reports/
+├── results/
+└── .gitignore
+```
+
+You might want to use the scratch space to put your data or workflow. In this example, we will create a symlink in the data/ directory.  
+
+
+```
+File: project-name/data/README.md
+
+ls -s /n/holyscratch01/LABS/dominici_nsaph/Lab/project-name .
+```
+
+You will also need to add a `.gitignore` on your data file so that your scratch space will not getting pushed to the GitHub. Here is an example of the gitignore file: 
+
+```
+*
+!*/
+!.gitignore
+!README.md
+```
 
 
 
