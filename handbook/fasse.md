@@ -194,40 +194,51 @@ data/
 
 ## Step 8. Scratch Space
 
-Scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. The high-performance storage and resource isolation capabilities of a scratch space enhance performance, streamline workflows, and protect valuable data. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical.
+A acratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical.
 
-We have created a scratch space within our FASSE space: 
+**When to use a scratch space?** Whenever you need a temporary storage for intermediate data during processing or computations, use it to store data that is being actively manipulated or processed but is not needed for long-term storage.
 
+The lab has scratch spaces available within FASSE and CANNON: 
+
+FASSE path: 
 ```
-Directory: /n/holyscratch01/LABS/dominici_nsaph/Lab 
-```
-You should create your own directory in this scratch space based on your project name. For example: `/heat-stress-project`
-
-Here is an instructions on how to use the scratch folder using R. Ideally a symlink the path folder should be incorporated within the project repo that is using the scratch space and not full paths.
-
-This is the example of your project path: 
-
-```
-project-name
-├── README.md
-├── data/
-├── code/
-├── figures/
-├── reports/
-├── results/
-└── .gitignore
+/n/holyscratch01/LABS/dominici_nsaph/Lab 
 ```
 
-You might want to use the scratch space to put your data or workflow. In this example, we will create a symlink in the data/ directory.  
-
-
+CANNON path:
 ```
-File: project-name/data/README.md
-
-ls -s /n/holyscratch01/LABS/dominici_nsaph/Lab/project-name .
+/n/holyscratch01/dominici_lab/Lab/
 ```
 
-You will also need to add a `.gitignore` on your data file so that your scratch space will not getting pushed to the GitHub. Here is an example of the gitignore file: 
+**How to use the scratch folder?** Create your own directory in this scratch space using your project name. For example, if your FASSE project name is `heat-stress-project`, then create a folder within the FASSE scratch folder: 
+
+`mkdir /n/holyscratch01/LABS/dominici_nsaph/Lab/heat-stress-project`
+
+Instead of storing large files in your local project folder, write temporary files in this path.
+
+**Use a symlink to a scratch folder** Ideally, you should not include full paths in a repository's code. To avoid including full paths in your code, create a symlink to the scratch folder inside the `data/intermediate/` folder of your project using:
+
+```
+ls -s /n/holyscratch01/LABS/dominici_nsaph/Lab/<project_name> .
+```
+
+When you write or read a file use:
+
+```
+# In R
+library(tidyverse)
+write_csv("data/intermediate/<project_name>/<filename>")
+read_csv("data/intermediate/<project_name>/<filename>")
+```
+
+```
+# In Python
+import pandas as pd
+df.write_csv("ata/intermediate/<project_name>/<filename>")
+pd.read_csv("data/intermediate/<project_name>/<filename>")
+```
+
+To force Github to ignore file changes in the scrath folder, you will need to add a `.gitignore` inside your data folder. Here is an example of the gitignore file: 
 
 ```
 *
@@ -235,8 +246,6 @@ You will also need to add a `.gitignore` on your data file so that your scratch 
 !.gitignore
 !README.md
 ```
-
-
 
 ### Note: 
 
