@@ -1,6 +1,6 @@
 # NSAPH Handbook
 
-The rendered handbook is located at [https://nsaph.info](https://nsaph.info/intro.html). 
+The rendered handbook is located at [https://nsaph.github.io/handbook/](https://nsaph.github.io/handbook/). 
 
 ## How to contribute to this handbook?
 

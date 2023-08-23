@@ -1,11 +1,11 @@
 # NSAPH Data Usage Policies
 
-We would like to take this opportunity to make sure that all RCE/FASSE users have read the following
+We would like to take this opportunity to make sure that all FASSE users have read the following
 usage policy and agree to it. Please take a few minutes to read the information below.
 
 ## Data Access
 
-**1. RCE and FASSE accounts are individual accounts that are not sharable.**
+**1. FASSE accounts are individual accounts that are not sharable.**
 
 *You are not allowed to share your account password with anyone. Allowing other individuals to log into your account or use your account is a violation of our DUA and will result in immediate termination of your account.*
 
@@ -23,10 +23,10 @@ usage policy and agree to it. Please take a few minutes to read the information 
 
 ## Data Sharing
 
-**1. Health data CANNOT be moved from the RCE/FASSE.**
+**1. Health data CANNOT be moved from the FASSE.**
 
-*Per the DUA and IRB, data has to be on the RCE/FASSE level 3 data cluster ONLY and cannot be 
-downloaded from the level 3 RCE/FASSE. Datasets CANNOT be downloaded or moved from RCE/FASSE even if they do not have identifying information. Violations come with serious consequences that jeopardize everyone's work. We are very much encouraging sharing reproducible code on GitHub, but please use 
+*Per the DUA and IRB, data has to be on the FASSE level 3 data cluster ONLY and cannot be 
+downloaded from the level 3 FASSE. Datasets CANNOT be downloaded or moved from FASSE even if they do not have identifying information. Violations come with serious consequences that jeopardize everyone's work. We are very much encouraging sharing reproducible code on GitHub, but please use 
 it only for CODE and publicly available data. We suggest adding a `.gitignore` file to your 
 repository and using it to prevent unintentional upload of data files. We also suggest using 
 the `git status` command before committing to confirm what you are committing.*
@@ -43,12 +43,12 @@ the `git status` command before committing to confirm what you are committing.*
 
 **2. Set up GitHub under [NSAPH-Projects](https://github.com/orgs/NSAPH-Projects) and link it to FASSE project space.**
 
-*For more details, please see instructions [here](https://nsaph.info/fasse.html#step-4-create-a-git-repository-on-github).*
+*For more details, please see instructions [here](https://nsaph.github.io/handbook/fasse.html#step-4-create-a-git-repository-on-github).*
 
 **3. Work under the project space, and not in your home folder.**
 
-*Instructions on how to create a project folder and a GitHub repository can be found [*here*](https://nsaph.info/fasse.html#step-3-project-workspace).*
+*Instructions on how to create a project folder and a GitHub repository can be found [*here*](https://nsaph.github.io/handbook/fasse.html#step-3-project-workspace).*
 
 **4. Use a Symbolic link to read in data from your project folder.**
 
-*In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under `/n/dominici_nsaph_l3/Lab/projects`. **Please do not copy the data**; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click [here](https://nsaph.info/fasse.html#step-5-analytic-data).*
+*In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under `/n/dominici_nsaph_l3/Lab/projects`. **Please do not copy the data**; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click [here](https://nsaph.github.io/handbook/fasse.html#step-5-analytic-data).*

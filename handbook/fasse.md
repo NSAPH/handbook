@@ -1,4 +1,4 @@
-# Getting started on FASSE
+# How to access CMS data on FASSE
 
 The following are instructions for logging in to FASSE and setting up your own workspace.
 
@@ -104,7 +104,7 @@ your **project name**.
 
 Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
 If you are not familiar with using `git`, check out this [git tutorial](https://swcarpentry.github.io/git-novice/). 
-Also, check out [our guidelines](https://nsaph.info/collaborative.html) for collaborative work on GitHub.
+Also, check out [our guidelines](https://nsaph.github.io/handbook/collaborative.html) for collaborative work on GitHub.
 
 ````{note}
 You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE's command line. 
@@ -123,7 +123,7 @@ The prompt for your password is NOT your actual Github password. Instead, you ne
 ## Step 5. Analytic Data
 
 Much of the NSAPH data is already available on FASSE. 
-Check out the data catalogue [here](https://nsaph.info/analytic.html).
+Check out the data catalogue [here](https://nsaph.github.io/handbook/analytic.html).
 
 If you'd like to use any of the analytic datasets, create a symbolic link (symlink) of that dataset instead 
 of creating a new copy. A symbolic link is a reference to another file or directory that the 
