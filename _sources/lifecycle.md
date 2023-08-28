@@ -34,8 +34,8 @@ The training is based on your understanding of the NSAPH Data Usage Policies [he
 
 After your project is approved, and you have completed NSAPH Additional Data Security Training  (Steps 1 & 2), you will be added to the appropriate IRB. You will receive a confirmation via Basecamp on your project thread within a week.
 
-Instructions for Undergraduate students to get Harvard University Area (HUA) Institutional Review Board (IRB) clearance: 
-Undergraduate Harvard University students who would like to engage in research projects using the regulated CMS data are required to get HUA IRB clearance before they can be added to an existing study at HSPH. To start the process, we request that all Harvard College students first go over the Undergraduate Research Training Program [(URTP)](https://cuhs.harvard.edu/urtp-portal) and complete the URTP Decision Form. Based on the responses, the form might direct the student to reach out to the HUA IRB main line for more help. If it does, please follow the instructions for a formal review. 
+Instructions for Undergraduate students: 
+Undergraduate Harvard University students who would like to engage in research projects using the regulated CMS data are required to get Harvard University Area (HUA) Institutional Review Board (IRB) clearance before they can be added to an existing study at HSPH. To start the process, we request that all Harvard College students first go over the Undergraduate Research Training Program [(URTP)](https://cuhs.harvard.edu/urtp-portal) and complete the URTP Decision Form. Based on the responses, the form might direct the student to reach out to the HUA IRB main line for more help. If it does, please follow the instructions for a formal review. 
 
 4. Accessing the data: After completing Steps 1-3, you are now ready to access data.
 
