@@ -428,6 +428,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daily-florida-hospitalization-counts-by-zip">Daily Florida Hospitalization Counts by Zip</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coal-pm2-5-source-impacts">Coal PM2.5 Source Impacts</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregated-2000-2016-medicare-mortality-data-with-pm2-5-exposure-by-zip-code">Aggregated 2000-2016 Medicare Mortality Data with PM2.5 Exposure by ZIP code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mortality-prediction">Mortality Prediction</a></li>
 </ul>
             </nav>
         </div>
@@ -2614,6 +2615,85 @@ header<div class="sd-summary-down docutils">
 </div>
 </div>
 </details></section>
+<section id="mortality-prediction">
+<h2>Mortality Prediction<a class="headerlink" href="#mortality-prediction" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Mortality Prediction</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p class="sd-card-text">dataset_author</p></td>
+<td><p class="sd-card-text">Kaela Nelson</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">date_created</p></td>
+<td><p class="sd-card-text">March, 2021</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">data_source</p></td>
+<td><p class="sd-card-text">Medicare and Medicaid Beneficiary Summary files, Census, and environmental/exposure data</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">spatial_coverage</p></td>
+<td><p class="sd-card-text">US</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">spatial_resolution</p></td>
+<td><p class="sd-card-text">zipcode</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">temporal_coverage</p></td>
+<td><p class="sd-card-text">2011-2016</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">temporal_resolution</p></td>
+<td><p class="sd-card-text">Annually</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">fasse_location</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">mortality_prediction</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">description</p></td>
+<td><p class="sd-card-text">The hospitalization data was processed by converting the primary and secondary diagnoses into binary indicators. The data was then aggregated by zipcode and year, with cause-specific hospitalizations summed and other variables such as age averaged. For the seasonal environmental and exposure data, rolling averages were calculated over a 4-year period to capture long-term trends. Predictors were included for winter, spring, summer, and fall, as well as temperature and humidity. The demographic data obtained from the US Census Bureau was already available by zipcode and year. Subsequently, the census, hospitalization, and environmental/exposure data were merged by zipcode and year. To determine yearly death counts by zipcode, the number of deaths per year per zipcode was summed. In order to predict the death counts for the following year, all death counts were shifted one year forward for each zipcode.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">githutb_repository</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://github.com/NSAPH-Data-Processing/mortality_prediction/tree/main">NSAPH-Data-Processing/mortality_prediction</a></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">size</p></td>
+<td><p class="sd-card-text">103 G</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">files</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
+├── [177M]  hosp_aggregated_zip_2011_2016.csv
+├── [ 73G]  medicare_2011_2016.csv
+├── [ 69M]  medicare_aggregated_zip_2011_2016.csv
+├── [175M]  medicare_deaths_monthly_2011_2016.csv
+├── [4.6G]  medicare_hosp_admin_2011_2016.csv
+├── [893M]  medicare_hosp_merged_zip_2011_2016.csv
+├── [151M]  merged_df3.csv
+├── [1.4G]  merged_df3_monthly.csv
+├── [1.4G]  merged_med_seasonal_2011_2016_v2.csv
+├── [330M]  monthly_temp_by_zip.csv
+├── [195M]  seasonal_environmental_data.csv
+├── [144M]  state_nerged_aggregated_.csv
+├── [ 86M]  train_test_merged.csv
+├── [159M]  zip_test_monthly.csv
+├── [220M]  zip_test_monthly_v2.csv
+├── [ 14M]  zip_test_yearly.csv
+├── [7.3M]  zip_test_yearly_higher_pop.csv
+├── [6.8M]  zip_test_yearly_lower_pop.csv
+├── [ 14M]  zip_test_yearly_v2.csv
+├── [818M]  zip_train_monthly.csv
+├── [1.1G]  zip_train_monthly_v2.csv
+├── [ 73M]  zip_train_yearly.csv
+├── [ 37M]  zip_train_yearly_higher_pop.csv
+├── [ 34M]  zip_train_yearly_lower_pop.csv
+└── [ 71M]  zip_train_yearly_v2.csv
+</pre></div>
+</div>
+</div>
+</details></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -2696,6 +2776,7 @@ header<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daily-florida-hospitalization-counts-by-zip">Daily Florida Hospitalization Counts by Zip</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coal-pm2-5-source-impacts">Coal PM2.5 Source Impacts</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregated-2000-2016-medicare-mortality-data-with-pm2-5-exposure-by-zip-code">Aggregated 2000-2016 Medicare Mortality Data with PM2.5 Exposure by ZIP code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mortality-prediction">Mortality Prediction</a></li>
 </ul>
   </nav></div>
 

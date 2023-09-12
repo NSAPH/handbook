@@ -1554,3 +1554,67 @@ ADRD_secondary: logi
 └── [166M]  aggregate_data.RDS
 ```
 `````
+
+
+### Mortality Prediction
+
+`````{dropdown} **Mortality Prediction**
+```{list-table}
+:header-rows: 0
+* - dataset_author
+  - Kaela Nelson
+* - date_created
+  - March, 2021
+* - data_source
+  - Medicare and Medicaid Beneficiary Summary files, Census, and environmental/exposure data
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - zipcode
+* - temporal_coverage
+  - 2011-2016
+* - temporal_resolution
+  - Annually
+* - fasse_location
+  - `mortality_prediction`
+* - description
+  - The hospitalization data was processed by converting the primary and secondary diagnoses into binary indicators. The data was then aggregated by zipcode and year, with cause-specific hospitalizations summed and other variables such as age averaged. For the seasonal environmental and exposure data, rolling averages were calculated over a 4-year period to capture long-term trends. Predictors were included for winter, spring, summer, and fall, as well as temperature and humidity. The demographic data obtained from the US Census Bureau was already available by zipcode and year. Subsequently, the census, hospitalization, and environmental/exposure data were merged by zipcode and year. To determine yearly death counts by zipcode, the number of deaths per year per zipcode was summed. In order to predict the death counts for the following year, all death counts were shifted one year forward for each zipcode.
+* - githutb_repository
+  - [NSAPH-Data-Processing/mortality_prediction](https://github.com/NSAPH-Data-Processing/mortality_prediction/tree/main)
+* - size
+  - 103 G
+* - files
+  -
+```
+```
+.
+├── [177M]  hosp_aggregated_zip_2011_2016.csv
+├── [ 73G]  medicare_2011_2016.csv
+├── [ 69M]  medicare_aggregated_zip_2011_2016.csv
+├── [175M]  medicare_deaths_monthly_2011_2016.csv
+├── [4.6G]  medicare_hosp_admin_2011_2016.csv
+├── [893M]  medicare_hosp_merged_zip_2011_2016.csv
+├── [151M]  merged_df3.csv
+├── [1.4G]  merged_df3_monthly.csv
+├── [1.4G]  merged_med_seasonal_2011_2016_v2.csv
+├── [330M]  monthly_temp_by_zip.csv
+├── [195M]  seasonal_environmental_data.csv
+├── [144M]  state_nerged_aggregated_.csv
+├── [ 86M]  train_test_merged.csv
+├── [159M]  zip_test_monthly.csv
+├── [220M]  zip_test_monthly_v2.csv
+├── [ 14M]  zip_test_yearly.csv
+├── [7.3M]  zip_test_yearly_higher_pop.csv
+├── [6.8M]  zip_test_yearly_lower_pop.csv
+├── [ 14M]  zip_test_yearly_v2.csv
+├── [818M]  zip_train_monthly.csv
+├── [1.1G]  zip_train_monthly_v2.csv
+├── [ 73M]  zip_train_yearly.csv
+├── [ 37M]  zip_train_yearly_higher_pop.csv
+├── [ 34M]  zip_train_yearly_lower_pop.csv
+└── [ 71M]  zip_train_yearly_v2.csv
+```
+`````
+
+
+
