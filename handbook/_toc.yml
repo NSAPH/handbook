@@ -7,7 +7,7 @@ parts:
     chapters:
     - file: lifecycle
     - url: https://drive.google.com/file/d/1x-4rGPNAkrMuegizzQ4gYf-hlPIvRgVx/view?usp=sharing
-    title: Data/Compute Access Policy
+      title: Data/Compute Access Policy
     - file: dua
     - file: data 
     - file: mcbs
