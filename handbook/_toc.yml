@@ -6,7 +6,7 @@ parts:
   - caption: Data
     chapters:
     - file: lifecycle
-    - url: https://drive.google.com/file/d/18Nx47O7wg3JN9r71WLwfBPvetH4XAsZW/view?usp=sharing
+    - url: https://drive.google.com/file/d/1gam7S-PTPdpHAnKXjWe-mTJjVRKf_NMm/view?usp=sharing
       title: Data/Compute Access Policy
     - file: dua
     - file: data 
