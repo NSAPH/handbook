@@ -192,6 +192,66 @@ data/
 *.rst
 ```
 
+## Step 8. Scratch Space
+
+A scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical. The scratch datasystem is highly optimized for high-throughput file read/write. This means if you have to do lots of edits to large files or work with many small files, scratch may provide a more efficient means of operating.
+
+**When to use a scratch space?** Whenever you need a temporary storage for intermediate data during processing or computations, use it to store data that is being actively manipulated or processed but is not needed for long-term storage.
+
+**Example scratch space usages**
+1. When creating a large dataset compiled from several analytic datasets. Merged data is large but takes time to compile so you want to save it to use for analyses but not take up valuable space on FASSE. Instead store the compiled dataset in scratch and access each time you need to run your analysis. if the merged dataset goes unmodified for 90 days it may be deleted, in which case you will need to rerun your script to merge the data.
+2. For bootstrap analyses it is often quicker to create a set of bootstrap datasets. these datasets individually are large and collectively would overrun the usable space on FASSE. instead, store the temporary datasets in scratch and then have your bootstrap analyses load each individually. delete after use!
+
+
+#### The lab has scratch spaces available within FASSE and CANNON: 
+
+FASSE path: 
+```
+/n/holyscratch01/LABS/dominici_nsaph/Lab/projects/<your-project-subdirectory> 
+```
+
+CANNON path:
+```
+/n/holyscratch01/dominici_lab/Lab/projects/<your-project-subdirectory>
+```
+
+**How to use the scratch folder?** Create your own directory in this scratch space using your project name. For example, if your FASSE project name is `heat-stress-project`, then create a folder within the FASSE scratch folder: 
+
+`mkdir /n/holyscratch01/LABS/dominici_nsaph/Lab/projects/heat-stress-project`
+
+Instead of storing large files in your local project folder, write temporary files in this path.
+
+**Use a symlink to a scratch folder** Ideally, you should not include full paths in a repository's code. To avoid including full paths in your code, create a symlink to the scratch folder inside the `data/` folder of your project using. `data/` will contains a shortcut link to the scratch folder:
+
+```
+ls -s /n/holyscratch01/LABS/dominici_nsaph/Lab/<project_name> .
+```
+
+When you write or read a file use:
+
+```
+# In R
+library(tidyverse)
+write_csv("data/intermediate/<project_name>/<filename>")
+read_csv("data/intermediate/<project_name>/<filename>")
+```
+
+```
+# In Python
+import pandas as pd
+df.write_csv("data/intermediate/<project_name>/<filename>")
+pd.read_csv("data/intermediate/<project_name>/<filename>")
+```
+
+To force Github to ignore file changes in the scrath folder, you will need to add a `.gitignore` inside your data folder. Here is an example of the gitignore file: 
+
+```
+*
+!*/
+!.gitignore
+!README.md
+```
+
 ### Note: 
 
 The terminology of CPUs, nodes, and cores can be confusing in FASSE. One node is like a computer, and it contains one CPU and many cores. The multiple cores can do calculations at the same time. When requesting a job in FASSE, you request a portion of a node. However, the Slurm job management system refers to CPUs as the cores of the CPU.
