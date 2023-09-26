@@ -417,7 +417,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-create-a-git-repository-on-github">Step 4. Create a git repository on GitHub</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-analytic-data">Step 5. Analytic Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-setting-up-r-and-rstudio">Step 6. Setting up R and RStudio</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-organize-your-folder">Step 7. Organize your folder</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-organize-your-folder">Step 7. Organize your folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-scratch-space">Step 8. Scratch Space</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lab-has-scratch-spaces-available-within-fasse-and-cannon">The lab has scratch spaces available within FASSE and CANNON:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#note">Note:</a></li>
 </ul>
 </li>
@@ -599,6 +601,54 @@ all files of a certain format like <code class="docutils literal notranslate"><s
 <span class="o">*.</span><span class="n">rst</span>
 </pre></div>
 </div>
+</section>
+<section id="step-8-scratch-space">
+<h2>Step 8. Scratch Space<a class="headerlink" href="#step-8-scratch-space" title="Permalink to this heading">#</a></h2>
+<p>A scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical. The scratch datasystem is highly optimized for high-throughput file read/write. This means if you have to do lots of edits to large files or work with many small files, scratch may provide a more efficient means of operating.</p>
+<p><strong>When to use a scratch space?</strong> Whenever you need a temporary storage for intermediate data during processing or computations, use it to store data that is being actively manipulated or processed but is not needed for long-term storage.</p>
+<p><strong>Example scratch space usages</strong></p>
+<ol class="arabic simple">
+<li><p>When creating a large dataset compiled from several analytic datasets. Merged data is large but takes time to compile so you want to save it to use for analyses but not take up valuable space on FASSE. Instead store the compiled dataset in scratch and access each time you need to run your analysis. if the merged dataset goes unmodified for 90 days it may be deleted, in which case you will need to rerun your script to merge the data.</p></li>
+<li><p>For bootstrap analyses it is often quicker to create a set of bootstrap datasets. these datasets individually are large and collectively would overrun the usable space on FASSE. instead, store the temporary datasets in scratch and then have your bootstrap analyses load each individually. delete after use!</p></li>
+</ol>
+<section id="the-lab-has-scratch-spaces-available-within-fasse-and-cannon">
+<h3>The lab has scratch spaces available within FASSE and CANNON:<a class="headerlink" href="#the-lab-has-scratch-spaces-available-within-fasse-and-cannon" title="Permalink to this heading">#</a></h3>
+<p>FASSE path:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">holyscratch01</span><span class="o">/</span><span class="n">LABS</span><span class="o">/</span><span class="n">dominici_nsaph</span><span class="o">/</span><span class="n">Lab</span><span class="o">/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">project</span><span class="o">-</span><span class="n">subdirectory</span><span class="o">&gt;</span> 
+</pre></div>
+</div>
+<p>CANNON path:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">holyscratch01</span><span class="o">/</span><span class="n">dominici_lab</span><span class="o">/</span><span class="n">Lab</span><span class="o">/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">project</span><span class="o">-</span><span class="n">subdirectory</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p><strong>How to use the scratch folder?</strong> Create your own directory in this scratch space using your project name. For example, if your FASSE project name is <code class="docutils literal notranslate"><span class="pre">heat-stress-project</span></code>, then create a folder within the FASSE scratch folder:</p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">/n/holyscratch01/LABS/dominici_nsaph/Lab/projects/heat-stress-project</span></code></p>
+<p>Instead of storing large files in your local project folder, write temporary files in this path.</p>
+<p><strong>Use a symlink to a scratch folder</strong> Ideally, you should not include full paths in a repository’s code. To avoid including full paths in your code, create a symlink to the scratch folder inside the <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder of your project using. <code class="docutils literal notranslate"><span class="pre">data/</span></code> will contains a shortcut link to the scratch folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">holyscratch01</span><span class="o">/</span><span class="n">LABS</span><span class="o">/</span><span class="n">dominici_nsaph</span><span class="o">/</span><span class="n">Lab</span><span class="o">/&lt;</span><span class="n">project_name</span><span class="o">&gt;</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>When you write or read a file use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># In R</span>
+<span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+<span class="n">write_csv</span><span class="p">(</span><span class="s2">&quot;data/intermediate/&lt;project_name&gt;/&lt;filename&gt;&quot;</span><span class="p">)</span>
+<span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/intermediate/&lt;project_name&gt;/&lt;filename&gt;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># In Python</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span><span class="o">.</span><span class="n">write_csv</span><span class="p">(</span><span class="s2">&quot;data/intermediate/&lt;project_name&gt;/&lt;filename&gt;&quot;</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/intermediate/&lt;project_name&gt;/&lt;filename&gt;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To force Github to ignore file changes in the scrath folder, you will need to add a <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> inside your data folder. Here is an example of the gitignore file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>*
+!*/
+!.gitignore
+!README.md
+</pre></div>
+</div>
+</section>
 <section id="note">
 <h3>Note:<a class="headerlink" href="#note" title="Permalink to this heading">#</a></h3>
 <p>The terminology of CPUs, nodes, and cores can be confusing in FASSE. One node is like a computer, and it contains one CPU and many cores. The multiple cores can do calculations at the same time. When requesting a job in FASSE, you request a portion of a node. However, the Slurm job management system refers to CPUs as the cores of the CPU.</p>
@@ -680,7 +730,9 @@ all files of a certain format like <code class="docutils literal notranslate"><s
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-create-a-git-repository-on-github">Step 4. Create a git repository on GitHub</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-analytic-data">Step 5. Analytic Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-setting-up-r-and-rstudio">Step 6. Setting up R and RStudio</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-organize-your-folder">Step 7. Organize your folder</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-organize-your-folder">Step 7. Organize your folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-scratch-space">Step 8. Scratch Space</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lab-has-scratch-spaces-available-within-fasse-and-cannon">The lab has scratch spaces available within FASSE and CANNON:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#note">Note:</a></li>
 </ul>
 </li>
