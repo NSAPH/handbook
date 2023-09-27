@@ -27,7 +27,7 @@ parts:
     - file: analytic
     - file: superset
     - file: dataverse
-  - caption: Infrastructure and Tools
+  - caption: Computing Infrastructure 
     chapters:
     - file: fasse
     - file: fasse_partitions
