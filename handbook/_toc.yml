@@ -38,8 +38,9 @@ parts:
     - file: vscode    
     - file: docs
     - file: singularity
+  - caption: Reproducibility 
     - url: https://swcarpentry.github.io/git-novice/
-      title: Git tutorial    
+      title: Git tutorial 
   - caption: DORIEH Database 
     chapters:
     - file: superset
