@@ -33,13 +33,13 @@ parts:
     - file: fasse_github
     - file: rstudio
     - file: cannon
-    - file: collaborative
     - file: vscode    
     - file: docs
     - file: singularity
   - caption: Reproducibility 
     chapters: 
     - file: analysis
+    - file: collaborative
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial 
   - caption: DORIEH Database 
