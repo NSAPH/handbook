@@ -1,4 +1,4 @@
-# Dataverse
+# Data Sharing using Harvard Dataverse
 
 There are three NSAPH collections at [Harvard Dataverse](https://dataverse.harvard.edu):
 
