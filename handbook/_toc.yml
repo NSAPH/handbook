@@ -5,8 +5,8 @@ root: intro
 parts:
   - caption: Policies and Trainings
     chapters:
-   - url: https://drive.google.com/file/d/1cRRfvqyDyPLEyzXLzEKigt-JFqyRpOsB/view?usp=sharing
-      title: Data/Compute Access Policies
+ #  - url: https://drive.google.com/file/d/1cRRfvqyDyPLEyzXLzEKigt-JFqyRpOsB/view?usp=sharing
+   #   title: Data/Compute Access Policies
         - file: dua
         - file: trainings
     - caption: User On-Boarding/Off-Boarding Forms
