@@ -35,7 +35,6 @@ parts:
     - file: cannon
     - file: collaborative
     - file: vscode    
-    - file: rce
     - file: docs
     - file: singularity
     - url: https://swcarpentry.github.io/git-novice/
