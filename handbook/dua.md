@@ -1,4 +1,4 @@
-# NSAPH Data Usage Policies
+# Data Usage Policies
 
 We would like to take this opportunity to make sure that all FASSE users have read the following
 usage policy and agree to it. Please take a few minutes to read the information below.
