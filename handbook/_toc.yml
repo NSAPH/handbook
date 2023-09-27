@@ -50,7 +50,7 @@ parts:
   - caption: NSAPH Data Science Support Team  
     chapters:
     - file: team 
-  - caption: References
-    chapters:
-    - file: references
+#  - caption: References
+#    chapters:
+#    - file: references
 
