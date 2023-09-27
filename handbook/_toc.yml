@@ -20,7 +20,7 @@ parts:
     - file: lifecycle
     - url: https://docs.google.com/forms/d/e/1FAIpQLSepWKdonUYVyAf2y3sz3g4vpGRgdYBF-NcPvPv4K_nIJAUmVg/viewform?usp=sf_link
       title: Project Initiation Form    
-  - caption: Data
+  - caption: Data Management
     chapters:  
     - file: data 
     - file: analytic
