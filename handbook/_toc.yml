@@ -23,8 +23,8 @@ parts:
   - caption: Data
     chapters:  
     - file: data 
-    - file: mcbs
     - file: analytic
+    - file: mcbs
     - file: dataverse   
   - caption: Computing Infrastructure 
     chapters:
