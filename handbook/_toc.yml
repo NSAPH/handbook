@@ -34,7 +34,6 @@ parts:
     - file: rstudio
     - file: cannon
     - file: vscode    
-    - file: docs
     - file: singularity
   - caption: Reproducibility 
     chapters: 
@@ -42,6 +41,7 @@ parts:
     - file: collaborative
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial 
+    - file: docs
   - caption: DORIEH Database 
     chapters:
     - file: superset
