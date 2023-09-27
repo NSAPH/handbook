@@ -1,7 +1,7 @@
 # The team
 
-Michelle Audirac, Senior Programmer
-
+**Michelle Audirac, Senior Programmer
+**
 Ask me about: data processing pipelines, data support tasks, GitHub
 
 Kezia Irene, Programmer
