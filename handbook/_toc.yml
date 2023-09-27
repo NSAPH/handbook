@@ -3,6 +3,13 @@
 format: jb-book
 root: intro 
 parts:
+  - caption: Policies and Trainings
+    chapters:
+   - url: https://drive.google.com/file/d/1cRRfvqyDyPLEyzXLzEKigt-JFqyRpOsB/view?usp=sharing
+      title: Data/Compute Access Policies
+        - file: dua
+            - file: trainings
+
     - caption: User On-Boarding/Off-Boarding Forms
     chapters:
     - url: https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform
@@ -18,15 +25,11 @@ parts:
     
   - caption: Data
     chapters:  
-    - url: https://drive.google.com/file/d/1cRRfvqyDyPLEyzXLzEKigt-JFqyRpOsB/view?usp=sharing
-      title: Data/Compute Access Policies
-    - file: dua
     - file: data 
     - file: mcbs
     - file: analytic
     - file: superset
     - file: dataverse
-    - file: trainings
 
   - caption: Infrastructure and Tools
     chapters:
