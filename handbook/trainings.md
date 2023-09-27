@@ -1,4 +1,4 @@
-# NSAPH Required Trainings
+# Required Trainings
 
 Data Security trainings are a required component of the NSAPH on-boarding process.
 We require three trainings:
