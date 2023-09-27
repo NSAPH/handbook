@@ -48,7 +48,7 @@ parts:
     chapters:
     - url: https://nsaph-software.github.io/intro.html
       title: NSAPH Software Website
-  - caption: The Team 
+  - caption: NSAPH Data Science Support Team  
     chapters:
     - file: team 
   - caption: References
