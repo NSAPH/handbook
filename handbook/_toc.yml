@@ -5,11 +5,11 @@ root: intro
 parts:
   - caption: Policies and Trainings
     chapters:
- #  - url: https://drive.google.com/file/d/1cRRfvqyDyPLEyzXLzEKigt-JFqyRpOsB/view?usp=sharing
-   #   title: Data/Compute Access Policies
-        - file: dua
-        - file: trainings
-    - caption: User On-Boarding/Off-Boarding Forms
+    - url: https://drive.google.com/file/d/1cRRfvqyDyPLEyzXLzEKigt-JFqyRpOsB/view?usp=sharing
+      title: Data/Compute Access Policies
+    - file: dua
+    - file: trainings
+  - caption: User On-Boarding/Off-Boarding Forms
     chapters:
     - url: https://docs.google.com/forms/d/e/1FAIpQLSe7b1-1IM9HsgvImDqzKVK5iK8i2iYSBXAVeAGo0zim-ekn2w/viewform
       title: On-Boarding Form  
@@ -17,8 +17,8 @@ parts:
       title: Off-Boarding Form
  - caption: Project Management
     chapters:   
-- file: lifecycle
-- url: https://docs.google.com/forms/d/e/1FAIpQLSepWKdonUYVyAf2y3sz3g4vpGRgdYBF-NcPvPv4K_nIJAUmVg/viewform?usp=sf_link
+    - file: lifecycle
+    - url: https://docs.google.com/forms/d/e/1FAIpQLSepWKdonUYVyAf2y3sz3g4vpGRgdYBF-NcPvPv4K_nIJAUmVg/viewform?usp=sf_link
       title: Project Initiation Form    
   - caption: Data
     chapters:  
