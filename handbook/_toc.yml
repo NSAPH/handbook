@@ -25,8 +25,7 @@ parts:
     - file: data 
     - file: mcbs
     - file: analytic
-    - file: superset
-    - file: dataverse
+    - file: dataverse   
   - caption: Computing Infrastructure 
     chapters:
     - file: fasse
@@ -40,7 +39,10 @@ parts:
     - file: docs
     - file: singularity
     - url: https://swcarpentry.github.io/git-novice/
-      title: Git tutorial
+      title: Git tutorial    
+  - caption: DORIEH Database 
+    chapters:
+    - file: superset
     - url: https://github.com/NSAPH/data-paltform-internal-docs
       title: Data-Platform Internal Docs
   - caption: Software
