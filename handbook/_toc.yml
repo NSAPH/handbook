@@ -38,6 +38,7 @@ parts:
     - file: docs
     - file: singularity
   - caption: Reproducibility 
+    chapters: 
     - file: analysis
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial 
