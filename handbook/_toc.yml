@@ -31,7 +31,6 @@ parts:
     - file: fasse
     - file: fasse_partitions
     - file: fasse_github
-    - file: analysis
     - file: rstudio
     - file: cannon
     - file: collaborative
@@ -39,6 +38,7 @@ parts:
     - file: docs
     - file: singularity
   - caption: Reproducibility 
+    - file: analysis
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial 
   - caption: DORIEH Database 
