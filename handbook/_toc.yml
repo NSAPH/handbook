@@ -43,7 +43,6 @@ parts:
     chapters:
     - url: https://nsaph-software.github.io/intro.html
       title: NSAPH Software Website
-    - file: software
   - caption: The Team 
     chapters:
     - file: team 
