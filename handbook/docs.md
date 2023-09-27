@@ -1,4 +1,4 @@
-# Documentation
+# Workflow Documentation
 
 This section will give you some general guidelines on documenting your analysis data and code.
 
