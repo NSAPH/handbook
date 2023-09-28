@@ -5,7 +5,7 @@ root: intro
 parts:
   - caption: Policies and Trainings
     chapters:
-    - url: https://drive.google.com/file/d/1cRRfvqyDyPLEyzXLzEKigt-JFqyRpOsB/view?usp=sharing
+    - url: https://drive.google.com/file/d/1bnQ0ycSlrGDphc5dvHGrqoyJD4lKrr82/view?usp=sharing
       title: Data/Compute Access Policies
     - file: dua
     - file: trainings
