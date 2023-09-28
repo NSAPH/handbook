@@ -25,6 +25,8 @@ parts:
     - file: data 
     - file: analytic
     - file: mcbs
+    - url: https://docs.google.com/document/d/1Nu6YG0NTazTW-jgWZgIlszdL1BUbPNCs5wXrPfK5XjM/edit?usp=sharing
+      title: Data Mangement Plan Template
     - file: dataverse   
   - caption: Computing Infrastructure 
     chapters:
