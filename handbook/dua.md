@@ -52,3 +52,9 @@ the `git status` command before committing to confirm what you are committing.*
 **4. Use a Symbolic link to read in data from your project folder.**
 
 *In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under `/n/dominici_nsaph_l3/Lab/projects`. **Please do not copy the data**; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click [here](https://nsaph.github.io/handbook/fasse.html#step-5-analytic-data).*
+
+**Useful links on data privacy **
+- "Why Anonymous Data Sometimes Isn't" 
+SCHNEIER, B. (2007), "Why Anonymous Data Sometimes Isn't", WIRED, [https://www.wired.com/2007/12/why-anonymous-data-sometimes-isnt/](https://www.wired.com/2007/12/why-anonymous-data-sometimes-isnt/) 
+- "Harvard Professor Re-Identifies Anonymous Volunteers In DNA Study"
+Adam Tanner (2013), Harvard Professor Re-Identifies Anonymous Volunteers In DNA Study, FORBES, [https://www.forbes.com/sites/adamtanner/2013/04/25/harvard-professor-re-identifies-anonymous-volunteers-in-dna-study/?sh=7964abc92c9b] (https://www.forbes.com/sites/adamtanner/2013/04/25/harvard-professor-re-identifies-anonymous-volunteers-in-dna-study/?sh=7964abc92c9b)
