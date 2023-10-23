@@ -57,4 +57,4 @@ the `git status` command before committing to confirm what you are committing.*
 - "Why Anonymous Data Sometimes Isn't" 
 SCHNEIER, B. (2007), "Why Anonymous Data Sometimes Isn't", WIRED, [https://www.wired.com/2007/12/why-anonymous-data-sometimes-isnt/](https://www.wired.com/2007/12/why-anonymous-data-sometimes-isnt/) 
 - "Harvard Professor Re-Identifies Anonymous Volunteers In DNA Study"
-Adam Tanner (2013), Harvard Professor Re-Identifies Anonymous Volunteers In DNA Study, FORBES, [https://www.forbes.com/sites/adamtanner/2013/04/25/harvard-professor-re-identifies-anonymous-volunteers-in-dna-study/?sh=7964abc92c9b] (https://www.forbes.com/sites/adamtanner/2013/04/25/harvard-professor-re-identifies-anonymous-volunteers-in-dna-study/?sh=7964abc92c9b)
+Adam Tanner (2013), Harvard Professor Re-Identifies Anonymous Volunteers In DNA Study, FORBES, [https://www.forbes.com/sites/adamtanner/2013/04/25/harvard-professor-re-identifies-anonymous-volunteers-in-dna-study/?sh=7964abc92c9b](https://www.forbes.com/sites/adamtanner/2013/04/25/harvard-professor-re-identifies-anonymous-volunteers-in-dna-study/?sh=7964abc92c9b)
