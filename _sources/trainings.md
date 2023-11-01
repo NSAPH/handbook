@@ -1,7 +1,7 @@
 # Required Trainings
 
 Data Security trainings are a required component of the NSAPH on-boarding process.
-We require three trainings:
+We require three trainings from all the research team members with access to regulated data:
 1. CITI- Social and Behavioral/Biomedical Research Investigators Training
 2. CITI- Yearly Data Security/Information Privacy and Security (IPS) Training
 3. [Additional NSAPH Data Security Training](https://docs.google.com/forms/d/e/1FAIpQLScU69szWvPCPhrcXhT8959B3osxn6KW5vzTyOMpdzb8FQlhEw/viewform)
@@ -30,7 +30,7 @@ Please note:
 
 ## Yearly Data Security/Information Privacy and Security (IPS) Training
 
-Because our research lab works with sensitive data, the IRB made it a requirement that all researchers complete a yearly Data Security Training on the CITI portal.
+Because our research lab works with sensitive data, the IRB made it a requirement that all the research team members with access to regulated data complete a yearly Data Security Training on the CITI portal.
 Please complete the CITI module "Information Privacy and Security for Researchers” to fulfill this requirement (see below screenshots for more details).
 
 ```{note}
