@@ -3,7 +3,7 @@
 The handbook offers information on data, software, and analysis.
 
 ## Mission and Core Values
-Find the group's Mission statement and Core Research Values and Workplace Values [here.](https://docs.google.com/document/d/1Xn2hAWo4WQrJ7nPQbtR4AEWCU9Y42pxIVw-OP6zKkwY/edit?usp=sharing)
+Find the group's Mission statement and Core Research Values and Workplace Values [here.](https://docs.google.com/document/d/1PMjUzXyaohMVkPNZR-HGe-1HehhdLUKrD0MgPxgI5y8/edit?usp=sharing)
 
 ## Web page
 
