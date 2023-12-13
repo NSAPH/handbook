@@ -24,7 +24,6 @@ parts:
     chapters:  
     - url: https://www.dropbox.com/request/WIo8w6lOR1UPGuEK3Gcl
       title: AWS File Import Request
-    - file: AWS-Export
     - file: data 
     - file: analytic
     - file: mcbs
