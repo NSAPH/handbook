@@ -18,12 +18,10 @@ parts:
   - caption: Project Management
     chapters:   
     - file: lifecycle
-    - url: https://docs.google.com/forms/d/e/1FAIpQLSepWKdonUYVyAf2y3sz3g4vpGRgdYBF-NcPvPv4K_nIJAUmVg/viewform?usp=sf_link
+    - url: https://docs.google.com/forms/d/e/1FAIpQLScNPmdDpoBTizB2r5lb5sNqsl8fA94wqu5lnS6imNJ2nf476w/viewform?usp=sf_link
       title: Project Initiation Form    
   - caption: Data Management
     chapters:  
-    - url: https://www.dropbox.com/request/WIo8w6lOR1UPGuEK3Gcl
-      title: AWS File Import Request
     - file: data 
     - file: analytic
     - file: mcbs
