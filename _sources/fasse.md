@@ -2,7 +2,7 @@
 
 The following are instructions for logging in to FASSE and setting up your own workspace.
 
-## Prerequisites. Join our project group
+## Step 1. Join our project group
 
 1. Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
 2. Navigate to the [Add Grants page](https://portal.rc.fas.harvard.edu/request/grants/add) in portal, you will need to login with your FASRC account
@@ -12,7 +12,7 @@ The following are instructions for logging in to FASSE and setting up your own w
 
 Your PI will have to approve the addition.  Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.
 
-## Step 1. Connect to Harvard's VPN 
+## Step 2. Connect to Harvard's VPN 
 
 Install [Cisco AnyConnect client](https://vpn.rc.fas.harvard.edu/) to connect to the FASRC VPN. 
 Install 2FA, i.e., Google Authenticator for FASRC. Set it up as explained [here](https://docs.rc.fas.harvard.edu/kb/openauth/).
@@ -39,7 +39,7 @@ CMS prohibits accessing data while outside of the U.S., this includes not only o
 submitting code/jobs to run on the data. 
 ```
 
-## Step 2. Access FASSE 
+## Step 3. Access FASSE 
 
 There are a few ways to access FASSE. You can access it via VDI/OoD (in the web browser) by clicking the link here:
 https://fasseood.rc.fas.harvard.edu/ 
@@ -56,7 +56,7 @@ The username, password and verification code are the same as in the previous ste
 For more information, see the [official documentation](https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/).
 ```
 
-## Step 3. Project workspace
+## Step 4. Project workspace
 
 Your **project name** should be informative for the group members and outsiders. 
 Think of a **project name** in the following format:
@@ -92,7 +92,7 @@ Use your **project name** folder in `/n/dominici_nsaph_l3/Lab/projects` as a wor
 for your analysis data and code. 
 ```
 
-## Step 4. Create a git repository on GitHub
+## Step 5. Create a git repository on GitHub
 
 Navigate to [NSAPH Projects GitHub organization](https://github.com/NSAPH-Projects) in your web browser.
 [NSAPH Projects GitHub organization](https://github.com/NSAPH-Projects) is a shared account where all NSAPH members 
@@ -120,7 +120,7 @@ While you may find FASRC documents suggesting the use of SSH to your repositorie
 The prompt for your password is NOT your actual Github password. Instead, you need to enter the generated token in replacement of the password. See how to generate token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token).
 ```
 
-## Step 5. Analytic Data
+## Step 6. Analytic Data
 
 Much of the NSAPH data is already available on FASSE. 
 Check out the data catalogue [here](https://nsaph.github.io/handbook/analytic.html).
@@ -136,7 +136,7 @@ cd data
 ln -s ../analytic/DATA_FOLDER .
 ```
 
-## Step 6. Setting up R and RStudio
+## Step 7. Setting up R and RStudio
 
 To load R and install packages, follow [these directions](https://docs.rc.fas.harvard.edu/kb/r-packages/). 
 If you're using RStudio, you'll need your `R_LIBS_USER` path to set up the interactive session.
@@ -152,7 +152,7 @@ If you are using R software in your analysis, have a look at best practices and 
 [here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
 ```
 
-## Step 7. Organize your folder
+## Step 8. Organize your folder
 
 Consider organizing your project folder (and repository) as follows:
 
@@ -192,7 +192,7 @@ data/
 *.rst
 ```
 
-## Step 8. Scratch Space
+## Step 9. Scratch Space
 
 A scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical. The scratch datasystem is highly optimized for high-throughput file read/write. This means if you have to do lots of edits to large files or work with many small files, scratch may provide a more efficient means of operating.
 
