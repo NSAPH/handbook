@@ -33,7 +33,7 @@ parts:
     - file: fasse
     - file: fasse_partitions
     - file: fasse_github
-    - url: https://docs.google.com/document/d/1b8M0fqLhMAT7Qa45Jm1xGVduFoh2ukBJEwlnzqo3oZM/edit?usp=sharing
+    - file: fasse_efficient
       title: Efficient Resource Utilization on FASSE
     - file: rstudio
     - file: cannon
