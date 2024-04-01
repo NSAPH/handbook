@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Working on RCE &#8212; NSAPH Handbook</title>
+    <title>Efficient Resource Utilization on FASSE &#8212; NSAPH Handbook</title>
   
   
   
@@ -62,9 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rce';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'fasse_efficient';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using RStudio on FASSE" href="rstudio.html" />
+    <link rel="prev" title="FASSE and GitHub Project Work" href="fasse_github.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -193,11 +195,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="dataverse.html">Data Sharing using Harvard Dataverse</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Computing Infrastructure</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="fasse.html">How to access CMS data on FASSE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fasse_github.html">FASSE and GitHub Project Work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_efficient.html">Efficient Resource Utilization on FASSE</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Efficient Resource Utilization on FASSE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rstudio.html">Using RStudio on FASSE</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="cannon.html">Getting started on CANNON</a></li>
@@ -295,7 +297,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Frce.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Ffasse_efficient.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -325,7 +327,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/rce.md" target="_blank"
+      <li><a href="_sources/fasse_efficient.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -409,7 +411,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Working on RCE</h1>
+    <h1>Efficient Resource Utilization on FASSE</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -419,9 +421,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#access-rce">Access RCE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-rstudio-on-rce">Running RStudio on RCE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rce-conda-environment">RCE Conda environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fairshare-policy">Fairshare Policy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-the-jobs-efficiency">Monitoring the Jobs Efficiency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices-in-using-fasse">Best Practices in Using FASSE</a></li>
 </ul>
             </nav>
         </div>
@@ -433,46 +435,131 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="working-on-rce">
-<h1>Working on RCE<a class="headerlink" href="#working-on-rce" title="Permalink to this heading">#</a></h1>
-<p>Unless you are at Harvard and connected to the Harvard network, you will first need to connect to the Harvard’s VPN (<a class="reference external" href="https://vpn.harvard.edu/">https://vpn.harvard.edu/</a>) through the Cisco AnyConnect application in order to work on the Research Computing Environment (RCE).</p>
-<p>See the official RCE documentation here: <a class="reference external" href="https://rce-docs.hmdc.harvard.edu">https://rce-docs.hmdc.harvard.edu</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The RCE is no longer maintained and the users should plan for their transition to FASSE.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="efficient-resource-utilization-on-fasse">
+<h1>Efficient Resource Utilization on FASSE<a class="headerlink" href="#efficient-resource-utilization-on-fasse" title="Permalink to this heading">#</a></h1>
+<p>As members of our research group, we share the responsibility to ensure that our computational resources on the Slurm cluster are used efficiently. To promote fair and effective use, please take a moment to review the following guidelines on resource requests and usage.</p>
+<section id="fairshare-policy">
+<h2>Fairshare Policy<a class="headerlink" href="#fairshare-policy" title="Permalink to this heading">#</a></h2>
+<p>Fairshare determines the fraction of system resources allocated to users, assigning scores to users based on their resource usage, and establishing priority levels for users based on these scores. Given that FASSE users come from different groups that have different resource needs, Fairshare aims to establish a method for prioritizing job allocation. This allows users who haven’t fully utilized their allocated resources to receive higher priority for their jobs, ensuring that groups that have exceeded their resource allocation do not monopolize the system.</p>
+<p>Read more about the Farishare policy <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/fairshare/">here</a>.</p>
+<p>You can check which accounts are associated with your username by running the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sacctmgr<span class="w"> </span>show<span class="w"> </span>assoc<span class="w"> </span><span class="nv">user</span><span class="o">=</span><span class="nv">$USER</span><span class="w"> </span><span class="nv">format</span><span class="o">=</span>account
+</pre></div>
 </div>
-<section id="access-rce">
-<h2>Access RCE<a class="headerlink" href="#access-rce" title="Permalink to this heading">#</a></h2>
-<p>You can access the RCE in the three following ways:</p>
-<ol class="arabic simple">
-<li><p>In the command line with: <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">username&#64;rce.hmdc.harvard.edu</span></code></p></li>
-<li><p>In the web browser at: <a class="reference external" href="https://rce.hmdc.harvard.edu/nxwebplayer">https://rce.hmdc.harvard.edu/nxwebplayer</a></p></li>
-<li><p>In <a class="reference external" href="https://rce-docs.hmdc.harvard.edu/nx4_installation">the NoMachine software</a>.</p></li>
-</ol>
+<p>These are all accounts that you can use to submit jobs. Please use the appropriate account when submitting jobs to the cluster.<br />
+Each lab has a seperate account, and the fairshare is calculated based on the usage of all users in that account.
+You can take a look at the lab’s fairshare using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sshare<span class="w"> </span>--account<span class="o">=</span>dominici_lab
+</pre></div>
+</div>
+<p>The fairshare score is a number between 0 and 1. According to FASRC documentation:</p>
+<ul class="simple">
+<li><p><strong>1.0</strong>: Unused. The Account has not initiated any jobs recently.</p></li>
+<li><p><strong>1.0 &gt; f &gt; 0.5</strong>: Underutilization. The Account is not fully utilizing their allocated Share.</p></li>
+<li><p><strong>0.5</strong>: Average utilization. The Account is utilizing resources exactly in proportion to their allocated Share.</p></li>
+<li><p><strong>0.5 &gt; f &gt; 0</strong>: Over-utilization. The Account has exceeded their allocated Share.</p></li>
+<li><p><strong>0</strong>: Exhausted Share. The Account has significantly exceeded their allocated Share. However, if there is no competition for resources, their jobs will still be initiated.</p></li>
+</ul>
+<p>Execute the command below to display a list of the lab’s users by their usage.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sshare<span class="w"> </span>--account<span class="o">=</span>dominici_lab<span class="w"> </span>--all
+</pre></div>
+</div>
+<p>Please note that the fairshare score recovers with time. This happens with attenuting the raw usage based on 3 days halflife. Thus work done in the last 3 days counts at full cost, work done 6 days ago costs half, work done 9 days ago one fourth, and so on. So, if the lab wants to recover the fairshare, they need to stop submitting job for a couple of days. The exact number of days for reaching a taget value can be computed using the <code class="docutils literal notranslate"><span class="pre">scalc</span></code> command.</p>
+<ul class="simple">
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">scalc</span></code> and press enter. This will ask the several questions, please responde it as follows:</p>
+<ul>
+<li><p>Select: 3 and press enter. (<code class="docutils literal notranslate"><span class="pre">3)</span> <span class="pre">Projected</span> <span class="pre">Time</span> <span class="pre">to</span> <span class="pre">Reach</span> <span class="pre">FairShare</span> <span class="pre">Score</span> <span class="pre">Assuming</span> <span class="pre">No</span> <span class="pre">New</span> <span class="pre">Jobs</span></code>)</p></li>
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">dominici_lab</span></code> and press enter.</p></li>
+<li><p>Enter traget fairshare (e.g., 0.9)</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The fairshare score is determined by the accumulated raw usage specific to your lab, rather than the broader NSAPH group. Every Principal Investigator (PI) oversees their respective lab and maintains an independent fairshare account.</p>
+</div>
 </section>
-<section id="running-rstudio-on-rce">
-<h2>Running RStudio on RCE<a class="headerlink" href="#running-rstudio-on-rce" title="Permalink to this heading">#</a></h2>
-<p>Inside the browser or NoMachine interface run the following application: <code class="docutils literal notranslate"><span class="pre">Menu</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Applications</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">RCE</span> <span class="pre">Powered</span> <span class="pre">Applications</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Shell</span></code> (see figure below).</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="_images/img.png"><img alt="_images/img.png" src="_images/img.png" style="width: 551.7px; height: 429.3px;" /></a>
-</figure>
-<p>Set the number of CPUs and the memory size for your job. Make sure that the allocated memory exceeds
-the size of the data you want to process. For instance, if your dataset is 20 GB in size, allocate
-40 GB or 60 GB of memory.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="_images/job_size.png"><img alt="_images/job_size.png" src="_images/job_size.png" style="width: 434.4px; height: 153.0px;" /></a>
-</figure>
-<p>When the shell is open, run the following commands to load the NSAPH’s R environment and the RStudio.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">CONDA_ENVS_PATH</span><span class="o">=</span>/nfs/projects/n/nsaph_common/conda/envs/
-<span class="nb">export</span><span class="w"> </span><span class="nv">CONDA_PKGS_PATH</span><span class="o">=</span>/nfs/projects/n/nsaph_common/conda/pkgs/
-<span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>nsaph
-rstudio
+<section id="monitoring-the-jobs-efficiency">
+<h2>Monitoring the Jobs Efficiency<a class="headerlink" href="#monitoring-the-jobs-efficiency" title="Permalink to this heading">#</a></h2>
+<p>It is the responsibility of each lab member to ensure their computations are efficient. Your fair share is calculated based on the resources you request (excluding time), not on the resources actually used. Please consider the following scenario:</p>
+<ul class="simple">
+<li><p>A request is made for 250 GB of memory and 24 CPU cores for a duration of 10 hours.</p></li>
+<li><p>The application consumes 16 GB of memory and 1 CPU core over 1.5 hours.</p></li>
+</ul>
+<p>Your lab will be charged for:</p>
+<ul class="simple">
+<li><p>250 GB of Memory, 24 CPU cores for 1.5 hours.</p></li>
+</ul>
+<p>As you can observe, you won’t be charged for 10 hours; however, your job is likely to receive lower priority due to its extended duration. In this scenario, requesting resources for 2 hours could result in quicker access compared to a 10-hour request.</p>
+<p>Each partition node has different unit price. Please read the Trackable RESources(TRES) section of the <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/fairshare/">Fairshare and Job Accounting</a>.</p>
+<p>A direct method to assess the efficiency of a job is to utilize the <code class="docutils literal notranslate"><span class="pre">seff</span></code> command. When the job is completed, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>seff<span class="w"> </span>&lt;job<span class="w"> </span>id&gt;
+</pre></div>
+</div>
+<p>This measures your job’s efficiency based on %CPU and %Memory usage compared to the resources requested. Low values indicate an overestimation of needed resources, leading to inefficient resource utilization. This not only depletes resources unnecessarily but also increases wait times for upcoming lab jobs.</p>
+<p>Lab moderators can use the <code class="docutils literal notranslate"><span class="pre">sreport</span></code> command to see the usage of the resources by the team in the specific period of time, for example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sreport<span class="w"> </span>cluster<span class="w"> </span>AccountUtilizationByUser<span class="w"> </span><span class="nv">account</span><span class="o">=</span>dominici_lab<span class="w"> </span><span class="nv">Start</span><span class="o">=</span><span class="m">2024</span>-03-21<span class="w"> </span><span class="nv">End</span><span class="o">=</span><span class="m">2024</span>-03-28
 </pre></div>
 </div>
 </section>
-<section id="rce-conda-environment">
-<h2>RCE Conda environment<a class="headerlink" href="#rce-conda-environment" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://github.com/NSAPH/CausalGPS-test/blob/main/Analyses/scaling_synthetic_rce_1/scaling_synthetic_rce.md#steps-for-setting-up-environment">Steps for setting up a Conda environment</a></p>
+<section id="best-practices-in-using-fasse">
+<h2>Best Practices in Using FASSE<a class="headerlink" href="#best-practices-in-using-fasse" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>FASSE is for L3 data</strong></p>
+<ul>
+<li><p>Utilize FASSE exclusively for handling sensitive and L3 data. For other computations, such as those involving simulated data, please transition to Cannon.</p></li>
+</ul>
+</li>
+<li><p><strong>Understanding your needs</strong></p>
+<ul>
+<li><p>Ensure you fully understand the resource requirements of your job before submission.</p></li>
+<li><p>Conduct small-scale tests or pilot runs to assess the CPU and memory requirements. For instance:</p>
+<ul>
+<li><p>For bootstrap analysis, initially run 10 iterations instead of 100. Afterwards, utilize the <code class="docutils literal notranslate"><span class="pre">seff</span> <span class="pre">&lt;job-id&gt;</span></code> command to evaluate job efficiency.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Monitoring your jobs</strong></p>
+<ul>
+<li><p>To monitor resource usage in real-time for a running job on a computation node, use <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">node_name</span></code> followed by <code class="docutils literal notranslate"><span class="pre">htop</span></code>.</p></li>
+<li><p>Integrate timing into your code for various segments and opt for logging to review code efficiency more effectively.</p></li>
+<li><p>Begin with lower memory allocations if unsure of requirements. Jobs exceeding memory limits will be terminated by SLURM.</p></li>
+<li><p>Profile your code’s CPU and memory usage by initiating an interactive session with salloc or through Open OnDemand, then use ssh login_node and htop for real-time performance monitoring.</p>
+<ul>
+<li><p>More resources for R: <a class="reference external" href="https://adv-r.hadley.nz/perf-measure.html">Measuring Performance</a></p></li>
+<li><p>More resources for Python: <a class="reference external" href="https://docs.python.org/3/library/profile.html">The Python Profilers</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Array jobs</strong></p>
+<ul>
+<li><p>If running an array-type job (for example bootstrap or multiple models) consider limiting the maximum number of simultaneous jobs. E.g. <code class="docutils literal notranslate"><span class="pre">--array=1-100%20</span></code> will limit to 20 array jobs running at once.</p></li>
+</ul>
+</li>
+<li><p><strong>Test partitions</strong></p>
+<ul>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">test</span></code> partition for testing the code and profiling activities. It does not affect you fairshare.</p></li>
+</ul>
+</li>
+<li><p><strong>Communication</strong></p>
+<ul>
+<li><p>If you anticipate a large or unusual resource request, consider discussing it with the group. This can help ensure that your needs are met without adversely impacting others.</p></li>
+</ul>
+</li>
+<li><p><strong>Other resources</strong></p>
+<ul>
+<li><p>FASSE (and Cannon) documentation provides a wealth of knowledge on best practices and available resources. Familiarize yourself with it to ensure efficient utilization.</p>
+<ul>
+<li><p>Fairshare documentation: <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/fairshare/">https://docs.rc.fas.harvard.edu/kb/fairshare/</a></p></li>
+<li><p>FASSE partitions: <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/fasse/#SLURM_and_Partitions">https://docs.rc.fas.harvard.edu/kb/fasse/#SLURM_and_Partitions</a></p></li>
+<li><p>SLURM: <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/running-jobs/">https://docs.rc.fas.harvard.edu/kb/running-jobs/</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 
@@ -506,6 +593,24 @@ rstudio
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="fasse_github.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">FASSE and GitHub Project Work</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rstudio.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Using RStudio on FASSE</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -521,9 +626,9 @@ rstudio
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#access-rce">Access RCE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-rstudio-on-rce">Running RStudio on RCE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rce-conda-environment">RCE Conda environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fairshare-policy">Fairshare Policy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-the-jobs-efficiency">Monitoring the Jobs Efficiency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices-in-using-fasse">Best Practices in Using FASSE</a></li>
 </ul>
   </nav></div>
 
