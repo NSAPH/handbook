@@ -120,7 +120,23 @@ While you may find FASRC documents suggesting the use of SSH to your repositorie
 The prompt for your password is NOT your actual Github password. Instead, you need to enter the generated token in replacement of the password. See how to generate token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token).
 ```
 
-## Step 6. Analytic Data
+## Step 6. Link your GitHub project with FASSE
+
+In this step, you will initialize a new Git repository for your project, make the initial commit, set the main branch, link the repository to the remote GitHub repository under the NSAPH Projects organization, and push the initial commit to GitHub. This will ensure that your project is properly set up and connected to the remote repository for collaborative work and version control.
+
+Open the terminal on your FASSE workspace and navigate to the directory where your project files are located. Then type the commands below in FASSE's command line. 
+
+```
+echo "# <project_name>" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NSAPH-Projects/<project_name>.git
+git push -u origin main
+```
+
+## Step 7. Analytic Data
 
 Much of the NSAPH data is already available on FASSE. 
 Check out the data catalogue [here](https://nsaph.github.io/handbook/analytic.html).
@@ -136,7 +152,7 @@ cd data
 ln -s ../analytic/DATA_FOLDER .
 ```
 
-## Step 7. Setting up R and RStudio
+## Step 8. Setting up R and RStudio
 
 To load R and install packages, follow [these directions](https://docs.rc.fas.harvard.edu/kb/r-packages/). 
 If you're using RStudio, you'll need your `R_LIBS_USER` path to set up the interactive session.
@@ -152,7 +168,7 @@ If you are using R software in your analysis, have a look at best practices and 
 [here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
 ```
 
-## Step 8. Organize your folder
+## Step 9. Organize your folder
 
 Consider organizing your project folder (and repository) as follows:
 
@@ -192,7 +208,7 @@ data/
 *.rst
 ```
 
-## Step 9. Scratch Space
+## Step 10. Scratch Space
 
 A scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical. The scratch datasystem is highly optimized for high-throughput file read/write. This means if you have to do lots of edits to large files or work with many small files, scratch may provide a more efficient means of operating.
 
