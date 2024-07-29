@@ -426,10 +426,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-access-fasse">Step 3. Access FASSE</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-project-workspace">Step 4. Project workspace</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-create-a-git-repository-on-github">Step 5. Create a git repository on GitHub</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-analytic-data">Step 6. Analytic Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-setting-up-r-and-rstudio">Step 7. Setting up R and RStudio</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-organize-your-folder">Step 8. Organize your folder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-scratch-space">Step 9. Scratch Space</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-link-your-github-project-with-fasse">Step 6. Link your GitHub project with FASSE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-analytic-data">Step 7. Analytic Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-setting-up-r-and-rstudio">Step 8. Setting up R and RStudio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-organize-your-folder">Step 9. Organize your folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-scratch-space">Step 10. Scratch Space</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lab-has-scratch-spaces-available-within-fasse-and-cannon">The lab has scratch spaces available within FASSE and CANNON:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#note">Note:</a></li>
 </ul>
@@ -549,8 +550,22 @@ By doing this, all code contributions (commits) from FASSE will be linked to you
 <p>The prompt for your password is NOT your actual Github password. Instead, you need to enter the generated token in replacement of the password. See how to generate token <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token">here</a>.</p>
 </div>
 </section>
-<section id="step-6-analytic-data">
-<h2>Step 6. Analytic Data<a class="headerlink" href="#step-6-analytic-data" title="Permalink to this heading">#</a></h2>
+<section id="step-6-link-your-github-project-with-fasse">
+<h2>Step 6. Link your GitHub project with FASSE<a class="headerlink" href="#step-6-link-your-github-project-with-fasse" title="Permalink to this heading">#</a></h2>
+<p>In this step, you will initialize a new Git repository for your project, make the initial commit, set the main branch, link the repository to the remote GitHub repository under the NSAPH Projects organization, and push the initial commit to GitHub. This will ensure that your project is properly set up and connected to the remote repository for collaborative work and version control.</p>
+<p>Open the terminal on your FASSE workspace and navigate to the directory where your project files are located. Then type the commands below in FASSE’s command line.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;# &lt;project_name&gt;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+<span class="n">git</span> <span class="n">init</span>
+<span class="n">git</span> <span class="n">add</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;first commit&quot;</span>
+<span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">M</span> <span class="n">main</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">NSAPH</span><span class="o">-</span><span class="n">Projects</span><span class="o">/&lt;</span><span class="n">project_name</span><span class="o">&gt;.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span>
+</pre></div>
+</div>
+</section>
+<section id="step-7-analytic-data">
+<h2>Step 7. Analytic Data<a class="headerlink" href="#step-7-analytic-data" title="Permalink to this heading">#</a></h2>
 <p>Much of the NSAPH data is already available on FASSE.
 Check out the data catalogue <a class="reference external" href="https://nsaph.github.io/handbook/analytic.html">here</a>.</p>
 <p>If you’d like to use any of the analytic datasets, create a symbolic link (symlink) of that dataset instead
@@ -562,8 +577,8 @@ operating system interprets as a path to that file or directory (a shortcut).</p
 </pre></div>
 </div>
 </section>
-<section id="step-7-setting-up-r-and-rstudio">
-<h2>Step 7. Setting up R and RStudio<a class="headerlink" href="#step-7-setting-up-r-and-rstudio" title="Permalink to this heading">#</a></h2>
+<section id="step-8-setting-up-r-and-rstudio">
+<h2>Step 8. Setting up R and RStudio<a class="headerlink" href="#step-8-setting-up-r-and-rstudio" title="Permalink to this heading">#</a></h2>
 <p>To load R and install packages, follow <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">these directions</a>.
 If you’re using RStudio, you’ll need your <code class="docutils literal notranslate"><span class="pre">R_LIBS_USER</span></code> path to set up the interactive session.</p>
 <p>In RStudio, if you want to see files outside of your home directory, you can click the three dots
@@ -577,8 +592,8 @@ your working directory using the command <code class="docutils literal notransla
 <a class="reference external" href="https://www.nature.com/articles/s41597-022-01143-6#Sec18">here</a>.</p>
 </div>
 </section>
-<section id="step-8-organize-your-folder">
-<h2>Step 8. Organize your folder<a class="headerlink" href="#step-8-organize-your-folder" title="Permalink to this heading">#</a></h2>
+<section id="step-9-organize-your-folder">
+<h2>Step 9. Organize your folder<a class="headerlink" href="#step-9-organize-your-folder" title="Permalink to this heading">#</a></h2>
 <p>Consider organizing your project folder (and repository) as follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>project-name
 ├── README.md
@@ -613,8 +628,8 @@ all files of a certain format like <code class="docutils literal notranslate"><s
 </pre></div>
 </div>
 </section>
-<section id="step-9-scratch-space">
-<h2>Step 9. Scratch Space<a class="headerlink" href="#step-9-scratch-space" title="Permalink to this heading">#</a></h2>
+<section id="step-10-scratch-space">
+<h2>Step 10. Scratch Space<a class="headerlink" href="#step-10-scratch-space" title="Permalink to this heading">#</a></h2>
 <p>A scratch space provides a dedicated area for temporary storage and facilitates efficient data processing. It allows you to perform tasks such as data preprocessing, computationally intensive computations, and analysis, while storing intermediate files and temporary results. It is particularly useful in high-performance computing environments, scientific research, and data-intensive tasks where speed, efficiency, and data management are critical. The scratch datasystem is highly optimized for high-throughput file read/write. This means if you have to do lots of edits to large files or work with many small files, scratch may provide a more efficient means of operating.</p>
 <p><strong>When to use a scratch space?</strong> Whenever you need a temporary storage for intermediate data during processing or computations, use it to store data that is being actively manipulated or processed but is not needed for long-term storage.</p>
 <p><strong>Example scratch space usages</strong></p>
@@ -739,10 +754,11 @@ all files of a certain format like <code class="docutils literal notranslate"><s
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-access-fasse">Step 3. Access FASSE</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-project-workspace">Step 4. Project workspace</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-create-a-git-repository-on-github">Step 5. Create a git repository on GitHub</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-analytic-data">Step 6. Analytic Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-setting-up-r-and-rstudio">Step 7. Setting up R and RStudio</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-organize-your-folder">Step 8. Organize your folder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-scratch-space">Step 9. Scratch Space</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-link-your-github-project-with-fasse">Step 6. Link your GitHub project with FASSE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-analytic-data">Step 7. Analytic Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-setting-up-r-and-rstudio">Step 8. Setting up R and RStudio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-organize-your-folder">Step 9. Organize your folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-scratch-space">Step 10. Scratch Space</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lab-has-scratch-spaces-available-within-fasse-and-cannon">The lab has scratch spaces available within FASSE and CANNON:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#note">Note:</a></li>
 </ul>
