@@ -1,4 +1,4 @@
-# How to work on FASSE
+# How to access CMS data on FASSE
 
 The following are instructions for logging in to FASSE and setting up your own workspace.
 
@@ -56,7 +56,7 @@ The username, password and verification code are the same as in the previous ste
 For more information, see the [official documentation](https://docs.rc.fas.harvard.edu/kb/fasse-vdi-apps/).
 ```
 
-## Step 4. Choose your project's short name
+## Step 4. Project workspace
 
 Your **project name** should be informative for the group members and outsiders. 
 Think of a **project name** in the following format:
@@ -73,8 +73,24 @@ For example: `heat_alert-mortality-reinforcement_learning` or shorter `heat_aler
 
 In practice, you may have multiple exposures and outcomes. 
 In that case, use your best judgement for your **project name** based on the guidelines. 
-
 Avoid adding information such as usernames and current date or year.
+
+Next, you should create a folder with your **project name** in the NSAPH projects folder at `/n/dominici_nsaph_l3/Lab/projects`.
+You can do that by opening "File System" in FAS-RC Remote Desktop and navigating to the projects folder (see Fig.).
+
+```{figure} imgs/img_1.png
+---
+scale: 80%
+align: center 
+---
+```
+
+Create there a new folder with your **project name** (ie, `heat_alert-mortality-rl`).
+
+```{note}
+Use your **project name** folder in `/n/dominici_nsaph_l3/Lab/projects` as a workspace 
+for your analysis data and code. 
+```
 
 ## Step 5. Create a git repository on GitHub
 
@@ -86,52 +102,72 @@ can collaborate across many projects at once. If you are not already a member of
 Crete a new git repository under [NSAPH Projects](https://github.com/NSAPH-Projects) and name it with 
 your **project name**.
 
-When creating your new repository, make sure to:
-
-When creating your new repository under NSAPH Projects, be sure to select the **Add a README** file and the **Add a license  option**.
-
-* **Initialize with a README:** Select the "Add a README file" option. This file serves as an introduction to your project and is a good place to describe its purpose, structure, and usage.
-
-* **Choose a License:** From the dropdown menu, select the MIT License. This is a permissive license that allows others to use, modify, and distribute your project with minimal restrictions. 
-
-Once you've made these selections, click Create repository to finalize the setup. Your new repository will now include a README.md file and an LICENSE file, making it easier for others to understand and contribute to your project.
-
-## Step 6. Create your project workspace in FASSE
-
-Access a terminal in FASSE and navigate to the directory `/n/dominici_nsaph_l3/Lab/projects` where the NSAPH project workspaces are located. Then run:
-
-```
-git clone https://github.com/NSAPH-Projects/<project_name> <username>_<project_name>
-```
-
-Notice that the first argument is the URL of your GitHub repository and the second argument is <username>_<project_name>. This will create a local copy of the GitHub repository in FASSE, and your project workspace name is <user_name>_<project_name>.
-
-
->Use your `/n/dominici_nsaph_l3/Lab/projects/<username>_<project_name>` folder as a personal workspace.
->
->If other colleagues are working on the same project and need to create their own workspaces linked to their GitHub accounts, they should follow a similar process. Each person should have their own local copy of the project repository to work independently.
-
-The workspace name will be <user_name>_<project_name>, which ensures that each colleague has a dedicated space. Each colleague can now work independently in their personal workspace while contributing to the same project repository. They can pull updates from the shared repository and push their changes without interfering with others.
-
-```{note}
-If the git prompt asks for your password, do NOT use  Github password. Instead, you need to enter the generated token in replacement of the password. See how to generate token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token).
-```
-
-Going forward, make sure to update your GitHub repository regularly with your analysis code and documentation.
+Going forward, make sure to update your GitHub repository daily with your analysis code and documentation.
 If you are not familiar with using `git`, check out this [git tutorial](https://swcarpentry.github.io/git-novice/). 
 Also, check out [our guidelines](https://nsaph.github.io/handbook/collaborative.html) for collaborative work on GitHub.
 
 ````{note}
-If this is the first time you use github you might have to configure your account in FASSE by typing the commands below in FASSE's command line. 
+You should link your GitHub account to the FASSE workspace by typing the commands below in FASSE's command line. 
+By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
 
 ```
 git config --global user.name "Mona Lisa"
 git config --global user.email "email@example.com"
 ```
-
-By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
 ````
- 
+While you may find FASRC documents suggesting the use of SSH to your repositories, FASSE environments are configured specifically so that the port used for SSH is blocked. Therefore, you should use the HTTPS version of git repo address when VCS your projects. This does mean that you are required to enter username and password each time a sync is performed between remote and the local. 
+```{note}
+The prompt for your password is NOT your actual Github password. Instead, you need to enter the generated token in replacement of the password. See how to generate token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token).
+```
+
+## Step 6. Link your GitHub project with FASSE
+
+In this step, you will initialize a new Git repository for your project, make the initial commit, set the main branch, link the repository to the remote GitHub repository under the NSAPH Projects organization, and push the initial commit to GitHub. This will ensure that your project is properly set up and connected to the remote repository for collaborative work and version control.
+
+Open the terminal on your FASSE workspace and navigate to the directory where your project files are located. Then type the commands below in FASSE's command line. 
+
+```
+echo "# <project_name>" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NSAPH-Projects/<project_name>.git
+git push -u origin main
+```
+
+## Step 7. Analytic Data
+
+Much of the NSAPH data is already available on FASSE. 
+Check out the data catalogue [here](https://nsaph.github.io/handbook/analytic.html).
+
+If you'd like to use any of the analytic datasets, create a symbolic link (symlink) of that dataset instead 
+of creating a new copy. A symbolic link is a reference to another file or directory that the 
+operating system interprets as a path to that file or directory (a shortcut).
+
+This is how you create a symlink from your `data` folder (in the command line):
+
+```
+cd data
+ln -s ../analytic/DATA_FOLDER .
+```
+
+## Step 8. Setting up R and RStudio
+
+To load R and install packages, follow [these directions](https://docs.rc.fas.harvard.edu/kb/r-packages/). 
+If you're using RStudio, you'll need your `R_LIBS_USER` path to set up the interactive session.
+
+In RStudio, if you want to see files outside of your home directory, you can click the three dots 
+on the upper right-hand side of the Files window in RStudio (under the refresh arrow) and type 
+in the directory path you want. If you want to save files outside your home directory, you can change 
+your working directory using the command `setwd([directory path])` in the Console.
+
+```{tip}
+If you are using R software in your analysis, have a look at best practices and recommendations 
+[here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) and 
+[here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
+```
+
 ## Step 9. Organize your folder
 
 Consider organizing your project folder (and repository) as follows:
@@ -170,28 +206,6 @@ data/
 *.csv 
 *.nc
 *.rst
-```
-
-```{tip}
-If you are using R software in your analysis, have a look at best practices and recommendations 
-[here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) and 
-[here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
-```
-
-## Step 7. Analytic Data
-
-Much of the NSAPH data is already available on FASSE. 
-Check out the data catalogue [here](https://nsaph.github.io/handbook/analytic.html).
-
-If you'd like to use any of the analytic datasets, create a symbolic link (symlink) of that dataset instead 
-of creating a new copy. A symbolic link is a reference to another file or directory that the 
-operating system interprets as a path to that file or directory (a shortcut).
-
-This is how you create a symlink from your `data` folder (in the command line):
-
-```
-cd data
-ln -s ../analytic/DATA_FOLDER .
 ```
 
 ## Step 10. Scratch Space
