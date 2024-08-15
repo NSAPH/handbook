@@ -134,28 +134,56 @@ By doing this, all code contributions (commits) from FASSE will be linked to you
  
 ## Step 9. Organize your folder
 
+Deciding on a system of file organization may take some time at the beginning of the project, but it will make it easier for others to interact with your work and it will save you time in the long run. A robust and clear file structure will come in handy when you've spent time away from your project and don't remember where all of your data and analysis scripts are :>
+
 Consider organizing your project folder (and repository) as follows:
 
 ```
 project-name
 ├── README.md
 ├── data/
+├── notes/
 ├── code/
 ├── figures/
-├── reports/
 ├── results/
 └── .gitignore
 ```
 
-```{tip}
-Have a look at the [NSAPH Project Template](https://github.com/NSAPH/project_template). 
-Also, here is another template example for new research projects: https://github.com/djnavarro/newproject/
+Have a look at the [NSAPH Project Template](https://github.com/NSAPH/project_template) for one idea for how to organize your repository. Note that the root of the repository is generally clear of files, save for `README` and `.gitignore` files. Instead, everything is organized into folders and corresponding subdirectories. As noted in the [project template](https://github.com/NSAPH/project_template), subdirectories are an excellent tool of organization and are often underutilized by researchers. Subdirectories segment your data and code, so that only files with similar purposes sit in the same folder.
+
+As an example of subdirectory structure, say your research project deals with hospitalization datasets from Medicare, air pollution datasets at the zip code level, and demographic data from the U.S. Census Bureau. The `data/` folder could then be organized as follows:
+
+```
+├── data/
+    ├── raw/
+        ├── us_census/
+        ├── pm25/
+        ├── cms/
+    ├── intermediate/
+    ├── output/
+    ├── simulation/
 ```
 
-Make sure to use the `README.md` and `.gitignore` special files. A `README.md` file is a standard documentation file where you should put information about the content of your 
-repository. A `.gitignore` file tells Git which files to ignore when committing your project to the GitHub 
-repository. It should be located in the root directory of your repo. Large data file and sensitive data should be 
-ignored by Git.
+The `code/` folder is another great place to implement subdirectory structure. Consider making subdirectory for each component of your analysis, such as:
+```
+├── code/
+    ├── slurm/
+    ├── preprocessing/
+    ├── models/
+    ├── figures/
+```
+
+It may be helpful to start with a smaller number of folders and grow from there. Think of your project like a garden--it's best to start with a plan, but as your garden grows you may decide to add new sections or organize it differently. Also, here is another template example for new research projects: https://github.com/djnavarro/newproject/.
+
+
+### `gitignore` and `readme` files
+
+Make sure to use the `README.md` and `.gitignore` special files. 
+
+A `README.md` file is a standard documentation file where you should put information about the content of your 
+repository. It's the first thing a user sees when they open the repository, so it's important to set the right tone! 
+
+A `.gitignore` file tells Git which files to ignore when committing your project to the GitHub repository. It should be located in the root directory of your repo. Large data files and sensitive data should be ignored by Git. Medicare/Medicaid data should NEVER leave the FASSE cluster, which includes getting pushed to a GitHub repo!
 
 ```{warning}
 Be careful not to push sensitive data on GitHub. Don't forget that Medicare/Medicaid data should not leave Harvard, 
@@ -174,7 +202,7 @@ data/
 
 ```{tip}
 If you are using R software in your analysis, have a look at best practices and recommendations 
-[here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/) and 
+[here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R.html) and 
 [here](https://www.nature.com/articles/s41597-022-01143-6#Sec18).
 ```
 
