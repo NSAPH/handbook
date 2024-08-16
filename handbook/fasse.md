@@ -88,8 +88,6 @@ your **project name**.
 
 When creating your new repository, make sure to:
 
-When creating your new repository under NSAPH Projects, be sure to select the **Add a README** file and the **Add a license  option**.
-
 * **Initialize with a README:** Select the "Add a README file" option. This file serves as an introduction to your project and is a good place to describe its purpose, structure, and usage.
 
 * **Choose a License:** From the dropdown menu, select the MIT License. This is a permissive license that allows others to use, modify, and distribute your project with minimal restrictions. 
