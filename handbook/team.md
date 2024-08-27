@@ -20,7 +20,7 @@ Ask me about: best practices for statistical software development, reproducible 
 
 Ask me about: DUA, IRB, data access, project management
 
-## 6. Catherine Adcock, Program Assistant
+## 6. Catherine Adcock, Program Coordinator
 
 Ask me about: onboarding, offboarding, scheduling
 
