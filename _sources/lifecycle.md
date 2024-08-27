@@ -11,7 +11,7 @@ align: center
 
 1. Create a GitHub account if you do not already have one.
 2. Complete the required NSAPH trainings listed [here](https://nsaph.github.io/handbook/trainings.html).
-3. Submit the [NSAPH On-Boarding Form (https://forms.gle/USwJDP49XQqToUuB9)].
+3. Submit the [NSAPH On-Boarding Form] (https://forms.gle/USwJDP49XQqToUuB9).
 Please note that submitting this form will not give you access to data, this is the first step that needs to be completed for every new user.
 
 ## Starting a New Project & Getting Access to Data
