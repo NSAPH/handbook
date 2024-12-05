@@ -12,7 +12,7 @@ Please note that if your certification has not yet expired for the trainings men
 appropriate box within the NSAPH form.
 ```
 
-## Social and Behavioral/Biomedical Research Investigators Training
+## Social and Behavioral/Biomedical Human Subject Training
 
 Information about the training and the link to the CITI page can be found [here](https://www.hsph.harvard.edu/regulatory-affairs-and-research-compliance/2019/12/10/citi-human-research-training/). Follow the "New CITI Users" instructions if you are a new user.
 
