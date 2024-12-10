@@ -879,9 +879,9 @@ ADRD_secondary: logi
 ```{list-table}
 :header-rows: 0
 * - description
-  - This data contain (annually aggregated) exposure to PM2.5 data, demographic data from census and mortality data + individual level characteristics for the entire Medicare population in 1999-2016. See [Xiao’s paper](https://www.science.org/doi/10.1126/sciadv.aba5692) for processing description. 
+  - aggregate_medicare_data_2010to2016.fst only contains data for year 2011, pm2.5 level in 2010 and 2011 and the mortality in the following 5 years. That is, the dataset contains enrollees of year 2011 and information of 2010 exposures and the outcome is `dead in the following 5 years`. The data is aggregated at the ZIP code level.
 * - dataset_author
-  - Xiao Wu, Ben Sabath
+  - Falco J. Bargagli-Stoffi, Riccardo Cadei
 * - date_created
   - 2020
 * - data_source
@@ -891,17 +891,15 @@ ADRD_secondary: logi
 * - spatial_resolution
   - zipcode
 * - temporal_coverage
-  - 2010-2016
+  - 2011
 * - temporal_resolution
   - Annually
 * - publication
-  - https://www.science.org/doi/10.1126/sciadv.aba5692
+  - Causal Rule Ensemble: Interpretable Discovery and Inference of Heterogeneous Treatment Effects https://arxiv.org/abs/2009.09036
 * - rce_location
   - `~shared_space/ci3_analysis/causal_rule_ensemble /aggregate_medicare_data_2010to2016.fst`
 * - fasse_location
   - `aggregate_medicare_data_2010to2016`
-* - git_repository
-  - https://github.com/wxwx1993/National_Causal
 * - files
   -
 ```
