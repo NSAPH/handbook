@@ -7,7 +7,7 @@ The following are instructions for logging in to CANNON and setting up your own 
 1. Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
 2. Navigate to the [Add Grants page](https://portal.rc.fas.harvard.edu/request/grants/add) in portal, you will need to login with your FASRC account
 3. Expand the plus sign next to “Other”
-4. Find the project group you want to be added to: `dominici_nsaph`
+4. Find the project group you want to be added to: `dominici_lab` (`dominici_nsaph` is for FASSE).
 5. Select the checkbox for the project group you want to be added to 
 
 Your PI will have to approve the addition.  Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.
@@ -87,7 +87,7 @@ align: center
 Create there a new folder with your **project name** (ie, `heat_alert-mortality-rl`).
 
 ```{note}
-Use your **project name** folder in `/n/dominici_nsaph_l3/Lab/projects` as a workspace 
+Use your **project name** folder in `/n/dominici_lab/lab/projects` as a workspace 
 for your analysis data and code. 
 ```
 
@@ -114,7 +114,7 @@ module load Anaconda3/2022.05
 export MY_NSAPH_SSH_USERNAME="USERNAME"
 export MY_NSAPH_SSH_PASSWORD="PASSWORD"
 
-WORK="/n/dominici_nsaph_l3/Lab"
+WORK="/n/dominici_lab/lab"
 ```
 4. Load VS Code, Git, conda using by running your function name in terminal (example `mm`) 
 
