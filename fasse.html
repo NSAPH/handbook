@@ -623,18 +623,18 @@ operating system interprets as a path to that file or directory (a shortcut).</p
 <section id="the-lab-has-scratch-spaces-available-within-fasse-and-cannon">
 <h3>The lab has scratch spaces available within FASSE and CANNON:<a class="headerlink" href="#the-lab-has-scratch-spaces-available-within-fasse-and-cannon" title="Permalink to this heading">#</a></h3>
 <p>FASSE path:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">netscratch</span><span class="o">/</span><span class="n">dominici_nsaph</span><span class="o">/</span><span class="n">Lab</span><span class="o">/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">project</span><span class="o">-</span><span class="n">subdirectory</span><span class="o">&gt;</span> 
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">netscratch</span><span class="o">/</span><span class="n">dominici_nsaph</span><span class="o">/</span><span class="n">Lab</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">project</span><span class="o">-</span><span class="n">subdirectory</span><span class="o">&gt;</span> 
 </pre></div>
 </div>
 <p>CANNON path:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">netscratch</span><span class="o">/</span><span class="n">dominici_lab</span><span class="o">/</span><span class="n">Lab</span><span class="o">/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">project</span><span class="o">-</span><span class="n">subdirectory</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">netscratch</span><span class="o">/</span><span class="n">dominici_lab</span><span class="o">/</span><span class="n">Lab</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">project</span><span class="o">-</span><span class="n">subdirectory</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p><strong>How to use the scratch folder?</strong> Create your own directory in this scratch space using your project name. For example, if your FASSE project name is <code class="docutils literal notranslate"><span class="pre">heat-stress-project</span></code>, then create a folder within the FASSE scratch folder:</p>
-<p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">/n/netscratch/dominici_nsaph/Lab/projects/heat-stress-project</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">/n/netscratch/dominici_nsaph/Lab/heat-stress-project</span></code></p>
 <p>Instead of storing large files in your local project folder, write temporary files in this path.</p>
 <p><strong>Use a symlink to a scratch folder</strong> Ideally, you should not include full paths in a repository’s code. To avoid including full paths in your code, create a symlink to the scratch folder inside the <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder of your project using. <code class="docutils literal notranslate"><span class="pre">data/</span></code> will contains a shortcut link to the scratch folder:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">netscratch</span><span class="o">/</span><span class="n">dominici_nsaph</span><span class="o">/</span><span class="n">Lab</span><span class="o">/</span><span class="n">projects</span><span class="o">/&lt;</span><span class="n">project_name</span><span class="o">&gt;</span> <span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">netscratch</span><span class="o">/</span><span class="n">dominici_nsaph</span><span class="o">/</span><span class="n">Lab</span><span class="o">/&lt;</span><span class="n">project_name</span><span class="o">&gt;</span> <span class="o">.</span>
 </pre></div>
 </div>
 <p>When you write or read a file use:</p>
@@ -645,7 +645,7 @@ operating system interprets as a path to that file or directory (a shortcut).</p
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># In Python</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="n">df</span><span class="o">.</span><span class="n">write_csv</span><span class="p">(</span><span class="s2">&quot;data/intermediate/&lt;project_name&gt;/&lt;filename&gt;&quot;</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/intermediate/&lt;project_name&gt;/&lt;filename&gt;&quot;</span><span class="p">)</span>
 </pre></div>

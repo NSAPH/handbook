@@ -207,24 +207,24 @@ A scratch space provides a dedicated area for temporary storage and facilitates 
 
 FASSE path: 
 ```
-/n/netscratch/dominici_nsaph/Lab/projects/<your-project-subdirectory> 
+/n/netscratch/dominici_nsaph/Lab/<your-project-subdirectory> 
 ```
 
 CANNON path:
 ```
-/n/netscratch/dominici_lab/Lab/projects/<your-project-subdirectory>
+/n/netscratch/dominici_lab/Lab/<your-project-subdirectory>
 ```
 
 **How to use the scratch folder?** Create your own directory in this scratch space using your project name. For example, if your FASSE project name is `heat-stress-project`, then create a folder within the FASSE scratch folder: 
 
-`mkdir /n/netscratch/dominici_nsaph/Lab/projects/heat-stress-project`
+`mkdir /n/netscratch/dominici_nsaph/Lab/heat-stress-project`
 
 Instead of storing large files in your local project folder, write temporary files in this path.
 
 **Use a symlink to a scratch folder** Ideally, you should not include full paths in a repository's code. To avoid including full paths in your code, create a symlink to the scratch folder inside the `data/` folder of your project using. `data/` will contains a shortcut link to the scratch folder:
 
 ```
-ls -s /n/netscratch/dominici_nsaph/Lab/projects/<project_name> .
+ls -s /n/netscratch/dominici_nsaph/Lab/<project_name> .
 ```
 
 When you write or read a file use:
