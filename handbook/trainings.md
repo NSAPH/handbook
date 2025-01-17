@@ -14,7 +14,7 @@ appropriate box within the NSAPH form.
 
 ## Social and Behavioral/Biomedical Human Subject Training
 
-Information about the training and the link to the CITI page can be found [here] (https://hsph.harvard.edu/office/regulatory-affairs-and-research-compliance/hlc-institutional-review-board-irb/human-research-training/). Follow the "New CITI Users" instructions if you are a new user.
+Information about the training and the link to the CITI page can be found [here](https://hsph.harvard.edu/office/regulatory-affairs-and-research-compliance/hlc-institutional-review-board-irb/human-research-training/). Follow the "New CITI Users" instructions if you are a new user.
 
 The following two courses are accepted by the Harvard Longwood Campus Institutional Review Board (IRB), you can choose to complete either one:
 1. Human Subject Biomedical Research training
