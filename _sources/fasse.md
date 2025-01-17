@@ -224,7 +224,7 @@ Instead of storing large files in your local project folder, write temporary fil
 **Use a symlink to a scratch folder** Ideally, you should not include full paths in a repository's code. To avoid including full paths in your code, create a symlink to the scratch folder inside the `data/` folder of your project using. `data/` will contains a shortcut link to the scratch folder:
 
 ```
-ls -s /n/netscratch/dominici_nsaph/Lab/<project_name> .
+ln -s /n/netscratch/dominici_nsaph/Lab/<project_name> .
 ```
 
 When you write or read a file use:
