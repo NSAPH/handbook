@@ -1,6 +1,6 @@
-# How to set up a .bashrc file
+# .bashrc
 
-The `.bashrc` file is a script executed whenever a new terminal session starts in an interactive, non-login shell. It's used to configure the environment, define aliases, set environment variables, and customize the command prompt. This is important, especially when working on data analysis to ensure reproducibility. Even more so when working in CANNON and FASSE, as certain settings must be changed to allow you to use common tools like Python, Git, and VS Code. 
+The `.bashrc` file is a script executed whenever a new terminal session starts in an interactive, non-login shell. It's used to configure the environment, define aliases, set environment variables, and customize the command prompt. This is important, especially when working on data analysis to ensure reproducibility. Even more so when working in CANNON and FASSE, as certain configurations must be made to allow you to use common tools like Python, Git, and VS Code. 
 
 ## Setting up a `.bashrc` file in CANNON/FASSE:
 1. Log into CANNON/FASSE and open Terminal
