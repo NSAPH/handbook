@@ -27,4 +27,4 @@ The `.bashrc` file is a script executed whenever a new terminal session starts i
    export https_proxy=http://rcproxy.rc.fas.harvard.edu:3128
    WORK="/n/dominici_lab/lab"
    ```  
-   4. Load the the modules configured in the `.bashrc ` by running your function in Terminal (e.g., `mm`)
+4. Load the the modules configured in the `.bashrc ` by running your function in Terminal (e.g., `mm`)

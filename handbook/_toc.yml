@@ -36,9 +36,9 @@ parts:
     - file: fasse_github
     - file: fasse_efficient
       title: Efficient Resource Utilization on FASSE
-    - file: bashrc
     - file: rstudio
     - file: cannon
+    - file: bashrc
     - file: vscode    
     - file: singularity
   - caption: Reproducibility 
