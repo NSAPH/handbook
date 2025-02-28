@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Singularity" href="singularity.html" />
-    <link rel="prev" title="Getting started on CANNON" href="cannon.html" />
+    <link rel="prev" title=".bashrc" href="bashrc.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -204,6 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="rstudio.html">Using RStudio on FASSE</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="cannon.html">Getting started on CANNON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bashrc.html">.bashrc</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">VS Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="singularity.html">Singularity</a></li>
 </ul>
@@ -423,7 +424,16 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-installation">Background and Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-and-extensions">Set Up and Extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-virtual-desktop">Setting Up a Virtual Desktop</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-extensions">Installing Extensions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-an-ssh-tunnel">Setting Up an SSH Tunnel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-requisites">Pre-requisites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-on-your-machine">Installation on Your Machine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-cannon-fasse">Connecting to CANNON/FASSE</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -440,17 +450,110 @@ document.write(`
 <section id="background-and-installation">
 <h2>Background and Installation<a class="headerlink" href="#background-and-installation" title="Permalink to this heading">#</a></h2>
 <p>VS Code, or Visual Studio Code, is a popular tool that allows for users to work in a variety of languages, including Python, Python notebooks, R, C, and more, all from one app.
-It also can work with Git and Docker. It is not currently an option as an interactive app in FASSE like RStudio or Jupyter, but you can still use VS Code in FASSE fairly easily.</p>
-<p>To open up VS Code, first open up a remote desktop in FASSE. Open up a new terminal window.</p>
-<p>In the terminal, you can type <code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">vscode</span></code> to load the default version of vscode, and then <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">.</span></code> to open it up.
-If you want a specific version of VS Code, you can type <code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">avail</span> <span class="pre">vscode</span></code> to show the available options, and then load your desired option.</p>
+It also can work with Git and Docker. It is not currently an option as an interactive app in FASSE like RStudio or Jupyter, but you can still use VS Code in CANNON/FASSE fairly easily, in 2 ways:</p>
+<ol class="arabic simple">
+<li><p><strong>Virtual Desktop</strong></p></li>
+<li><p><strong>SSH Tunnel</strong></p></li>
+</ol>
 </section>
-<section id="set-up-and-extensions">
-<h2>Set Up and Extensions<a class="headerlink" href="#set-up-and-extensions" title="Permalink to this heading">#</a></h2>
-<p>When you first use VS Code, you will have to install the languages you are interested in working with.
-To do that, first click the sidebar icon which says extensions. Then you can select from a variety of languages and other extensions.
-Some options are Python, Jupyter, Java, and more. There are also extensions for how you want your text editing to appear, Git visualizations, and more.</p>
-<p>Note: if you get a message about VS Code working best with Git version &gt;2 and are currently using an older version of Git, you can also run <code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">git/2.17.0-fasrc01</span></code> before opening up your VS Code window.</p>
+<section id="setting-up-a-virtual-desktop">
+<h2>Setting Up a Virtual Desktop<a class="headerlink" href="#setting-up-a-virtual-desktop" title="Permalink to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Launch <strong>Remote Desktop</strong> in CANNON/FASSE and follow the steps to create a session.</p></li>
+<li><p>Open VS Code: In a new Terminal window, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>vscode
+code<span class="w"> </span>.
+</pre></div>
+</div>
+<p>If you want a specific version of VS Code, you can type</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>avail<span class="w"> </span>vscode
+</pre></div>
+</div>
+<p>to show the available options, and then load your desired option.</p>
+</li>
+<li><p>Configure your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file to load necessary modules automatically:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># .bashrc</span>
+
+<span class="c1"># Source global definitions</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>/etc/bashrc<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span>.<span class="w"> </span>/etc/bashrc
+<span class="k">fi</span>
+
+<span class="k">function</span><span class="w"> </span>mm<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>module<span class="w"> </span>load<span class="w"> </span>vscode<span class="w"> </span>
+<span class="w">    </span>module<span class="w"> </span>load<span class="w"> </span>git
+<span class="w">    </span>module<span class="w"> </span>load<span class="w"> </span>python
+<span class="o">}</span><span class="w"> </span>
+
+<span class="nb">export</span><span class="w"> </span><span class="nv">MY_NSAPH_SSH_USERNAME</span><span class="o">=</span><span class="s2">&quot;USERNAME&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">MY_NSAPH_SSH_PASSWORD</span><span class="o">=</span><span class="s2">&quot;PASSWORD&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">http_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
+<span class="nb">export</span><span class="w"> </span><span class="nv">https_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
+<span class="nv">WORK</span><span class="o">=</span><span class="s2">&quot;/n/dominici_lab/lab&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Load VS Code, Git, and Python by running your function in Terminal (e.g., <code class="docutils literal notranslate"><span class="pre">mm</span></code>).</p></li>
+</ol>
+<blockquote>
+<div><p><strong>Tip:</strong> For more details, watch this <a class="reference external" href="https://harvard.zoom.us/rec/play/Mu7_kI9FOmEnKsZrhZ-9AB8opY0ou_biKTUon6xu7aSBdcyAd_atViYGXcCurJr9DeBvlZoWj-fBJWtH.OsgEPAqi2glckinb?continueMode=true">tutorial video</a>.</p>
+</div></blockquote>
+<section id="installing-extensions">
+<h3>Installing Extensions<a class="headerlink" href="#installing-extensions" title="Permalink to this heading">#</a></h3>
+<p>If you prefer not to configure <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code>, you can install language support manually:</p>
+<ol class="arabic simple">
+<li><p>Open <strong>Extensions</strong> from the sidebar.</p></li>
+<li><p>Install language support for Python, Jupyter, Java, and more.</p></li>
+<li><p>Customize VS Code with extensions for Git visualization, text editing, and themes.</p></li>
+</ol>
+<blockquote>
+<div><p><strong>Note:</strong> If you receive a message about an outdated Git version, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>git/2.17.0-fasrc01
+</pre></div>
+</div>
+<p>before launching VS Code.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="setting-up-an-ssh-tunnel">
+<h2>Setting Up an SSH Tunnel<a class="headerlink" href="#setting-up-an-ssh-tunnel" title="Permalink to this heading">#</a></h2>
+<p>These directions are adapted from the official <a class="reference external" href="https://code.visualstudio.com/docs/remote/ssh">VS Code SSH setup guide</a>.</p>
+<section id="pre-requisites">
+<h3>Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permalink to this heading">#</a></h3>
+<p>Before setting up the SSH Tunnel, ensure your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file is configured as shown above.</p>
+</section>
+<section id="installation-on-your-machine">
+<h3>Installation on Your Machine<a class="headerlink" href="#installation-on-your-machine" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Install an <a class="reference external" href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client">OpenSSH-compatible SSH client</a> if needed.</p></li>
+<li><p>Install <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>.</p></li>
+<li><p>Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote-SSH extension</a>.</p></li>
+<li><p>Set up an SSH host by following the instructions for:</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-server">Linux</a></strong></p></li>
+<li><p><strong><a class="reference external" href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui&amp;pivots=windows-server-2025">Windows</a></strong></p></li>
+<li><p><strong><a class="reference external" href="https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac">macOS</a></strong></p></li>
+<li><p>Or create an <strong><a class="reference external" href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu">Azure VM</a></strong></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="connecting-to-cannon-fasse">
+<h3>Connecting to CANNON/FASSE<a class="headerlink" href="#connecting-to-cannon-fasse" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>In VS Code, open the <strong>Command Palette</strong> (<code class="docutils literal notranslate"><span class="pre">F1</span></code> or <code class="docutils literal notranslate"><span class="pre">⇧⌘P</span></code>).</p></li>
+<li><p>Select <strong>Remote-SSH: Connect to Host…</strong> and enter:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">username&#64;login.rc.fas.harvard.edu</span></code> (for CANNON)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">username&#64;fasselogin.rc.fas.harvard.edu</span></code> (for FASSE)</p></li>
+</ul>
+</li>
+<li><p>Enter your <strong>Harvard password</strong>, followed by your <strong>multi-factor authentication code</strong> (e.g., Microsoft Authenticator, Duo).</p></li>
+<li><p>VS Code will establish the connection, displaying progress notifications and logs in the <strong>Remote - SSH output channel</strong>.</p></li>
+<li><p>Once connected, you’ll see an empty VS Code window. The <strong>Status Bar</strong> (bottom left corner) shows the active remote session.</p></li>
+<li><p>Open a folder or workspace using <strong>File &gt; Open…</strong>, or clone a Git repository, just as you would locally.</p></li>
+</ol>
+</section>
 </section>
 </section>
 
@@ -485,12 +588,12 @@ Some options are Python, Jupyter, Java, and more. There are also extensions for 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cannon.html"
+       href="bashrc.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Getting started on CANNON</p>
+        <p class="prev-next-title">.bashrc</p>
       </div>
     </a>
     <a class="right-next"
@@ -518,7 +621,16 @@ Some options are Python, Jupyter, Java, and more. There are also extensions for 
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-installation">Background and Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-and-extensions">Set Up and Extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-virtual-desktop">Setting Up a Virtual Desktop</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-extensions">Installing Extensions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-an-ssh-tunnel">Setting Up an SSH Tunnel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-requisites">Pre-requisites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-on-your-machine">Installation on Your Machine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-cannon-fasse">Connecting to CANNON/FASSE</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

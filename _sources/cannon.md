@@ -43,7 +43,7 @@ Cannon is the Faculty of Arts and Sciences research computing cluster for users 
 There are a few ways to access CANNON. You can access it via VDI/OoD (in the web browser) by clicking the link here:
 https://vdi.rc.fas.harvard.edu 
 
-You can also access it via command line (Terminal) by typing: `ssh username@login.rc.fas.harvard.edu `. 
+You can also access it via command line (Terminal) by typing: `ssh username@login.rc.fas.harvard.edu`. 
 To learn more about working in the command line, check out this [Unix Shell tutorial](https://swcarpentry.github.io/shell-novice/).
 
 ```{note}
@@ -89,35 +89,4 @@ Create there a new folder with your **project name** (ie, `heat_alert-mortality-
 ```{note}
 Use your **project name** folder in `/n/dominici_lab/lab/projects` as a workspace 
 for your analysis data and code. 
-```
-
-
-## Step 4. Setting up Virtual Desktop
-
-1. Look for Remote Desktop and follow steps to create a session 
-2. Open VS Code: In Terminal, type `module load vscode`, then type `code .`
-3. Set up `.bashrc` file in your home folder to load modules that you need, example:
-```
-# .bashrc
-
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
-function mm (){
-module load vscode 
-module load git/2.17.0-fasrc01
-module load Anaconda3/2022.05
-
-} 
-
-export MY_NSAPH_SSH_USERNAME="USERNAME"
-export MY_NSAPH_SSH_PASSWORD="PASSWORD"
-
-WORK="/n/dominici_lab/lab"
-```
-4. Load VS Code, Git, conda using by running your function name in terminal (example `mm`) 
-
-```{tip}
-For more information, watch this [tutorial video](https://harvard.zoom.us/rec/play/Mu7_kI9FOmEnKsZrhZ-9AB8opY0ou_biKTUon6xu7aSBdcyAd_atViYGXcCurJr9DeBvlZoWj-fBJWtH.OsgEPAqi2glckinb?continueMode=true) on how to set up VS Code and remote desktop.
 ```
