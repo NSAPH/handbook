@@ -38,6 +38,7 @@ parts:
       title: Efficient Resource Utilization on FASSE
     - file: rstudio
     - file: cannon
+    - file: bashrc
     - file: vscode    
     - file: singularity
   - caption: Reproducibility 
