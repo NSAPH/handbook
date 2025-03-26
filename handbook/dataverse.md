@@ -1,10 +1,8 @@
 # Data Sharing using Harvard Dataverse
 
-There are three NSAPH collections at [Harvard Dataverse](https://dataverse.harvard.edu):
+The are NSAPH Dataverse Sub-collection is located under the CAFE Dataverse collections at [Harvard CAFE Dataverse]([https://dataverse.harvard.edu/dataverse.xhtml?alias=CAFE](https://dataverse.harvard.edu/dataverse.xhtml?alias=CAFE)):
 
-- General: [https://dataverse.harvard.edu/dataverse/biostats](https://dataverse.harvard.edu/dataverse/biostats)
-- Open data collection: [https://dataverse.harvard.edu/dataverse/nsaphopendata](https://dataverse.harvard.edu/dataverse/nsaphopendata)
-- Analysis data collection: [https://dataverse.harvard.edu/dataverse/nsaphanalysis](https://dataverse.harvard.edu/dataverse/nsaphanalysis)
+- NSAPH Subcollection: [NSAPH Sub-collection]([https://dataverse.harvard.edu/dataverse/nsaph](https://dataverse.harvard.edu/dataverse/nsaph))
 
 ## Uploading data to NSAPH Dataverse collection
 
