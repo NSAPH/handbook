@@ -1,8 +1,8 @@
 # Data Sharing using Harvard Dataverse
 
-The are NSAPH Dataverse Sub-collection is located under the CAFE Dataverse collections at [Harvard CAFE Dataverse]([https://dataverse.harvard.edu/dataverse.xhtml?alias=CAFE](https://dataverse.harvard.edu/dataverse.xhtml?alias=CAFE)):
+The are NSAPH Dataverse Sub-collection is located under the CAFE Dataverse collections at [Harvard CAFE Dataverse](https://dataverse.harvard.edu/dataverse.xhtml?alias=CAFE):
 
-- NSAPH Subcollection: [NSAPH Sub-collection]([https://dataverse.harvard.edu/dataverse/nsaph](https://dataverse.harvard.edu/dataverse/nsaph))
+- NSAPH Subcollection: [NSAPH Sub-collection](https://dataverse.harvard.edu/dataverse/nsaph)
 
 ## Uploading data to NSAPH Dataverse collection
 
