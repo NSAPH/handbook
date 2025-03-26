@@ -12,9 +12,7 @@ There are two ways to upload data to a NSAPH Dataverse collection.
 
 The first is:
 
-1. Navigate to one of the NSAPH collections: [NSAPH Open Data](https://dataverse.harvard.edu/dataverse/nsaphopendata), 
-[NSAPH Analysis data](https://dataverse.harvard.edu/dataverse/nsaphanalysis) or 
-[NSAPH General](https://dataverse.harvard.edu/dataverse/biostats).
+1. Navigate to the NSAPH collection: [NSAPH Sub-collection](https://dataverse.harvard.edu/dataverse/nsaph) 
 2. Within the collection, click "Add Data" > "New Dataset" (see figure):
 
 ![](imgs/dv1.jpg)
