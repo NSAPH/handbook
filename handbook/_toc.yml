@@ -31,6 +31,7 @@ parts:
     - file: dataverse   
   - caption: Computing Infrastructure 
     chapters:
+    - file: red
     - file: fasse
     - file: fasse_partitions
     - file: fasse_github
