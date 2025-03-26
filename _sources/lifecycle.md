@@ -32,7 +32,7 @@ Undergraduate Harvard University students who would like to engage in research p
 
 **4. Accessing the data: After completing Steps 1-3, you are now ready to access data.**
 
-To Create an FASRC Account, and to Request Access to NSAPH FASSE Group, please follow the instructions [here](https://nsaph.github.io/handbook/fasse.html)).
+To Create an FASRC Account, and to Request Access to NSAPH FASSE Group, please follow the instructions [here](https://nsaph.github.io/handbook/fasse.html).
 
 
 ## Continuing to work on your existing project
