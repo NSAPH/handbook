@@ -13,9 +13,7 @@ There are two ways to upload data to a NSAPH Dataverse collection.
 The first is:
 
 1. Navigate to the NSAPH collection: [NSAPH Sub-collection](https://dataverse.harvard.edu/dataverse/nsaph) 
-2. Within the collection, click "Add Data" > "New Dataset" (see figure):
-
-![](imgs/dv1.jpg)
+2. Within the collection, click "Add Data" > "New Dataset". 
 
 
 ### Upload from the main page
@@ -23,7 +21,7 @@ The first is:
 Another way to upload data to a NSAPH Dataverse collection is by selecting the collection at upload:
 
 1. On the main [Harvard Dataverse](https://dataverse.harvard.edu) page, click "Add Data".
-2. Next, specify the Host Dataverse (i.e., the collection) name in the upload form 
+2. Next, specify the Host Dataverse (i.e., the collection) name in the upload form.  
 
 ```{note}
 For additional guidence on data upload, please see documentation here: https://support.dataverse.harvard.edu/getting-started
