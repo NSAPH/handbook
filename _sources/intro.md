@@ -1,13 +1,13 @@
-# Welcome to the NSAPH Handbook 
+# Welcome to the National Studies on Air Pollution and Health (NSAPH) Handbook 
 
-The handbook offers information on data, software, and analysis.
+This handbook offers information on data, software, and analysis for the NSAPH Group.
 
 ## Mission and Core Values
-Find the group's Mission statement and Core Research Values and Workplace Values [here.](https://docs.google.com/document/d/1PMjUzXyaohMVkPNZR-HGe-1HehhdLUKrD0MgPxgI5y8/edit?usp=sharing)
+NSAPH's Mission statement and Core Research Values and Workplace Values are [here.](https://docs.google.com/document/d/1PMjUzXyaohMVkPNZR-HGe-1HehhdLUKrD0MgPxgI5y8/edit?usp=sharing)
 
 ## Web page
 
-Find the National Studies on Air Pollution and Health (NSAPH) group official web page [here.](https://www.hsph.harvard.edu/nsaph/)
+NSAPH's official web page is [here.](https://www.hsph.harvard.edu/nsaph/)
 
 ## Basecamp
 
@@ -17,9 +17,9 @@ Basecamp is the main channel of communication of **NSAPH**. It is central to all
 
 Once you've been added to Basecamp, from the homepage you can connect with people by joining multiple groups/projects. The two main groups are: 
 
-**NSAPH group** brings together researchers, visiting researchers, program coordinators, and data scientists from multiple universities and organizations with a common goal, understanding climate change and environmental impacts on health outcomes and regulatory policy.
+**NSAPH Community** brings together researchers, staff, and faculty from multiple universities and organizations with a common goal of understanding the impacts of environmental exposures and climate change on health outcomes and regulatory policy.
 
-**NSAPH biostats group** is mostly comprised of active members in the HSPH departments of biostatistics, epidemiology, and environmental health.
+**NSAPH Projects** focuses on project specific discussions and project management.
 
 Depending on your role, you can be added to additional groups/projects. Each group has message boards, chats, schedule information and more.
 
@@ -49,8 +49,8 @@ If you do not have write access to a repository, ask for help. **As an NSAPH mem
 CMS
   Centers for Medicare and Medicaid Services
   
-FASSE
-  Faculty of Arts and Sciences Secure Environment research computing cluster
+RED
+  Harvard's regulated data computing environment
   
 FFS
   fee-for-service
