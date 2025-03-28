@@ -22,9 +22,10 @@ parts:
       title: Project Initiation Form    
   - caption: Data Management
     chapters:  
-    - file: data 
-    - file: analytic
+    # - file: data 
+    # - file: analytic
     - file : lego_data_model
+    - file : medpar_outcomes
     - file: mcbs
     - url: https://docs.google.com/document/d/1Nu6YG0NTazTW-jgWZgIlszdL1BUbPNCs5wXrPfK5XjM/edit?usp=sharing
       title: Data Mangement Plan Template
@@ -49,11 +50,11 @@ parts:
     - url: https://swcarpentry.github.io/git-novice/
       title: Git tutorial 
     - file: docs
-  - caption: DORIEH Database 
-    chapters:
-    - file: superset
-    - url: https://github.com/NSAPH/data-paltform-internal-docs
-      title: Data-Platform Internal Docs
+  # - caption: DORIEH Database 
+  #   chapters:
+  #   - file: superset
+  #   - url: https://github.com/NSAPH/data-paltform-internal-docs
+  #     title: Data-Platform Internal Docs
   - caption: Software
     chapters:
     - url: https://nsaph-software.github.io/intro.html
