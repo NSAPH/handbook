@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>VS Code &#8212; NSAPH Handbook</title>
+    <title>MedPAR Outcome Datasets Overview &#8212; NSAPH Handbook</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'vscode';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'medpar_outcomes';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Singularity" href="singularity.html" />
-    <link rel="prev" title=".bashrc" href="bashrc.html" />
+    <link rel="next" title="MCBS" href="mcbs.html" />
+    <link rel="prev" title="LEGO Data Model" href="lego_data_model.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -186,16 +186,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLScNPmdDpoBTizB2r5lb5sNqsl8fA94wqu5lnS6imNJ2nf476w/viewform?usp=sf_link">Project Initiation Form</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Management</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="lego_data_model.html">LEGO Data Model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="medpar_outcomes.html">MedPAR Outcome Datasets Overview</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">MedPAR Outcome Datasets Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mcbs.html">MCBS</a></li>
 
 <li class="toctree-l1"><a class="reference external" href="https://docs.google.com/document/d/1Nu6YG0NTazTW-jgWZgIlszdL1BUbPNCs5wXrPfK5XjM/edit?usp=sharing">Data Mangement Plan Template</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dataverse.html">Data Sharing using Harvard Dataverse</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Computing Infrastructure</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="red.html">Working on RED</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fasse.html">How to work on FASSE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
@@ -205,7 +205,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <li class="toctree-l1"><a class="reference internal" href="cannon.html">Getting started on CANNON</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bashrc.html">.bashrc</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">VS Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">VS Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="singularity.html">Singularity</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Reproducibility</span></p>
@@ -294,7 +294,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fvscode.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fmedpar_outcomes.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -324,7 +324,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/vscode.md" target="_blank"
+      <li><a href="_sources/medpar_outcomes.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -408,7 +408,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>VS Code</h1>
+    <h1>MedPAR Outcome Datasets Overview</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -418,17 +418,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-installation">Background and Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-virtual-desktop">Setting Up a Virtual Desktop</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-extensions">Installing Extensions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-an-ssh-tunnel">Setting Up an SSH Tunnel</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-requisites">Pre-requisites</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-on-your-machine">Installation on Your Machine</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-cannon-fasse">Connecting to CANNON/FASSE</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-assessing-the-medpar-outcomes-content">Step 1 : Assessing the MedPAR Outcomes Content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-exploring-the-available-outcomes-dataset">Step 2 : Exploring the Available Outcomes dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-reusing-previously-created-outcome-datasets">Step 3 : Reusing Previously Created Outcome Datasets</a></li>
 </ul>
             </nav>
         </div>
@@ -440,115 +432,38 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="vs-code">
-<h1>VS Code<a class="headerlink" href="#vs-code" title="Permalink to this heading">#</a></h1>
-<section id="background-and-installation">
-<h2>Background and Installation<a class="headerlink" href="#background-and-installation" title="Permalink to this heading">#</a></h2>
-<p>VS Code, or Visual Studio Code, is a popular tool that allows for users to work in a variety of languages, including Python, Python notebooks, R, C, and more, all from one app.
-It also can work with Git and Docker. It is not currently an option as an interactive app in FASSE like RStudio or Jupyter, but you can still use VS Code in CANNON/FASSE fairly easily, in 2 ways:</p>
-<ol class="arabic simple">
-<li><p><strong>Virtual Desktop</strong></p></li>
-<li><p><strong>SSH Tunnel</strong></p></li>
-</ol>
+  <section id="medpar-outcome-datasets-overview">
+<h1>MedPAR Outcome Datasets Overview<a class="headerlink" href="#medpar-outcome-datasets-overview" title="Permalink to this heading">#</a></h1>
+<p>The MedPAR Outcome Datasets in the LEGO data catalog provide researchers with access to processed inpatient admission records for Medicare beneficiaries, where each beneficiary admission is tagged and filtered with a health outcome based on predefined ICD-9 and ICD-10 diagnosis codes. These curated datasets reflect hospitalizations associated with specific medical conditions.</p>
+<p>This walkthrough guides users through navigating the data catalog, identifying outcome-specific datasets, determining whether an existing dataset meets study requirements, and leveraging ICD Codes YAML configuration files to ensure consistency and reproducibility in outcome definitions.</p>
+<section id="step-1-assessing-the-medpar-outcomes-content">
+<h2>Step 1 : Assessing the MedPAR Outcomes Content<a class="headerlink" href="#step-1-assessing-the-medpar-outcomes-content" title="Permalink to this heading">#</a></h2>
+<p>To begin exploring the MedPAR Outcome Datasets, access the <a class="reference external" href="https://lego-catalog.netlify.app/#/dataset/lego/v0">data catalog</a> and navigate to the Medpar Outcomes section in Medicare or Legacy Medicare section. It provides a centralized view of curated outcome-specific inpatient datasets, along with documentation, metadata, and data paths to support outcome selection and reuse.</p>
 </section>
-<section id="setting-up-a-virtual-desktop">
-<h2>Setting Up a Virtual Desktop<a class="headerlink" href="#setting-up-a-virtual-desktop" title="Permalink to this heading">#</a></h2>
-<ol class="arabic">
-<li><p>Launch <strong>Remote Desktop</strong> in CANNON/FASSE and follow the steps to create a session.</p></li>
-<li><p>Open VS Code: In a new Terminal window, run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>vscode
-code<span class="w"> </span>.
-</pre></div>
-</div>
-<p>If you want a specific version of VS Code, you can type</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>avail<span class="w"> </span>vscode
-</pre></div>
-</div>
-<p>to show the available options, and then load your desired option.</p>
-</li>
-<li><p>Configure your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file to load necessary modules automatically:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># .bashrc</span>
-
-<span class="c1"># Source global definitions</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>/etc/bashrc<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">    </span>.<span class="w"> </span>/etc/bashrc
-<span class="k">fi</span>
-
-<span class="k">function</span><span class="w"> </span>mm<span class="o">()</span><span class="w"> </span><span class="o">{</span>
-<span class="w">    </span>module<span class="w"> </span>load<span class="w"> </span>vscode<span class="w"> </span>
-<span class="w">    </span>module<span class="w"> </span>load<span class="w"> </span>git
-<span class="w">    </span>module<span class="w"> </span>load<span class="w"> </span>python
-<span class="o">}</span><span class="w"> </span>
-
-<span class="nb">export</span><span class="w"> </span><span class="nv">MY_NSAPH_SSH_USERNAME</span><span class="o">=</span><span class="s2">&quot;USERNAME&quot;</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">MY_NSAPH_SSH_PASSWORD</span><span class="o">=</span><span class="s2">&quot;PASSWORD&quot;</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">http_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
-<span class="nb">export</span><span class="w"> </span><span class="nv">https_proxy</span><span class="o">=</span>http://rcproxy.rc.fas.harvard.edu:3128
-<span class="nv">WORK</span><span class="o">=</span><span class="s2">&quot;/n/dominici_lab/lab&quot;</span>
-</pre></div>
-</div>
-</li>
-<li><p>Load VS Code, Git, and Python by running your function in Terminal (e.g., <code class="docutils literal notranslate"><span class="pre">mm</span></code>).</p></li>
-</ol>
-<blockquote>
-<div><p><strong>Tip:</strong> For more details, watch this <a class="reference external" href="https://harvard.zoom.us/rec/play/Mu7_kI9FOmEnKsZrhZ-9AB8opY0ou_biKTUon6xu7aSBdcyAd_atViYGXcCurJr9DeBvlZoWj-fBJWtH.OsgEPAqi2glckinb?continueMode=true">tutorial video</a>.</p>
-</div></blockquote>
-<section id="installing-extensions">
-<h3>Installing Extensions<a class="headerlink" href="#installing-extensions" title="Permalink to this heading">#</a></h3>
-<p>If you prefer not to configure <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code>, you can install language support manually:</p>
-<ol class="arabic simple">
-<li><p>Open <strong>Extensions</strong> from the sidebar.</p></li>
-<li><p>Install language support for Python, Jupyter, Java, and more.</p></li>
-<li><p>Customize VS Code with extensions for Git visualization, text editing, and themes.</p></li>
-</ol>
-<blockquote>
-<div><p><strong>Note:</strong> If you receive a message about an outdated Git version, run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>git/2.17.0-fasrc01
-</pre></div>
-</div>
-<p>before launching VS Code.</p>
-</div></blockquote>
+<section id="step-2-exploring-the-available-outcomes-dataset">
+<h2>Step 2 : Exploring the Available Outcomes dataset<a class="headerlink" href="#step-2-exploring-the-available-outcomes-dataset" title="Permalink to this heading">#</a></h2>
+<p>Within the <strong>Content</strong> tab of the catalog, each folder represents a project submission from a specific researcher, named using the format  <code class="docutils literal notranslate"><span class="pre">&lt;pi_name&gt;_&lt;researcher_name&gt;_&lt;project_number&gt;</span></code> (e.g., antonella_ernani_00, michelle_yongsoo_01).</p>
+<p>Expanding the folder displays a list of <code class="docutils literal notranslate"><span class="pre">.parquet</span></code> files, each representing outcome-tagged inpatient admissions for Medicare beneficiaries. These files follow a standard naming convention: <code class="docutils literal notranslate"><span class="pre">&lt;outcome&gt;_&lt;yyyy&gt;.parquet</span></code>, where <code class="docutils literal notranslate"><span class="pre">&lt;outcome&gt;</span></code> refers to the diagnosis (e.g., diabetes, cvd, melanoma) and <code class="docutils literal notranslate"><span class="pre">&lt;yyyy&gt;</span></code> denotes the calendar year.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/medpar_outcomes_content.png"><img alt="_images/medpar_outcomes_content.png" src="_images/medpar_outcomes_content.png" style="width: 529.8px; height: 321.0px;" /></a>
+</figure>
+<p>Clicking on a <code class="docutils literal notranslate"><span class="pre">.parquet</span></code> file displays the data dictionary, and provide additional context such as a link to the github icd code yaml file.</p>
+<p>The <strong>Subdatasets</strong> view also includes a searchable list of all available outcome files. You can apply a filter based on diagnosis to easily locate specific outcomes of interest.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/medpar_outcomes_subdataset.png"><img alt="_images/medpar_outcomes_subdataset.png" src="_images/medpar_outcomes_subdataset.png" style="width: 701.6px; height: 400.0px;" /></a>
+</figure>
 </section>
-</section>
-<section id="setting-up-an-ssh-tunnel">
-<h2>Setting Up an SSH Tunnel<a class="headerlink" href="#setting-up-an-ssh-tunnel" title="Permalink to this heading">#</a></h2>
-<p>These directions are adapted from the official <a class="reference external" href="https://code.visualstudio.com/docs/remote/ssh">VS Code SSH setup guide</a>.</p>
-<section id="pre-requisites">
-<h3>Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permalink to this heading">#</a></h3>
-<p>Before setting up the SSH Tunnel, ensure your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file is configured as shown above.</p>
-</section>
-<section id="installation-on-your-machine">
-<h3>Installation on Your Machine<a class="headerlink" href="#installation-on-your-machine" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Install an <a class="reference external" href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client">OpenSSH-compatible SSH client</a> if needed.</p></li>
-<li><p>Install <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>.</p></li>
-<li><p>Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote-SSH extension</a>.</p></li>
-<li><p>Set up an SSH host by following the instructions for:</p>
+<section id="step-3-reusing-previously-created-outcome-datasets">
+<h2>Step 3 : Reusing Previously Created Outcome Datasets<a class="headerlink" href="#step-3-reusing-previously-created-outcome-datasets" title="Permalink to this heading">#</a></h2>
+<p>Researchers are encouraged to reuse existing outcome-specific <code class="docutils literal notranslate"><span class="pre">.parquet</span></code> files when the dataset aligns with the goals and criteria of their study. Reusing curated datasets helps reduce duplication of effort and promotes consistency in cohort definitions across projects.</p>
+<p>Before reusing a dataset, carefully review the associated ICD codes and outcome criteria to ensure it matches your research definition. In some cases, multiple users may have created datasets for the same condition. It’s important to assess which version best fits your study requirements.</p>
+<p>Each outcome dataset is generated using an ICD-based YAML configuration file, which defines :</p>
 <ul class="simple">
-<li><p><strong><a class="reference external" href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-server">Linux</a></strong></p></li>
-<li><p><strong><a class="reference external" href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui&amp;pivots=windows-server-2025">Windows</a></strong></p></li>
-<li><p><strong><a class="reference external" href="https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac">macOS</a></strong></p></li>
-<li><p>Or create an <strong><a class="reference external" href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu">Azure VM</a></strong></p></li>
+<li><p>The list of ICD-9 and ICD-10 codes used for identifying the outcome</p></li>
+<li><p>The outcome criteria (e.g., whether to evaluate all diagnosis codes or only the primary/few initial ones).</p></li>
 </ul>
-</li>
-</ol>
-</section>
-<section id="connecting-to-cannon-fasse">
-<h3>Connecting to CANNON/FASSE<a class="headerlink" href="#connecting-to-cannon-fasse" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>In VS Code, open the <strong>Command Palette</strong> (<code class="docutils literal notranslate"><span class="pre">F1</span></code> or <code class="docutils literal notranslate"><span class="pre">⇧⌘P</span></code>).</p></li>
-<li><p>Select <strong>Remote-SSH: Connect to Host…</strong> and enter:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">username&#64;login.rc.fas.harvard.edu</span></code> (for CANNON)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">username&#64;fasselogin.rc.fas.harvard.edu</span></code> (for FASSE)</p></li>
-</ul>
-</li>
-<li><p>Enter your <strong>Harvard password</strong>, followed by your <strong>multi-factor authentication code</strong> (e.g., Microsoft Authenticator, Duo).</p></li>
-<li><p>VS Code will establish the connection, displaying progress notifications and logs in the <strong>Remote - SSH output channel</strong>.</p></li>
-<li><p>Once connected, you’ll see an empty VS Code window. The <strong>Status Bar</strong> (bottom left corner) shows the active remote session.</p></li>
-<li><p>Open a folder or workspace using <strong>File &gt; Open…</strong>, or clone a Git repository, just as you would locally.</p></li>
-</ol>
-</section>
+<p>The YAML files are available on the GitHub repository : <a class="github reference external" href="https://github.com/NSAPH-Data-Processing/medpar_outcomes/tree/main/conf/icd_codes">NSAPH-Data-Processing/medpar_outcomes</a></p>
+<p>If the desired outcome dataset is not available, the researcher can complete the project initiation form to request a new dataset, specifying the ICD-9 and ICD-10 codes and outcome criteria to be used.</p>
 </section>
 </section>
 
@@ -583,20 +498,20 @@ code<span class="w"> </span>.
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="bashrc.html"
+       href="lego_data_model.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">.bashrc</p>
+        <p class="prev-next-title">LEGO Data Model</p>
       </div>
     </a>
     <a class="right-next"
-       href="singularity.html"
+       href="mcbs.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Singularity</p>
+        <p class="prev-next-title">MCBS</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -615,17 +530,9 @@ code<span class="w"> </span>.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-installation">Background and Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-virtual-desktop">Setting Up a Virtual Desktop</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-extensions">Installing Extensions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-an-ssh-tunnel">Setting Up an SSH Tunnel</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-requisites">Pre-requisites</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-on-your-machine">Installation on Your Machine</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-cannon-fasse">Connecting to CANNON/FASSE</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-assessing-the-medpar-outcomes-content">Step 1 : Assessing the MedPAR Outcomes Content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-exploring-the-available-outcomes-dataset">Step 2 : Exploring the Available Outcomes dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-reusing-previously-created-outcome-datasets">Step 3 : Reusing Previously Created Outcome Datasets</a></li>
 </ul>
   </nav></div>
 
