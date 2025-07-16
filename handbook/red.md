@@ -56,7 +56,7 @@ Both the `lego/` and `play-doh/` folders are used to store data, but they have d
 
 ## Data Imports on ReD
 
-Additional data can only be imported into ReD if it is documented with appropriate metadata and shared (with appropriate exceptions) with the rest of the NSAPH research community. This ensures the security of the ReD environment and supports the NSAPH community's goal of promoting FAIR guidelines for data use in research. The metadata for all data imports will be pulled from the [Harvard Dataverse](https://dataverse.harvard.edu). If your dataset is not fully sharable at this time, you can create a metadata-only entry as described below.
+Additional data can only be imported into ReD if it is documented with appropriate metadata and shared (with appropriate exceptions) with the rest of the NSAPH research community. This ensures the security of the ReD environment and supports the NSAPH community's goal of promoting [FAIR guidelines](https://www.go-fair.org/fair-principles/) for data use in research. The metadata for all data imports will be pulled from the [Harvard Dataverse](https://dataverse.harvard.edu). If your dataset is not fully sharable at this time, you can create a metadata-only entry as described below.
 
 **Step 1** Decide which option applies best to your case:
 * **Fully sharable** you are ready to share your dataset with the public, including data files and metadata.
