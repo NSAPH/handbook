@@ -395,7 +395,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -411,6 +413,23 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#access-and-logging-in">Access and Logging In</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#home-directory-vs-lab-share">Home Directory vs Lab Share</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-share-and-permissions">Lab Share and Permissions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-structure">Folder Structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-projects">Research Projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lego-and-play-doh">LEGO and Play-Doh</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-imports-on-red">Data Imports on ReD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-imports-on-red">Code Imports on ReD</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -422,7 +441,110 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="working-on-red">
 <h1>Working on RED<a class="headerlink" href="#working-on-red" title="Permalink to this heading">#</a></h1>
-<p>To request a RED account please follow the instructions here: <a class="reference external" href="https://rc.harvard.edu/services/regulated-data-services-user-guide/">RED</a></p>
+<p>The <a class="reference external" href="https://rc.harvard.edu/services/regulated-data-services-user-guide/">Regulated Data (ReD) Environment</a> is a secure environment for managing and analyzing sensitive data.</p>
+<section id="access-and-logging-in">
+<h2>Access and Logging In<a class="headerlink" href="#access-and-logging-in" title="Permalink to this heading">#</a></h2>
+<p>Access to the ReD environment is restricted and requires approval. To request a ReD account and log into ReD please follow the instructions in the <a class="reference external" href="https://rc.harvard.edu/services/regulated-data-services-user-guide/">ReD</a> site.</p>
+</section>
+<section id="home-directory-vs-lab-share">
+<h2>Home Directory vs Lab Share<a class="headerlink" href="#home-directory-vs-lab-share" title="Permalink to this heading">#</a></h2>
+<p>Your initial working directory upon login is your home directory (aka homedir). The lab share is a shared space accessible to all members of your lab or group. The home directory is used for personal configurations (e.g. .bashrc files), while the lab share is used for all research and analysis data and code.</p>
+<blockquote>
+<div><p><strong>Good practices:</strong></p>
+<ul class="simple">
+<li><p>Your homedir has good performance only for simple tasks. Computation in homedir results in poor performance for all users. Only store configuration files in your home directory.</p></li>
+<li><p>Research projects typically require intensive or large numbers of jobs and should NOT be sitting in home directories. <strong>Only use our lab share for data and code</strong>.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="lab-share-and-permissions">
+<h2>Lab Share and Permissions<a class="headerlink" href="#lab-share-and-permissions" title="Permalink to this heading">#</a></h2>
+<p>The specific location of our lab share remains confidential to protect sensitive data. For the purpose of this guide, we will refer to the lab share location in ReD as <code class="docutils literal notranslate"><span class="pre">lab_share/</span></code>.</p>
+<p>There are two permission groups in the lab share:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">urc-nsaph-lab</span></code> all members of NSAPH belong to this group and have read/write access to the lab share.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">urc-nsaph-lab-data</span></code> only members of the NSAPH data team belong to this group. The data team has special permissions to manage data files and directories within the lab share.</p></li>
+</ul>
+<p>The folder structure in the lab share is designed to facilitate collaboration and organization. The main folders in the lab share are as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/.../
+├── lab_share/
+│   ├── data/
+│   │   ├── lego/
+│   │   └── play-doh/
+│   ├── data_management/
+│   └── research_projects/
+</pre></div>
+</div>
+<section id="folder-structure">
+<h3>Folder Structure<a class="headerlink" href="#folder-structure" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>research_projects/</strong>: directory containing individual research projects, all members in the <code class="docutils literal notranslate"><span class="pre">urc-nsaph-lab</span></code> group have access.</p></li>
+<li><p><strong>data/</strong>: accessible to members of the <code class="docutils literal notranslate"><span class="pre">urc-nsaph-lab</span></code> for data storage and sharing.</p></li>
+<li><p><strong>data_management/</strong>: accessible only to members of the <code class="docutils literal notranslate"><span class="pre">urc-nsaph-lab-data</span></code> group.</p></li>
+</ul>
+</section>
+<section id="research-projects">
+<h3>Research Projects<a class="headerlink" href="#research-projects" title="Permalink to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">research_projects/</span></code> folder is used to store individual research projects. Each project should have its own folder.</p>
+<ul class="simple">
+<li><p>Follow the naming convention described in Step 4 of the <a class="reference internal" href="fasse.html"><span class="doc std std-doc">Working in FASSE</span></a> section of the handbook.</p></li>
+<li><p>After creating your project folder change permissions by doing <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">-R</span> <span class="pre">770</span> <span class="pre">/path/to/folder/</span></code></p></li>
+<li><p>If you need to import code for your project, look at the <span class="xref myst">Code Imports on ReD</span> section below.</p></li>
+</ul>
+</section>
+<section id="lego-and-play-doh">
+<h3>LEGO and Play-Doh<a class="headerlink" href="#lego-and-play-doh" title="Permalink to this heading">#</a></h3>
+<p>Both the <code class="docutils literal notranslate"><span class="pre">lego/</span></code> and <code class="docutils literal notranslate"><span class="pre">play-doh/</span></code> folders are used to store data, but they have different requirements and cataloging mechanisms. If you want to import data into ReD, please follow the steps outlined in the <span class="xref myst">Data Imports on ReD</span> section below.</p>
+<ul class="simple">
+<li><p><strong>data/lego/</strong>: a structured data warehouse housing standardized, modular, and vetted datasets following the <a class="reference internal" href="lego_data_model.html"><span class="doc std std-doc">LEGO data model</span></a>. As a requirement, the datasets in this folder must be LEGO compatible, that is:</p>
+<ul>
+<li><p>The datasets must conform to the LEGO schema and data model standards</p></li>
+<li><p>Must be registered in the <a class="reference external" href="https://lego-catalog.netlify.app/">LEGO catalog</a></p></li>
+<li><p>Must be fully reproducible, meaning that the data versions can be regenerated from the source data and scripts</p></li>
+</ul>
+</li>
+<li><p><strong>data/play-doh/</strong>: an unstructured data repository housing datasets that do not conform to the LEGO standards, including raw and other data contributions. The datasets in this folder must be catalogued in <a class="reference external" href="https://dataverse.harvard.edu">Harvard Dataverse</a> and meet the following requirements:</p>
+<ul>
+<li><p>The datasets must belong to the <a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaph">NSAPH collection</a> or <a class="reference external" href="https://dataverse.harvard.edu/dataverse/cafe">CAFE collection</a> in Dataverse.</p></li>
+<li><p>The metadata must be <a class="reference external" href="https://climate-cafe.github.io/intro.html">CAFE compliant</a>, meaning that the metadata must follow the CAFE standards and include the required fields.</p></li>
+<li><p>Must be registered in the <a class="reference external" href="https://docs.google.com/spreadsheets/d/1wWP48xTTigh7xwGSEsQax68cpaqoxmfqNX4QK838nYM/edit?usp=sharing">Play-Doh catalog</a>, a spreadsheet that lists all datasets in the <code class="docutils literal notranslate"><span class="pre">play-doh/</span></code> folder and includes basic information such as the dataset name and link to the Dataverse page.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="data-imports-on-red">
+<h2>Data Imports on ReD<a class="headerlink" href="#data-imports-on-red" title="Permalink to this heading">#</a></h2>
+<p>Additional data can only be imported into ReD if it is documented with appropriate metadata and shared (with appropriate exceptions) with the rest of the NSAPH research community. This ensures the security of the ReD environment and supports the NSAPH community’s goal of promoting <a class="reference external" href="https://www.go-fair.org/fair-principles/">FAIR guidelines</a> for data use in research. The metadata for all data imports will be pulled from the <a class="reference external" href="https://dataverse.harvard.edu">Harvard Dataverse</a>. If your dataset is not fully sharable at this time, you can create a metadata-only entry as described below.</p>
+<p><strong>Step 1</strong> Decide which option applies best to your case:</p>
+<ul class="simple">
+<li><p><strong>Fully sharable</strong> you are ready to share your dataset with the public, including data files and metadata.</p></li>
+<li><p><strong>Metadata only</strong> there are two instances when this applies:</p>
+<ul>
+<li><p><strong>Draft publication</strong> your data files are not ready for publication</p></li>
+<li><p><strong>Restricted data</strong> your data files cannot be shared because of sensitive or restricted content</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Step 2</strong> Create your <a class="reference external" href="https://dataverse.harvard.edu">Harvard Dataverse</a> entry. Regardless of whether your dataset is fully shareable or metadata only, you will need to create a Dataverse entry for your dataset in order to be imported into ReD.</p>
+<ul class="simple">
+<li><p>Preferably, create your dataset under the <a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaph">NSAPH Dataverse collection</a> following the <a class="reference external" href="https://climate-cafe.github.io/intro.html">CAFE data management guidelines</a>.</p></li>
+<li><p>If your dataset is under another collection, please let the data team know so the dataset is linked into the <a class="reference external" href="https://dataverse.harvard.edu/dataverse/cafe">CAFE collection</a>.</p></li>
+</ul>
+<p><strong>Step 3</strong> Fill and submit the <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSe7TTNU4NUS3UDVSP5VfXiJxvImHQCnT2aDIxhrhcSZdQxKVg/viewform">data intake form</a> so the data team can proceed with the importation process.</p>
+<blockquote>
+<div><p><strong>What Happens After Submission?</strong> The data team will:</p>
+<ul class="simple">
+<li><p>Review the Dataverse entry and metadata.</p></li>
+<li><p>Check that the dataset meets the folder-specific requirements (e.g., LEGO schema, Play-Doh catalog entry).</p></li>
+<li><p>Copy/import data into the appropriate lab_share location.</p></li>
+<li><p>Update catalogs or tracking systems.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="code-imports-on-red">
+<h2>Code Imports on ReD<a class="headerlink" href="#code-imports-on-red" title="Permalink to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -479,6 +601,29 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#access-and-logging-in">Access and Logging In</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#home-directory-vs-lab-share">Home Directory vs Lab Share</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-share-and-permissions">Lab Share and Permissions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-structure">Folder Structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-projects">Research Projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lego-and-play-doh">LEGO and Play-Doh</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-imports-on-red">Data Imports on ReD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-imports-on-red">Code Imports on ReD</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

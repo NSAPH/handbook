@@ -66,6 +66,7 @@ The LEGO Data Model includes five domains, accessible via :
 
 * **FASSE** `/n/dominici_nsaph_l3/Lab/lego` 
 * **CANNON** `/n/dominici_lab/lab/lego` (excluding health)
+* **ReD** `lab_share/data/lego` (`lab_share` refers to the lab share directory, which remains confidential for security reasons)
 
 ##### Domains
 
