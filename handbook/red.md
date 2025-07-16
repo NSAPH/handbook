@@ -6,7 +6,7 @@ The [Regulated Data (ReD) Environment](https://rc.harvard.edu/services/regulated
 Access to the ReD environment is restricted and requires approval. To request a ReD account and log into ReD please follow the instructions in the [ReD](https://rc.harvard.edu/services/regulated-data-services-user-guide/) site.
 
 ## Home Directory vs Lab Share
-Your initial working directory upon login is your home directory (aka homedir). The lab share is a shared space accessible to all members of your lab or group. The home directory is used for personal files and configurations, while the lab share is used for all the research and analysis data and code.
+Your initial working directory upon login is your home directory (aka homedir). The lab share is a shared space accessible to all members of your lab or group. The home directory is used for personal configurations (e.g. .bashrc files), while the lab share is used for all research and analysis data and code.
 
 > **Good practices:**
 > * Your homedir has good performance only for simple tasks. Computation in homedir results in poor performance for all users. Only store configuration files in your home directory.
@@ -52,11 +52,11 @@ Both the `lego/` and `play-doh/` folders are used to store data, but they have d
 * **data/play-doh/**: an unstructured data repository housing datasets that do not conform to the LEGO standards, including raw and other data contributions. The datasets in this folder must be catalogued in [Harvard Dataverse](https://dataverse.harvard.edu) and meet the following requirements:
     - The datasets must belong to the [NSAPH collection](https://dataverse.harvard.edu/dataverse/nsaph) or [CAFE collection](https://dataverse.harvard.edu/dataverse/cafe) in Dataverse.
     - The metadata must be [CAFE compliant](https://climate-cafe.github.io/intro.html), meaning that the metadata must follow the CAFE standards and include the required fields.
-    - Must be registered in the Play-Doh catalog, a spreadsheet that lists all datasets in the `play-doh/` folder and includes basic information such as the dataset name and link to the Dataverse page.
+    - Must be registered in the [Play-Doh catalog](https://docs.google.com/spreadsheets/d/1wWP48xTTigh7xwGSEsQax68cpaqoxmfqNX4QK838nYM/edit?usp=sharing), a spreadsheet that lists all datasets in the `play-doh/` folder and includes basic information such as the dataset name and link to the Dataverse page.
 
 ## Data Imports on ReD
 
-The metadata for all data imports will be pulled from the [Harvard Dataverse](https://dataverse.harvard.edu). If your dataset is not fully sharable at this time, you can create a metadata-only entry as described below.
+Additional data can only be imported into ReD if it is documented with appropriate metadata and shared (with appropriate exceptions) with the rest of the NSAPH research community. This ensures the security of the ReD environment and supports the NSAPH community's goal of promoting FAIR guidelines for data use in research. The metadata for all data imports will be pulled from the [Harvard Dataverse](https://dataverse.harvard.edu). If your dataset is not fully sharable at this time, you can create a metadata-only entry as described below.
 
 **Step 1** Decide which option applies best to your case:
 * **Fully sharable** you are ready to share your dataset with the public, including data files and metadata.
@@ -68,7 +68,7 @@ The metadata for all data imports will be pulled from the [Harvard Dataverse](ht
   - Preferably, create your dataset under the [NSAPH Dataverse collection](https://dataverse.harvard.edu/dataverse/nsaph) following the [CAFE data management guidelines](https://climate-cafe.github.io/intro.html). 
   - If your dataset is under another collection, please let the data team know so the dataset is linked into the [CAFE collection](https://dataverse.harvard.edu/dataverse/cafe).
 
-**Step 3** Fill and submit the [data intake form]() so the data team can proceed with the importation process.
+**Step 3** Fill and submit the [data intake form](https://docs.google.com/forms/d/e/1FAIpQLSe7TTNU4NUS3UDVSP5VfXiJxvImHQCnT2aDIxhrhcSZdQxKVg/viewform) so the data team can proceed with the importation process.
 
 >**What Happens After Submission?** The data team will:
 >* Review the Dataverse entry and metadata.
