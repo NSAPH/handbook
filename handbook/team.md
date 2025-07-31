@@ -8,6 +8,10 @@ Ask me about: data processing pipelines, data support tasks, GitHub
 
 Ask me about: data processing pipelines, R, R-to-Python/Python-to-R translations and comparisons, the [Climate Science Public Health group](https://hsph.harvard.edu/research/golden-group/), the [US-Research Software Engineering Association](https://us-rse.org)
 
+## 3. Shreya Nalluri, Programmer 
+
+Ask me about: building robust data processing pipelines, Python development, Medicaid data processing & availability, and exposures data processing & availability
+
 ## 6. Catherine Adcock, Program Coordinator
 
 Ask me about: onboarding, offboarding, scheduling
