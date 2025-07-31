@@ -2,7 +2,10 @@
 
 ##  1. Michelle Audirac, Senior Data Science Specialist
 
-Ask me about: data processing pipelines, data support tasks, GitHub
+Ask me about:
+* Building scalable and reproducible data processing pipelines that unify diverse data sources, addressing challenges in manipulating large datasets and in computational efficiency
+* Developing data loaders of environmental health datasets, tailored for foundation models and GPT-architectures
+
 
 ## 2. Tinashe Michael Tapera, Progammer
 
