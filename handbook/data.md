@@ -483,6 +483,40 @@ yy: 00, 01, ..., 18, 19
 ```
 `````
 
+`````{dropdown} 10 km grid
+
+```{list-table}
+:header-rows: 0
+
+* - spatial_coverage
+  - US
+* - spatial_resolution
+  - 10km x 10km
+* - size
+  - 20 MB
+* - cannon_location
+  - /net/rcstorenfs02/ifs/rc_labs/dominici_lab/lab/data/10km_grid_wgs84/
+* - description
+  - 10km_grid/10km_grid_wgs84/: This is a folder that contains the shapefile for the 10 km grid.
+  For github repo source, see: https://github.com/wxwx1993/National_Causal/blob/master/pm_map.R.
+* - publication 
+  - Marissa L. Childs, Jessica Li, Jeffrey Wen, Sam Heft-Neal, Anne Driscoll, Sherrie Wang, Carlos F. Gould, Minghao Qiu, Jennifer Burney, and Marshall Burke, Environmental Science & Technology 2022 56 (19), 13607-13621, DOI: 10.1021/acs.est.2c02934
+  10km_grid/smokePM2pt5_predictions_daily_10km_20060101-20201231.rds:
+  This is a file that contains a data frame with the final set of daily smoke PM2.5 predictions on smoke days at 10 km resolution from January 1, 2006 to December 31, 2020 for the contiguous US. The 'grid_id_10km' column in this file corresponds to the 'ID' column in the 10 km grid shapefile.
+
+  All rows in this file are predictions on smoke days. Predictions on non-smoke days are by construction 0 ug/m^3 and not included in this file. A smoke PM2.5 prediction of 0 in this file means that the grid cell-day did have a smoke day but did not have elevated PM2.5. The full set of smoke PM2.5 predictions on both smoke days and non-smoke days can be obtained by setting the smoke PM2.5 prediction to 0 on grid cell-days in the 10 km grid and in the January 1, 2006-December 31, 2020 date range that are not in this file. 
+  Publication: https://pubs.acs.org/doi/10.1021/acs.est.2c02934
+* - files
+  -
+```
+```	  
+   ├── 10km_grid_wgs84  
+   ├── smokePM2pt5_predictions_daily_10km_20060101.csv
+   ├── smokePM2pt5_predictions_daily_10km_20060101.rds
+   └── README.txt
+```
+`````
+
 
 ### ZIP to ZCTA crosswalk (2015)
 `````{dropdown} **zip_to_zcta**
