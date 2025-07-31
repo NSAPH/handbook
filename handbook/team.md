@@ -12,6 +12,10 @@ Ask me about: data processing pipelines, R, R-to-Python/Python-to-R translations
 
 Ask me about: building robust data processing pipelines, Python development, Medicaid data processing & availability, and exposures data processing & availability
 
+## 4. Mahima Kaur, Progammer
+
+Ask me about: Medicare data, data processing pipelines, Python. Supports large-scale public health research, particularly in analyzing Medicare data. 
+
 ## 6. Catherine Adcock, Program Coordinator
 
 Ask me about: onboarding, offboarding, scheduling
