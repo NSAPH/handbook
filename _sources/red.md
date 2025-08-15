@@ -68,7 +68,7 @@ Additional data can only be imported into ReD if it is documented with appropria
   - Preferably, create your dataset under the [NSAPH Dataverse collection](https://dataverse.harvard.edu/dataverse/nsaph) following the [CAFE data management guidelines](https://climate-cafe.github.io/intro.html). 
   - If your dataset is under another collection, please let the data team know so the dataset is linked into the [CAFE collection](https://dataverse.harvard.edu/dataverse/cafe).
 
-**Step 3** Fill and submit the [data intake form]([https://docs.google.com/forms/d/e/1FAIpQLSe7TTNU4NUS3UDVSP5VfXiJxvImHQCnT2aDIxhrhcSZdQxKVg/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdnxBGA71_w7nGiKg0L81GQMkXlI0CN4ogRkp3cBV2VQPgt_A/viewform?usp=sharing&ouid=101897576193745764063)) so the data team can proceed with the importation process.
+**Step 3** Fill and submit the [data intake form](https://docs.google.com/forms/d/e/1FAIpQLSdnxBGA71_w7nGiKg0L81GQMkXlI0CN4ogRkp3cBV2VQPgt_A/viewform?usp=header) so the data team can proceed with the importation process.
 
 >**What Happens After Submission?** The data team will:
 >* Review the Dataverse entry and metadata.
