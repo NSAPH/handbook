@@ -67,7 +67,6 @@ Additional data can only be imported into ReD if it is documented with appropria
 **Step 2** Create your [Harvard Dataverse](https://dataverse.harvard.edu) entry. Regardless of whether your dataset is fully shareable or metadata only, you will need to create a Dataverse entry for your dataset in order to be imported into ReD.
   - Preferably, create your dataset under the [NSAPH Dataverse collection](https://dataverse.harvard.edu/dataverse/nsaph) following the [CAFE data management guidelines](https://climate-cafe.github.io/intro.html). 
   - If your dataset is under another collection, please let the data team know so the dataset is linked into the [CAFE collection](https://dataverse.harvard.edu/dataverse/cafe).
-  
 **Step 3** Import your dataset using [Globus](https://www.globus.org/):
     - If you don't have a Globus account, create one by following the [Transfers via Globus](https://userdocs.red.rc.harvard.edu/data-transfer/globus/) instructions in the ReD user documentation.
     - Share your Globus ID with the [Data Team](team.md).
