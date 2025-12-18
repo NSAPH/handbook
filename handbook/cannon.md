@@ -7,7 +7,7 @@ The following are instructions for logging in to CANNON and setting up your own 
 1. Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
 2. Navigate to the [Add Grants page](https://portal.rc.fas.harvard.edu/request/grants/add) in portal, you will need to login with your FASRC account
 3. Expand the plus sign next to “Other”
-4. Find the project group you want to be added to: `dominici_lab` (`dominici_nsaph` is for FASSE).
+4. Find the project group you want to be added to; it could be `dominici_lab`, `dominici_nsaph`, or even `access to dominici_nsaph- Protected data: dat20-0613,dat21-0471,dua19-1403 (Approvers: Danielle Braun)`. Let us know if you don't see any entry that includes `dominici` or `Braun`!
 5. Select the checkbox for the project group you want to be added to 
 
 Your PI will have to approve the addition.  Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.
@@ -35,7 +35,7 @@ align: center
 ```
 
 ```{warning}
-Cannon is the Faculty of Arts and Sciences research computing cluster for users with Data Security Level 2 data. If you have Data Security Level 3 data, you must use the FAS Secure Environment (FASSE) cluster. 
+Cannon is the Faculty of Arts and Sciences research computing cluster for users with Data Security Level 2 data. 
 ```
 
 ## Step 2. Access CANNON 
