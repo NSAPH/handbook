@@ -2,14 +2,14 @@
 
 ## Background and Installation
 VS Code, or Visual Studio Code, is a popular tool that allows for users to work in a variety of languages, including Python, Python notebooks, R, C, and more, all from one app.
-It also can work with Git and Docker. It is not currently an option as an interactive app in FASSE like RStudio or Jupyter, but you can still use VS Code in CANNON/FASSE fairly easily, in 2 ways: 
+It also can work with Git and Docker. It is not currently an option as an interactive app in FASRC clusters like RStudio or Jupyter, but you can still use VS Code fairly easily, in 2 ways: 
 
 1. **Virtual Desktop**  
 2. **SSH Tunnel**  
 
 ## Setting Up a Virtual Desktop  
 
-1. Launch **Remote Desktop** in CANNON/FASSE and follow the steps to create a session.  
+1. Launch **Remote Desktop** in CANNON and follow the steps to create a session.  
 2. Open VS Code: In a new Terminal window, run:  
    ```bash
    module load vscode
@@ -75,11 +75,10 @@ Before setting up the SSH Tunnel, ensure your `.bashrc` file is configured as sh
    - Or create an **[Azure VM](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu)**  
 
 
-### Connecting to CANNON/FASSE  
+### Connecting to CANNON
 1. In VS Code, open the **Command Palette** (`F1` or `⇧⌘P`).  
 2. Select **Remote-SSH: Connect to Host...** and enter:  
    - `username@login.rc.fas.harvard.edu` (for CANNON)  
-   - `username@fasselogin.rc.fas.harvard.edu` (for FASSE)  
 3. Enter your **Harvard password**, followed by your **multi-factor authentication code** (e.g., Microsoft Authenticator, Duo).  
 4. VS Code will establish the connection, displaying progress notifications and logs in the **Remote - SSH output channel**.  
 5. Once connected, you’ll see an empty VS Code window. The **Status Bar** (bottom left corner) shows the active remote session.  
