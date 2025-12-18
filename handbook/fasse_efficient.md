@@ -1,10 +1,10 @@
-# Efficient Resource Utilization on FASSE
+# Fairshare on FASRC clusters
 
 As members of our research group, we share the responsibility to ensure that our computational resources on the Slurm cluster are used efficiently. To promote fair and effective use, please take a moment to review the following guidelines on resource requests and usage.
 
 ## Fairshare Policy
 
-Fairshare determines the fraction of system resources allocated to users, assigning scores to users based on their resource usage, and establishing priority levels for users based on these scores. Given that FASSE users come from different groups that have different resource needs, Fairshare aims to establish a method for prioritizing job allocation. This allows users who haven't fully utilized their allocated resources to receive higher priority for their jobs, ensuring that groups that have exceeded their resource allocation do not monopolize the system.
+Fairshare determines the fraction of system resources allocated to users, assigning scores to users based on their resource usage, and establishing priority levels for users based on these scores. Given that FASRC cluster users come from different groups that have different resource needs, Fairshare aims to establish a method for prioritizing job allocation. This allows users who haven't fully utilized their allocated resources to receive higher priority for their jobs, ensuring that groups that have exceeded their resource allocation do not monopolize the system.
 
 Read more about the Farishare policy [here](https://docs.rc.fas.harvard.edu/kb/fairshare/).
 
@@ -76,10 +76,8 @@ Lab moderators can use the `sreport` command to see the usage of the resources b
 sreport cluster AccountUtilizationByUser account=dominici_lab Start=2024-03-21 End=2024-03-28
 ```
 
-## Best Practices in Using FASSE
+## Best Practices in Using FASRC clusters
 
-- **FASSE is for L3 data**
-  - Utilize FASSE exclusively for handling sensitive and L3 data. For other computations, such as those involving simulated data, please transition to Cannon.
 - **Understanding your needs**
   - Ensure you fully understand the resource requirements of your job before submission.
   - Conduct small-scale tests or pilot runs to assess the CPU and memory requirements. For instance:
@@ -98,9 +96,8 @@ sreport cluster AccountUtilizationByUser account=dominici_lab Start=2024-03-21 E
 - **Communication** 
   - If you anticipate a large or unusual resource request, consider discussing it with the group. This can help ensure that your needs are met without adversely impacting others.
 - **Other resources**
-  - FASSE (and Cannon) documentation provides a wealth of knowledge on best practices and available resources. Familiarize yourself with it to ensure efficient utilization.
+  - FASRC documentation provides a wealth of knowledge on best practices and available resources. Familiarize yourself with it to ensure efficient utilization.
     - Fairshare documentation: https://docs.rc.fas.harvard.edu/kb/fairshare/ 
-    - FASSE partitions: https://docs.rc.fas.harvard.edu/kb/fasse/#SLURM_and_Partitions 
     - SLURM: https://docs.rc.fas.harvard.edu/kb/running-jobs/
 
 
