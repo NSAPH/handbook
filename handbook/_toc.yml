@@ -34,11 +34,8 @@ parts:
     chapters:
     - file: red
     - file: fasse
-    - file: fasse_partitions
-    - file: fasse_github
-    - file: fasse_efficient
-      title: Efficient Resource Utilization on FASSE
-    - file: rstudio
+    - file: labshare_github
+    - file: fairshare
     - file: cannon
     - file: bashrc
     - file: vscode    
