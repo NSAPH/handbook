@@ -38,7 +38,7 @@ The folder structure in the lab share is designed to facilitate collaboration an
 
 ### Research Projects
 The `research_projects/` folder is used to store individual research projects. Each project should have its own folder. 
-* Follow the naming convention described in Step 4 of the [Working in FASSE](fasse.md) section of the handbook.
+* Follow the naming convention described in Step 4 of the [Project Setup](project_setup.md) section of the handbook.
 * After creating your project folder change permissions by doing `chmod -R 770 /path/to/folder/`
 * If you need to import code for your project, look at the [Code Imports on ReD](#code-imports-on-red) section below.
 
