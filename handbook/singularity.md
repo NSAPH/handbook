@@ -8,9 +8,9 @@ Docker is usually not available on HPC clusters, Singularity is a secure HPC alt
 
 ## Downloading a rocker/docker image with singularity
 
-To work on a containerized Rstudio in FASSE, first identify the rocker distribution that best fits your needs. For the purpose of this tutorial, we will work with `rocker/geospatial:3.6.3`.
+To work on a containerized Rstudio in Cannon, first identify the rocker distribution that best fits your needs. For the purpose of this tutorial, we will work with `rocker/geospatial:3.6.3`.
 
-Once logged in to FASSE, create an `images` folder in your user directory and run
+Once logged in to Cannon, create an `images` folder in your user directory and run
 
 ```
 cd images
@@ -80,4 +80,4 @@ docker build -t . core_geospatial
 
 Create a docker account and push into dockerhub following instructions [here](https://docs.docker.com/docker-hub/repos/#pushing-a-docker-container-image-to-docker-hub).
 
-You can then pull the image you created into FASSE with `singularity pull` as explained at the beginning of the **Singularity** section.
+You can then pull the image you created into Cannon with `singularity pull` as explained at the beginning of the **Singularity** section.
