@@ -58,22 +58,7 @@ For more information, see the [official documentation](https://docs.rc.fas.harva
 
 ## Step 3. Project workspace
 
-Your **project name** should be informative for the group members and outsiders. 
-Think of a **project name** in the following format:
-
-```
-<exposure>-<outcome>-<method>
-```
-
-- Exposure examples: `pm-components`, `pm-no2`, `pm-no2-o3`, `heat-alert`
-- Outcome examples: `cardiovascular`, `respiratory`, `adrd`
-- Method: `reinforcement-learning`, `causalgps` 
-
-For example: `heat_alert-mortality-reinforcement_learning` or shorter `heat_alert-mortality-rl`.
-
-In practice, you may have multiple exposures and outcomes. 
-In that case, use your best judgement for your **project name** based on the guidelines. 
-Avoid adding information such as usernames and current date or year.
+Refer to Step 1 in the [project setup](project_setup.md) guidelines for the appropriate naming convention for your project and directory name.
 
 Next, you should create a folder with your **project name** in the NSAPH projects folder at `/n/dominici_lab/lab/projects`.
 You can do that by opening "File System" in FAS-RC Remote Desktop and navigating to the projects folder (see Fig.).
