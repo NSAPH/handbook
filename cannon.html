@@ -65,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'cannon';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title=".bashrc" href="bashrc.html" />
-    <link rel="prev" title="Using RStudio on FASSE" href="rstudio.html" />
+    <link rel="next" title="Lab Share and GitHub Project Work" href="labshare_github.html" />
+    <link rel="prev" title="Working on RED" href="red.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -196,14 +196,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Computing Infrastructure</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="computing_spaces.html">Computing Spaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="red.html">Working on RED</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse.html">How to work on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_github.html">FASSE and GitHub Project Work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_efficient.html">Efficient Resource Utilization on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rstudio.html">Using RStudio on FASSE</a></li>
-
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting started on CANNON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labshare_github.html">Lab Share and GitHub Project Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_setup.html">Setting up your Work Space on an HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fairshare.html">Fairshare on FASRC clusters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bashrc.html">.bashrc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">VS Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="singularity.html">Singularity</a></li>
@@ -442,10 +440,11 @@ document.write(`
 <li><p>Get a FASRC account by requesting it <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/">here</a>.</p></li>
 <li><p>Navigate to the <a class="reference external" href="https://portal.rc.fas.harvard.edu/request/grants/add">Add Grants page</a> in portal, you will need to login with your FASRC account</p></li>
 <li><p>Expand the plus sign next to “Other”</p></li>
-<li><p>Find the project group you want to be added to: <code class="docutils literal notranslate"><span class="pre">dominici_lab</span></code> (<code class="docutils literal notranslate"><span class="pre">dominici_nsaph</span></code> is for FASSE).</p></li>
+<li><p>Find the project group you want to be added to; it could be <code class="docutils literal notranslate"><span class="pre">dominici_lab</span></code>.
+Let us know if you don’t see any entry that includes <code class="docutils literal notranslate"><span class="pre">dominici</span></code> or <code class="docutils literal notranslate"><span class="pre">Braun</span></code>!</p></li>
 <li><p>Select the checkbox for the project group you want to be added to</p></li>
 </ol>
-<p>Your PI will have to approve the addition.  Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.</p>
+<p>Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.</p>
 </section>
 <section id="step-1-connect-to-harvard-s-vpn">
 <h2>Step 1. Connect to Harvard’s VPN<a class="headerlink" href="#step-1-connect-to-harvard-s-vpn" title="Permalink to this heading">#</a></h2>
@@ -463,7 +462,7 @@ Install 2FA, i.e., Google Authenticator for FASRC. Set it up as explained <a cla
 </figure>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Cannon is the Faculty of Arts and Sciences research computing cluster for users with Data Security Level 2 data. If you have Data Security Level 3 data, you must use the FAS Secure Environment (FASSE) cluster.</p>
+<p>Cannon is the Faculty of Arts and Sciences research computing cluster for users with Data Security Level 2 data.</p>
 </div>
 </section>
 <section id="step-2-access-cannon">
@@ -484,20 +483,7 @@ To learn more about working in the command line, check out this <a class="refere
 </section>
 <section id="step-3-project-workspace">
 <h2>Step 3. Project workspace<a class="headerlink" href="#step-3-project-workspace" title="Permalink to this heading">#</a></h2>
-<p>Your <strong>project name</strong> should be informative for the group members and outsiders.
-Think of a <strong>project name</strong> in the following format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">exposure</span><span class="o">&gt;-&lt;</span><span class="n">outcome</span><span class="o">&gt;-&lt;</span><span class="n">method</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Exposure examples: <code class="docutils literal notranslate"><span class="pre">pm-components</span></code>, <code class="docutils literal notranslate"><span class="pre">pm-no2</span></code>, <code class="docutils literal notranslate"><span class="pre">pm-no2-o3</span></code>, <code class="docutils literal notranslate"><span class="pre">heat-alert</span></code></p></li>
-<li><p>Outcome examples: <code class="docutils literal notranslate"><span class="pre">cardiovascular</span></code>, <code class="docutils literal notranslate"><span class="pre">respiratory</span></code>, <code class="docutils literal notranslate"><span class="pre">adrd</span></code></p></li>
-<li><p>Method: <code class="docutils literal notranslate"><span class="pre">reinforcement-learning</span></code>, <code class="docutils literal notranslate"><span class="pre">causalgps</span></code></p></li>
-</ul>
-<p>For example: <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-reinforcement_learning</span></code> or shorter <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-rl</span></code>.</p>
-<p>In practice, you may have multiple exposures and outcomes.
-In that case, use your best judgement for your <strong>project name</strong> based on the guidelines.
-Avoid adding information such as usernames and current date or year.</p>
+<p>Refer to Step 1 in the <a class="reference internal" href="project_setup.html"><span class="doc std std-doc">project setup</span></a> guidelines for the appropriate naming convention for your project and directory name.</p>
 <p>Next, you should create a folder with your <strong>project name</strong> in the NSAPH projects folder at <code class="docutils literal notranslate"><span class="pre">/n/dominici_lab/lab/projects</span></code>.
 You can do that by opening “File System” in FAS-RC Remote Desktop and navigating to the projects folder (see Fig.).</p>
 <figure class="align-center">
@@ -543,20 +529,20 @@ for your analysis data and code.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rstudio.html"
+       href="red.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Using RStudio on FASSE</p>
+        <p class="prev-next-title">Working on RED</p>
       </div>
     </a>
     <a class="right-next"
-       href="bashrc.html"
+       href="labshare_github.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">.bashrc</p>
+        <p class="prev-next-title">Lab Share and GitHub Project Work</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

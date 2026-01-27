@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="VS Code" href="vscode.html" />
-    <link rel="prev" title="Getting started on CANNON" href="cannon.html" />
+    <link rel="prev" title="Fairshare on FASRC clusters" href="fairshare.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -196,14 +196,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Computing Infrastructure</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="computing_spaces.html">Computing Spaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="red.html">Working on RED</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse.html">How to work on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_github.html">FASSE and GitHub Project Work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_efficient.html">Efficient Resource Utilization on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rstudio.html">Using RStudio on FASSE</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="cannon.html">Getting started on CANNON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labshare_github.html">Lab Share and GitHub Project Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_setup.html">Setting up your Work Space on an HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fairshare.html">Fairshare on FASRC clusters</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">.bashrc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">VS Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="singularity.html">Singularity</a></li>
@@ -418,7 +416,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-bashrc-file-in-cannon-fasse">Setting up a <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file in CANNON/FASSE:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-bashrc-file-in-cannon">Setting up a <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file in CANNON:</a></li>
 </ul>
             </nav>
         </div>
@@ -432,11 +430,11 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="bashrc">
 <h1>.bashrc<a class="headerlink" href="#bashrc" title="Permalink to this heading">#</a></h1>
-<p>The <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file is a script executed whenever a new terminal session starts in an interactive, non-login shell. It’s used to configure the environment, define aliases, set environment variables, and customize the command prompt. This is important, especially when working on data analysis to ensure reproducibility. Even more so when working in CANNON and FASSE, as certain configurations must be made to allow you to use common tools like Python, Git, and VS Code.</p>
-<section id="setting-up-a-bashrc-file-in-cannon-fasse">
-<h2>Setting up a <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file in CANNON/FASSE:<a class="headerlink" href="#setting-up-a-bashrc-file-in-cannon-fasse" title="Permalink to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file is a script executed whenever a new terminal session starts in an interactive, non-login shell. It’s used to configure the environment, define aliases, set environment variables, and customize the command prompt. This is important, especially when working on data analysis to ensure reproducibility. Even more so when working in CANNON, as certain configurations must be made to allow you to use common tools like Python, Git, and VS Code.</p>
+<section id="setting-up-a-bashrc-file-in-cannon">
+<h2>Setting up a <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file in CANNON:<a class="headerlink" href="#setting-up-a-bashrc-file-in-cannon" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Log into CANNON/FASSE and open Terminal</p></li>
+<li><p>Log into CANNON and open Terminal</p></li>
 <li><p>Navigate to your home directory. There should already by a <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file in this directory.</p></li>
 <li><p>Open and edit it with at least the following configurations to allow you to use Python, Git, and VS Code.</p></li>
 </ol>
@@ -497,12 +495,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cannon.html"
+       href="fairshare.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Getting started on CANNON</p>
+        <p class="prev-next-title">Fairshare on FASRC clusters</p>
       </div>
     </a>
     <a class="right-next"
@@ -529,7 +527,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-bashrc-file-in-cannon-fasse">Setting up a <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file in CANNON/FASSE:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-bashrc-file-in-cannon">Setting up a <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file in CANNON:</a></li>
 </ul>
   </nav></div>
 

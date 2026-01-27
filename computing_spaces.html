@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Using RStudio on FASSE &#8212; NSAPH Handbook</title>
+    <title>Computing Spaces &#8212; NSAPH Handbook</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'rstudio';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'computing_spaces';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting started on CANNON" href="cannon.html" />
-    <link rel="prev" title="Efficient Resource Utilization on FASSE" href="fasse_efficient.html" />
+    <link rel="next" title="Working on RED" href="red.html" />
+    <link rel="prev" title="Data Sharing using Harvard Dataverse" href="dataverse.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -196,14 +196,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Computing Infrastructure</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Computing Spaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="red.html">Working on RED</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse.html">How to work on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_github.html">FASSE and GitHub Project Work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_efficient.html">Efficient Resource Utilization on FASSE</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Using RStudio on FASSE</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="cannon.html">Getting started on CANNON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labshare_github.html">Lab Share and GitHub Project Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_setup.html">Setting up your Work Space on an HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fairshare.html">Fairshare on FASRC clusters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bashrc.html">.bashrc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">VS Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="singularity.html">Singularity</a></li>
@@ -294,7 +292,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Frstudio.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/NSAPH/handbook/issues/new?title=Issue%20on%20page%20%2Fcomputing_spaces.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -324,7 +322,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/rstudio.md" target="_blank"
+      <li><a href="_sources/computing_spaces.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -408,7 +406,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Using RStudio on FASSE</h1>
+    <h1>Computing Spaces</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -418,10 +416,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Using RStudio on FASSE</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-r-packages">Installing R Packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-right-space">Choosing the right space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#red">ReD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cannon">Cannon</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fasse-sync">FASSE sync</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -432,52 +431,44 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="using-rstudio-on-fasse">
-<h1>Using RStudio on FASSE<a class="headerlink" href="#using-rstudio-on-fasse" title="Permalink to this heading">#</a></h1>
-<p>There are two ways to use RStudio and access your files on FASSE:</p>
-<ol class="arabic simple">
-<li><p>RStudio Server or</p></li>
-<li><p>Remote Desktop (or Containerized Remote Desktop). You may find RStudio Server to be the easiest to use because you can use shortcuts like Cmd + C (or Ctrl + C) there. Meanwhile, Remote Desktop (or Containerized Remote Desktop) is useful because you can use Terminal there to upload files to GitHub.</p></li>
-</ol>
-<p>When starting a RStudio session, you may want to use the following options:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="computing-spaces">
+<h1>Computing Spaces<a class="headerlink" href="#computing-spaces" title="Permalink to this heading">#</a></h1>
+<p>NSAPH work happens in two main computing spaces. Choose the space you work in based on the data sensitivity and tooling you need.</p>
+<section id="choosing-the-right-space">
+<h2>Choosing the right space<a class="headerlink" href="#choosing-the-right-space" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Partition: “fasse” (or “test” if “fasse” is taking too long to start because other user(s) are using that partition too).</p></li>
-<li><p>R version to be loaded with Rstudio: <code class="docutils literal notranslate"><span class="pre">R/4.0.5-fasrc02</span> <span class="pre">Comp</span> <span class="pre">gcc</span></code> (or whatever version of R you’re looking to use).</p></li>
-<li><p>Location of your R_LIBS_USER folder: <code class="docutils literal notranslate"><span class="pre">$HOME/apps/{your</span> <span class="pre">project</span> <span class="pre">name}/R_4.0.5:$R_LIBS_USER</span></code>. More on this last option below.</p></li>
+<li><p>ReD — regulated data that require higher security controls (Medicare, Medicaid, IRB-restricted or other sensitive health data).</p></li>
+<li><p>Cannon — general-purpose HPC for non-regulated data (environmental, geospatial, modeling, exploratory analysis).</p></li>
+<li><p>FASSE sync — legacy access for finishing work that still lives there; do not start new projects in this environment.</p></li>
 </ul>
 </section>
-<section id="installing-r-packages">
-<h1>Installing R Packages<a class="headerlink" href="#installing-r-packages" title="Permalink to this heading">#</a></h1>
-<p>To install R packages in RStudio Server in the FASEE cluster, you will need to configure the proxies according to our <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/proxy-settings/">Proxy Settings</a> guidelines. To prepare for package installation, run the following two commands on RStudio Server before installing any packages. In this example, we want to install package <code class="docutils literal notranslate"><span class="pre">argparse</span></code> as explained by <a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/rstudio-server-vs-rstudio-desktop/#Installing_R_packages_in_RStudio_Server_in_the_FASSE_cluster">this link</a>:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Sys.setenv<span class="o">(</span><span class="nv">http_proxy</span><span class="o">=</span><span class="s2">&quot;http://rcproxy.rc.fas.harvard.edu:3128&quot;</span><span class="o">)</span>
-Sys.setenv<span class="o">(</span><span class="nv">https_proxy</span><span class="o">=</span><span class="s2">&quot;http://rcproxy.rc.fas.harvard.edu:3128&quot;</span><span class="o">)</span>
-install.packages<span class="o">(</span><span class="s2">&quot;argparse&quot;</span><span class="o">)</span>
-</pre></div>
-</div>
-<p>If you don’t want to install the same R packages over and over again each time you open FASSE, create a $R_LIBS_USER file.
-<a class="reference external" href="https://docs.rc.fas.harvard.edu/kb/r-packages/">This link</a> explains some of this, and below are some tips for setting up your $R_LIBS_USER, but you might want to go to Harvard FAS Research Computing’s weekly <a class="reference external" href="https://www.rc.fas.harvard.edu/training/office-hours/">office hours</a> to get more help.</p>
-<p>You’ll want to edit your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file (which you can see in your home folder by clicking “View” &gt; “Show Hidden Files”) to be the following.
-In this example, the user wants to use R version 4.0.5. <code class="docutils literal notranslate"><span class="pre">projects</span></code>, <code class="docutils literal notranslate"><span class="pre">ml_r4</span></code>, and <code class="docutils literal notranslate"><span class="pre">ml_rstudio</span></code> are examples of Terminal commands that you may to create “aliases” (i.e., shortcuts) for.
-After you do this, you can open a Terminal window (or more than one Terminal window) and type your aliases to, in this example, change the working directory to the <code class="docutils literal notranslate"><span class="pre">/n/dominici_nsaph_l3/Lab/projects/projects</span></code> folder or load RStudio (which requires loading R first).</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># .bashrc</span>
-
-<span class="c1"># Source global definitions</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>/etc/bashrc<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-.<span class="w"> </span>/etc/bashrc
-<span class="k">fi</span>
-
-<span class="nb">export</span><span class="w"> </span><span class="nv">R_LIBS_USER</span><span class="o">=</span><span class="nv">$HOME</span>/apps/<span class="o">{</span>your<span class="w"> </span>project<span class="w"> </span>name<span class="o">}</span>/R_4.0.5:<span class="nv">$R_LIBS_USER</span>
-
-<span class="c1"># Aliases</span>
-<span class="nb">alias</span><span class="w"> </span><span class="nv">projects</span><span class="o">=</span><span class="s1">&#39;cd /n/dominici_nsaph_l3/Lab/projects&#39;</span>
-<span class="nb">alias</span><span class="w"> </span><span class="nv">ml_r4</span><span class="o">=</span><span class="s1">&#39;module load gcc/9.3.0-fasrc01 R/4.0.5-fasrc02&#39;</span>
-<span class="nb">alias</span><span class="w"> </span><span class="nv">ml_rstudio</span><span class="o">=</span><span class="s1">&#39;module load rstudio/1.1.453-fasrc01&#39;</span>
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you want to use your $R_LIBS_USER to access R packages you’ve installed in previous sessions (as already described above, this allows you to not have to <code class="docutils literal notranslate"><span class="pre">install.packages()</span></code> in RStudio every time you start a FASSE session), you’ll need to create a folder, which is called <code class="docutils literal notranslate"><span class="pre">apps/R_4.0.5</span></code> in this example (that is, this example requires a folder called “R_4.0.5” within a folder called “apps”), in your private private home folder.</p>
-</div>
+<section id="red">
+<h2>ReD<a class="headerlink" href="#red" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Purpose: secure environment for regulated health data with stricter access controls and auditing.</p></li>
+<li><p>Use ReD when working with Medicare, Medicaid, or any data covered by DUAs/IRB that contain PHI/PII.</p></li>
+<li><p>Account setup and workflows are in <a class="reference internal" href="red.html"><span class="doc std std-doc">ReD</span></a>.</p></li>
+<li><p>Follow <a class="reference internal" href="project_setup.html"><span class="doc std std-doc">project setup</span></a> guidelines for consistent workspace structure</p></li>
+<li><p>GitHub access is not currently available; you must export your code upon project completion and upload to GitHub per NSAPH guidelines (see ReD documentation for export instructions).</p></li>
+</ul>
+</section>
+<section id="cannon">
+<h2>Cannon<a class="headerlink" href="#cannon" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Purpose: general HPC cluster for data that do not require the regulated controls of ReD.</p></li>
+<li><p>Use Cannon for environmental and geospatial datasets, simulations, and analysis that exclude regulated health data.</p></li>
+<li><p>Cluster usage guidance and fairshare details are in <a class="reference internal" href="cannon.html"><span class="doc std std-doc">Cannon</span></a> and <a class="reference internal" href="fairshare.html"><span class="doc std std-doc">Fairshare</span></a>.</p></li>
+<li><p>Git/GitHub are available; follow <a class="reference internal" href="project_setup.html"><span class="doc std std-doc">project setup</span></a> guidelines for consistent workspace structure.</p></li>
+</ul>
+</section>
+<section id="fasse-sync">
+<h2>FASSE sync<a class="headerlink" href="#fasse-sync" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Legacy environment that mirrors work predating the move to ReD.</p></li>
+<li><p>Use only to finish projects that still reside there; new work should be on ReD (regulated data) or Cannon (non-regulated data).</p></li>
+<li><p>Access requires coordination with the <a class="reference internal" href="team.html"><span class="doc std std-doc">data team</span></a></p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -511,20 +502,20 @@ After you do this, you can open a Terminal window (or more than one Terminal win
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="fasse_efficient.html"
+       href="dataverse.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Efficient Resource Utilization on FASSE</p>
+        <p class="prev-next-title">Data Sharing using Harvard Dataverse</p>
       </div>
     </a>
     <a class="right-next"
-       href="cannon.html"
+       href="red.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Getting started on CANNON</p>
+        <p class="prev-next-title">Working on RED</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -543,10 +534,11 @@ After you do this, you can open a Terminal window (or more than one Terminal win
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Using RStudio on FASSE</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-r-packages">Installing R Packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-right-space">Choosing the right space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#red">ReD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cannon">Cannon</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fasse-sync">FASSE sync</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

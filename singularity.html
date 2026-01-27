@@ -196,14 +196,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Computing Infrastructure</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="computing_spaces.html">Computing Spaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="red.html">Working on RED</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse.html">How to work on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_github.html">FASSE and GitHub Project Work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_efficient.html">Efficient Resource Utilization on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rstudio.html">Using RStudio on FASSE</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="cannon.html">Getting started on CANNON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labshare_github.html">Lab Share and GitHub Project Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_setup.html">Setting up your Work Space on an HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fairshare.html">Fairshare on FASRC clusters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bashrc.html">.bashrc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">VS Code</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Singularity</a></li>
@@ -443,8 +441,8 @@ document.write(`
 <p>Docker is usually not available on HPC clusters, Singularity is a secure HPC alternative to Docker.</p>
 <section id="downloading-a-rocker-docker-image-with-singularity">
 <h2>Downloading a rocker/docker image with singularity<a class="headerlink" href="#downloading-a-rocker-docker-image-with-singularity" title="Permalink to this heading">#</a></h2>
-<p>To work on a containerized Rstudio in FASSE, first identify the rocker distribution that best fits your needs. For the purpose of this tutorial, we will work with <code class="docutils literal notranslate"><span class="pre">rocker/geospatial:3.6.3</span></code>.</p>
-<p>Once logged in to FASSE, create an <code class="docutils literal notranslate"><span class="pre">images</span></code> folder in your user directory and run</p>
+<p>To work on a containerized Rstudio in Cannon, first identify the rocker distribution that best fits your needs. For the purpose of this tutorial, we will work with <code class="docutils literal notranslate"><span class="pre">rocker/geospatial:3.6.3</span></code>.</p>
+<p>Once logged in to Cannon, create an <code class="docutils literal notranslate"><span class="pre">images</span></code> folder in your user directory and run</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">images</span>
 <span class="n">singularity</span> <span class="n">pull</span> <span class="n">docker</span><span class="p">:</span><span class="o">//</span><span class="n">rocker</span><span class="o">/</span><span class="n">geospatial</span><span class="p">:</span><span class="mf">3.6.3</span>
 </pre></div>
@@ -502,7 +500,7 @@ document.write(`
 </pre></div>
 </div>
 <p>Create a docker account and push into dockerhub following instructions <a class="reference external" href="https://docs.docker.com/docker-hub/repos/#pushing-a-docker-container-image-to-docker-hub">here</a>.</p>
-<p>You can then pull the image you created into FASSE with <code class="docutils literal notranslate"><span class="pre">singularity</span> <span class="pre">pull</span></code> as explained at the beginning of the <strong>Singularity</strong> section.</p>
+<p>You can then pull the image you created into Cannon with <code class="docutils literal notranslate"><span class="pre">singularity</span> <span class="pre">pull</span></code> as explained at the beginning of the <strong>Singularity</strong> section.</p>
 </section>
 </section>
 

@@ -196,14 +196,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Computing Infrastructure</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="computing_spaces.html">Computing Spaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="red.html">Working on RED</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse.html">How to work on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_partitions.html">FASSE Compute Partitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_github.html">FASSE and GitHub Project Work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fasse_efficient.html">Efficient Resource Utilization on FASSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rstudio.html">Using RStudio on FASSE</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="cannon.html">Getting started on CANNON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labshare_github.html">Lab Share and GitHub Project Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_setup.html">Setting up your Work Space on an HPC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fairshare.html">Fairshare on FASRC clusters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bashrc.html">.bashrc</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">VS Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="singularity.html">Singularity</a></li>
@@ -426,7 +424,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-an-ssh-tunnel">Setting Up an SSH Tunnel</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-requisites">Pre-requisites</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-on-your-machine">Installation on Your Machine</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-cannon-fasse">Connecting to CANNON/FASSE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-cannon">Connecting to CANNON</a></li>
 </ul>
 </li>
 </ul>
@@ -445,7 +443,7 @@ document.write(`
 <section id="background-and-installation">
 <h2>Background and Installation<a class="headerlink" href="#background-and-installation" title="Permalink to this heading">#</a></h2>
 <p>VS Code, or Visual Studio Code, is a popular tool that allows for users to work in a variety of languages, including Python, Python notebooks, R, C, and more, all from one app.
-It also can work with Git and Docker. It is not currently an option as an interactive app in FASSE like RStudio or Jupyter, but you can still use VS Code in CANNON/FASSE fairly easily, in 2 ways:</p>
+It also can work with Git and Docker. It is not currently an option as an interactive app in FASRC clusters like RStudio or Jupyter, but you can still use VS Code fairly easily, in 2 ways:</p>
 <ol class="arabic simple">
 <li><p><strong>Virtual Desktop</strong></p></li>
 <li><p><strong>SSH Tunnel</strong></p></li>
@@ -454,7 +452,7 @@ It also can work with Git and Docker. It is not currently an option as an intera
 <section id="setting-up-a-virtual-desktop">
 <h2>Setting Up a Virtual Desktop<a class="headerlink" href="#setting-up-a-virtual-desktop" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
-<li><p>Launch <strong>Remote Desktop</strong> in CANNON/FASSE and follow the steps to create a session.</p></li>
+<li><p>Launch <strong>Remote Desktop</strong> in CANNON and follow the steps to create a session.</p></li>
 <li><p>Open VS Code: In a new Terminal window, run:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>vscode
 code<span class="w"> </span>.
@@ -533,14 +531,13 @@ code<span class="w"> </span>.
 </li>
 </ol>
 </section>
-<section id="connecting-to-cannon-fasse">
-<h3>Connecting to CANNON/FASSE<a class="headerlink" href="#connecting-to-cannon-fasse" title="Permalink to this heading">#</a></h3>
+<section id="connecting-to-cannon">
+<h3>Connecting to CANNON<a class="headerlink" href="#connecting-to-cannon" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>In VS Code, open the <strong>Command Palette</strong> (<code class="docutils literal notranslate"><span class="pre">F1</span></code> or <code class="docutils literal notranslate"><span class="pre">⇧⌘P</span></code>).</p></li>
 <li><p>Select <strong>Remote-SSH: Connect to Host…</strong> and enter:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">username&#64;login.rc.fas.harvard.edu</span></code> (for CANNON)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">username&#64;fasselogin.rc.fas.harvard.edu</span></code> (for FASSE)</p></li>
 </ul>
 </li>
 <li><p>Enter your <strong>Harvard password</strong>, followed by your <strong>multi-factor authentication code</strong> (e.g., Microsoft Authenticator, Duo).</p></li>
@@ -623,7 +620,7 @@ code<span class="w"> </span>.
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-an-ssh-tunnel">Setting Up an SSH Tunnel</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-requisites">Pre-requisites</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-on-your-machine">Installation on Your Machine</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-cannon-fasse">Connecting to CANNON/FASSE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-cannon">Connecting to CANNON</a></li>
 </ul>
 </li>
 </ul>
