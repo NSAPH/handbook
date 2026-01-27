@@ -80,7 +80,7 @@ By doing this, all code contributions (commits) from FASSE will be linked to you
 
 ### ReD: 
 
-GitHub is not currently configured to work with ReD, so push/pull to/from GitHub is not possible. However, git is available on ReD. If you would like to implement git tracking and version control, you can set up a local remote. 
+GitHub is not currently configured to work with ReD, so push/pull to/from GitHub is not possible.
  
 ## Step 4. Organize your folder
 
