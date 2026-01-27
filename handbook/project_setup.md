@@ -1,6 +1,6 @@
 # Setting up your Work Space on an HPC 
 
-In order to stay organized when working on Cannon or ReD, please follow the follow recommendations on project naming, GitHub set up, and repository structure. 
+In order to stay organized when working on Cannon or ReD, please follow the recommendations on project naming, GitHub set up, and repository structure. 
 
 ## Step 1. Choose your project's short name
 
@@ -80,7 +80,7 @@ By doing this, all code contributions (commits) from FASSE will be linked to you
 
 ### ReD: 
 
-GitHub is not currently configured to work with ReD, so push/pull to/from GitHub is not possible.
+GitHub is not currently configured to work with ReD, so push/pull to/from GitHub is not possible.You must export your code upon project completion and upload to GitHub per NSAPH guidelines (see ReD documentation for export instructions).
  
 ## Step 4. Organize your folder
 
