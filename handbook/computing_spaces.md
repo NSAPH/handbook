@@ -1,6 +1,6 @@
 # Computing Spaces
 
-NSAPH work happens in three computing spaces. Choose the space you work in based on the data sensitivity and tooling you need.
+NSAPH work happens in two main computing spaces. Choose the space you work in based on the data sensitivity and tooling you need.
 
 ## Choosing the right space
 
@@ -14,7 +14,10 @@ NSAPH work happens in three computing spaces. Choose the space you work in based
 - Use ReD when working with Medicare, Medicaid, or any data covered by DUAs/IRB that contain PHI/PII.
 - Account setup and workflows are in [ReD](red.md).
 - Follow [project setup](project_setup.md) guidelines for consistent workspace structure
+- GitHub access is not currently available; you must export your code upon project completion and upload to GitHub per NSAPH guidelines (see ReD documentation for export instructions).
+
 ## Cannon
+
 
 - Purpose: general HPC cluster for data that do not require the regulated controls of ReD.
 - Use Cannon for environmental and geospatial datasets, simulations, and analysis that exclude regulated health data.
