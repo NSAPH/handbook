@@ -34,6 +34,7 @@ Undergraduate Harvard University students who would like to engage in research p
 
 To Create an FASRC Account, and to Request Access to NSAPH FASSE Group, please follow the instructions [here](https://nsaph.github.io/handbook/fasse.html).
 
+_**please note that accessing CMS data outside of the USA is prohibited and will result in immediate termination of your account._
 
 ## Continuing to work on your existing project
 
