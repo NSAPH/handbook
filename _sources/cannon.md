@@ -2,14 +2,9 @@
 
 The following are instructions for logging in to CANNON and setting up your own workspace.
 
-## Prerequisites. Join our project group
+## Prerequisites. Request an FASRC account
 
-1. Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/get-a-fasse-account-and-project-group/).
-2. Navigate to the [Add Grants page](https://portal.rc.fas.harvard.edu/request/grants/add) in portal, you will need to login with your FASRC account
-3. Expand the plus sign next to “Other”
-4. Find the project group you want to be added to; it could be `dominici_lab`. 
-Let us know if you don't see any entry that includes `dominici` or `Braun`!
-5. Select the checkbox for the project group you want to be added to 
+Get a FASRC account by requesting it [here](https://docs.rc.fas.harvard.edu/kb/how-do-i-get-a-research-computing-account/).
 
 Once you’re notified of the approval, it can take up to an hour for your permissions to be configured.  If you’re not able to access the VPN or your home directory, try waiting an hour and logging in again.
 
