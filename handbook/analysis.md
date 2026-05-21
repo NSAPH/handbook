@@ -59,11 +59,9 @@ This is important so that shared repository URLs are not broken. In this case, d
 
 ## Creating a GitHub repository in CANNON
 
-Once you have created a repository on GitHub, you can clone that repository into CANNON, so that you can transfer versions of your files to and from CANNON and GitHub. To clone a GitHub repository into CANNON, start a CANNON Remote Desktop (or Containerized Remote Desktop) session, Open a Terminal window, and write the following lines one-by-one. Note that the first and second lines are different from each other because the first says "http" and second says "https".
+Once you have created a repository on GitHub, you can clone that repository into CANNON, so that you can transfer versions of your files to and from CANNON and GitHub. To clone a GitHub repository into CANNON, start a CANNON Remote Desktop session, Open a Terminal window, and write the following lines one-by-one.
 
 ```shell
-export http_proxy=http://rcproxy.rc.fas.harvard.edu:3128
-export https_proxy=http://rcproxy.rc.fas.harvard.edu:3128
 cd nsaph_projects/{your project name}
 git clone {url of your repository: go to your repository and click on green "Code" button}
 ```
@@ -76,7 +74,7 @@ As you code in CANNON, it's good practice to upload your code to GitHub often, p
 2. you're about to ask someone for coding help or you're about to present your research and people may want to see your code, or even 
 3. you yourself want to see your code without logging into CANNON.
 
-To add files from CANNON to GitHub, start a Remote Desktop (or Containerized Remote Desktop) session. 
+To add files from CANNON to GitHub, start a Remote Desktop session. 
 Open a Terminal window AFTER you're done editing your files (if you open Terminal before you've finished making edits, you'll end up uploading an old version of your code) and type the following lines one by one.
 
 All of the `git status` lines are optional; `git status` simply lets you see what files are in the current folder, 

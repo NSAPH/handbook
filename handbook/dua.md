@@ -43,7 +43,7 @@ the `git status` command before committing to confirm what you are committing.*
 
 **2. GitHub is not supported in the ReD environment**
 
-*GitHub access is not available within the ReD environment. Users should not clone, pull, or push repositories from within ReD. All code should be developed and maintained within the ReD lab share using approved compute environments. Any use of external platforms such as GitHub must follow NSAPH data security and governance policies.*
+*GitHub access is not available within the ReD environment. Users should not clone, pull, or push repositories from within ReD. All code should be developed and maintained within the ReD lab share using approved compute environments.*
 
 **3. Work under the project space, and not in your home folder.**
 
