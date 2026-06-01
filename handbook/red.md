@@ -67,8 +67,9 @@ Data can be imported into ReD if it is documented with appropriate metadata and 
   - Preferably, create your dataset under the [NSAPH Dataverse collection](https://dataverse.harvard.edu/dataverse/nsaph) following the [CAFE data management guidelines](https://climate-cafe.github.io/intro.html). 
   - If your dataset is under another collection, please let the data team know so the dataset is linked into the [CAFE collection](https://dataverse.harvard.edu/dataverse/cafe).
 
-**Step 3** Using Globus, create a subfolder named with your username (for example, `jharvard`) within the `/import/` directory and transfer the data that needs to be imported into this folder. See the Importing Data using Globus guide at ReD Sharepoint site > Documents > ReD-File Transfers with Globus.
-Note : If you are using Globus for the first time, please notify either [Shreya Nalluri](mailto:snalluri@hsph.harvard.edu) and/or [Mahima Kaur](mailto:mahimakaur@hsph.harvard.edu) with your Globus ID so you can be added to the NSAPH collection.
+**Step 3** Using Globus, create a subfolder named with your username (for example, `jharvard`) within the `/import/` directory and transfer the data that needs to be imported into this folder. See the Globus user guide at ReD Sharepoint site > Documents > ReD-File Transfers with Globus.
+
+NOTE: If you are using Globus for the first time, please notify either [Shreya Nalluri](mailto:snalluri@hsph.harvard.edu) and/or [Mahima Kaur](mailto:mahimakaur@hsph.harvard.edu) with your Globus ID so you can be added to the NSAPH collection.
 
 Once the data transfer is complete, fill and submit the [data intake form](https://docs.google.com/forms/d/e/1FAIpQLSdnxBGA71_w7nGiKg0L81GQMkXlI0CN4ogRkp3cBV2VQPgt_A/viewform?usp=header) so the data team can proceed with the importation process.
 
@@ -125,7 +126,7 @@ In Globus, navigate to the `/import/` directory and use the Upload button to tra
 
 **What happens after transfer?**
 
-The import process is automatic; no ticket submission is needed. A malware scan and security compliance check will run once your files arrive. A member of the NSAPH data team will move the code to your preferred project location.
+The import process is automatic; no ticket submission is needed. A malware scan and security compliance check will run once your files arrive. Once you receive notification of successful Globus import, ping a member of the [NSAPH data team](team.md#3-shreya-nalluri-programmer) to move the code to your preferred project location.
 
 
 ## Data/Code Exports on ReD
@@ -138,8 +139,8 @@ Please allow up to 5 working days for review, depending on the number and size o
 
 **Before submitting an export request:**
 * Export only the files needed outside ReD.
-* Prefer plots, figures, tables, code, manuscripts, notes, or other small analysis outputs.
-* For code exports, remove sensitive paths, credentials, tokens, keys, and any values copied from restricted data.
+* Prefer plots, figures, tables, code, manuscripts, notes, or other small analysis outputs
+* For code exports, remove sensitive paths, credentials, tokens, keys, and any values copied from restricted data
 * Do not include generated data, temporary files, logs, or cache files in code export folders.
 * Make sure tables follow CMS cell suppression rules: all cell sizes must be 10 or greater, including weighted, unweighted, zero-count, and missing-data cells.
 * Make sure maps or visualizations do not reveal exact respondent locations.
@@ -175,7 +176,7 @@ cp figure1.png lab_share/export/jharvard_260416_1443/
 ```
 
 **Step 4** Email [Emre Kaskin](mailto:emre_keskin@harvard.edu) and cc [Bob Freeman](mailto:robert_freeman@harvard.edu) to request review. Include:
-* Subject line, such as `Export Request: NSAPH Lab, Standard`
+* Subject line, such as `Export Request: NSAPH Lab, {Standard, Urgent}`
 * PI name
 * Data Manager name: Emre Kaskin & Bob Freeman
 * DUA, IRB, or project title
@@ -189,10 +190,8 @@ cp figure1.png lab_share/export/jharvard_260416_1443/
 
 After submitting the request, you will receive an automated ServiceNow ticket. Avoid replying separately to the ticket unless the ReD team asks for more information, since extra replies may create duplicate tickets.
 
-**Step 7** Wait for the ReD team to review and scan the files. If approved, the ReD team will move the files to the Globus export folder and respond through the ticket with next steps.
+**Step 7** Wait for the ReD team to review and scan the files. If approved, the ReD team will move the files to the Globus export folder and respond through the ticket with next steps. If there is a problem with the contents of the export, review the recommendations and re-export your data. If repeating this process, you may use the same ticket for communications
 
-**Step 8** Download the approved files from Globus. See the Importing Data using Globus guide at ReD Sharepoint site > Documents > ReD-File Transfers with Globus
+**Step 8** Download the approved files from Globus. See the Globus user guide at ReD Sharepoint site > Documents > ReD-File Transfers with Globus
 
 **Step 9** After download, delete the export copies from both the ReD export folder and the Globus export folder.
-
-If the ReD team identifies a problem with the export contents, revise the files and continue communicating through the same ServiceNow ticket.
