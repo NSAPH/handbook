@@ -67,7 +67,7 @@ Data can be imported into ReD if it is documented with appropriate metadata and 
   - Preferably, create your dataset under the [NSAPH Dataverse collection](https://dataverse.harvard.edu/dataverse/nsaph) following the [CAFE data management guidelines](https://climate-cafe.github.io/intro.html). 
   - If your dataset is under another collection, please let the data team know so the dataset is linked into the [CAFE collection](https://dataverse.harvard.edu/dataverse/cafe).
 
-**Step 3** Using Globus, create a subfolder named with your username (e.g., lastname_firstname) within the /import directory and transfer the data that needs to be imported into this folder. Please see the Importing Data using Globus guide in the ReD Env Docs.
+**Step 3** Using Globus, create a subfolder named with your username (for example, `jharvard`) within the `/import/` directory and transfer the data that needs to be imported into this folder. See the Importing Data using Globus guide at ReD Sharepoint site > Documents > ReD-File Transfers with Globus.
 Note : If you are using Globus for the first time, please notify either [Shreya Nalluri](mailto:snalluri@hsph.harvard.edu) and/or [Mahima Kaur](mailto:mahimakaur@hsph.harvard.edu) with your Globus ID so you can be added to the NSAPH collection.
 
 Once the data transfer is complete, fill and submit the [data intake form](https://docs.google.com/forms/d/e/1FAIpQLSdnxBGA71_w7nGiKg0L81GQMkXlI0CN4ogRkp3cBV2VQPgt_A/viewform?usp=header) so the data team can proceed with the importation process.
@@ -104,14 +104,24 @@ Code includes any of the following entering the environment:
 **Step 2** Download a ZIP of your repository.
 - Note the most recent commit hash; you will need it for the filename.
 - Download a ZIP of the repository.
-- Name the file in a consistent, traceable format: `<repositoryname>_<commit#>.zip`
+- Name the file in a consistent, traceable format, such as `heat_alert-mortality-rl_a1b2c3d.zip`.
 - Confirm the ZIP contains only what you intend to import (no data, secrets, or binaries).
 
-**Step 3** Stage your transfer folder locally, then transfer via Globus.
-- Name your local folder with your username: `<username>`
-- Place your `<repositoryname>_<commit#>.zip` inside it.
-- In Globus, navigate to the `/import/` directory and use the Upload button to transfer your local folder.
-- Reference: [Importing Data using Globus](https://hu.sharepoint.com/sites/hrci-RegulatedDataEnvironment/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fhrci%2DRegulatedDataEnvironment%2FShared%20Documents%2FReD%20%2D%20File%20Transfers%20with%20Globus%2Epdf&parent=%2Fsites%2Fhrci%2DRegulatedDataEnvironment%2FShared%20Documents) guide.
+**Step 3** Stage your transfer folder locally.
+
+Name your local folder with your username.
+
+For example:
+
+```bash
+mkdir jharvard
+cp heat_alert-mortality-rl_a1b2c3d.zip jharvard/
+```
+
+**Step 4** Transfer your local folder via Globus.
+
+In Globus, navigate to the `/import/` directory and use the Upload button to transfer your local folder.
+- Reference: ReD Sharepoint site > Documents > ReD-File Transfers with Globus
 
 **What happens after transfer?**
 
@@ -136,36 +146,36 @@ Please allow up to 5 working days for review, depending on the number and size o
 * Include a brief `README` describing the exported contents.
 * Confirm that file permissions allow the Data Manager and ReD team to inspect the files.
 
-**Step 1** Create a folder in `<lab_share>/export/` using your username, date, and approximate request time.
+**Step 1** Create a folder in `lab_share/export/` using your username, date, and approximate request time.
 
 For example:
 
 ```bash
-mkdir <lab_share>/export/jharvard_260416_1443
+mkdir lab_share/export/jharvard_260416_1443
 ```
 **Step 2** Create a `README.md` in your export folder containing:
 
 For data exports:
-- General description of export contents.
-- Dataset name.
-- Sample size.
-- Table-cell description.
-- Data dictionary.
+- General description of export contents
+- Dataset name
+- Sample size
+- Table-cell description
+- Data dictionary
 
 For code exports:
-- General description of export contents.
-- Attestation that no paths, data, or identifiers are exposed in the code you are exporting.
+- General description of export contents
+- Attestation that you have checked that no paths, data, or identifiers are exposed in the code you are exporting
 
 **Step 3** Copy only the files you want reviewed into that folder.
 
 For example:
 
 ```bash
-cp figure1.png <lab_share>/export/jharvard_260416_1443/
+cp figure1.png lab_share/export/jharvard_260416_1443/
 ```
 
 **Step 4** Email [Emre Kaskin](mailto:emre_keskin@harvard.edu) and cc [Bob Freeman](mailto:robert_freeman@harvard.edu) to request review. Include:
-* Subject line: `Export Request: NSAPH Lab, {Standard or Urgent}`
+* Subject line, such as `Export Request: NSAPH Lab, Standard`
 * PI name
 * Data Manager name: Emre Kaskin & Bob Freeman
 * DUA, IRB, or project title
@@ -173,7 +183,7 @@ cp figure1.png <lab_share>/export/jharvard_260416_1443/
 * Name and relative path of the export folder
 * A brief description of the files being exported
 
-**Step 5** Wait for approval. The Data Manager will review the files and reply with an explicit approval stating that the files do not contain sensitive, regulated, or identifying information and comply with applicable DUA sanitization or de-identification requirements.
+**Step 5** Wait for approval. One of the Data Managers will review the files and reply with an explicit approval stating that the files do not contain sensitive, regulated, or identifying information and comply with applicable DUA sanitization or de-identification requirements.
 
 **Step 6** Forward the approved email thread to [regulated_data_environment@harvard.edu](mailto:regulated_data_environment@harvard.edu), cc'ing [Emre Kaskin](mailto:emre_keskin@harvard.edu) and [Bob Freeman](mailto:robert_freeman@harvard.edu).
 
@@ -181,7 +191,7 @@ After submitting the request, you will receive an automated ServiceNow ticket. A
 
 **Step 7** Wait for the ReD team to review and scan the files. If approved, the ReD team will move the files to the Globus export folder and respond through the ticket with next steps.
 
-**Step 8** Download the approved files from Globus. See the [Exporting Data using Globus](https://hu.sharepoint.com/sites/hrci-RegulatedDataEnvironment/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fhrci%2DRegulatedDataEnvironment%2FShared%20Documents%2FReD%20%2D%20File%20Transfers%20with%20Globus%2Epdf&parent=%2Fsites%2Fhrci%2DRegulatedDataEnvironment%2FShared%20Documents) guide.
+**Step 8** Download the approved files from Globus. See the Importing Data using Globus guide at ReD Sharepoint site > Documents > ReD-File Transfers with Globus
 
 **Step 9** After download, delete the export copies from both the ReD export folder and the Globus export folder.
 
