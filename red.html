@@ -424,8 +424,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lego-and-play-doh">LEGO and Play-Doh</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-imports-on-red">Data Imports on ReD</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-imports-on-red">Code Imports on ReD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-import">Data Import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-import">Code Import</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#required-rules">Required Rules</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-code-exports-on-red">Data/Code Exports on ReD</a></li>
 </ul>
             </nav>
         </div>
@@ -487,7 +491,6 @@ document.write(`
 <ul class="simple">
 <li><p>Follow the naming convention described in Step 1 of the <a class="reference internal" href="project_setup.html"><span class="doc std std-doc">Project Setup</span></a> section of the handbook.</p></li>
 <li><p>After creating your project folder change permissions by doing <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">-R</span> <span class="pre">770</span> <span class="pre">/path/to/folder/</span></code></p></li>
-<li><p>If you need to import code for your project, look at the <span class="xref myst">Code Imports on ReD</span> section below.</p></li>
 </ul>
 </section>
 <section id="lego-and-play-doh">
@@ -511,9 +514,9 @@ document.write(`
 </ul>
 </section>
 </section>
-<section id="data-imports-on-red">
-<h2>Data Imports on ReD<a class="headerlink" href="#data-imports-on-red" title="Permalink to this heading">#</a></h2>
-<p>Additional data can only be imported into ReD if it is documented with appropriate metadata and shared (with appropriate exceptions) with the rest of the NSAPH research community. This ensures the security of the ReD environment and supports the NSAPH community’s goal of promoting <a class="reference external" href="https://www.go-fair.org/fair-principles/">FAIR guidelines</a> for data use in research. The metadata for all data imports will be pulled from the <a class="reference external" href="https://dataverse.harvard.edu">Harvard Dataverse</a>. If your dataset is not fully sharable at this time, you can create a metadata-only entry as described below.</p>
+<section id="data-import">
+<h2>Data Import<a class="headerlink" href="#data-import" title="Permalink to this heading">#</a></h2>
+<p>Data can be imported into ReD if it is documented with appropriate metadata and shared (with appropriate exceptions) with the rest of the NSAPH research community. This ensures the security of the ReD environment and supports the NSAPH community’s goal of promoting <a class="reference external" href="https://www.go-fair.org/fair-principles/">FAIR guidelines</a> for data use in research. The metadata for all data imports will be pulled from the <a class="reference external" href="https://dataverse.harvard.edu">Harvard Dataverse</a>. If your dataset is not fully sharable at this time, you can create a metadata-only entry as described below.</p>
 <p><strong>Step 1</strong> Decide which option applies best to your case:</p>
 <ul class="simple">
 <li><p><strong>Fully sharable</strong> you are ready to share your dataset with the public, including data files and metadata.</p></li>
@@ -529,19 +532,122 @@ document.write(`
 <li><p>Preferably, create your dataset under the <a class="reference external" href="https://dataverse.harvard.edu/dataverse/nsaph">NSAPH Dataverse collection</a> following the <a class="reference external" href="https://climate-cafe.github.io/intro.html">CAFE data management guidelines</a>.</p></li>
 <li><p>If your dataset is under another collection, please let the data team know so the dataset is linked into the <a class="reference external" href="https://dataverse.harvard.edu/dataverse/cafe">CAFE collection</a>.</p></li>
 </ul>
-<p><strong>Step 3</strong> Fill and submit the <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSdnxBGA71_w7nGiKg0L81GQMkXlI0CN4ogRkp3cBV2VQPgt_A/viewform?usp=header">data intake form</a> so the data team can proceed with the importation process.</p>
+<p><strong>Step 3</strong> Using Globus, create a subfolder named with your username (for example, <code class="docutils literal notranslate"><span class="pre">jharvard</span></code>) within the <code class="docutils literal notranslate"><span class="pre">/import/</span></code> directory and transfer the data that needs to be imported into this folder. See the Globus user guide at ReD Sharepoint site &gt; Documents &gt; ReD-File Transfers with Globus.</p>
+<p>NOTE: If you are using Globus for the first time, please notify either <a class="reference external" href="mailto:snalluri&#37;&#52;&#48;hsph&#46;harvard&#46;edu">Shreya Nalluri</a> and/or <a class="reference external" href="mailto:mahimakaur&#37;&#52;&#48;hsph&#46;harvard&#46;edu">Mahima Kaur</a> with your Globus ID so you can be added to the NSAPH collection.</p>
+<p>Once the data transfer is complete, fill and submit the <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSdnxBGA71_w7nGiKg0L81GQMkXlI0CN4ogRkp3cBV2VQPgt_A/viewform?usp=header">data intake form</a> so the data team can proceed with the importation process.</p>
 <blockquote>
-<div><p><strong>What Happens After Submission?</strong> The data team will:</p>
+<div><p><strong>What Happens After Submission?</strong>
+The data team will:</p>
 <ul class="simple">
-<li><p>Review the Dataverse entry and metadata.</p></li>
-<li><p>Check that the dataset meets the folder-specific requirements (e.g., LEGO schema, Play-Doh catalog entry).</p></li>
-<li><p>Copy/import data into the appropriate lab_share location.</p></li>
-<li><p>Update catalogs or tracking systems.</p></li>
+<li><p>Review the Dataverse entry and associated metadata, confirm that the dataset meets applicable data standards and folder-specific requirements (such as LEGO or Play-Doh).</p></li>
+<li><p>Move the data to its final location on ReD. If the data cannot be shared with other lab members due to access, licensing, or sensitivity constraints, it may instead be placed in a user-specific location on ReD.</p></li>
+<li><p>Update the data location in the intake form accordingly.</p></li>
 </ul>
 </div></blockquote>
+<p>NOTE: To import new CMS data from physical media, please connect with SPH IT <a class="reference external" href="mailto:mronn&#37;&#52;&#48;sdac&#46;harvard&#46;edu">Matt Ronn</a> and <a class="reference external" href="mailto:bpedrant&#37;&#52;&#48;hsph&#46;harvard&#46;edu">Brian Pedrant</a>. They will maintain the physical asset inventory and upload the data through a secure workstation via Globus to ReD Environment.</p>
 </section>
-<section id="code-imports-on-red">
-<h2>Code Imports on ReD<a class="headerlink" href="#code-imports-on-red" title="Permalink to this heading">#</a></h2>
+<section id="code-import">
+<h2>Code Import<a class="headerlink" href="#code-import" title="Permalink to this heading">#</a></h2>
+<p>Code imports ensure the code brought into the regulated environment is traceable and reviewed.</p>
+<p>Code includes any of the following entering the environment:</p>
+<ul class="simple">
+<li><p>Source code (scripts, notebooks, pipelines)</p></li>
+<li><p>Configuration files (YAML/JSON/INI)</p></li>
+<li><p>Dependency files (requirements.txt, environment.yml)</p></li>
+</ul>
+<section id="required-rules">
+<h3>Required Rules<a class="headerlink" href="#required-rules" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>No PHI/PII/sensitive identifiers may be included in code, comments, example files, or logs.</p></li>
+<li><p>Do not include IP addresses, ARNs, or full system paths.</p></li>
+<li><p>Do not include SSH keys, PGP keys, secrets, tokens, or any hashes or keys that could be considered personal or sensitive.</p></li>
+<li><p>Do not import executables or binaries.</p></li>
+</ul>
+<p><strong>Step 1</strong> Upload code to GitHub.</p>
+<ul class="simple">
+<li><p>Create a GitHub repository under the <a class="reference external" href="https://github.com/NSAPH-Projects">NSAPH organization</a>.</p></li>
+<li><p>Ensure the code is committed and pushed.</p></li>
+<li><p>Include a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> with purpose, usage, and required inputs/outputs.</p></li>
+</ul>
+<p><strong>Step 2</strong> Download a ZIP of your repository.</p>
+<ul class="simple">
+<li><p>Note the most recent commit hash; you will need it for the filename.</p></li>
+<li><p>Download a ZIP of the repository.</p></li>
+<li><p>Name the file in a consistent, traceable format, such as <code class="docutils literal notranslate"><span class="pre">heat_alert-mortality-rl_a1b2c3d.zip</span></code>.</p></li>
+<li><p>Confirm the ZIP contains only what you intend to import (no data, secrets, or binaries).</p></li>
+</ul>
+<p><strong>Step 3</strong> Stage your transfer folder locally.</p>
+<p>Name your local folder with your username.</p>
+<p>For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>jharvard
+cp<span class="w"> </span>heat_alert-mortality-rl_a1b2c3d.zip<span class="w"> </span>jharvard/
+</pre></div>
+</div>
+<p><strong>Step 4</strong> Transfer your local folder via Globus.</p>
+<p>In Globus, navigate to the <code class="docutils literal notranslate"><span class="pre">/import/</span></code> directory and use the Upload button to transfer your local folder.</p>
+<ul class="simple">
+<li><p>Reference: ReD Sharepoint site &gt; Documents &gt; ReD-File Transfers with Globus</p></li>
+</ul>
+<p><strong>What happens after transfer?</strong></p>
+<p>The import process is automatic; no ticket submission is needed. A malware scan and security compliance check will run once your files arrive. Once you receive notification of successful Globus import, ping a member of the <span class="xref myst">NSAPH data team</span> to move the code to your preferred project location.</p>
+</section>
+</section>
+<section id="data-code-exports-on-red">
+<h2>Data/Code Exports on ReD<a class="headerlink" href="#data-code-exports-on-red" title="Permalink to this heading">#</a></h2>
+<p>Exports from ReD require review before files can leave the regulated environment. This applies to code, figures, tables, manuscripts, notes, and other analysis outputs. Raw data, data extracts, individual-level data, PII, and PHI should not be exported.</p>
+<p>GitHub is not currently configured to work with ReD, so you cannot push or pull directly between ReD and GitHub. When code needs to leave ReD, export it through the process below and upload it to GitHub after approval.</p>
+<p>Please allow up to 5 working days for review, depending on the number and size of the files.</p>
+<p><strong>Before submitting an export request:</strong></p>
+<ul class="simple">
+<li><p>Export only the files needed outside ReD.</p></li>
+<li><p>Prefer plots, figures, tables, code, manuscripts, notes, or other small analysis outputs.</p></li>
+<li><p>For code exports, remove sensitive paths, credentials, tokens, keys, and any values copied from restricted data.</p></li>
+<li><p>Do not include generated data, temporary files, logs, or cache files in code export folders.</p></li>
+<li><p>Make sure tables follow CMS cell suppression rules: all cell sizes must be 10 or greater, including weighted, unweighted, zero-count, and missing-data cells.</p></li>
+<li><p>Make sure maps or visualizations do not reveal exact respondent locations.</p></li>
+<li><p>Include a brief <code class="docutils literal notranslate"><span class="pre">README</span></code> describing the exported contents.</p></li>
+<li><p>Confirm that file permissions allow the Data Manager and ReD team to inspect the files.</p></li>
+</ul>
+<p><strong>Step 1</strong> Create a folder in <code class="docutils literal notranslate"><span class="pre">lab_share/export/</span></code> using your username, date, and approximate request time.</p>
+<p>For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>lab_share/export/jharvard_260416_1443
+</pre></div>
+</div>
+<p><strong>Step 2</strong> Create a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> in your export folder containing:</p>
+<p>For data exports:</p>
+<ul class="simple">
+<li><p>General description of export contents</p></li>
+<li><p>Dataset name</p></li>
+<li><p>Sample size</p></li>
+<li><p>Table-cell description</p></li>
+<li><p>Data dictionary</p></li>
+</ul>
+<p>For code exports:</p>
+<ul class="simple">
+<li><p>General description of export contents</p></li>
+<li><p>Attestation that you have checked that no paths, data, or identifiers are exposed in the code you are exporting</p></li>
+</ul>
+<p><strong>Step 3</strong> Copy only the files you want reviewed into that folder.</p>
+<p>For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span>figure1.png<span class="w"> </span>lab_share/export/jharvard_260416_1443/
+</pre></div>
+</div>
+<p><strong>Step 4</strong> Email <a class="reference external" href="mailto:emre_keskin&#37;&#52;&#48;harvard&#46;edu">Emre Kaskin</a> and cc <a class="reference external" href="mailto:robert_freeman&#37;&#52;&#48;harvard&#46;edu">Bob Freeman</a> to request review. Include:</p>
+<ul class="simple">
+<li><p>Subject line, such as <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">Request:</span> <span class="pre">NSAPH</span> <span class="pre">Lab,</span> <span class="pre">{Standard,</span> <span class="pre">Urgent}</span></code></p></li>
+<li><p>PI name</p></li>
+<li><p>Data Manager name: Emre Kaskin &amp; Bob Freeman</p></li>
+<li><p>DUA, IRB, or project title</p></li>
+<li><p>Deadline, if applicable</p></li>
+<li><p>Name and relative path of the export folder</p></li>
+<li><p>A brief description of the files being exported</p></li>
+</ul>
+<p><strong>Step 5</strong> Wait for approval. One of the Data Managers will review the files and reply with an explicit approval stating that the files do not contain sensitive, regulated, or identifying information and comply with applicable DUA sanitization or de-identification requirements.</p>
+<p><strong>Step 6</strong> Forward the approved email thread to <a class="reference external" href="mailto:regulated_data_environment&#37;&#52;&#48;harvard&#46;edu">regulated_data_environment<span>&#64;</span>harvard<span>&#46;</span>edu</a>, cc’ing <a class="reference external" href="mailto:emre_keskin&#37;&#52;&#48;harvard&#46;edu">Emre Kaskin</a> and <a class="reference external" href="mailto:robert_freeman&#37;&#52;&#48;harvard&#46;edu">Bob Freeman</a>.</p>
+<p>After submitting the request, you will receive an automated ServiceNow ticket. Avoid replying separately to the ticket unless the ReD team asks for more information, since extra replies may create duplicate tickets.</p>
+<p><strong>Step 7</strong> Wait for the ReD team to review and scan the files. If approved, the ReD team will move the files to the Globus export folder and respond through the ticket with next steps. If there is a problem with the contents of the export, review the recommendations and re-export your data. If repeating this process, you may use the same ticket for communications.</p>
+<p><strong>Step 8</strong> Download the approved files from Globus. See the Globus user guide at ReD Sharepoint site &gt; Documents &gt; ReD-File Transfers with Globus</p>
+<p><strong>Step 9</strong> After download, delete the export copies from both the ReD export folder and the Globus export folder.</p>
 </section>
 </section>
 
@@ -616,8 +722,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lego-and-play-doh">LEGO and Play-Doh</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-imports-on-red">Data Imports on ReD</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-imports-on-red">Code Imports on ReD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-import">Data Import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-import">Code Import</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#required-rules">Required Rules</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-code-exports-on-red">Data/Code Exports on ReD</a></li>
 </ul>
   </nav></div>
 
