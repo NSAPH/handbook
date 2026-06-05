@@ -79,7 +79,7 @@ Once the data transfer is complete, fill and submit the [data intake form](https
 >* Move the data to its final location on ReD. If the data cannot be shared with other lab members due to access, licensing, or sensitivity constraints, it may instead be placed in a user-specific location on ReD.
 >* Update the data location in the intake form accordingly.
 
-NOTE: To import new CMS data from physical media, please connect with SPH IT [Matt Ronn](mailto:mronn@sdac.harvard.edu) and [Brian Pedrant](bpedrant@hsph.harvard.edu). They will maintain the physical asset inventory and upload the data through a secure workstation via Globus to ReD Environment.
+NOTE: To import new CMS data from physical media, please connect with SPH IT [Matt Ronn](mailto:mronn@sdac.harvard.edu) and [Brian Pedrant](mailto:bpedrant@hsph.harvard.edu). They will maintain the physical asset inventory and upload the data through a secure workstation via Globus to ReD Environment.
 
 ## Code Import
 
