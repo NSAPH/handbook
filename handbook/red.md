@@ -190,7 +190,7 @@ cp figure1.png lab_share/export/jharvard_260416_1443/
 
 After submitting the request, you will receive an automated ServiceNow ticket. Avoid replying separately to the ticket unless the ReD team asks for more information, since extra replies may create duplicate tickets.
 
-**Step 7** Wait for the ReD team to review and scan the files. If approved, the ReD team will move the files to the Globus export folder and respond through the ticket with next steps. If there is a problem with the contents of the export, review the recommendations and re-export your data. If repeating this process, you may use the same ticket for communications
+**Step 7** Wait for the ReD team to review and scan the files. If approved, the ReD team will move the files to the Globus export folder and respond through the ticket with next steps. If there is a problem with the contents of the export, review the recommendations and re-export your data. If repeating this process, you may use the same ticket for communications.
 
 **Step 8** Download the approved files from Globus. See the Globus user guide at ReD Sharepoint site > Documents > ReD-File Transfers with Globus
 
