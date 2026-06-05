@@ -83,7 +83,7 @@ NOTE: To import new CMS data from physical media, please connect with SPH IT [Ma
 
 ## Code Import
 
-Code imports ensure the code brought into the regulated environment is traceable and reviewed
+Code imports ensure the code brought into the regulated environment is traceable and reviewed.
 
 Code includes any of the following entering the environment:
 - Source code (scripts, notebooks, pipelines)
