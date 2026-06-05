@@ -499,12 +499,12 @@ If you are not familiar with using <code class="docutils literal notranslate"><s
 Also, check out <a class="reference external" href="https://nsaph.github.io/handbook/collaborative.html">our guidelines</a> for collaborative work on GitHub.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If this is the first time you use github you might have to configure your account in FASSE by typing the commands below in FASSE’s command line.</p>
+<p>If this is the first time you use GitHub, you may need to configure your account by typing the commands below in your terminal.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Mona Lisa&quot;</span>
 <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;email@example.com&quot;</span>
 </pre></div>
 </div>
-<p>By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.</p>
+<p>By doing this, all code contributions (commits) will be linked to your GitHub account.</p>
 </div>
 </section>
 <section id="red">
@@ -573,8 +573,8 @@ operating system interprets as a path to that file or directory (a shortcut).</p
 <p><strong>When to use a scratch space?</strong> Whenever you need a temporary storage for intermediate data during processing or computations, use it to store data that is being actively manipulated or processed but is not needed for long-term storage.</p>
 <p><strong>Example scratch space usages</strong></p>
 <ol class="arabic simple">
-<li><p>When creating a large dataset compiled from several analytic datasets. Merged data is large but takes time to compile so you want to save it to use for analyses but not take up valuable space on FASSE. Instead store the compiled dataset in scratch and access each time you need to run your analysis. if the merged dataset goes unmodified for 90 days it may be deleted, in which case you will need to rerun your script to merge the data.</p></li>
-<li><p>For bootstrap analyses it is often quicker to create a set of bootstrap datasets. these datasets individually are large and collectively would overrun the usable space on FASSE. instead, store the temporary datasets in scratch and then have your bootstrap analyses load each individually. delete after use!</p></li>
+<li><p>When creating a large dataset compiled from several analytic datasets. Merged data is large but takes time to compile so you want to save it to use for analyses but not take up valuable space on CANNON. Instead store the compiled dataset in scratch and access each time you need to run your analysis. if the merged dataset goes unmodified for 90 days it may be deleted, in which case you will need to rerun your script to merge the data.</p></li>
+<li><p>For bootstrap analyses it is often quicker to create a set of bootstrap datasets. these datasets individually are large and collectively would overrun the usable space on CANNON. instead, store the temporary datasets in scratch and then have your bootstrap analyses load each individually. delete after use!</p></li>
 </ol>
 <section id="the-lab-has-scratch-spaces-only-available-within-cannon">
 <h3>The lab has scratch spaces only available within CANNON:<a class="headerlink" href="#the-lab-has-scratch-spaces-only-available-within-cannon" title="Permalink to this heading">#</a></h3>
@@ -582,7 +582,7 @@ operating system interprets as a path to that file or directory (a shortcut).</p
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">netscratch</span><span class="o">/</span><span class="n">dominici_lab</span><span class="o">/</span><span class="n">Lab</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">project</span><span class="o">-</span><span class="n">subdirectory</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p><strong>How to use the scratch folder?</strong> Create your own directory in this scratch space using your project name. For example, if your FASSE project name is <code class="docutils literal notranslate"><span class="pre">heat-stress-project</span></code>, then create a folder within the FASSE scratch folder:</p>
+<p><strong>How to use the scratch folder?</strong> Create your own directory in this scratch space using your project name. For example, if your CANNON project name is <code class="docutils literal notranslate"><span class="pre">heat-stress-project</span></code>, then create a folder within the CANNON scratch folder:</p>
 <p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">/n/netscratch/dominici_lab/Lab/heat-stress-project</span></code></p>
 <p>Instead of storing large files in your local project folder, write temporary files in this path.</p>
 <p><strong>Use a symlink to a scratch folder</strong> Ideally, you should not include full paths in a repository’s code. To avoid including full paths in your code, create a symlink to the scratch folder inside the <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder of your project using. <code class="docutils literal notranslate"><span class="pre">data/</span></code> will contains a shortcut link to the scratch folder:</p>

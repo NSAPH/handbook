@@ -1,11 +1,11 @@
 # Data Usage Policies
 
-We would like to take this opportunity to make sure that all FASSE/RED users have read the following
+We would like to take this opportunity to make sure that all RED users have read the following
 usage policy and agree to it. Please take a few minutes to read the information below.
 
 ## Data Access
 
-**1. FASSE/RED accounts are individual accounts that are not sharable.**
+**1. RED accounts are individual accounts that are not sharable.**
 
 *You are not allowed to share your account password with anyone. Allowing other individuals to log into your account or use your account is a violation of our DUA and will result in immediate termination of your account.*
 
@@ -23,10 +23,10 @@ usage policy and agree to it. Please take a few minutes to read the information 
 
 ## Data Sharing
 
-**1. Health data CANNOT be moved from the FASSE/RED.**
+**1. Health data CANNOT be moved from the RED.**
 
-*Per the DUA and IRB, data has to be on the FASSE/RED data cluster ONLY and cannot be 
-downloaded from the computing clusters. Datasets CANNOT be downloaded or moved from FASSE/RED even if they do not have identifying information. Violations come with serious consequences that jeopardize everyone's work. We are very much encouraging sharing reproducible code on GitHub, but please use 
+*Per the DUA and IRB, data has to be on the RED data cluster ONLY and cannot be 
+downloaded from the computing clusters. Datasets CANNOT be downloaded or moved from RED even if they do not have identifying information. Violations come with serious consequences that jeopardize everyone's work. We are very much encouraging sharing reproducible code on GitHub, but please use 
 it only for CODE and publicly available data. We suggest adding a `.gitignore` file to your 
 repository and using it to prevent unintentional upload of data files. We also suggest using 
 the `git status` command before committing to confirm what you are committing.*
@@ -41,17 +41,17 @@ the `git status` command before committing to confirm what you are committing.*
 
 *Inefficient use of compute resources by a single user can prevent the entire team from getting work done. Users should develop and benchmark their models using the Rstudio profiler on small subsets of their data prior to grabbing large chunks of memory. We monitor compute usage, and users using the cluster inefficiently may have their jobs cancelled.*
 
-**2. Set up GitHub under [NSAPH-Projects](https://github.com/orgs/NSAPH-Projects) and link it to FASSE/RED project space.**
+**2. GitHub is not supported in the ReD environment**
 
-*For more details, please see instructions [here](https://nsaph.github.io/handbook/fasse.html#step-4-create-a-git-repository-on-github).*
+*GitHub access is not available within the ReD environment. Users should not clone, pull, or push repositories from within ReD. All code should be developed and maintained within the ReD lab share using approved compute environments.*
 
 **3. Work under the project space, and not in your home folder.**
 
-*Instructions on how to create a project folder and a GitHub repository can be found [*here*](https://nsaph.github.io/handbook/fasse.html#step-3-project-workspace).*
+*All work should be conducted within the appropriate project directories in the ReD lab share, not in personal home folders. This ensures proper organization, supports collaboration, and aligns with the standard project structure used across ReD. Additional guidance on working within the ReD environment can be found [here](https://nsaph.github.io/handbook/red.html).*
 
-**4. Use a Symbolic link to read in data from your project folder.**
+**4. Access shared data from the ReD lab share**
 
-*In order to use any of the analytic datasets available under the dominici_nsaph FASSE group, please make sure to use a symbolic link to read in data from your project folder located under `/n/dominici_nsaph_l3/Lab/projects`. **Please do not copy the data**; we have limited storage capacity and cannot have multiple copies of the data. For more information on this step, click [here](https://nsaph.github.io/handbook/fasse.html#step-5-analytic-data).*
+*Users should access datasets from approved locations within the ReD lab share and should not create duplicate copies of data within project directories. Maintaining a single authoritative version of datasets supports data integrity and efficient use of storage Where appropriate, mechanisms such as symbolic links may be used to reference shared datasets instead of copying them.*
 
 **Useful links on data privacy **
 - "*Why Anonymous Data Sometimes Isn't*"

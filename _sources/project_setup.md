@@ -68,14 +68,14 @@ If you are not familiar with using `git`, check out this [git tutorial](https://
 Also, check out [our guidelines](https://nsaph.github.io/handbook/collaborative.html) for collaborative work on GitHub.
 
 ````{note}
-If this is the first time you use github you might have to configure your account in FASSE by typing the commands below in FASSE's command line. 
+If this is the first time you use GitHub, you may need to configure your account by typing the commands below in your terminal. 
 
 ```
 git config --global user.name "Mona Lisa"
 git config --global user.email "email@example.com"
 ```
 
-By doing this, all code contributions (commits) from FASSE will be linked to your GitHub account.
+By doing this, all code contributions (commits) will be linked to your GitHub account.
 ````
 
 ### ReD: 
@@ -151,8 +151,8 @@ A scratch space provides a dedicated area for temporary storage and facilitates 
 **When to use a scratch space?** Whenever you need a temporary storage for intermediate data during processing or computations, use it to store data that is being actively manipulated or processed but is not needed for long-term storage.
 
 **Example scratch space usages**
-1. When creating a large dataset compiled from several analytic datasets. Merged data is large but takes time to compile so you want to save it to use for analyses but not take up valuable space on FASSE. Instead store the compiled dataset in scratch and access each time you need to run your analysis. if the merged dataset goes unmodified for 90 days it may be deleted, in which case you will need to rerun your script to merge the data.
-2. For bootstrap analyses it is often quicker to create a set of bootstrap datasets. these datasets individually are large and collectively would overrun the usable space on FASSE. instead, store the temporary datasets in scratch and then have your bootstrap analyses load each individually. delete after use!
+1. When creating a large dataset compiled from several analytic datasets. Merged data is large but takes time to compile so you want to save it to use for analyses but not take up valuable space on CANNON. Instead store the compiled dataset in scratch and access each time you need to run your analysis. if the merged dataset goes unmodified for 90 days it may be deleted, in which case you will need to rerun your script to merge the data.
+2. For bootstrap analyses it is often quicker to create a set of bootstrap datasets. these datasets individually are large and collectively would overrun the usable space on CANNON. instead, store the temporary datasets in scratch and then have your bootstrap analyses load each individually. delete after use!
 
 
 #### The lab has scratch spaces only available within CANNON: 
@@ -162,7 +162,7 @@ CANNON path:
 /n/netscratch/dominici_lab/Lab/<your-project-subdirectory>
 ```
 
-**How to use the scratch folder?** Create your own directory in this scratch space using your project name. For example, if your FASSE project name is `heat-stress-project`, then create a folder within the FASSE scratch folder: 
+**How to use the scratch folder?** Create your own directory in this scratch space using your project name. For example, if your CANNON project name is `heat-stress-project`, then create a folder within the CANNON scratch folder: 
 
 `mkdir /n/netscratch/dominici_lab/Lab/heat-stress-project`
 
