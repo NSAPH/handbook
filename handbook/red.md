@@ -139,8 +139,8 @@ Please allow up to 5 working days for review, depending on the number and size o
 
 **Before submitting an export request:**
 * Export only the files needed outside ReD.
-* Prefer plots, figures, tables, code, manuscripts, notes, or other small analysis outputs
-* For code exports, remove sensitive paths, credentials, tokens, keys, and any values copied from restricted data
+* Prefer plots, figures, tables, code, manuscripts, notes, or other small analysis outputs.
+* For code exports, remove sensitive paths, credentials, tokens, keys, and any values copied from restricted data.
 * Do not include generated data, temporary files, logs, or cache files in code export folders.
 * Make sure tables follow CMS cell suppression rules: all cell sizes must be 10 or greater, including weighted, unweighted, zero-count, and missing-data cells.
 * Make sure maps or visualizations do not reveal exact respondent locations.
