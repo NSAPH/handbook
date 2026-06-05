@@ -74,8 +74,8 @@ NOTE: If you are using Globus for the first time, please notify either [Shreya N
 Once the data transfer is complete, fill and submit the [data intake form](https://docs.google.com/forms/d/e/1FAIpQLSdnxBGA71_w7nGiKg0L81GQMkXlI0CN4ogRkp3cBV2VQPgt_A/viewform?usp=header) so the data team can proceed with the importation process.
 
 >**What Happens After Submission?**
-The data team will :
->*  Review the Dataverse entry and associated metadata, confirm that the dataset meets applicable data standards and folder-specific requirements (such as LEGO or Play-Doh).
+>The data team will:
+>* Review the Dataverse entry and associated metadata, confirm that the dataset meets applicable data standards and folder-specific requirements (such as LEGO or Play-Doh).
 >* Move the data to its final location on ReD. If the data cannot be shared with other lab members due to access, licensing, or sensitivity constraints, it may instead be placed in a user-specific location on ReD.
 >* Update the data location in the intake form accordingly.
 
