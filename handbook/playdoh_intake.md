@@ -2,38 +2,38 @@
 
 The `data/play-doh/` folder in the ReD lab share is an unstructured data repository housing datasets that do not conform to the [LEGO](lego_data_model.md) standards. This space primarily stores data that has been imported into ReD by NSAPH members. This page describes how to navigate the data intake form for importing data into ReD using the [data intake form](https://docs.google.com/forms/d/e/1FAIpQLScJ-hkr3GrqJVf-g8wN9veyvCTb_AWweDzteSGiXo2q29b39Q/viewform?usp=header). 
 
-## Play-Doh Requirements
+> ⚠️ **All import requests must go through the [data intake form](https://docs.google.com/forms/d/e/1FAIpQLScJ-hkr3GrqJVf-g8wN9veyvCTb_AWweDzteSGiXo2q29b39Q/viewform?usp=header).**
+>
+> If you need help filling it out, please reach out to a member of the Data Team via Basecamp.
 
-- Requests must go through the the [data intake form](https://docs.google.com/forms/d/e/1FAIpQLScJ-hkr3GrqJVf-g8wN9veyvCTb_AWweDzteSGiXo2q29b39Q/viewform?usp=header). If you need help filling it out, please reach out to a member of the Data Team.
-
-## Decision Tree
+## Filling out the Form
+### Decision Tree
 
 Use the decision tree below to determine whether you need to create a Dataverse entry, where your data will be stored on ReD, and if/how the data will be shared with other NSAPH members
 
-```{figure} imgs/playdoh_decision_tree.png
----
-align: center
----
-Play-Doh data intake decision tree
-```
+![Play-Doh data intake decision tree](imgs/playdoh_decision_tree.png)
 
 
-### Examples
+#### Examples
 
-The following stories are hypothetical, but they reflect the kinds of datasets researchers commonly bring into ReD. Each one shows the path taken through the decision tree, what to do in the intake form, and where the data ends up.
+The following stories reflect the kinds of datasets researchers commonly bring into ReD. Each one shows the path taken through the decision tree, what to do in the intake form, and where the data ends up.
 
-````{admonition} Example 1: Maya finds a dataset that is already on Harvard Dataverse
+````{admonition} Example 1: Riley creates a new Harvard Dataverse deposit
 :class: tip
 
-Maya is starting a project on wildfire smoke and hospital admissions. While searching the literature, Maya finds that another research group has already published a dataset of daily PM2.5 concentrations by ZCTA on Harvard Dataverse, complete with a DOI. The data is free for anyone to download.
+Riley assembled a dataset linking National Weather Service heat alerts to county boundaries. The paper using it has been published, and the dataset is ready to be shared, but it is not yet in any public repository.
 
 ```text
 Did you get access through a user agreement / restricted to your use only?  → No
-└── Is the data already in a public repository?                             → Yes
-    └── ✅ Fill out the intake form with the required metadata, including the DOI
+└── Is the data already in a public repository?                             → No
+    └── Are you the author of this dataset?                                 → Yes
+        └── Is the dataset ready for publication?                           → Yes
+            └── ✅ Create an entry in the NSAPH subcollection of CAFE in Harvard Dataverse,
+                   then fill out the intake form with the required metadata, including the DOI
 ```
 
-Maya transfers the files through Globus and fills out the intake form, pasting in the existing DOI.
+Riley starts the intake form, and after the publication question, the form shows the Harvard Dataverse deposit instructions and ends. Riley submits it, creates a deposit in the NSAPH subcollection of the CAFE Dataverse, and submits the draft for publication to receive a DOI. Riley then fills out the intake form again, this time answering that the dataset is already in a public repository and entering the new DOI.
+
 **Result:** the data is stored in `data/play-doh/`, and the catalog entry and data are available to NSAPH members.
 ````
 
@@ -54,24 +54,7 @@ Before doing anything else, Jordan messages the data team on Basecamp and gets t
 **Result:** the data is stored in Jordan's project directory. The catalog entry is available to NSAPH members without the location of the files, so others know the data exists and who to ask for access.
 ````
 
-````{admonition} Example 3: Sam licenses a dataset that cannot be shared
-:class: tip
-
-Sam licensed a proprietary mobility dataset from a commercial vendor. The license limits its use to Sam alone, so no one else in the lab can access it, even with the PI's approval.
-
-```text
-Did you get access through a user agreement / restricted to your use only?  → Yes
-└── Did you ask a member of the Data Team for permission to import?         → Yes
-    └── Is the data shareable with your/your PI's permission?               → No
-        └── ✅ Fill out the intake form with the required metadata (no DOI)
-```
-
-After getting permission from the data team via Basecamp, Sam fills out the intake form with the project directory path and the required metadata, entering N/A for the DOI. After the import, Sam updates the project directory's permissions so only Sam can read the files.
-
-**Result:** the data is stored in Sam's project directory, and the catalog entry is hidden from other NSAPH members.
-````
-
-````{admonition} Example 4: Alex built a dataset that is not ready to publish yet
+````{admonition} Example 3: Alex built a dataset that is not ready to publish yet
 :class: tip
 
 Alex built a county-level heat exposure dataset from public weather station data for a paper that is still under review. The data itself is not sensitive, but Alex wants to wait until the paper is accepted before publishing the dataset.
@@ -89,28 +72,9 @@ Alex transfers the files through Globus and fills out the intake form, entering 
 **Result:** the data is stored in `data/play-doh/`, and the catalog entry and data are available to NSAPH members.
 ````
 
-````{admonition} Example 5: Riley creates a new Harvard Dataverse deposit
-:class: tip
+## Data Import Steps
 
-Riley assembled a dataset linking National Weather Service heat alerts to county boundaries. The paper using it has been published, and the dataset is ready to be shared, but it is not yet in any public repository.
-
-```text
-Did you get access through a user agreement / restricted to your use only?  → No
-└── Is the data already in a public repository?                             → No
-    └── Are you the author of this dataset?                                 → Yes
-        └── Is the dataset ready for publication?                           → Yes
-            └── ✅ Create an entry in the NSAPH subcollection of CAFE in Harvard Dataverse,
-                   then fill out the intake form with the required metadata, including the DOI
-```
-
-Riley starts the intake form, and after the publication question, the form shows the Harvard Dataverse deposit instructions and ends. Riley submits it, creates a deposit in the NSAPH subcollection of the CAFE Dataverse, and submits the draft for publication to receive a DOI. Riley then fills out the intake form again, this time answering that the dataset is already in a public repository and entering the new DOI.
-
-**Result:** the data is stored in `data/play-doh/`, and the catalog entry and data are available to NSAPH members.
-````
-
-## Data Import
-
-**Step 1** Follow the [decision tree](#decision-tree) above to determine which case applies to your dataset. If your data is restricted, do not continue until a member of the data team has granted permission to import it.
+**Step 1** Follow the decision tree above to determine which case applies to your dataset. If your data is restricted, do not continue until a member of the data team has granted permission to import it.
 
 **Step 2** If the decision tree indicates that you should create a [Harvard Dataverse](https://dataverse.harvard.edu) entry, create it in the NSAPH subcollection of the [CAFE Dataverse](https://dataverse.harvard.edu/dataverse/cafe) following the [CAFE data management guidelines](https://climate-cafe.github.io/intro.html). If your dataset is already under another collection, please let the data team know so the dataset is linked into the CAFE collection.
 
