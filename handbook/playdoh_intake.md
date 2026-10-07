@@ -90,4 +90,4 @@ NOTE: If you are using Globus for the first time, please notify either [Shreya N
 >The data team will:
 >* Review the Dataverse entry (if applicable) and associated metadata, and confirm that the dataset meets applicable data standards and Play-Doh requirements.
 >* Move the data to its final location on ReD: the `data/play-doh/` directory, or your project directory for restricted data.
->* Add the dataset to the [Play-Doh catalog](https://docs.google.com/spreadsheets/d/1wWP48xTTigh7xwGSEsQax68cpaqoxmfqNX4QK838nYM/edit?usp=sharing) with the appropriate visibility and update the data location in the intake form accordingly.
+>* Add the dataset to the [Play-Doh catalog](https://docs.google.com/spreadsheets/d/1IPhl_-Zgn6EkWPpUkARkzNNW82RZDArxXJ98XPpm4JQ/edit?resourcekey=&gid=615500760#gid=615500760) with the appropriate visibility and update the data location in the intake form accordingly.
