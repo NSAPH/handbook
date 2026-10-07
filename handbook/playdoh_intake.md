@@ -16,7 +16,7 @@ Use the decision tree below to determine whether you need to create a Dataverse 
 
 #### Examples
 
-The following stories reflect the kinds of datasets researchers commonly bring into ReD. Each one shows the path taken through the decision tree, what to do in the intake form, and where the data ends up.
+The following examples reflect the kinds of datasets researchers commonly bring into ReD. Each one shows the path taken through the decision tree, what to do in the intake form, and where the data ends up.
 
 ````{admonition} Example 1: Riley creates a new Harvard Dataverse deposit
 :class: tip
@@ -78,7 +78,7 @@ Alex transfers the files through Globus and fills out the intake form, entering 
 
 **Step 2** If the decision tree indicates that you should create a [Harvard Dataverse](https://dataverse.harvard.edu) entry, create it in the NSAPH subcollection of the [CAFE Dataverse](https://dataverse.harvard.edu/dataverse/cafe) following the [CAFE data management guidelines](https://climate-cafe.github.io/intro.html). If your dataset is already under another collection, please let the data team know so the dataset is linked into the CAFE collection.
 
-NOTE: If you reach a Harvard Dataverse deposit page in the intake form, the form will end there. Submit the form, create your Dataverse deposit, and once you have a DOI, fill out the intake form again, this time answering that your dataset is already in a public repository and providing the DOI. Similarly, if your data is restricted and you have not yet received permission from the data team, the form will end early; come back and complete it once permission is granted.
+NOTE: If you reach a Harvard Dataverse deposit page in the intake form, the form will end there. Do not submit the form. create your Dataverse deposit, and once you have a DOI, fill out the intake form again, this time answering that your dataset is already in a public repository and providing the DOI. Similarly, if your data is restricted and you have not yet received permission from the data team, the form will end early; come back and complete it once permission is granted.
 
 **Step 3** Using Globus, create a subfolder named with your username (for example, `jharvard`) within the `/import/` directory and transfer the data that needs to be imported into this folder. See the Globus user guide at ReD Sharepoint site > Documents > ReD-File Transfers with Globus.
 
