@@ -27,9 +27,36 @@ parts:
     - file: mcbs
     - url: https://docs.google.com/document/d/1Nu6YG0NTazTW-jgWZgIlszdL1BUbPNCs5wXrPfK5XjM/edit?usp=sharing
       title: Data Mangement Plan Template
-    - file: dataverse   
-  - caption: Computing Infrastructure 
+    - file: dataverse
+  - caption: NSAPH Data
     chapters:
+    - file: nsaph_data_tiers
+    - file: what_is_lego
+    - file: what_is_playdoh
+    - file: lego_data_catalog
+    - file: playdoh_catalog
+    - file: playdoh_intake
+    - file: cms_data
+    - file: citing_data
+  - caption: NSAPH Code Sharing
+    chapters:
+    - file: code_sharing
+    - file: nsaph_github
+  - caption: Computing Infrastructure
+    chapters:
+    - file: cannon_red_clusters
+    - file: cannon_onboarding
+    - file: red_onboarding
+    - file: cannon_lab_folder
+    - file: red_lab_folder
+    - file: red_imports
+      sections:
+      - file: red_data_imports
+      - file: red_code_imports
+    - file: red_exports
+      sections:
+      - file: red_data_exports
+      - file: red_code_exports
     - file: computing_spaces
     - file: red
     - file: cannon
@@ -37,7 +64,7 @@ parts:
     - file: project_setup
     - file: fairshare
     - file: bashrc
-    - file: vscode    
+    - file: vscode
     - file: singularity
   - caption: Reproducibility 
     chapters: 
